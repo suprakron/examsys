@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<title>CU-TEP Practice Site</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8;
+    --radius:14px;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+      --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+      --gold:#d9b458; --gold-soft:#332a15;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  *{ box-sizing:border-box; }
+  body{
+    margin:0; min-height:100vh; font-family:var(--font-sans); background:var(--bg); color:var(--text);
+    display:flex; align-items:center; justify-content:center; padding:20px;
+  }
+  main{ max-width:480px; width:100%; }
+  .eyebrow{ font-family:var(--font-mono); letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:600; }
+  h1{ font-size:clamp(26px,6vw,32px); margin:10px 0 8px; letter-spacing:-.01em; }
+  p.lede{ color:var(--text-muted); font-size:15px; margin:0 0 26px; }
+  .links{ display:grid; gap:12px; }
+  a.tile{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:20px 18px; box-shadow:var(--shadow);
+  }
+  a.tile:hover{ border-color:var(--accent); }
+  a.tile .t{ font-weight:700; font-size:17px; }
+  a.tile .s{ font-size:13px; color:var(--text-muted); margin-top:4px; }
+  a.tile .arrow{ float:right; color:var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">CU-TEP</div>
+  <h1>เตรียมสอบ CU-TEP</h1>
+  <p class="lede">เลือกเข้าหน้าที่ต้องการ — สรุปเทคนิคการทำข้อสอบ หรือฝึกทำข้อสอบจริง</p>
+  <div class="links">
+    <a class="tile" href="cu-tep-guide.html">
+      <span class="arrow">→</span>
+      <div class="t">Tips and Tricks</div>
+      <div class="s">สรุปเทคนิค Listening · Reading · Writing พร้อมตัวอย่างข้อสอบ</div>
+    </a>
+    <a class="tile" href="exam.html">
+      <span class="arrow">→</span>
+      <div class="t">Practice Test</div>
+      <div class="s">ฝึกทำข้อสอบจริง 4 ชุด (Form 1–4) พร้อมเฉลยและคำอธิบาย</div>
+    </a>
+  </div>
+</main>
+</body>
+</html>
