@@ -1,0 +1,850 @@
+<meta charset="utf-8" />
+<title>CU-TEP Tips and Tricks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#f5f6f4;
+    --surface:#ffffff;
+    --surface-2:#eef0ee;
+    --text:#1c2226;
+    --text-muted:#5b6570;
+    --border:#dde1de;
+    --accent:#2a5c63;
+    --accent-strong:#1c4147;
+    --accent-soft:#e3edee;
+    --gold:#8a6a1f;
+    --gold-soft:#f4ecd8;
+    --error:#a83a3a;
+    --error-soft:#f6e6e4;
+    --radius:14px;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171a;
+      --surface:#1a2124;
+      --surface-2:#212a2d;
+      --text:#e7ebe9;
+      --text-muted:#98a5a3;
+      --border:#2b3538;
+      --accent:#6fb0af;
+      --accent-strong:#8fc7c6;
+      --accent-soft:#1e3234;
+      --gold:#d9b458;
+      --gold-soft:#332a15;
+      --error:#e08585;
+      --error-soft:#3a2323;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+    --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+    --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  body{ margin:0; }
+  #top{
+    font-family:var(--font-sans);
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+    font-size:16px;
+  }
+  main{ max-width:760px; margin:0 auto; padding:0 20px 80px; }
+
+  .masthead{
+    padding:44px 20px 20px;
+    max-width:760px; margin:0 auto;
+  }
+  .eyebrow{
+    font-family:var(--font-mono);
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--accent);
+    font-weight:600;
+  }
+  h1.title{
+    font-size:clamp(28px,6vw,38px);
+    line-height:1.15;
+    margin:10px 0 8px;
+    font-weight:700;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+  }
+  .subtitle{
+    color:var(--text-muted);
+    font-size:15.5px;
+    max-width:56ch;
+  }
+  .meta-row{
+    display:flex; gap:14px; flex-wrap:wrap;
+    margin-top:18px; font-size:13px; color:var(--text-muted);
+    font-family:var(--font-mono);
+  }
+  .meta-row span{ display:flex; align-items:center; gap:6px; }
+  .dot{ width:6px; height:6px; border-radius:50%; background:var(--accent); display:inline-block; }
+
+  nav.tabs{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(160%) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  nav.tabs .inner{
+    max-width:760px; margin:0 auto; padding:10px 20px;
+    display:flex; gap:8px; overflow-x:auto;
+  }
+  nav.tabs a{
+    flex:none;
+    text-decoration:none;
+    color:var(--text);
+    font-size:13.5px;
+    font-weight:600;
+    padding:8px 14px;
+    border-radius:999px;
+    border:1px solid var(--border);
+    background:var(--surface);
+    white-space:nowrap;
+  }
+  nav.tabs a b{ color:var(--accent); font-family:var(--font-mono); font-weight:700; margin-right:6px; }
+
+  section.part{ padding-top:46px; }
+  section.part:first-of-type{ padding-top:34px; }
+
+  .part-head{
+    display:flex; align-items:baseline; gap:12px; margin-bottom:6px;
+  }
+  .part-badge{
+    font-family:var(--font-mono);
+    font-size:13px; font-weight:700; color:var(--accent-strong);
+    background:var(--accent-soft);
+    border-radius:8px;
+    padding:3px 9px;
+  }
+  h2.part-title{ font-size:24px; margin:0; letter-spacing:-.01em; }
+  .part-lede{ color:var(--text-muted); font-size:15px; margin:6px 0 22px; max-width:62ch; }
+
+  .stat-row{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
+    gap:10px; margin:18px 0 26px;
+  }
+  .stat{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:12px 14px;
+  }
+  .stat .n{ font-family:var(--font-mono); font-size:20px; font-weight:700; color:var(--accent); font-variant-numeric:tabular-nums; }
+  .stat .l{ font-size:12.5px; color:var(--text-muted); margin-top:2px; }
+
+  h3.h{ font-size:17px; margin:28px 0 8px; font-weight:700; }
+  p{ margin:0 0 14px; }
+  .prose p{ font-size:15.3px; }
+  .prose ul{ padding-left:1.2em; margin:0 0 14px; font-size:15.3px; }
+  .prose li{ margin-bottom:6px; }
+
+  details.card{
+    background:var(--surface);
+    border:1px solid var(--border);
+    border-radius:var(--radius);
+    margin:14px 0;
+    box-shadow:var(--shadow);
+    overflow:hidden;
+  }
+  details.card > summary{
+    list-style:none;
+    cursor:pointer;
+    padding:16px 18px;
+    display:flex; align-items:center; gap:12px;
+    font-weight:700;
+    font-size:15.5px;
+  }
+  details.card > summary::-webkit-details-marker{ display:none; }
+  details.card > summary::before{
+    content:"+";
+    font-family:var(--font-mono);
+    color:var(--accent);
+    font-size:16px;
+    width:22px; height:22px; flex:none;
+    border-radius:50%;
+    border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+  }
+  details.card[open] > summary::before{ content:"–"; }
+  details.card > summary .num{
+    font-family:var(--font-mono); color:var(--accent-strong); font-weight:700;
+  }
+  details.card > summary .hint{
+    font-weight:400; color:var(--text-muted); font-size:13px; margin-left:auto; text-align:right;
+  }
+  .card-body{ padding:0 18px 20px; border-top:1px solid var(--border); }
+  .card-body > *:first-child{ margin-top:16px; }
+
+  .tbl-wrap{ overflow-x:auto; margin:14px 0; border:1px solid var(--border); border-radius:10px; }
+  table{ border-collapse:collapse; width:100%; font-size:13.6px; }
+  table th, table td{ text-align:left; padding:9px 12px; border-bottom:1px solid var(--border); vertical-align:top; }
+  table th{ background:var(--surface-2); font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); }
+  table tr:last-child td{ border-bottom:none; }
+
+  .passage{
+    background:var(--surface-2);
+    border-left:3px solid var(--accent);
+    border-radius:0 10px 10px 0;
+    padding:14px 16px;
+    font-size:14.6px;
+    margin:14px 0;
+  }
+  .passage p{ margin:0 0 10px; }
+  .passage p:last-child{ margin-bottom:0; }
+
+  .dialogue{ margin:14px 0; display:flex; flex-direction:column; gap:8px; }
+  .line{ max-width:82%; padding:8px 13px; border-radius:12px; font-size:14.6px; }
+  .line b{ display:block; font-family:var(--font-mono); font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; opacity:.65; margin-bottom:2px; }
+  .line.man{ background:var(--surface-2); align-self:flex-start; border-bottom-left-radius:3px; }
+  .line.woman{ background:var(--accent-soft); align-self:flex-end; border-bottom-right-radius:3px; }
+
+  .qline{ font-weight:700; margin:14px 0 8px; font-size:14.8px; }
+  .qline .th{ font-weight:400; color:var(--text-muted); }
+
+  ol.choices{ list-style:none; padding:0; margin:0 0 14px; display:grid; gap:6px; }
+  ol.choices li{
+    display:flex; gap:10px; font-size:14.6px; padding:7px 10px;
+    border:1px solid var(--border); border-radius:9px; background:var(--surface);
+  }
+  ol.choices li .k{ font-family:var(--font-mono); color:var(--text-muted); flex:none; }
+  ol.choices li.correct{ border-color:var(--gold); background:var(--gold-soft); }
+  ol.choices li.correct .k{ color:var(--gold); font-weight:700; }
+  ol.choices li.correct::after{ content:"✓ ตอบถูก"; margin-left:auto; font-size:11.5px; color:var(--gold); font-weight:700; white-space:nowrap; }
+
+  .answer{
+    font-size:14.8px; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:6px;
+  }
+  .answer b{ color:var(--accent-strong); }
+
+  .note{
+    font-size:12.8px; color:var(--text-muted); border-left:2px solid var(--border);
+    padding-left:10px; margin:10px 0; font-style:italic;
+  }
+
+  .err-sentence{
+    font-family:var(--font-mono);
+    font-size:14px;
+    background:var(--surface-2);
+    border-radius:10px;
+    padding:14px 16px;
+    line-height:1.9;
+    margin:14px 0;
+  }
+  .seg{ padding:1px 3px; border-radius:4px; }
+  .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin:0 1px 0 3px; }
+  .seg-err{ background:var(--error-soft); color:var(--error); text-decoration:underline wavy var(--error); font-weight:700; }
+  .fix{ font-family:var(--font-mono); font-size:13.5px; margin-top:8px; }
+  .fix .arrow{ color:var(--text-muted); margin:0 6px; }
+  .fix .to{ color:var(--gold); font-weight:700; }
+
+  .formula{
+    font-family:var(--font-mono); font-size:14px; font-weight:600;
+    background:var(--accent-soft); color:var(--accent-strong);
+    border-radius:8px; padding:9px 12px; margin:8px 0; display:inline-block;
+  }
+
+  .grid-2{ display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  @media (max-width:520px){ .grid-2{ grid-template-columns:1fr; } }
+  .type-box{ border:1px solid var(--border); border-radius:10px; padding:10px 12px; background:var(--surface); }
+  .type-box .ty{ font-family:var(--font-mono); font-weight:700; font-size:12.5px; color:var(--accent); margin-bottom:4px; }
+
+  footer{
+    max-width:760px; margin:40px auto 0; padding:24px 20px 0;
+    border-top:1px solid var(--border);
+    color:var(--text-muted); font-size:12.8px;
+  }
+
+  .to-top{
+    position:fixed; right:18px; bottom:18px;
+    width:42px; height:42px; border-radius:50%;
+    background:var(--accent); color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    text-decoration:none; font-size:18px; box-shadow:var(--shadow);
+    z-index:30;
+  }
+  a:focus-visible, summary:focus-visible, .to-top:focus-visible{
+    outline:2px solid var(--accent); outline-offset:2px;
+  }
+</style>
+
+<div id="top">
+  <header class="masthead">
+    <div class="eyebrow">CU-TEP · Practice Test III</div>
+    <h1 class="title">Tips and Tricks</h1>
+    <p class="subtitle">สรุปเทคนิคการทำข้อสอบ CU-TEP ทั้งสามทักษะ — Listening, Reading และ Writing — พร้อมคำศัพท์ที่พบบ่อยในโจทย์และตัวอย่างข้อสอบพร้อมเฉลย</p>
+    <div class="meta-row">
+      <span><span class="dot"></span>Listening · 30 ข้อ</span>
+      <span><span class="dot"></span>Reading · 60 ข้อ</span>
+      <span><span class="dot"></span>Writing · Error Identification</span>
+    </div>
+  </header>
+
+  <nav class="tabs" aria-label="ไปยังหมวด">
+    <div class="inner">
+      <a href="#listening"><b>01</b>Listening</a>
+      <a href="#reading"><b>02</b>Reading</a>
+      <a href="#writing"><b>03</b>Writing</a>
+      <a href="exam.html" style="margin-left:auto;">ทำข้อสอบ →</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ================= LISTENING ================= -->
+    <section class="part" id="listening">
+      <div class="part-head">
+        <span class="part-badge">01</span>
+        <h2 class="part-title">Listening</h2>
+      </div>
+      <p class="part-lede">ข้อสอบทักษะการฟังใน CU-TEP มีทั้งหมด 30 ข้อ แบ่งเป็น 3 ส่วน</p>
+
+      <div class="stat-row">
+        <div class="stat"><div class="n">15</div><div class="l">Short Conversations — บทสนทนาสั้น 1 ข้อ/บท</div></div>
+        <div class="stat"><div class="n">9</div><div class="l">Longer Conversations — 3 บท บทละ 3 ข้อ</div></div>
+        <div class="stat"><div class="n">6</div><div class="l">Monologues / Short Talks — 2 บท บทละ 3 ข้อ</div></div>
+      </div>
+
+      <div class="prose">
+        <p><b>Short Conversations</b> เป็นบทสนทนาสั้น ๆ ระหว่างผู้พูดสองคนเกี่ยวกับเรื่องทั่วไปในชีวิตประจำวัน การเรียน หรือการทำงาน ตามด้วยคำถาม 1 ข้อ</p>
+        <p><b>Longer Conversations</b> เป็นบทสนทนาที่ยาวขึ้น มีการพูดโต้ตอบกันประมาณ 5–10 รอบ เนื้อหาอาจเป็นการพูดคุยระหว่างเพื่อน เพื่อนร่วมงาน หรือระหว่างผู้ให้บริการกับผู้ใช้บริการ (ร้านค้า โรงแรม สนามบิน ร้านอาหาร ฯลฯ)</p>
+        <p><b>Monologues / Short Talks</b> เป็นบทบรรยายของผู้พูดคนเดียว ความยาวประมาณ 170–300 คำ เนื้อหาหลากหลาย เช่น ข่าว ประกาศให้ข้อมูล หรือประกาศเชิญชวนเข้าร่วมกิจกรรม</p>
+
+        <h3 class="h">อยากฟังเก่งต้องเก็บชั่วโมงบิน</h3>
+        <p>การฟังเป็นทักษะที่ต้องอาศัยการฝึกฝนอย่างต่อเนื่อง สิ่งสำคัญที่สุดคือฝึกฟังให้มากและหลากหลายประเด็น ควบคู่กับการอ่านเพื่อเพิ่มพูนความรู้และคำศัพท์ เพราะพื้นความรู้ที่กว้างจะช่วยให้เชื่อมโยงสิ่งที่ฟังกับความรู้เดิม และคาดเดาเรื่องราวได้ดีขึ้น</p>
+        <p>อีกปัจจัยสำคัญคือ<b>การออกเสียงที่ถูกต้อง</b> ปัญหาฟังไม่เข้าใจบ่อยครั้งเกิดจากการที่ผู้ฟังจำการออกเสียงคำผิด เช่น รู้จักคำว่า <i>allow</i> (อนุญาต) แต่เข้าใจว่าออกเสียงว่า "อะ-โล" เมื่อได้ยินเสียงที่ถูกคือ "อะ-ลาว" จึงไม่คิดว่าเป็นคำเดียวกัน วิธีแก้คือหมั่นตรวจสอบการออกเสียงจากแหล่งอ้างอิงที่เชื่อถือได้ เช่น Cambridge Dictionary และฝึกฟังคู่กับการอ่านสคริปต์หรืออ่านออกเสียงตาม รวมถึงสังเกตจังหวะ การเน้นเสียง (stress) การเชื่อมเสียง (linking) และทำนองเสียง (intonation)</p>
+
+        <h3 class="h">เทคนิคการทำข้อสอบฟัง</h3>
+        <ul>
+          <li>หาเทคนิคที่เหมาะกับตัวเอง เช่น จดโน้ตย่อเฉพาะ Monologues แต่ไม่จดใน Short Conversations เพราะสั้นเกินไป หรือลองนึกภาพเหตุการณ์ระหว่างฟังเพื่อช่วยจดจ่อ</li>
+          <li>ข้อสอบฟัง CU-TEP <b>ไม่มีคำถามให้อ่านล่วงหน้า</b> — ผู้สอบจะได้ยินคำถามหลังจบบทพูดเท่านั้น จึงควรอ่านตัวเลือก (choices) ก่อนฟัง เพื่อคาดเดาเรื่องราวและจุดที่ต้องตั้งใจฟัง บางครั้งอ่านตัวเลือกอย่างเดียวก็พอเดาคำถามได้ เช่น ถ้าตัวเลือกส่วนใหญ่เป็นสิ่งที่พูดถึงในบท ยกเว้นหนึ่งข้อ คำถามมักเป็น "ข้อใดไม่ได้กล่าวถึง"</li>
+          <li>ฟังไม่ทันให้ปล่อยผ่าน จับ<b>คำหลัก (keyword)</b> และใจความหลักไว้ก่อน ลองตอบคำถามกับตัวเองว่า ใคร ทำอะไร ที่ไหน กับใคร</li>
+          <li>สังเกต<b>น้ำเสียง</b>ของผู้พูด (นิ่งเฉย ประหลาดใจ ขบขัน ผิดหวัง กังวล เสียดสี ฯลฯ) จะช่วยเข้าใจบริบทและความหมายแฝง</li>
+          <li>ระวัง<b>ตัวลวง</b> ที่นำคำ/วลีจากบทมาใส่ในตัวเลือกแต่ความหมายไม่ถูกต้อง เช่น บทพูดว่า <i>"Monica has a sweet tooth. We should buy her a box of cookies."</i> ถ้าไม่รู้สำนวน <i>sweet tooth</i> (ชอบของหวาน) อาจไขว้เขวเลือกตัวเลือกที่มีคำว่า <i>sweet</i> ทั้งที่ความหมายผิด — การรู้จัก <b>idioms</b> จึงช่วยลดโอกาสถูกหลอกได้มาก</li>
+        </ul>
+
+        <h3 class="h">แนวคำถามข้อสอบการฟัง 5 ประเภท</h3>
+      </div>
+
+      <!-- 1 Main Ideas -->
+      <details class="card">
+        <summary><span class="num">1</span> Main Ideas <span class="hint">ใจความสำคัญ</span></summary>
+        <div class="card-body">
+          <p>ทดสอบว่าจับใจความสำคัญได้หรือไม่ ควรฟังคำที่ปรากฏซ้ำ ๆ และ <i>transition signals</i> เช่น <i>firstly, for instance, moreover, to conclude</i></p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>speaker ผู้พูด<br>talk บทพูด<br>mainly discuss / mainly about พูดถึง...เป็นหลัก<br>main idea ใจความสำคัญ</td>
+                <td>What is the talk mainly about?<br>What is the main idea of the talk?<br>What are the two speakers mainly discussing?</td></tr>
+          </table></div>
+
+          <p><b>Talk 1</b> — post-holiday blues</p>
+          <div class="passage">
+            <p>Have you heard of post-holiday blues? These refer to the feelings of sadness or anxiety you feel after a holiday ends, and you have to return to your normal routine. You probably have low energy level, experience some sleep problems, or have stress and feelings of nostalgia. There can be multiple causes for post-holiday blues, but quite often it is not having anything to look forward to that brings sadness.</p>
+            <p>Good news is that these post-holiday blues are short-lived, and there are ways to deal with them. <b>First of all</b>, it's a good idea to schedule your next holiday or time for fun so that you have something on your calendar to look forward to.</p>
+            <p><b>Secondly</b>, take good care of yourself — quality sleep, enough exercise, and balanced diets help boost your mood.</p>
+            <p><b>Thirdly</b>, relive your holiday by writing about it or sharing your experience with friends and family.</p>
+            <p><b>Lastly and above all</b>, remind yourself that these feelings will pass. Do not force yourself to get rid of the blues — be kind to yourself and give yourself time to recover.</p>
+          </div>
+          <p class="qline">What is the talk mainly about?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Defining post-holiday blues</li>
+            <li><span class="k">2.</span> Preventing post-holiday blues</li>
+            <li><span class="k">3.</span> Diagnosing post-holiday blues</li>
+            <li class="correct"><span class="k">4.</span> Coping with post-holiday blues</li>
+          </ol>
+          <div class="answer">ทุกตัวเลือกมีคำว่า <i>post-holiday blues</i> จึงต้องดูว่าบทพูดเน้นประเด็นใด สังเกต transition signals — <i>first of all, secondly, thirdly, lastly and above all</i> — ล้วนนำเสนอ<b>วิธีรับมือ</b> ดังนั้นคำตอบคือข้อ 4</div>
+        </div>
+      </details>
+
+      <!-- 2 Specific Details -->
+      <details class="card">
+        <summary><span class="num">2</span> Specific Details <span class="hint">รายละเอียด</span></summary>
+        <div class="card-body">
+          <p>ต้องฟังรายละเอียดให้ดี เพราะไม่ทราบคำถามจนกว่าจะฟังจบ ระหว่างอ่านตัวเลือกให้คาดเดาคำถามไว้ก่อน หากคำถามมีคำว่า <b>NOT</b> หรือ <b>EXCEPT</b> ต้องหาข้อที่ "ไม่ได้" กล่าวถึง</p>
+          <p>ตัวอย่างจาก Talk 1 ข้างต้น</p>
+          <p class="qline">Which of the following is <u>NOT</u> mentioned as a treatment for post-holiday blues?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Getting enough exercise</li>
+            <li><span class="k">2.</span> Writing about your holiday</li>
+            <li><span class="k">3.</span> Scheduling the next holiday</li>
+            <li class="correct"><span class="k">4.</span> Trying to get rid of the blues</li>
+          </ol>
+          <div class="answer">ตัวเลือก 1–3 ล้วนเป็นสิ่งที่พูดแนะนำ ส่วนข้อ 4 ผู้พูดบอกว่า <i>อย่า</i> บังคับตัวเองให้กำจัดความรู้สึกนี้ — ตรงข้ามกับที่ตัวเลือกบอก จึงเป็นคำตอบ หากจับได้แค่คำว่า <i>get rid of</i> โดยไม่ฟังบริบทรอบ ๆ อาจตอบผิดได้</div>
+        </div>
+      </details>
+
+      <!-- 3 Speaker's Feelings -->
+      <details class="card">
+        <summary><span class="num">3</span> The Speaker's Feelings <span class="hint">ความรู้สึกของผู้พูด</span></summary>
+        <div class="card-body">
+          <p>มักไม่ระบุความรู้สึกตรง ๆ ต้องตีความจากสำนวนและน้ำเสียง ควรศึกษาสำนวนภาษาพูดให้มาก</p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>feel รู้สึก<br>feel toward รู้สึกต่อ<br>think about คิดเกี่ยวกับ</td>
+                <td>How does the woman feel toward the man?<br>What did the woman think about...?<br>What is the man probably feeling?</td></tr>
+          </table></div>
+          <div class="dialogue">
+            <div class="line man"><b>Man</b>Okay, your laptop is now working again.</div>
+            <div class="line woman"><b>Woman</b>That's unbelievable. You're a gem.</div>
+          </div>
+          <p class="qline">How does the woman feel toward the man?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> He is valuable.</li>
+            <li class="correct"><span class="k">2.</span> He is very helpful.</li>
+            <li><span class="k">3.</span> He is hard to believe.</li>
+            <li><span class="k">4.</span> He is unbelievably fast.</li>
+          </ol>
+          <div class="answer">สำนวน <i>You're a gem.</i> ใช้ชมเชยคนที่ช่วยเหลือเราเป็นอย่างดี ไม่ได้แปลตรงตัวว่า "เป็นอัญมณี" คำตอบคือข้อ 2 หากไม่รู้สำนวนนี้อาจถูกลวงด้วยคำ <i>believe / unbelievably</i> ที่ใกล้เคียงกับ <i>unbelievable</i> ในบทไปเลือกข้อ 1, 3 หรือ 4</div>
+        </div>
+      </details>
+
+      <!-- 4 Inferences -->
+      <details class="card">
+        <summary><span class="num">4</span> Inferences <span class="hint">คำถามเชิงอนุมาน</span></summary>
+        <div class="card-body">
+          <p>คำถามที่ซับซ้อนที่สุด เพราะต้อง <b>read between the lines</b> — คิดต่อยอดจากสิ่งที่ได้ยิน ไม่ใช่การเดาแบบเลื่อนลอย แต่ต้องอ้างอิงจากคำพูดและบริบท อาจถามว่าผู้พูดเป็นใคร บทสนทนาเกิดที่ไหน วัตถุประสงค์คืออะไร หรือน้ำเสียงเป็นอย่างไร</p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>mean, imply, infer, probably, likely, possible, purpose, tone, target/intended audience, take place</td>
+                <td>What does the woman mean / imply?<br>What can be inferred about...?<br>Where does the conversation probably take place?<br>What is the possible relationship between the two speakers?<br>What is the purpose / tone of the talk?<br>Who are the target audience of the talk?</td></tr>
+          </table></div>
+
+          <div class="dialogue">
+            <div class="line man"><b>Man</b>Our boss never listens. Convincing him to agree with us is nearly impossible.</div>
+            <div class="line woman"><b>Woman</b>You can say that again!</div>
+          </div>
+          <p class="qline">What does the woman mean?</p>
+          <ol class="choices">
+            <li class="correct"><span class="k">1.</span> She shares the man's opinion.</li>
+            <li><span class="k">2.</span> She wants the man to repeat what he said.</li>
+            <li><span class="k">3.</span> She asks the man to convince the boss again.</li>
+            <li><span class="k">4.</span> She thinks it is impossible to listen to the man.</li>
+          </ol>
+          <div class="answer"><i>You can say that again!</i> เป็นสำนวนแปลว่า "เห็นด้วยอย่างยิ่ง" ไม่ใช่การขอให้พูดซ้ำ คำตอบคือข้อ 1 ส่วนข้อ 3–4 เป็นการดึงคำในบท (<i>convince, boss, impossible, listen</i>) มาลวงโดยไม่ตรงความหมาย</div>
+
+          <p style="margin-top:18px">ตัวอย่างที่สอง</p>
+          <div class="dialogue">
+            <div class="line woman"><b>Woman</b>Believe me, I had such a bad headache yesterday. I tried to get out of bed, but I couldn't. So bad I didn't attend Dr. Kayne's lecture.</div>
+            <div class="line man"><b>Man</b>Don't worry. You didn't miss much.</div>
+          </div>
+          <p class="qline">What does the man imply?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> He wasn't worried about her.</li>
+            <li><span class="k">2.</span> The woman should be honest.</li>
+            <li class="correct"><span class="k">3.</span> Dr. Kayne's lecture wasn't good.</li>
+            <li><span class="k">4.</span> The woman didn't miss a lot of work.</li>
+          </ol>
+          <div class="answer">สำนวน <i>You didn't miss much.</i> ใช้บอกว่าสิ่งที่พลาดไปนั้นไม่ได้ดีเท่าไร (ไม่ต้องเสียดาย) ฝ่ายชายจึงกำลังบอกเป็นนัยว่าการบรรยายไม่น่าสนใจ คำตอบคือข้อ 3</div>
+        </div>
+      </details>
+
+      <!-- 5 Predictions -->
+      <details class="card">
+        <summary><span class="num">5</span> Predictions <span class="hint">คำถามเชิงคาดการณ์</span></summary>
+        <div class="card-body">
+          <p>ถามว่าหลังจบบทสนทนาน่าจะเกิดอะไรขึ้นต่อ หรือผู้พูดน่าจะทำอะไรถัดไป ต้องอาศัยการคิดเชิงอนุมานเช่นเดียวกับข้อ 4</p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>probably do (next), likely to do next, likely to go next, suggest that...do</td>
+                <td>What will... probably do next?<br>What are the two speakers likely to do next?<br>Where are the two speakers likely to go next?<br>What does the woman suggest that the man do?</td></tr>
+          </table></div>
+          <div class="dialogue">
+            <div class="line woman"><b>Woman</b>Our class starts in about half an hour, but I'm starving. How about we go grab a quick bite?</div>
+            <div class="line man"><b>Man</b>That sounds great!</div>
+          </div>
+          <p class="qline">Where are the two speakers likely to go next?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Home</li>
+            <li class="correct"><span class="k">2.</span> Canteen</li>
+            <li><span class="k">3.</span> Restroom</li>
+            <li><span class="k">4.</span> Classroom</li>
+          </ol>
+          <div class="answer"><i>I'm starving</i> = หิวมาก, <i>grab a quick bite</i> = ไปกินอะไรเร็ว ๆ เมื่อรวมกับข้อจำกัดเรื่องเวลา (อีกครึ่งชั่วโมงจะเข้าเรียน) สถานที่ที่สมเหตุสมผลที่สุดคือโรงอาหาร (canteen) ไม่ใช่กลับบ้านไปทำอาหารซึ่งขัดกับคำว่า <i>quick</i></div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= READING ================= -->
+    <section class="part" id="reading">
+      <div class="part-head">
+        <span class="part-badge">02</span>
+        <h2 class="part-title">Reading</h2>
+      </div>
+      <p class="part-lede">ข้อสอบทักษะการอ่านมีทั้งหมด 60 ข้อ แบ่งเป็น 2 ส่วน</p>
+
+      <div class="stat-row">
+        <div class="stat"><div class="n">15</div><div class="l">Cloze Test</div></div>
+        <div class="stat"><div class="n">45</div><div class="l">Reading Comprehension — 5 บทความ</div></div>
+      </div>
+
+      <div class="prose">
+        <p><b>Reading Comprehension</b> ประกอบด้วยบทความสั้น 150–200 คำ 1 บทความ (5 ข้อ) และบทความยาว 300–350 คำ 4 บทความ (บทความละ 10 ข้อ) เนื้อหาครอบคลุมประเด็นสังคม การเมือง การศึกษา การค้า เทคโนโลยี วิทยาศาสตร์ สิ่งแวดล้อม ประวัติศาสตร์ ตำนาน และเรื่องที่เป็นที่ถกเถียงในสังคม</p>
+        <p>คำถามใน Reading Comprehension มี 6 ประเภท:</p>
+        <div class="grid-2">
+          <div class="type-box"><div class="ty">01</div>Main Ideas</div>
+          <div class="type-box"><div class="ty">02</div>Specific Details</div>
+          <div class="type-box"><div class="ty">03</div>Word Meanings / Definitions</div>
+          <div class="type-box"><div class="ty">04</div>Pronoun References</div>
+          <div class="type-box"><div class="ty">05</div>Inferences</div>
+          <div class="type-box"><div class="ty">06</div>Predictions</div>
+        </div>
+      </div>
+
+      <!-- 1 Main Ideas -->
+      <details class="card">
+        <summary><span class="num">1</span> Main Ideas <span class="hint">ใจความสำคัญ</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>writer / author ผู้แต่ง<br>excerpt / extract / text บทความ<br>mainly discuss / mainly concerned with กล่าวถึงเป็นหลัก<br>title ชื่อเรื่อง</td>
+                <td>What does the author mainly discuss?<br>What does the text mainly discuss?<br>What is the best title for the text?</td></tr>
+          </table></div>
+          <p>ใช้เทคนิค <b>Skimming</b> (อ่านคร่าว ๆ ไม่ต้องละเอียด) มี 2 วิธีหลัก</p>
+
+          <p><b>วิธีที่ 1 — อ่านเร็วเพื่อหาคำที่ปรากฏซ้ำ</b></p>
+          <div class="passage">
+            <p>Children become overweight and obese for a variety of reasons. The most common causes are genetic factors, lack of physical activity, unhealthy eating patterns, or a combination of these causes... A child's diet and activity level play an important role in determining a child's weight. Today, many children spend a lot of time being inactive — for example, the average child spends about 4 hours a day watching television.</p>
+          </div>
+          <div class="answer">คำที่พบซ้ำ ๆ คือ <i>children/child, overweight/obesity, reasons/cause/risk</i> — สรุปได้ว่าบทความพูดถึง<b>สาเหตุของโรคอ้วนในเด็ก</b> (causes of obesity in children)</div>
+
+          <p style="margin-top:18px"><b>วิธีที่ 2 — อ่านประโยคแรกและประโยคสุดท้ายของแต่ละย่อหน้า</b> เพราะใจความหลักมักอยู่ใน topic sentence และ concluding sentence</p>
+          <div class="passage">
+            <p>In people with obesity, the heart needs to work harder to pump blood around the body, which can lead to high blood pressure, or hypertension. High blood pressure is the leading cause of stroke... <i>[เนื้อหาส่วนกลางกล่าวถึงกลไกที่โรคอ้วนทำให้เกิดภาวะดื้ออินซูลิน น้ำตาลในเลือดสูง และเบาหวานชนิดที่ 2]</i> High blood pressure, high cholesterol, and blocked arteries — a condition called atherosclerosis — can increase the risk of heart attack and stroke.</p>
+          </div>
+          <div class="answer">รวมใจความประโยคแรก+สุดท้าย: โรคอ้วนส่งผลต่อการทำงานของหัวใจและก่อให้เกิดความดันโลหิตสูงซึ่งอาจนำไปสู่อาการหัวใจวายได้ — ย่อหน้านี้กล่าวถึง <b>ผลกระทบของโรคอ้วนต่อหัวใจ</b></div>
+        </div>
+      </details>
+
+      <!-- 2 Specific Details -->
+      <details class="card">
+        <summary><span class="num">2</span> Specific Details <span class="hint">รายละเอียด</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>mention / cite กล่าวถึง<br>according to / based on จากข้อมูลของ<br>except ยกเว้น<br>state / statement กล่าว / คำกล่าว</td>
+                <td>The text mentioned all of the following <b>EXCEPT</b> ...<br>What / When / Where / Why / How...?</td></tr>
+          </table></div>
+          <p>ใช้ทักษะ <b>Scanning</b> — มองหาคำสำคัญ (keyword) แล้วอ่านบริบทรอบ ๆ คำนั้นเพื่อหาคำตอบ</p>
+          <div class="passage">
+            <p>Biologists have long linked body size and temperature. In colder climates, it pays to be big because having a smaller surface area relative to one's volume reduces heat loss through the skin... "you'd expect shrinking body sizes to help organisms off-load heat better," says Vitek Jirinec, an ecologist. Many species of North American migratory birds are getting smaller, Winger and colleagues reported in 2020 in <i>Ecology Letters</i>. Climate change is the likely culprit, Winger says, but since migrators experience a wide range of conditions while globe-trotting, other factors such as shrinking habitats that birds may encounter can't be ruled out.</p>
+          </div>
+          <p class="qline">According to Winger, apart from climate change, what is the other possible factor for birds getting smaller?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Migration</li>
+            <li><span class="k">2.</span> Air pollution</li>
+            <li><span class="k">3.</span> Global ecology</li>
+            <li class="correct"><span class="k">4.</span> Declining habitats</li>
+          </ol>
+          <div class="answer">คำสำคัญคือ <i>Winger, climate change, factor</i> — อ่านบริบทรอบคำเหล่านี้พบว่า <i>shrinking habitats</i> ถูกกล่าวถึงเป็นอีกปัจจัยหนึ่ง ซึ่งมีความหมายเดียวกับ <i>declining habitats</i> คำตอบคือข้อ 4</div>
+        </div>
+      </details>
+
+      <!-- 3 Word Meanings -->
+      <details class="card">
+        <summary><span class="num">3</span> Word Meanings / Definitions <span class="hint">ความหมายคำศัพท์</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>replace แทนที่<br>mean แปลว่า<br>refer to หมายถึง</td>
+                <td>The word "___" (line 14) can be best replaced by...<br>What does the word "___" (line 14) mean?<br>The word "___" (line 14) refers to...</td></tr>
+          </table></div>
+          <p>เดาความหมายจาก <b>context clues</b> ได้ 4 รูปแบบหลัก</p>
+          <ul>
+            <li><b>คำนิยาม/ความหมาย</b> — สังเกตคำว่า <i>refer to, be defined as, be described as</i> หรือเครื่องหมาย <b>,</b> <b>—</b> <b>:</b></li>
+            <li><b>คำพ้อง/ตรงข้าม</b> (synonym/antonym) — สังเกต <i>similarly, like, as...as</i> (พ้องความหมาย) หรือ <i>on the other hand, on the contrary, in contrast, but, although</i> (ตรงข้ามความหมาย)</li>
+            <li><b>ตัวอย่าง</b> — สังเกต <i>for example, for instance, such as</i></li>
+            <li><b>คำอธิบายซ้ำในบทความ</b> — คำศัพท์บางคำอาจถูกอธิบายซ้ำในประโยคอื่นซึ่งใช้เป็นคำใบ้ได้</li>
+          </ul>
+          <div class="passage">
+            <p>For centuries, researchers have puzzled over how oysters grow stunningly <b>symmetrical</b>, perfectly round pearls around irregularly shaped grains of sand or bits of debris. Now a team has shown that oysters, mussels and other mollusks use a complex process to grow the gems that follows mathematical rules seen throughout nature.</p>
+          </div>
+          <div class="answer">"symmetrical" มีความหมายว่า "perfectly round" — คำใบ้คือเครื่องหมาย <b>,</b> ซึ่งบ่งชี้ว่าคำหลังเครื่องหมายจุลภาคเป็นคำจำกัดความของคำก่อนหน้า</div>
+        </div>
+      </details>
+
+      <!-- 4 Pronoun References -->
+      <details class="card">
+        <summary><span class="num">4</span> Pronoun References <span class="hint">การเชื่อมโยงสรรพนาม</span></summary>
+        <div class="card-body">
+          <p>คำถามประเภทนี้ถามว่าคำสรรพนาม (เช่น <i>it, they, this, those</i>) ในบทความ แทนคำนามใด เทคนิคคือ ดูก่อนว่าสรรพนามเป็นเอกพจน์หรือพหูพจน์ ตัดตัวเลือกที่ไม่ตรงรูปจำนวนทิ้งไปก่อน จากนั้นแทนคำนามที่เหลือลงในประโยคเพื่อดูว่าความหมายสมเหตุสมผลหรือไม่</p>
+          <p class="note">หมายเหตุ: ต้นฉบับตอนนี้เป็นภาพสแกนที่บางส่วนเลือนหายไป จึงสรุปเนื้อเรื่องแทนการยกบทความเต็ม — บทความเดิมกล่าวถึงกรณีโรงงานในมาเลเซียที่ถูกตรวจสอบเรื่องการปฏิบัติต่อแรงงานอย่างไม่เป็นธรรมในกระบวนการผลิตถุงมือทางการแพทย์</p>
+          <p class="qline">The word "they" (line 2) refers to</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> scrutiny <span style="color:var(--text-muted)">(การตรวจสอบ)</span></li>
+            <li><span class="k">2.</span> palm oil <span style="color:var(--text-muted)">(น้ำมันปาล์ม)</span></li>
+            <li><span class="k">3.</span> medical gloves <span style="color:var(--text-muted)">(ถุงมือแพทย์)</span></li>
+            <li class="correct"><span class="k">4.</span> Malaysian factories <span style="color:var(--text-muted)">(โรงงานในมาเลเซีย)</span></li>
+          </ol>
+          <div class="answer">"they" แทนคำนามพหูพจน์ — ข้อ 1 และ 2 เป็นเอกพจน์ ตัดทิ้งได้ก่อน เหลือข้อ 3 และ 4 เมื่อพิจารณาคู่กับกริยา "abuse" (กระทำการทารุณ) <i>medical gloves</i> ไม่สามารถกระทำการทารุณคนงานได้ คำตอบจึงเป็นข้อ 4</div>
+        </div>
+      </details>
+
+      <!-- 5 Inferences -->
+      <details class="card">
+        <summary><span class="num">5</span> Inferences <span class="hint">คำถามเชิงอนุมาน</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>mention, according to, state, indicate, infer, imply, likely / possible</td>
+                <td>What can (NOT) be INFERRED from the text?<br>What does the author imply when he states that...?<br>Which of the following likely happens in the text?</td></tr>
+          </table></div>
+          <p>การอนุมานคือการหาข้อสรุปจากบริบทโดยไม่มีการพูดถึงตรง ๆ — ต้องมีหลักฐานในบทความรองรับ ห้ามเหมารวมหรือสรุปเอาเองโดยไม่มีที่มา</p>
+          <div class="passage">
+            <p>Social media may trigger feelings of inadequacy. People may feel as though their life or appearance does not compare favorably with that of others on social media, leading to feelings of envy and dissatisfaction. A study found that high social media usage increases rather than decreases feelings of loneliness. Additionally, social media can facilitate cyberbullying and create unhealthy self-centeredness and distance from friends and family.</p>
+          </div>
+          <p class="qline">What can be INFERRED from the text?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Social media issues have been intensified in the past decade.</li>
+            <li><span class="k">2.</span> Cyberbullying has been found to lead to suicide among teenagers.</li>
+            <li><span class="k">3.</span> People generally like to compare themselves with others in real life.</li>
+            <li class="correct"><span class="k">4.</span> Reducing social media use helps people feel less lonely and isolated.</li>
+          </ol>
+          <div class="answer">หลักฐานคือประโยค "high social media usage increases rather than decreases feelings of loneliness" — จึงอนุมานย้อนกลับได้ว่าการลดการใช้งานช่วยลดความรู้สึกโดดเดี่ยว (ข้อ 4) ส่วนข้อ 1–3 ไม่มีส่วนใดในบทความรองรับ</div>
+
+          <p style="margin-top:18px">คำถามเชิงอนุมานยังครอบคลุม <b>วัตถุประสงค์ (purpose)</b> และ <b>น้ำเสียง/ทัศนคติ (tone / attitude)</b> ของผู้แต่ง ซึ่งมักไม่ระบุตรง ๆ</p>
+          <div class="grid-2">
+            <div class="type-box"><div class="ty">Purposes</div>To inform · To persuade · To entertain · To describe/explain · To classify · To give an example · To discuss · To argue for/against · To inspire · To urge</div>
+            <div class="type-box"><div class="ty">Tones</div>Encouraging · Enthusiastic · Excited · Optimistic · Pessimistic · Nostalgic · Matter-of-fact · Humorous · Amusing · Entertaining · Critical · Cynical · Ironic · Sympathetic · Sarcastic · Satirical · Informative · Concerned · Indifferent · Objective · Subjective</div>
+          </div>
+          <div class="passage" style="margin-top:14px">
+            <p>The promise of jobs and prosperity, among other factors, pulls people to cities. Half of the global population already lives in cities, and by 2050 two-thirds of the world's people are expected to live in urban areas. But in cities, two of the most pressing problems facing the world today also come together: poverty and environmental degradation. Poor air and water quality, insufficient water availability, waste-disposal problems, and high energy consumption are exacerbated by the increasing population density... Strong city planning will be essential in managing these and other difficulties as the world's urban areas swell.</p>
+          </div>
+          <p class="qline">Based on the text, what is the author's tone?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Cynical</li>
+            <li><span class="k">2.</span> Optimistic</li>
+            <li class="correct"><span class="k">3.</span> Concerned</li>
+            <li><span class="k">4.</span> Enthusiastic</li>
+          </ol>
+          <div class="answer">เนื้อหาเป็นไปในเชิงลบ กล่าวถึงปัญหามากมายที่จะเกิดขึ้น และท้ายย่อหน้าแนะนำให้มีการวางแผนรับมือ — น้ำเสียงจึงเป็นความ<b>กังวล (Concerned)</b> ไม่ใช่มองโลกแง่ดีหรือกระตือรือร้น</div>
+        </div>
+      </details>
+
+      <!-- 6 Predictions -->
+      <details class="card">
+        <summary><span class="num">6</span> Predictions <span class="hint">คำถามเชิงคาดการณ์</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th>Keywords</th><th>Examples</th></tr>
+            <tr><td>the paragraph that follows, likely / possibly, talk about / discuss</td>
+                <td>The paragraph that follows most likely discusses...<br>If the text were longer / continued, what would most likely be discussed next?</td></tr>
+          </table></div>
+          <p>คาดการณ์ว่าย่อหน้าถัดไปจะกล่าวถึงอะไร โดยอ้างอิงจากเนื้อหาและบริบทในย่อหน้าสุดท้ายให้สอดคล้องเป็นเหตุเป็นผลกับเนื้อหาก่อนหน้า</p>
+          <div class="passage">
+            <p>Indonesia's Mount Semeru spewed more ash on Monday, forcing rescuers to suspend the search for survivors as aerial images showed the extent of the devastation unleashed by the volcano's deadly weekend eruption.</p>
+            <p>Dangerous thick plumes of smoke continued to emerge from areas blanketed by the volcanic ash, while rescuers tried to dig through the mud to find survivors and recover bodies. Their task was made more difficult as the volcanic debris had started to harden.</p>
+          </div>
+          <p class="qline">If the text continued, what would most likely be discussed next?</p>
+          <ol class="choices">
+            <li><span class="k">1.</span> Evacuation plans for the sufferers</li>
+            <li><span class="k">2.</span> Reasons why Mount Semeru erupted</li>
+            <li class="correct"><span class="k">3.</span> Further hardships faced by the rescuers</li>
+            <li><span class="k">4.</span> Effects of the smoke caused by the volcanic eruption</li>
+          </ol>
+          <div class="answer">ย่อหน้าสุดท้ายกล่าวถึงความยากลำบากของเจ้าหน้าที่กู้ภัย (ขุดดิน หาคนรอด เศษภูเขาไฟเริ่มแข็งตัว) จึงอนุมานได้ว่าย่อหน้าถัดไปน่าจะพูดถึงความยากลำบากอื่น ๆ ที่ตามมาต่อเนื่องกัน คำตอบคือข้อ 3</div>
+        </div>
+      </details>
+    </section>
+
+    <!-- ================= WRITING ================= -->
+    <section class="part" id="writing">
+      <div class="part-head">
+        <span class="part-badge">03</span>
+        <h2 class="part-title">Writing</h2>
+      </div>
+      <p class="part-lede">ทดสอบทักษะการเขียนแบบ<b>ทางอ้อม</b>ในรูปแบบ <b>Error Identification</b> — หาข้อผิดพลาดทางไวยากรณ์ในประโยคจากตัวเลือกที่กำหนดให้ 4 จุด</p>
+      <p class="prose" style="font-size:15.3px">นอกจากความรู้ไวยากรณ์ ความรวดเร็วและแม่นยำก็สำคัญเช่นกัน ควรพัฒนาไวยากรณ์ควบคู่กับทักษะการอ่าน เพราะการอ่านภาษาอังกฤษจากหลายแหล่งจะทำให้คุ้นเคยกับรูปแบบภาษาที่เจ้าของภาษานิยมใช้</p>
+
+      <!-- Parallel Structure -->
+      <details class="card">
+        <summary>Parallel Structure <span class="hint">โครงสร้างคู่ขนาน</span></summary>
+        <div class="card-body">
+          <ul>
+            <li>คำ/วลี/อนุประโยคที่อยู่คู่ขนานกันต้องใช้โครงสร้างแบบเดียวกัน</li>
+            <li>อาจคู่ขนานกันในระดับคำ (word) วลี (phrase) หรืออนุประโยค (clause)</li>
+            <li>สังเกตเครื่องหมาย comma และคำเชื่อม <b>and, but, or</b></li>
+          </ul>
+          <p style="font-size:14.6px">ตัวอย่างประโยคที่ถูกต้อง (คู่ขนานกันแล้ว):</p>
+          <div class="passage" style="font-size:14px">
+            <p>Mr. Smith is a man with dignity, determination, and intellect.</p>
+            <p>It's my honor to introduce to you my new research and explain its objectives.</p>
+            <p>I have no idea what I should do and where I could seek further assistance.</p>
+          </div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">Sunscreens work by coating the skin with a barrier that <span class="seg seg-err">absorbing</span><span class="seg-num">1</span> sunlight and <span class="seg">converts</span><span class="seg-num">2</span> it to heat or <span class="seg">reflects</span><span class="seg-num">3</span> it away from the skin.</div>
+          <div class="fix">absorbing <span class="arrow">→</span> <span class="to">absorbs</span></div>
+          <div class="answer">คำเชื่อม "and" เชื่อมกริยาแท้ของอนุประโยค (adjective clause) ที่ขึ้นต้นด้วย "that" ดังนั้น "absorbing" ต้องเปลี่ยนเป็น "absorbs" เพื่อคู่ขนานกับ "converts"</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">With the negative comments I received, I <span class="seg">have no idea</span><span class="seg-num">1</span> <span class="seg">what I should</span><span class="seg-num">2</span> do and <span class="seg seg-err">where could I</span><span class="seg-num">3</span> seek <span class="seg">for any help</span><span class="seg-num">4</span>.</div>
+          <div class="fix">where could I <span class="arrow">→</span> <span class="to">where I could</span></div>
+          <div class="answer">โครงสร้างหน้าและหลัง "and" ต้องเป็นแบบเดียวกัน — "I have no idea" ตามด้วย noun clause แบบบอกเล่า (ไม่ใช่การเรียงแบบคำถาม) "what I should" ถูกต้องแล้ว ส่วน "where could I" สลับกริยาช่วยไว้หน้าประธานแบบประโยคคำถาม จึงต้องแก้เป็น "where I could"</div>
+        </div>
+      </details>
+
+      <!-- Tense -->
+      <details class="card">
+        <summary>Tense <span class="hint">กาลของกริยา</span></summary>
+        <div class="card-body">
+          <div class="tbl-wrap"><table>
+            <tr><th></th><th>Simple</th><th>Perfect</th><th>Continuous</th></tr>
+            <tr><td><b>Present</b><br>ปัจจุบัน</td>
+                <td class="formula" style="display:table-cell">S + V(s)</td>
+                <td class="formula" style="display:table-cell">S + has/have + V3</td>
+                <td class="formula" style="display:table-cell">S + is/am/are + V-ing</td></tr>
+            <tr><td><b>Past</b><br>อดีต</td>
+                <td class="formula" style="display:table-cell">S + V2</td>
+                <td class="formula" style="display:table-cell">S + had + V3</td>
+                <td class="formula" style="display:table-cell">S + was/were + V-ing</td></tr>
+            <tr><td><b>Future</b><br>อนาคต</td>
+                <td class="formula" style="display:table-cell">S + will + V1</td>
+                <td class="formula" style="display:table-cell">S + will + have + V3</td>
+                <td class="formula" style="display:table-cell">S + will + be + V-ing</td></tr>
+          </table></div>
+
+          <p><b>Example</b></p>
+          <div class="err-sentence">By 2050, half of the species on Earth <span class="seg seg-err">will become</span><span class="seg-num">1</span> <span class="seg">extinct</span><span class="seg-num">2</span>, considering current environmental measures which fail to efficiently cope with severe issues of global warming.</div>
+          <div class="fix">will become <span class="arrow">→</span> <span class="to">will have become</span></div>
+          <div class="answer">"By 2050" เป็นคำบอกเวลาที่ระบุจุดสิ้นสุดชัดเจนในอนาคต จึงต้องใช้ <b>future perfect tense</b> ไม่ใช่ future simple ("extinct" ถูกต้องแล้วเพราะ become เป็น linking verb ตามด้วย adjective)</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">Surprisingly enough, the rain <span class="seg seg-err">hardly stopped</span><span class="seg-num">1</span> when the players <span class="seg">were asked</span><span class="seg-num">2</span> to <span class="seg">reenter</span><span class="seg-num">3</span> the field in order to resume the match.</div>
+          <div class="fix">hardly stopped <span class="arrow">→</span> <span class="to">had hardly stopped</span></div>
+          <div class="answer">มี 2 เหตุการณ์ในอดีต ฝนยังไม่ทันหยุดตกดี (เกิดก่อน) นักกีฬาถูกเรียกให้ลงสนามต่อ (เกิดทีหลัง) — เหตุการณ์ที่เกิดก่อนต้องใช้ <b>past perfect</b> เป็น "had hardly stopped"</div>
+        </div>
+      </details>
+
+      <!-- Passive -->
+      <details class="card">
+        <summary>Passive Structure <span class="hint">ประโยคที่ประธานถูกกระทำ</span></summary>
+        <div class="card-body">
+          <p>โครงสร้าง <span class="formula">Subject + V to be + V3</span> โดย V to be ผันตาม tense หากมีผู้กระทำ ให้ใส่หลังคำว่า "by" ท้ายประโยค</p>
+          <div class="tbl-wrap"><table>
+            <tr><th>Tense</th><th>Formula</th><th>Tense</th><th>Formula</th></tr>
+            <tr><td>Present Simple</td><td class="formula" style="display:table-cell">is/am/are + V3</td><td>Past Simple</td><td class="formula" style="display:table-cell">was/were + V3</td></tr>
+            <tr><td>Present Cont.</td><td class="formula" style="display:table-cell">is/am/are + being + V3</td><td>Past Cont.</td><td class="formula" style="display:table-cell">was/were + being + V3</td></tr>
+            <tr><td>Future Simple</td><td class="formula" style="display:table-cell">will + be + V3</td><td>Past Perfect</td><td class="formula" style="display:table-cell">had + been + V3</td></tr>
+            <tr><td>Future Perfect</td><td class="formula" style="display:table-cell">will + have + been + V3</td><td></td><td></td></tr>
+          </table></div>
+
+          <p><b>Example</b></p>
+          <div class="err-sentence">Even though the system <span class="seg seg-err">can regard</span><span class="seg-num">1</span> as a new and innovative work upgrade, I <span class="seg">should not receive</span><span class="seg-num">2</span> a compliment <span class="seg">without attributing</span><span class="seg-num">3</span> the success to <span class="seg">the team's</span><span class="seg-num">4</span> efforts.</div>
+          <div class="fix">can regard <span class="arrow">→</span> <span class="to">can be regarded</span></div>
+          <div class="answer">ประธานคือ "the system" ซึ่งถูกพิจารณา (ถูกกระทำ) ไม่สามารถกระทำกริยา "regard" ได้เอง ต้องใช้ passive: "can be regarded"</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">As a matter of fact, Jim <span class="seg seg-err">must blame</span><span class="seg-num">1</span> for <span class="seg">proposing</span><span class="seg-num">2</span> conflicting figures that <span class="seg">caused</span><span class="seg-num">3</span> a huge financial loss for the company.</div>
+          <div class="fix">must blame <span class="arrow">→</span> <span class="to">must be blamed</span></div>
+          <div class="answer">Jim คือผู้ถูกตำหนิ (ถูกกระทำ) เมื่อ passive มี modal verb (may, can, should, must ฯลฯ) โครงสร้างคือ <span class="formula">Subject + modal + be + V3</span> จึงต้องแก้เป็น "must be blamed" ("proposing" ถูกต้องแล้วเพราะตามหลัง preposition "for")</div>
+        </div>
+      </details>
+
+      <!-- Word Form -->
+      <details class="card">
+        <summary>Word Form <span class="hint">ชนิด/รูปคำ</span></summary>
+        <div class="card-body">
+          <p>โจทย์ลักษณะนี้ต้องเข้าใจทั้งโครงสร้างประโยคและประเภทของคำ (part of speech) เพื่อเลือกรูปคำที่เหมาะสม</p>
+          <p><b>Example</b></p>
+          <div class="err-sentence">Unless you devote more to sharpening your persuasive skills, your consistently lowered sales figures are <span class="seg">prone to</span><span class="seg-num">3</span> <span class="seg seg-err">effect</span><span class="seg-num">4</span> your promotion in the long run.</div>
+          <div class="fix">effect <span class="arrow">→</span> <span class="to">affect / affecting</span></div>
+          <div class="answer">"prone to" ตามด้วยกริยาช่อง 1 หรือ V-ing ที่หมายถึง "ส่งผลกระทบต่อ" คือ <b>affect</b> (กริยา = ทำให้เกิดผล) ไม่ใช่ <b>effect</b> (ปกติเป็นคำนามแปลว่า "ผลกระทบ")</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">Despite <span class="seg seg-err">it is</span><span class="seg-num">1</span> the world's major exporter of agricultural products, Brazil is a country <span class="seg">plagued</span><span class="seg-num">2</span> by chronic and widespread poverty.</div>
+          <div class="fix">it is <span class="arrow">→</span> <span class="to">being</span></div>
+          <div class="answer">"Despite" เป็น preposition ต้องตามด้วยคำนามหรือ gerund (V-ing) เท่านั้น ไม่ใช่อนุประโยค (มีประธาน+กริยา) จึงต้องแก้เป็น "being" — หากต้องการตามด้วยอนุประโยคจริง ๆ ให้ใช้ <b>Despite the fact that</b> แทน</div>
+        </div>
+      </details>
+
+      <!-- Conditionals -->
+      <details class="card">
+        <summary>If-Structure <span class="hint">ประโยคเงื่อนไข</span></summary>
+        <div class="card-body">
+          <p>ประกอบด้วย 2 ส่วน: อนุประโยคเงื่อนไข ("If" clause) และอนุประโยคหลัก (main clause) สลับตำแหน่งกันได้</p>
+
+          <p><b>Type I — Future Possibility</b> <span style="color:var(--text-muted)">(มีโอกาสเกิดขึ้นได้ในอนาคต)</span></p>
+          <div class="formula">If + present, will/may/can + V1</div>
+          <div class="passage" style="font-size:14px"><p>If it rains, we will not go camping.<br>If the boss disagrees, we will have further discussion on this issue.</p></div>
+
+          <p><b>Type II — Contrary to the PRESENT facts</b> <span style="color:var(--text-muted)">(ตรงข้ามความจริงปัจจุบัน)</span></p>
+          <div class="formula">If + past simple, would/might/could + V1</div>
+          <div class="passage" style="font-size:14px"><p>If I were the president, I would authorize this project now.<br>If I had more money, I would donate to those in need.</p></div>
+
+          <p><b>Type III — Contrary to the facts in the PAST</b> <span style="color:var(--text-muted)">(ตรงข้ามความจริงในอดีต)</span></p>
+          <div class="formula">If + past perfect, would/might/could + have + V3</div>
+          <div class="passage" style="font-size:14px"><p>If Sue had been more careful last night, she wouldn't have had an accident.<br>If I had confessed my love to her, our relationship would have continued.</p></div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">If Susan <span class="seg">had driven</span><span class="seg-num">1</span> more carefully last night, she <span class="seg seg-err">would not had</span><span class="seg-num">2</span> such a severe accident which <span class="seg">paralyzed</span><span class="seg-num">3</span> her upper body.</div>
+          <div class="fix">would not had <span class="arrow">→</span> <span class="to">would not have had</span></div>
+          <div class="answer">เหตุการณ์ทั้งหมดเกิดขึ้นแล้วในอดีตแต่พูดสมมติตรงข้ามกับความจริง — เข้าเงื่อนไข Type III จึงต้องใช้ "would not have had"</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">If <span class="seg seg-err">you are</span><span class="seg-num">1</span> the US president, <span class="seg">would you propose</span><span class="seg-num">2</span> a new economic plan to help the country survive the financial crisis after COVID-19?</div>
+          <div class="fix">you are <span class="arrow">→</span> <span class="to">you were</span></div>
+          <div class="answer">เป็นการสมมติที่ตรงข้ามกับความจริงในปัจจุบัน (Type II) — เมื่อกริยาแท้เป็น verb to be ในเงื่อนไขแบบนี้ต้องใช้ "were" เสมอไม่ว่าประธานจะเป็นอะไร</div>
+        </div>
+      </details>
+
+      <!-- Reduced Adverb Clause -->
+      <details class="card">
+        <summary>Reduced Adverb Clause <span class="hint">การลดรูปอนุประโยค</span></summary>
+        <div class="card-body">
+          <p>Adverb clause ขึ้นต้นด้วย subordinating conjunction (<i>before, when, while, although</i> ฯลฯ) และขยาย main clause หากประธานใน adverb clause กับ main clause เป็นตัวเดียวกัน สามารถลดรูปได้</p>
+          <ul>
+            <li><b>Active voice</b> — ตัดประธานออก เปลี่ยนกริยาเป็น V-ing เสมอ<br><span class="formula">Conjunction + V-ing..., Subject + V...</span></li>
+            <li><b>Passive voice</b> (be + V3) — ตัดทั้งประธานและ V to be ออก เหลือเพียง V3<br><span class="formula">Conjunction + V3..., Subject + V...</span></li>
+          </ul>
+
+          <p><b>Example</b></p>
+          <div class="err-sentence">While <span class="seg seg-err">driven</span><span class="seg-num">1</span>, you should consistently check the road ahead for hazards and develop a plan to deal with any hazards that could arise.</div>
+          <div class="fix">driven <span class="arrow">→</span> <span class="to">driving</span></div>
+          <div class="answer">อนุประโยคเดิมคือ "While you are driving..." เป็น active voice ที่ประธานกระทำเอง จึงต้องลดรูปเป็น V-ing: "While driving"</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">Although <span class="seg seg-err">making</span><span class="seg-num">1</span> by the muscle power of carpenters in the past, carts are mostly <span class="seg">manufactured</span><span class="seg-num">2</span> by machines and <span class="seg">electrically powered</span><span class="seg-num">3</span> nowadays.</div>
+          <div class="fix">making <span class="arrow">→</span> <span class="to">made</span></div>
+          <div class="answer">อนุประโยคเดิมคือ "Although carts were made by..." เป็น passive voice จึงต้องลดรูปเหลือ V3: "Although made"</div>
+        </div>
+      </details>
+
+      <!-- Miscellaneous -->
+      <details class="card">
+        <summary>Miscellaneous <span class="hint">ประเด็นเบ็ดเตล็ด</span></summary>
+        <div class="card-body">
+          <p><b>Example</b></p>
+          <div class="err-sentence">Earlier, my dance posture <span class="seg">was criticized</span><span class="seg-num">1</span> for <span class="seg seg-err">not smooth</span><span class="seg-num">2</span> enough, but after a week all my dance movements <span class="seg">improved</span><span class="seg-num">3</span> considerably.</div>
+          <div class="fix">not smooth <span class="arrow">→</span> <span class="to">not being smooth</span></div>
+          <div class="answer">"smooth" เป็น adjective ต้องมี verb to be นำหน้า และเนื่องจากตามหลัง preposition "for" ต้องอยู่ในรูป -ing จึงต้องแก้เป็น "not being smooth" ("was criticized" และ "improved" ถูกต้องแล้วเพราะกล่าวถึงอดีต ส่วน "considerably" เป็น adverb ขยายกริยา "improved" ถูกต้องแล้ว)</div>
+
+          <p style="margin-top:16px"><b>Example</b></p>
+          <div class="err-sentence">Like [those with] mental disorders, criminals convicted of misconduct may have difficulty <span class="seg seg-err">find</span><span class="seg-num">4</span> a new job.</div>
+          <div class="fix">find <span class="arrow">→</span> <span class="to">finding</span></div>
+          <div class="answer">สำนวน "have difficulty" ต้องตามด้วยกริยารูป -ing จึงต้องแก้เป็น "finding"</div>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    เรียบเรียงจากเอกสาร <i>CU-TEP Practice Test III — Tips and Tricks</i> · เนื้อหาบางจุดของต้นฉบับ (ไฟล์สแกน) มีข้อความเลือนหรือสลับตำแหน่ง จึงเรียบเรียงใหม่ให้อ่านลื่นไหลโดยคงใจความและตัวอย่างข้อสอบเดิมไว้ครบถ้วน
+  </footer>
+
+  <a href="#top" class="to-top" aria-label="กลับขึ้นบนสุด">↑</a>
+</div>

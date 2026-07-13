@@ -1,0 +1,580 @@
+<meta charset="utf-8" />
+<title>CU-TEP Practice Test</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --radius:14px;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+      --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+      --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+    --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+    --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  body{ margin:0; }
+  #app{ font-family:var(--font-sans); background:var(--bg); color:var(--text); line-height:1.7; font-size:16px; min-height:100vh; }
+  main{ max-width:720px; margin:0 auto; padding:0 20px 100px; }
+
+  header.bar{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(160%) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  header.bar .inner{
+    max-width:720px; margin:0 auto; padding:14px 20px;
+    display:flex; align-items:center; gap:12px;
+  }
+  header.bar .crumbs{ font-size:13.5px; color:var(--text-muted); display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  header.bar .crumbs a{ color:var(--text-muted); text-decoration:none; }
+  header.bar .crumbs a:hover{ color:var(--accent); }
+  header.bar .crumbs b{ color:var(--text); font-weight:600; }
+  header.bar .spacer{ flex:1; }
+  header.bar .guide-link{
+    font-size:12.5px; font-weight:600; color:var(--accent); text-decoration:none;
+    border:1px solid var(--border); border-radius:999px; padding:6px 12px; white-space:nowrap;
+  }
+
+  .masthead{ padding:34px 0 22px; }
+  .eyebrow{ font-family:var(--font-mono); letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:600; }
+  h1.title{ font-size:clamp(26px,6vw,34px); line-height:1.15; margin:10px 0 8px; font-weight:700; letter-spacing:-.01em; text-wrap:balance; }
+  .subtitle{ color:var(--text-muted); font-size:15px; max-width:56ch; }
+
+  .sample-banner{
+    display:flex; gap:10px; align-items:flex-start;
+    background:var(--gold-soft); border:1px solid color-mix(in srgb, var(--gold) 40%, var(--border));
+    color:var(--text); border-radius:10px; padding:12px 14px; font-size:13.6px; margin:18px 0;
+  }
+  .sample-banner b{ color:var(--gold); }
+
+  .grid{ display:grid; gap:12px; margin:18px 0; }
+  .form-grid{ grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); }
+  .part-grid{ grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); }
+
+  .tile{
+    display:block; text-decoration:none; color:inherit;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:18px 16px; box-shadow:var(--shadow); position:relative;
+  }
+  .tile:hover{ border-color:var(--accent); }
+  .tile .tile-label{ font-weight:700; font-size:16px; }
+  .tile .tile-sub{ font-size:12.8px; color:var(--text-muted); margin-top:6px; }
+  .badge{
+    position:absolute; top:14px; right:14px;
+    font-family:var(--font-mono); font-size:10.5px; font-weight:700; letter-spacing:.04em;
+    padding:3px 8px; border-radius:999px; text-transform:uppercase;
+  }
+  .badge.ready{ background:var(--accent-soft); color:var(--accent-strong); }
+  .badge.empty{ background:var(--surface-2); color:var(--text-muted); }
+  .part-icon{ font-family:var(--font-mono); font-size:12px; color:var(--accent); font-weight:700; margin-bottom:8px; }
+
+  .progress-bar{
+    position:sticky; top:53px; z-index:15;
+    background:var(--bg); border-bottom:1px solid var(--border); padding:10px 0;
+  }
+  .progress-bar .row{ display:flex; align-items:center; gap:12px; font-size:12.8px; color:var(--text-muted); }
+  .progress-track{ flex:1; height:6px; border-radius:99px; background:var(--surface-2); overflow:hidden; }
+  .progress-fill{ height:100%; background:var(--accent); border-radius:99px; transition:width .2s ease; }
+  @media (prefers-reduced-motion: reduce){ .progress-fill{ transition:none; } }
+
+  .audio-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:14px 16px; margin:14px 0; box-shadow:var(--shadow);
+  }
+  .audio-card .lbl{ font-weight:700; font-size:14.5px; margin-bottom:8px; }
+  audio{ width:100%; height:36px; }
+
+  .q-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:16px 18px; margin:14px 0; box-shadow:var(--shadow);
+  }
+  .q-num{ font-family:var(--font-mono); font-size:12px; color:var(--accent); font-weight:700; margin-bottom:6px; }
+  .q-passage-title{ font-size:12.5px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px; }
+  .q-passage{
+    background:var(--surface-2); border-left:3px solid var(--accent); border-radius:0 10px 10px 0;
+    padding:12px 14px; font-size:14px; margin-bottom:12px; white-space:pre-line;
+  }
+  .q-prompt{ font-weight:700; font-size:15px; margin-bottom:10px; white-space:pre-line; }
+
+  ul.choices{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+  ul.choices button.choice{
+    all:unset; cursor:pointer; box-sizing:border-box;
+    display:flex; gap:10px; align-items:center;
+    font-family:var(--font-sans); font-size:14.6px; padding:9px 12px;
+    border:1px solid var(--border); border-radius:9px; background:var(--surface);
+    width:100%;
+  }
+  ul.choices button.choice:hover{ border-color:var(--accent); }
+  ul.choices button.choice .k{ font-family:var(--font-mono); color:var(--text-muted); flex:none; }
+  ul.choices button.choice.selected{ border-color:var(--accent); background:var(--accent-soft); }
+  ul.choices button.choice.selected .k{ color:var(--accent-strong); font-weight:700; }
+  ul.choices button.choice:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+  /* review state */
+  ul.choices.reviewed button.choice{ cursor:default; }
+  ul.choices.reviewed button.choice.correct-answer{ border-color:var(--gold); background:var(--gold-soft); }
+  ul.choices.reviewed button.choice.correct-answer .k{ color:var(--gold); }
+  ul.choices.reviewed button.choice.wrong-pick{ border-color:var(--error); background:var(--error-soft); }
+  ul.choices.reviewed button.choice.wrong-pick .k{ color:var(--error); }
+  .tag{ margin-left:auto; font-size:11px; font-weight:700; font-family:var(--font-mono); white-space:nowrap; }
+  .tag.ok{ color:var(--gold); }
+  .tag.no{ color:var(--error); }
+
+  .err-sentence{
+    font-family:var(--font-mono); font-size:14px; background:var(--surface-2);
+    border-radius:10px; padding:14px 16px; line-height:2.1; margin-bottom:14px;
+  }
+  .seg-btn{
+    all:unset; cursor:pointer; font-family:var(--font-mono); font-size:14px;
+    padding:2px 5px; border-radius:5px; border:1px solid transparent;
+  }
+  .seg-btn .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin-left:2px; }
+  .seg-btn.selected{ background:var(--accent-soft); border-color:var(--accent); }
+  .seg-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+  .seg-btn.reviewed.is-answer{ background:var(--gold-soft); border-color:var(--gold); font-weight:700; }
+  .seg-btn.reviewed.wrong-pick{ background:var(--error-soft); border-color:var(--error); text-decoration:line-through; }
+
+  .explain{ font-size:14px; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:12px; }
+  .explain b{ color:var(--accent-strong); }
+
+  .empty-state{
+    text-align:center; padding:60px 20px; color:var(--text-muted);
+  }
+  .empty-state .big{ font-size:34px; margin-bottom:10px; }
+
+  .actions{ display:flex; gap:10px; flex-wrap:wrap; margin:22px 0 6px; }
+  button.btn, a.btn{
+    all:unset; cursor:pointer; box-sizing:border-box; text-align:center;
+    font-family:var(--font-sans); font-weight:700; font-size:14.5px;
+    padding:11px 18px; border-radius:10px; border:1px solid var(--border);
+  }
+  button.btn:focus-visible, a.btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  button.btn.primary{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  button.btn.ghost{ background:var(--surface); color:var(--text); }
+
+  .score-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:22px; text-align:center; box-shadow:var(--shadow); margin:18px 0;
+  }
+  .score-card .big-num{ font-family:var(--font-mono); font-size:42px; font-weight:700; color:var(--accent); font-variant-numeric:tabular-nums; }
+  .score-card .of{ color:var(--text-muted); font-size:14px; }
+
+  footer.foot{ max-width:720px; margin:40px auto 0; padding:24px 20px 0; border-top:1px solid var(--border); color:var(--text-muted); font-size:12.8px; }
+</style>
+
+<div id="app"></div>
+
+<script src="exam-data.js"></script>
+<script>
+(function(){
+  "use strict";
+  var DATA = window.EXAM_DATA;
+  var PART_LABEL = { listening: "Listening", reading: "Reading", writing: "Writing" };
+  var PART_ICON = { listening: "L", reading: "R", writing: "W" };
+
+  function el(html){ var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[c];
+    });
+  }
+
+  function getForm(formId){ return DATA.forms.find(function(f){ return f.id === formId; }); }
+
+  function storageKey(formId, partKey){ return "cutep:" + formId + ":" + partKey; }
+  function loadAnswers(formId, partKey){
+    try { return JSON.parse(localStorage.getItem(storageKey(formId, partKey)) || "{}"); }
+    catch(e){ return {}; }
+  }
+  function saveAnswers(formId, partKey, answers){
+    try { localStorage.setItem(storageKey(formId, partKey), JSON.stringify(answers)); } catch(e){}
+  }
+  function clearAnswers(formId, partKey){
+    try { localStorage.removeItem(storageKey(formId, partKey)); } catch(e){}
+  }
+
+  function parseHash(){
+    var h = location.hash.replace(/^#\/?/, "");
+    var parts = h.split("/").filter(Boolean);
+    return { formId: parts[0] || null, partKey: parts[1] || null, mode: parts[2] || null };
+  }
+
+  function navigate(hash){ location.hash = hash; }
+
+  window.addEventListener("hashchange", render);
+  document.addEventListener("DOMContentLoaded", render);
+
+  function render(){
+    var route = parseHash();
+    var app = document.getElementById("app");
+    app.innerHTML = "";
+
+    var header = renderHeader(route);
+    app.appendChild(header);
+
+    var main = document.createElement("main");
+    app.appendChild(main);
+
+    if (!route.formId){
+      main.appendChild(renderHome());
+    } else {
+      var form = getForm(route.formId);
+      if (!form){ main.appendChild(renderHome()); return; }
+      if (!route.partKey){
+        main.appendChild(renderForm(form));
+      } else {
+        var partData = form[route.partKey];
+        if (!partData){ main.appendChild(renderForm(form)); return; }
+        if (route.mode === "results"){
+          main.appendChild(renderResults(form, route.partKey, partData));
+        } else {
+          main.appendChild(renderQuiz(form, route.partKey, partData));
+        }
+      }
+    }
+
+    var foot = document.createElement("footer");
+    foot.className = "foot";
+    foot.textContent = "โหมดฝึกทำข้อสอบ — ไม่จับเวลา เฉลยและคำอธิบายจะแสดงหลังกดส่งคำตอบเท่านั้น";
+    app.appendChild(foot);
+  }
+
+  function renderHeader(route){
+    var header = el('<header class="bar"><div class="inner"></div></header>');
+    var inner = header.querySelector(".inner");
+    var crumbs = el('<div class="crumbs"></div>');
+    crumbs.appendChild(el('<a href="#/">Practice Test</a>'));
+    if (route.formId){
+      var form = getForm(route.formId);
+      crumbs.appendChild(document.createTextNode(" / "));
+      if (route.partKey){
+        crumbs.appendChild(el('<a href="#/' + route.formId + '">' + (form ? form.label : route.formId) + "</a>"));
+        crumbs.appendChild(document.createTextNode(" / "));
+        crumbs.appendChild(el("<b>" + PART_LABEL[route.partKey] + (route.mode === "results" ? " · เฉลย" : "") + "</b>"));
+      } else {
+        crumbs.appendChild(el("<b>" + (form ? form.label : route.formId) + "</b>"));
+      }
+    }
+    inner.appendChild(crumbs);
+    inner.appendChild(el('<div class="spacer"></div>'));
+    inner.appendChild(el('<a class="guide-link" href="cu-tep-guide.html">Tips &amp; Tricks →</a>'));
+    return header;
+  }
+
+  function countReady(part){
+    if (!part) return 0;
+    return (part.questions || []).length;
+  }
+
+  function renderHome(){
+    var wrap = el('<div></div>');
+    wrap.appendChild(el(
+      '<div class="masthead">' +
+        '<div class="eyebrow">CU-TEP · Practice Test</div>' +
+        '<h1 class="title">เลือกชุดข้อสอบ</h1>' +
+        '<p class="subtitle">ข้อสอบแบ่งเป็น 4 ชุด (Form 1–4) แต่ละชุดมี 3 ส่วน — Listening / Reading / Writing รวม 120 ข้อต่อชุด</p>' +
+      "</div>"
+    ));
+    if (DATA.meta.isSample){
+      wrap.appendChild(el(
+        '<div class="sample-banner"><span>🔧</span><span><b>ข้อมูลตัวอย่าง</b> — เนื้อหาข้อสอบจริงจะถูกเพิ่มเข้ามาทีหลัง ตอนนี้ใส่โจทย์สาธิตไว้ใน Form 3 เพื่อทดสอบหน้าตาและการใช้งานเท่านั้น</span></div>'
+      ));
+    }
+    var grid = el('<div class="grid form-grid"></div>');
+    DATA.forms.forEach(function(form){
+      var total = countReady(form.listening) + countReady(form.reading) + countReady(form.writing);
+      var expected = (form.listening.expectedCount||0) + (form.reading.expectedCount||0) + (form.writing.expectedCount||0);
+      var badge = total > 0 ? '<span class="badge ready">มีตัวอย่าง</span>' : '<span class="badge empty">รอเนื้อหา</span>';
+      var tile = el(
+        '<a class="tile" href="#/' + form.id + '">' + badge +
+          '<div class="tile-label">' + form.label + "</div>" +
+          '<div class="tile-sub">' + total + " / " + expected + " ข้อ</div>" +
+        "</a>"
+      );
+      grid.appendChild(tile);
+    });
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  function renderForm(form){
+    var wrap = el('<div></div>');
+    wrap.appendChild(el(
+      '<div class="masthead">' +
+        '<div class="eyebrow">' + form.label + "</div>" +
+        '<h1 class="title">เลือกส่วนที่จะฝึก</h1>' +
+        '<p class="subtitle">แตะเข้าไปทำทีละส่วน ระบบจะจำคำตอบไว้ให้จนกว่าจะกดส่ง</p>' +
+      "</div>"
+    ));
+    var grid = el('<div class="grid part-grid"></div>');
+    ["listening","reading","writing"].forEach(function(key){
+      var part = form[key];
+      var n = countReady(part);
+      var badge = n > 0 ? '<span class="badge ready">' + n + " ข้อ</span>" : '<span class="badge empty">รอเนื้อหา</span>';
+      var sub = n > 0 ? (n + " / " + part.expectedCount + " ข้อพร้อมฝึก") : ("ยังไม่มีข้อสอบ (คาดไว้ " + part.expectedCount + " ข้อ)");
+      var tile = el(
+        '<a class="tile" href="#/' + form.id + "/" + key + '">' + badge +
+          '<div class="part-icon">' + PART_ICON[key] + "</div>" +
+          '<div class="tile-label">' + PART_LABEL[key] + "</div>" +
+          '<div class="tile-sub">' + sub + "</div>" +
+        "</a>"
+      );
+      grid.appendChild(tile);
+    });
+    wrap.appendChild(grid);
+    return wrap;
+  }
+
+  // ---------- Quiz ----------
+  function renderQuiz(form, partKey, part){
+    var wrap = el('<div></div>');
+    var questions = part.questions || [];
+
+    wrap.appendChild(el(
+      '<div class="masthead">' +
+        '<div class="eyebrow">' + form.label + " · " + PART_LABEL[partKey] + "</div>" +
+        '<h1 class="title">' + PART_LABEL[partKey] + "</h1>" +
+      "</div>"
+    ));
+
+    if (questions.length === 0){
+      wrap.appendChild(el(
+        '<div class="empty-state"><div class="big">📭</div>' +
+        "ยังไม่มีเนื้อหาข้อสอบส่วนนี้<br>รอเพิ่มภายหลัง</div>"
+      ));
+      wrap.appendChild(el('<div class="actions"><a class="btn ghost" href="#/' + form.id + '">← กลับไปเลือกส่วนอื่น</a></div>'));
+      return wrap;
+    }
+
+    var answers = loadAnswers(form.id, partKey);
+
+    var progressBar = el(
+      '<div class="progress-bar"><div class="row">' +
+        '<span id="prog-label">ตอบแล้ว 0 / ' + questions.length + " ข้อ</span>" +
+        '<div class="progress-track"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>' +
+      "</div></div>"
+    );
+    wrap.appendChild(progressBar);
+
+    if (partKey === "listening" && part.audioParts && part.audioParts.length){
+      part.audioParts.forEach(function(ap){
+        wrap.appendChild(el(
+          '<div class="audio-card"><div class="lbl">🎧 ' + escapeHtml(ap.label) + '</div>' +
+          '<audio controls preload="none" src="' + encodeURI(ap.src) + '"></audio></div>'
+        ));
+      });
+    }
+
+    function updateProgress(){
+      var answered = Object.keys(answers).length;
+      wrap.querySelector("#prog-label").textContent = "ตอบแล้ว " + answered + " / " + questions.length + " ข้อ";
+      wrap.querySelector("#prog-fill").style.width = Math.round((answered / questions.length) * 100) + "%";
+    }
+
+    questions.forEach(function(q, qi){
+      var card = el('<div class="q-card"></div>');
+      card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + questions.length + "</div>"));
+
+      if (partKey === "writing"){
+        var sentence = el('<div class="err-sentence"></div>');
+        q.segments.forEach(function(seg){
+          if (seg.n){
+            var btn = document.createElement("button");
+            btn.className = "seg-btn";
+            btn.type = "button";
+            btn.innerHTML = escapeHtml(seg.text) + '<span class="seg-num">' + seg.n + "</span>";
+            btn.dataset.n = seg.n;
+            if (answers[q.id] === seg.n) btn.classList.add("selected");
+            btn.addEventListener("click", function(){
+              answers[q.id] = seg.n;
+              saveAnswers(form.id, partKey, answers);
+              sentence.querySelectorAll(".seg-btn").forEach(function(b){
+                b.classList.toggle("selected", Number(b.dataset.n) === seg.n);
+              });
+              updateProgress();
+            });
+            sentence.appendChild(btn);
+          } else {
+            sentence.appendChild(document.createTextNode(seg.text));
+          }
+        });
+        card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
+        card.appendChild(sentence);
+      } else {
+        if (q.passageTitle){
+          card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
+        }
+        if (q.passage){
+          card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        }
+        card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
+        var list = el('<ul class="choices"></ul>');
+        q.choices.forEach(function(choiceText, ci){
+          var li = document.createElement("li");
+          var btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice";
+          if (answers[q.id] === ci) btn.classList.add("selected");
+          btn.innerHTML = '<span class="k">' + String.fromCharCode(65 + ci) + "</span><span>" + escapeHtml(choiceText) + "</span>";
+          btn.addEventListener("click", function(){
+            answers[q.id] = ci;
+            saveAnswers(form.id, partKey, answers);
+            list.querySelectorAll("button.choice").forEach(function(b, bi){
+              b.classList.toggle("selected", bi === ci);
+            });
+            updateProgress();
+          });
+          li.appendChild(btn);
+          list.appendChild(li);
+        });
+        card.appendChild(list);
+      }
+      wrap.appendChild(card);
+    });
+
+    updateProgress();
+
+    var actions = el('<div class="actions"></div>');
+    var submitBtn = el('<button class="btn primary">ส่งคำตอบ / ดูเฉลย</button>');
+    submitBtn.addEventListener("click", function(){ navigate("#/" + form.id + "/" + partKey + "/results"); });
+    actions.appendChild(submitBtn);
+    var resetBtn = el('<button class="btn ghost">ล้างคำตอบ</button>');
+    resetBtn.addEventListener("click", function(){
+      if (confirm("ล้างคำตอบทั้งหมดในส่วนนี้?")){
+        clearAnswers(form.id, partKey);
+        render();
+      }
+    });
+    actions.appendChild(resetBtn);
+    actions.appendChild(el('<a class="btn ghost" href="#/' + form.id + '">← กลับ</a>'));
+    wrap.appendChild(actions);
+
+    return wrap;
+  }
+
+  // ---------- Results ----------
+  function renderResults(form, partKey, part){
+    var wrap = el('<div></div>');
+    var questions = part.questions || [];
+    var answers = loadAnswers(form.id, partKey);
+
+    var correct = 0;
+    questions.forEach(function(q){
+      var given = answers[q.id];
+      if (given === q.answer) correct++;
+    });
+
+    wrap.appendChild(el(
+      '<div class="masthead">' +
+        '<div class="eyebrow">' + form.label + " · " + PART_LABEL[partKey] + "</div>" +
+        '<h1 class="title">เฉลยและคำอธิบาย</h1>' +
+      "</div>"
+    ));
+
+    wrap.appendChild(el(
+      '<div class="score-card">' +
+        '<div class="big-num">' + correct + " / " + questions.length + "</div>" +
+        '<div class="of">ตอบถูก (' + (questions.length ? Math.round((correct/questions.length)*100) : 0) + "%)</div>" +
+      "</div>"
+    ));
+
+    if (partKey === "listening" && part.audioParts && part.audioParts.length){
+      part.audioParts.forEach(function(ap){
+        wrap.appendChild(el(
+          '<div class="audio-card"><div class="lbl">🎧 ' + escapeHtml(ap.label) + '</div>' +
+          '<audio controls preload="none" src="' + encodeURI(ap.src) + '"></audio></div>'
+        ));
+      });
+    }
+
+    questions.forEach(function(q, qi){
+      var given = answers[q.id];
+      var isCorrect = given === q.answer;
+      var card = el('<div class="q-card"></div>');
+      card.appendChild(el(
+        '<div class="q-num">' + (qi + 1) + " / " + questions.length +
+        '<span class="tag ' + (isCorrect ? "ok" : "no") + '" style="float:right">' +
+        (given === undefined ? "ไม่ได้ตอบ" : (isCorrect ? "✓ ถูก" : "✗ ผิด")) +
+        "</span></div>"
+      ));
+
+      if (partKey === "writing"){
+        var sentence = el('<div class="err-sentence"></div>');
+        q.segments.forEach(function(seg){
+          if (seg.n){
+            var span = document.createElement("span");
+            span.className = "seg-btn reviewed";
+            if (seg.n === q.answer) span.classList.add("is-answer");
+            if (given === seg.n && given !== q.answer) span.classList.add("wrong-pick");
+            span.innerHTML = escapeHtml(seg.text) + '<span class="seg-num">' + seg.n + "</span>";
+            sentence.appendChild(span);
+          } else {
+            sentence.appendChild(document.createTextNode(seg.text));
+          }
+        });
+        card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
+        card.appendChild(sentence);
+      } else {
+        if (q.passageTitle) card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
+        if (q.passage) card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
+        var list = el('<ul class="choices reviewed"></ul>');
+        q.choices.forEach(function(choiceText, ci){
+          var li = document.createElement("li");
+          var cls = "choice";
+          if (ci === q.answer) cls += " correct-answer";
+          else if (ci === given) cls += " wrong-pick";
+          li.innerHTML =
+            '<button type="button" class="' + cls + '" disabled>' +
+              '<span class="k">' + String.fromCharCode(65 + ci) + "</span><span>" + escapeHtml(choiceText) + "</span>" +
+            "</button>";
+          list.appendChild(li);
+        });
+        card.appendChild(list);
+      }
+
+      card.appendChild(el('<div class="explain"><b>คำอธิบาย</b> — ' + escapeHtml(q.explanation) + "</div>"));
+      wrap.appendChild(card);
+    });
+
+    var actions = el('<div class="actions"></div>');
+    var retryBtn = el('<button class="btn primary">ทำใหม่อีกครั้ง</button>');
+    retryBtn.addEventListener("click", function(){
+      clearAnswers(form.id, partKey);
+      navigate("#/" + form.id + "/" + partKey);
+    });
+    actions.appendChild(retryBtn);
+    actions.appendChild(el('<a class="btn ghost" href="#/' + form.id + '">← กลับไปเลือกส่วนอื่น</a>'));
+    actions.appendChild(el('<a class="btn ghost" href="#/">หน้าแรก</a>'));
+    wrap.appendChild(actions);
+
+    return wrap;
+  }
+
+  render();
+})();
+</script>
