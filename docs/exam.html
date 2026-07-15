@@ -151,12 +151,13 @@
   .seg-btn{
     all:unset; cursor:pointer; font-family:var(--font-mono); font-size:14px;
     padding:2px 5px; border-radius:5px; border:1px solid transparent;
+    text-decoration:underline; text-decoration-color:var(--text-muted); text-underline-offset:3px;
   }
   .seg-btn .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin-left:2px; }
-  .seg-btn.selected{ background:var(--accent-soft); border-color:var(--accent); }
+  .seg-btn.selected{ background:var(--accent-soft); border-color:var(--accent); text-decoration-color:var(--accent); }
   .seg-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
-  .seg-btn.reviewed.is-answer{ background:var(--gold-soft); border-color:var(--gold); font-weight:700; }
-  .seg-btn.reviewed.wrong-pick{ background:var(--error-soft); border-color:var(--error); text-decoration:line-through; }
+  .seg-btn.reviewed.is-answer{ background:var(--gold-soft); border-color:var(--gold); font-weight:700; text-decoration-color:var(--gold); }
+  .seg-btn.reviewed.wrong-pick{ background:var(--error-soft); border-color:var(--error); text-decoration-line:underline line-through; text-decoration-color:var(--error); }
 
   .explain{ font-size:14px; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:12px; }
   .explain b{ color:var(--accent-strong); }
