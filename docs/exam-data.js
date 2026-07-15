@@ -1934,7 +1934,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " from phones and smart TVs to home speakers and internet-connected",
+                                    "text": " from phones and smart TVs to home speakers and "
+                              },
+                              {
+                                    "text": "internet-connected",
                                     "n": 4
                               },
                               {
