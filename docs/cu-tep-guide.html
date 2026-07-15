@@ -198,6 +198,15 @@
   table th{ background:var(--surface-2); font-family:var(--font-mono); font-size:11.5px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-muted); }
   table tr:last-child td{ border-bottom:none; }
 
+  .speak-btn{
+    all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:5px;
+    font-family:var(--font-sans); font-size:11.5px; font-weight:700; color:var(--accent);
+    border:1px solid var(--border); border-radius:999px; padding:4px 11px;
+  }
+  .speak-btn:hover{ border-color:var(--accent); }
+  .speak-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .speak-btn.playing{ background:var(--accent-soft); border-color:var(--accent); color:var(--accent-strong); }
+
   .passage{
     background:var(--surface-2);
     border-left:3px solid var(--accent);
@@ -848,3 +857,74 @@
 
   <a href="#top" class="to-top" aria-label="กลับขึ้นบนสุด">↑</a>
 </div>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- Read-aloud (Web Speech API) ----------
+  var currentSpeakBtn = null;
+  function toggleSpeak(text, btn){
+    if (!("speechSynthesis" in window)){
+      alert("ขออภัย เบราว์เซอร์นี้ไม่รองรับการอ่านออกเสียง");
+      return;
+    }
+    var synth = window.speechSynthesis;
+    if (currentSpeakBtn === btn && synth.speaking){
+      synth.cancel();
+      return;
+    }
+    synth.cancel();
+    var utter = new SpeechSynthesisUtterance(text);
+    utter.lang = "en-US";
+    utter.rate = 0.95;
+    utter.onstart = function(){ currentSpeakBtn = btn; btn.classList.add("playing"); btn.innerHTML = "⏸ หยุด"; };
+    utter.onend = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    utter.onerror = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    synth.speak(utter);
+  }
+  function makeSpeakBtn(text, label){
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "speak-btn";
+    btn.style.marginBottom = "10px";
+    btn.dataset.label = label;
+    btn.innerHTML = "🔊 " + label;
+    btn.addEventListener("click", function(){ toggleSpeak(text, btn); });
+    return btn;
+  }
+  function textOf(node){ return node.textContent.replace(/\s+/g, " ").trim(); }
+
+  document.querySelectorAll(".passage").forEach(function(p){
+    var text = textOf(p);
+    if (!text) return;
+    p.parentNode.insertBefore(makeSpeakBtn(text, "ฟังเนื้อหา"), p);
+  });
+
+  document.querySelectorAll(".dialogue").forEach(function(d){
+    var lines = Array.prototype.map.call(d.querySelectorAll(".line"), function(line){
+      var clone = line.cloneNode(true);
+      var b = clone.querySelector("b");
+      if (b) b.remove();
+      return textOf(clone);
+    });
+    var text = lines.join(". ");
+    if (!text) return;
+    d.parentNode.insertBefore(makeSpeakBtn(text, "ฟังบทสนทนา"), d);
+  });
+
+  document.querySelectorAll(".err-sentence").forEach(function(s){
+    var clone = s.cloneNode(true);
+    clone.querySelectorAll(".seg-num").forEach(function(n){ n.remove(); });
+    var text = textOf(clone);
+    if (!text) return;
+    s.parentNode.insertBefore(makeSpeakBtn(text, "ฟังประโยค"), s);
+  });
+
+  // stop any playback if the user navigates away from the page
+  window.addEventListener("pagehide", function(){
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+  });
+})();
+</script>
+

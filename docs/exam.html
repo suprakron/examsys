@@ -144,6 +144,15 @@
   .tag.ok{ color:var(--gold); }
   .tag.no{ color:var(--error); }
 
+  .speak-btn{
+    all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:5px;
+    font-family:var(--font-sans); font-size:11.5px; font-weight:700; color:var(--accent);
+    border:1px solid var(--border); border-radius:999px; padding:4px 11px; margin-bottom:8px;
+  }
+  .speak-btn:hover{ border-color:var(--accent); }
+  .speak-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .speak-btn.playing{ background:var(--accent-soft); border-color:var(--accent); color:var(--accent-strong); }
+
   .err-sentence{
     font-family:var(--font-mono); font-size:14px; background:var(--surface-2);
     border-radius:10px; padding:14px 16px; line-height:2.1; margin-bottom:14px;
@@ -204,6 +213,45 @@
     });
   }
 
+  // ---------- Read-aloud (Web Speech API) ----------
+  var currentSpeakBtn = null;
+  function stopSpeaking(){
+    if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+    currentSpeakBtn = null;
+  }
+  function sanitizeForSpeech(text){
+    return String(text).replace(/_+\(\d+\)_+/g, "blank");
+  }
+  function toggleSpeak(text, btn){
+    if (!("speechSynthesis" in window)){
+      alert("ขออภัย เบราว์เซอร์นี้ไม่รองรับการอ่านออกเสียง");
+      return;
+    }
+    var synth = window.speechSynthesis;
+    if (currentSpeakBtn === btn && synth.speaking){
+      synth.cancel();
+      return;
+    }
+    synth.cancel();
+    var utter = new SpeechSynthesisUtterance(sanitizeForSpeech(text));
+    utter.lang = "en-US";
+    utter.rate = 0.95;
+    utter.onstart = function(){ currentSpeakBtn = btn; btn.classList.add("playing"); btn.innerHTML = "⏸ หยุด"; };
+    utter.onend = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    utter.onerror = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    synth.speak(utter);
+  }
+  function makeSpeakBtn(text, label){
+    var lbl = label || "ฟังเนื้อหา";
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "speak-btn";
+    btn.dataset.label = lbl;
+    btn.innerHTML = "🔊 " + lbl;
+    btn.addEventListener("click", function(){ toggleSpeak(text, btn); });
+    return btn;
+  }
+
   function getForm(formId){ return DATA.forms.find(function(f){ return f.id === formId; }); }
 
   function storageKey(formId, partKey){ return "cutep:" + formId + ":" + partKey; }
@@ -230,6 +278,7 @@
   document.addEventListener("DOMContentLoaded", render);
 
   function render(){
+    stopSpeaking();
     var route = parseHash();
     var app = document.getElementById("app");
     app.innerHTML = "";
@@ -402,6 +451,7 @@
 
       if (partKey === "writing"){
         var sentence = el('<div class="err-sentence"></div>');
+        var plainSentence = q.segments.map(function(seg){ return seg.text; }).join("");
         q.segments.forEach(function(seg){
           if (seg.n){
             var btn = document.createElement("button");
@@ -423,6 +473,7 @@
             sentence.appendChild(document.createTextNode(seg.text));
           }
         });
+        card.appendChild(makeSpeakBtn(plainSentence, "ฟังประโยค"));
         card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
         card.appendChild(sentence);
       } else {
@@ -430,6 +481,7 @@
           card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
         }
         if (q.passage){
+          card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
           card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
         }
         card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
@@ -525,6 +577,7 @@
 
       if (partKey === "writing"){
         var sentence = el('<div class="err-sentence"></div>');
+        var plainSentence = q.segments.map(function(seg){ return seg.text; }).join("");
         q.segments.forEach(function(seg){
           if (seg.n){
             var span = document.createElement("span");
@@ -537,11 +590,15 @@
             sentence.appendChild(document.createTextNode(seg.text));
           }
         });
+        card.appendChild(makeSpeakBtn(plainSentence, "ฟังประโยค"));
         card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
         card.appendChild(sentence);
       } else {
         if (q.passageTitle) card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
-        if (q.passage) card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        if (q.passage){
+          card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
+          card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        }
         card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
         var list = el('<ul class="choices reviewed"></ul>');
         q.choices.forEach(function(choiceText, ci){
