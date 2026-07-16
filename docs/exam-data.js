@@ -1376,22 +1376,28 @@ window.EXAM_DATA = {
                         "id": "f1-wri-91",
                         "segments": [
                               {
-                                    "text": "Prices of some",
+                                    "text": "Prices ",
                                     "n": 1
                               },
                               {
-                                    "text": " essential food items, such as rice and cooking oil, have "
+                                    "text": "of some essential food items, such as rice and cooking oil, have "
                               },
                               {
                                     "text": "raised",
                                     "n": 2
                               },
-                              {
-                                    "text": " by 5% to as much",
-                                    "n": 3
+                             {
+                                    "text": "by 5% to as "
                               },
                               {
-                                    "text": " as 20% in recent",
+                                    "text": "  much",
+                                    "n": 3
+                              },
+                             {
+                                    "text": "as 20% in "
+                              },
+                              {
+                                    "text": "  recent",
                                     "n": 4
                               },
                               {
