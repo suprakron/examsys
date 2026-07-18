@@ -1376,7 +1376,10 @@ window.EXAM_DATA = {
                         "id": "f1-wri-91",
                         "segments": [
                               {
-                                    "text": "Prices of some",
+                                    "text": "Prices of "
+                              },
+                              {
+                                    "text": "some",
                                     "n": 1
                               },
                               {
@@ -1387,11 +1390,17 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": " by 5% to as much",
+                                    "text": " by 5% to as "
+                              },
+                              {
+                                    "text": "much",
                                     "n": 3
                               },
                               {
-                                    "text": " as 20% in recent",
+                                    "text": " as 20% in "
+                              },
+                              {
+                                    "text": "recent",
                                     "n": 4
                               },
                               {
@@ -1405,18 +1414,24 @@ window.EXAM_DATA = {
                         "id": "f1-wri-92",
                         "segments": [
                               {
-                                    "text": "The expert committee on",
+                                    "text": "The expert committee "
+                              },
+                              {
+                                    "text": "on",
                                     "n": 1
                               },
                               {
-                                    "text": " COVID-19 vaccination has "
+                                    "text": " COVID-19 vaccination "
                               },
                               {
-                                    "text": "recommended",
+                                    "text": "has recommended",
                                     "n": 2
                               },
                               {
-                                    "text": " that the two",
+                                    "text": " that "
+                              },
+                              {
+                                    "text": "the two",
                                     "n": 3
                               },
                               {
@@ -1441,14 +1456,17 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " raspberries easily absorb water, it "
+                                    "text": " raspberries easily absorb water, "
                               },
                               {
-                                    "text": "is",
+                                    "text": "it is",
                                     "n": 2
                               },
                               {
-                                    "text": " best to wash them with",
+                                    "text": " best to wash them "
+                              },
+                              {
+                                    "text": "with",
                                     "n": 3
                               },
                               {
@@ -1457,9 +1475,6 @@ window.EXAM_DATA = {
                               {
                                     "text": "eating",
                                     "n": 4
-                              },
-                              {
-                                    "text": "."
                               }
                         ],
                         "answer": 1,
@@ -1490,10 +1505,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " dwindling native "
+                                    "text": " dwindling "
                               },
                               {
-                                    "text": "Australian",
+                                    "text": "native Australian",
                                     "n": 4
                               },
                               {
@@ -1601,10 +1616,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " could be the oldest English coin ever "
+                                    "text": " could be the oldest English coin "
                               },
                               {
-                                    "text": "found",
+                                    "text": "ever found",
                                     "n": 4
                               },
                               {
@@ -1632,10 +1647,10 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": ", the US, EU and UK recently provided $8.5 bn to "
+                                    "text": ", the US, EU and UK recently provided $8.5 bn "
                               },
                               {
-                                    "text": "help",
+                                    "text": "to help",
                                     "n": 3
                               },
                               {
@@ -1660,14 +1675,14 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " fossil fuels such as oil, gas, and coal "
+                                    "text": " fossil fuels such as oil, gas, and coal releases carbon dioxide into "
                               },
                               {
-                                    "text": "releases",
+                                    "text": "the",
                                     "n": 2
                               },
                               {
-                                    "text": " carbon dioxide into the atmosphere, trapping heat "
+                                    "text": " atmosphere, trapping heat "
                               },
                               {
                                     "text": "and",
@@ -1747,10 +1762,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " know you are trying to "
+                                    "text": " know you are trying "
                               },
                               {
-                                    "text": "focus",
+                                    "text": "to focus",
                                     "n": 4
                               },
                               {
@@ -1764,7 +1779,7 @@ window.EXAM_DATA = {
                         "id": "f1-wri-102",
                         "segments": [
                               {
-                                    "text": "The world's "
+                                    "text": "The world’s "
                               },
                               {
                                     "text": "most",
@@ -1778,17 +1793,17 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": " kopi luwak, which is harvested after "
+                                    "text": " kopi luwak, which is harvested "
                               },
                               {
-                                    "text": "digested",
+                                    "text": "after digested",
                                     "n": 3
                               },
                               {
-                                    "text": " and excreted by the Asian palm civet, a small "
+                                    "text": " and excreted by the Asian palm civet, a "
                               },
                               {
-                                    "text": "catlike",
+                                    "text": "small catlike",
                                     "n": 4
                               },
                               {
@@ -1823,10 +1838,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " since "
+                                    "text": " since the ancient "
                               },
                               {
-                                    "text": "the ancient times",
+                                    "text": "times",
                                     "n": 4
                               },
                               {
@@ -1854,14 +1869,17 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": " malls in Auckland when they decided to "
+                                    "text": " malls in Auckland when they decided "
                               },
                               {
-                                    "text": "reopen",
+                                    "text": "to reopen",
                                     "n": 3
                               },
                               {
-                                    "text": " for the first time in",
+                                    "text": " for the first time "
+                              },
+                              {
+                                    "text": "in",
                                     "n": 4
                               },
                               {
@@ -1875,7 +1893,7 @@ window.EXAM_DATA = {
                         "id": "f1-wri-105",
                         "segments": [
                               {
-                                    "text": "Sweden's "
+                                    "text": "Sweden’s "
                               },
                               {
                                     "text": "first",
@@ -1896,10 +1914,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " the government and her budget failed to "
+                                    "text": " the government and her budget failed "
                               },
                               {
-                                    "text": "pass",
+                                    "text": "to pass",
                                     "n": 4
                               },
                               {
@@ -1958,10 +1976,10 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " after "
+                                    "text": " after a "
                               },
                               {
-                                    "text": "a group",
+                                    "text": "group",
                                     "n": 2
                               },
                               {
@@ -1989,7 +2007,10 @@ window.EXAM_DATA = {
                         "id": "f1-wri-108",
                         "segments": [
                               {
-                                    "text": "Octopuses, crabs and lobsters are capable of",
+                                    "text": "Octopuses, crabs and lobsters are capable "
+                              },
+                              {
+                                    "text": "of",
                                     "n": 1
                               },
                               {
@@ -2000,11 +2021,17 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": " has added the creatures to",
+                                    "text": " has added the creatures "
+                              },
+                              {
+                                    "text": "to",
                                     "n": 3
                               },
                               {
-                                    "text": " a list of sentient beings to be given",
+                                    "text": " a list of sentient beings "
+                              },
+                              {
+                                    "text": "to be given",
                                     "n": 4
                               },
                               {
@@ -2022,11 +2049,17 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " quality time with children has significant benefits for",
+                                    "text": " quality time with children has significant benefits "
+                              },
+                              {
+                                    "text": "for",
                                     "n": 2
                               },
                               {
-                                    "text": " them, including",
+                                    "text": " them, "
+                              },
+                              {
+                                    "text": "including",
                                     "n": 3
                               },
                               {
@@ -2065,10 +2098,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " opportunities throughout your day to "
+                                    "text": " opportunities throughout your day "
                               },
                               {
-                                    "text": "express",
+                                    "text": "to express",
                                     "n": 4
                               },
                               {
@@ -2089,10 +2122,10 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " already pledged to "
+                                    "text": " already pledged "
                               },
                               {
-                                    "text": "offer",
+                                    "text": "to offer",
                                     "n": 2
                               },
                               {
@@ -2127,7 +2160,10 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " join the US and other major energy-consuming",
+                                    "text": " join the US and other major "
+                              },
+                              {
+                                    "text": "energy-consuming",
                                     "n": 2
                               },
                               {
@@ -2176,7 +2212,10 @@ window.EXAM_DATA = {
                                     "n": 3
                               },
                               {
-                                    "text": " dead animal carcasses for",
+                                    "text": " dead animal carcasses "
+                              },
+                              {
+                                    "text": "for",
                                     "n": 4
                               },
                               {
@@ -2190,11 +2229,17 @@ window.EXAM_DATA = {
                         "id": "f1-wri-114",
                         "segments": [
                               {
-                                    "text": "Cognitive behavioral sleep training",
+                                    "text": "Cognitive behavioral sleep "
+                              },
+                              {
+                                    "text": "training",
                                     "n": 1
                               },
                               {
-                                    "text": " can teach you how to",
+                                    "text": " can teach you "
+                              },
+                              {
+                                    "text": "how to",
                                     "n": 2
                               },
                               {
@@ -2295,10 +2340,10 @@ window.EXAM_DATA = {
                         "id": "f1-wri-117",
                         "segments": [
                               {
-                                    "text": "Scientists have uncovered one of the earliest "
+                                    "text": "Scientists have uncovered one of the "
                               },
                               {
-                                    "text": "examples",
+                                    "text": "earliest examples",
                                     "n": 1
                               },
                               {
@@ -2344,7 +2389,10 @@ window.EXAM_DATA = {
                                     "n": 2
                               },
                               {
-                                    "text": " stuck underground was suspended owing to",
+                                    "text": " stuck underground was suspended "
+                              },
+                              {
+                                    "text": "owing to",
                                     "n": 3
                               },
                               {
@@ -2407,17 +2455,17 @@ window.EXAM_DATA = {
                                     "n": 1
                               },
                               {
-                                    "text": " rock art is common in the Arabian Peninsula, some of the carvings "
+                                    "text": " rock art is common in the Arabian Peninsula, some of the "
                               },
                               {
-                                    "text": "in",
+                                    "text": "carvings",
                                     "n": 2
                               },
                               {
-                                    "text": " Al Jassasiya, Qatar's largest rock art site, "
+                                    "text": " in Al Jassasiya, Qatar’s largest rock art site, are "
                               },
                               {
-                                    "text": "are unique",
+                                    "text": "unique",
                                     "n": 3
                               },
                               {
