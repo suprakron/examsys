@@ -1,0 +1,367 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<title>CU-TEP Reading &amp; Writing Content</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --radius:14px;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+      --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+      --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+    --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+    --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  body{ margin:0; }
+  #app{ font-family:var(--font-sans); background:var(--bg); color:var(--text); line-height:1.7; font-size:16px; min-height:100vh; }
+  main{ max-width:720px; margin:0 auto; padding:0 20px 100px; }
+
+  header.bar{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(160%) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  header.bar .inner{
+    max-width:720px; margin:0 auto; padding:14px 20px;
+    display:flex; align-items:center; gap:12px;
+  }
+  header.bar .crumbs{ font-size:13.5px; color:var(--text-muted); display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  header.bar .crumbs a{ color:var(--text-muted); text-decoration:none; }
+  header.bar .crumbs a:hover{ color:var(--accent); }
+  header.bar .crumbs b{ color:var(--text); font-weight:600; }
+  header.bar .spacer{ flex:1; }
+
+  .masthead{ padding:34px 0 22px; }
+  .eyebrow{ font-family:var(--font-mono); letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:600; }
+  h1.title{ font-size:clamp(26px,6vw,34px); line-height:1.15; margin:10px 0 8px; font-weight:700; letter-spacing:-.01em; text-wrap:balance; }
+  .subtitle{ color:var(--text-muted); font-size:15px; max-width:56ch; }
+
+  nav.tabs{
+    display:flex; gap:8px; overflow-x:auto; margin:18px 0 0; padding-bottom:2px;
+  }
+  nav.tabs a{
+    flex:none; text-decoration:none; color:var(--text); font-size:13.5px; font-weight:600;
+    padding:8px 14px; border-radius:999px; border:1px solid var(--border); background:var(--surface);
+    white-space:nowrap;
+  }
+  nav.tabs a b{ color:var(--accent); font-family:var(--font-mono); font-weight:700; margin-right:6px; }
+  nav.tabs a:hover{ border-color:var(--accent); }
+
+  .section-head{ padding-top:44px; display:flex; align-items:baseline; gap:12px; margin-bottom:6px; }
+  .section-head:first-of-type{ padding-top:8px; }
+  .part-badge{
+    font-family:var(--font-mono); font-size:13px; font-weight:700; color:var(--accent-strong);
+    background:var(--accent-soft); border-radius:8px; padding:3px 9px;
+  }
+  h2.part-title{ font-size:24px; margin:0; letter-spacing:-.01em; }
+  .part-count{ color:var(--text-muted); font-size:13px; margin:0 0 18px; }
+
+  .speak-btn{
+    all:unset; cursor:pointer; display:inline-flex; align-items:center; gap:5px;
+    font-family:var(--font-sans); font-size:11.5px; font-weight:700; color:var(--accent);
+    border:1px solid var(--border); border-radius:999px; padding:4px 11px; margin-bottom:8px;
+  }
+  .speak-btn:hover{ border-color:var(--accent); }
+  .speak-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .speak-btn.playing{ background:var(--accent-soft); border-color:var(--accent); color:var(--accent-strong); }
+
+  .q-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:16px 18px; margin:14px 0; box-shadow:var(--shadow);
+  }
+  .q-num{ font-family:var(--font-mono); font-size:12px; color:var(--accent); font-weight:700; margin-bottom:6px; }
+  .q-passage-title{ font-size:12.5px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px; }
+  .q-passage{
+    background:var(--surface-2); border-left:3px solid var(--accent); border-radius:0 10px 10px 0;
+    padding:12px 14px; font-size:14px; margin-bottom:12px; white-space:pre-line;
+  }
+  .q-prompt{ font-weight:700; font-size:15px; margin-bottom:10px; white-space:pre-line; }
+
+  ul.choices{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+  ul.choices button.choice{
+    all:unset; cursor:default; box-sizing:border-box;
+    display:flex; gap:10px; align-items:center;
+    font-family:var(--font-sans); font-size:14.6px; padding:9px 12px;
+    border:1px solid var(--border); border-radius:9px; background:var(--surface);
+    width:100%;
+  }
+  ul.choices button.choice .k{ font-family:var(--font-mono); color:var(--text-muted); flex:none; }
+  ul.choices button.choice.correct-answer{ border-color:var(--gold); background:var(--gold-soft); }
+  ul.choices button.choice.correct-answer .k{ color:var(--gold); font-weight:700; }
+  .tag{ margin-left:auto; font-size:11px; font-weight:700; font-family:var(--font-mono); white-space:nowrap; color:var(--gold); }
+
+  .err-sentence{
+    font-family:var(--font-mono); font-size:14px; background:var(--surface-2);
+    border-radius:10px; padding:14px 16px; line-height:2.1; margin-bottom:14px;
+  }
+  .seg{ padding:2px 5px; border-radius:5px; text-decoration:underline; text-decoration-color:var(--text-muted); text-underline-offset:3px; }
+  .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin-left:2px; }
+  .seg.is-answer{ background:var(--gold-soft); border:1px solid var(--gold); font-weight:700; text-decoration-color:var(--gold); }
+
+  .explain{ font-size:14px; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:12px; }
+  .explain b{ color:var(--accent-strong); }
+
+  .empty-state{ text-align:center; padding:60px 20px; color:var(--text-muted); }
+  .empty-state .big{ font-size:34px; margin-bottom:10px; }
+
+  details.chapter{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    margin:14px 0; box-shadow:var(--shadow); overflow:hidden;
+  }
+  details.chapter > summary{
+    list-style:none; cursor:pointer; padding:16px 18px;
+    display:flex; align-items:center; gap:12px; font-weight:700; font-size:15.5px;
+  }
+  details.chapter > summary::-webkit-details-marker{ display:none; }
+  details.chapter > summary::before{
+    content:"+"; font-family:var(--font-mono); color:var(--accent); font-size:16px;
+    width:22px; height:22px; flex:none; border-radius:50%; border:1px solid var(--border);
+    display:flex; align-items:center; justify-content:center;
+  }
+  details.chapter[open] > summary::before{ content:"–"; }
+  details.chapter > summary .hint{ font-weight:400; color:var(--text-muted); font-size:12.5px; margin-left:auto; }
+  .chapter-body{ padding:0 18px 20px; border-top:1px solid var(--border); }
+  .chapter-body > *:first-child{ margin-top:16px; }
+
+  .ref h4{ font-size:16px; margin:22px 0 8px; }
+  .ref h4:first-child{ margin-top:0; }
+  .ref p{ font-size:14.6px; margin:0 0 12px; }
+  .ref ol, .ref ul{ padding-left:1.2em; margin:0 0 12px; font-size:14.6px; }
+  .ref li{ margin-bottom:6px; }
+  .ref .note{
+    font-size:12.8px; color:var(--text-muted); border-left:2px solid var(--border);
+    padding-left:10px; margin:10px 0; font-style:italic;
+  }
+  .ref u{ text-decoration-color:var(--accent); }
+  .ref .tbl-wrap{ overflow-x:auto; margin:12px 0; border:1px solid var(--border); border-radius:10px; }
+  .ref table{ border-collapse:collapse; width:100%; font-size:13.4px; }
+  .ref table th, .ref table td{ text-align:left; padding:8px 11px; border-bottom:1px solid var(--border); vertical-align:top; }
+  .ref table th{ background:var(--surface-2); font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-muted); }
+  .ref table tr:last-child td{ border-bottom:none; }
+
+  .exercises-label{ font-size:12.5px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.04em; margin:24px 0 4px; }
+
+  footer.foot{ max-width:720px; margin:40px auto 0; padding:24px 20px 0; border-top:1px solid var(--border); color:var(--text-muted); font-size:12.8px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="bar">
+    <div class="inner">
+      <div class="crumbs"><a href="index.html">CU-TEP</a> / <b>เนื้อหา</b></div>
+      <div class="spacer"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="masthead">
+      <div class="eyebrow">CU-TEP · เนื้อหาเต็ม</div>
+      <h1 class="title">เนื้อหา Reading &amp; Writing</h1>
+      <p class="subtitle">บทความ โจทย์ และเฉลยฉบับเต็ม ไว้อ่านทบทวน — แสดงคำตอบและคำอธิบายให้เลยโดยไม่ต้องกดส่งคำตอบเหมือนหน้า Practice Test</p>
+      <nav class="tabs">
+        <a href="#reading"><b>01</b>Reading</a>
+        <a href="#writing"><b>02</b>Writing</a>
+        <a href="cu-tep-guide.html" style="margin-left:auto;">Tips &amp; Tricks →</a>
+        <a href="exam.html">ไปทำ Practice Test →</a>
+      </nav>
+    </div>
+
+    <div id="reading-section"></div>
+    <div id="writing-section"></div>
+  </main>
+
+  <footer class="foot">โหมดอ่านเนื้อหา — เฉลยและคำอธิบายแสดงไว้ให้พร้อมกันทั้งหมด</footer>
+</div>
+
+<script src="content-data.js"></script>
+<script>
+(function(){
+  "use strict";
+  var DATA = window.CONTENT_DATA;
+
+  function el(html){ var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[c];
+    });
+  }
+
+  // ---------- Read-aloud (Web Speech API) ----------
+  var currentSpeakBtn = null;
+  function sanitizeForSpeech(text){
+    return String(text).replace(/_+\(\d+\)_+/g, "blank");
+  }
+  function toggleSpeak(text, btn){
+    if (!("speechSynthesis" in window)){
+      alert("ขออภัย เบราว์เซอร์นี้ไม่รองรับการอ่านออกเสียง");
+      return;
+    }
+    var synth = window.speechSynthesis;
+    if (currentSpeakBtn === btn && synth.speaking){
+      synth.cancel();
+      return;
+    }
+    synth.cancel();
+    var utter = new SpeechSynthesisUtterance(sanitizeForSpeech(text));
+    utter.lang = "en-US";
+    utter.rate = 0.95;
+    utter.onstart = function(){ currentSpeakBtn = btn; btn.classList.add("playing"); btn.innerHTML = "⏸ หยุด"; };
+    utter.onend = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    utter.onerror = function(){ btn.classList.remove("playing"); btn.innerHTML = "🔊 " + btn.dataset.label; if (currentSpeakBtn === btn) currentSpeakBtn = null; };
+    synth.speak(utter);
+  }
+  function makeSpeakBtn(text, label){
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "speak-btn";
+    btn.dataset.label = label;
+    btn.innerHTML = "🔊 " + label;
+    btn.addEventListener("click", function(){ toggleSpeak(text, btn); });
+    return btn;
+  }
+
+  function renderEmpty(msg){
+    return el('<div class="empty-state"><div class="big">📭</div>' + escapeHtml(msg) + '</div>');
+  }
+
+  function renderReadingSection(){
+    var wrap = document.getElementById("reading-section");
+    var questions = (DATA.reading && DATA.reading.questions) || [];
+    wrap.appendChild(el(
+      '<div class="section-head" id="reading"><span class="part-badge">01</span><h2 class="part-title">Reading</h2></div>'
+    ));
+    wrap.appendChild(el('<p class="part-count">' + questions.length + ' ข้อ</p>'));
+
+    if (questions.length === 0){
+      wrap.appendChild(renderEmpty("ยังไม่มีเนื้อหา Reading — รอเพิ่มเติม"));
+      return;
+    }
+
+    questions.forEach(function(q, qi){
+      var card = el('<div class="q-card"></div>');
+      card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + questions.length + "</div>"));
+      if (q.passageTitle){
+        card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
+      }
+      if (q.passage){
+        card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
+        card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+      }
+      card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
+      var list = el('<ul class="choices"></ul>');
+      q.choices.forEach(function(choiceText, ci){
+        var li = document.createElement("li");
+        var cls = "choice" + (ci === q.answer ? " correct-answer" : "");
+        li.innerHTML =
+          '<button type="button" class="' + cls + '" disabled>' +
+            '<span class="k">' + String.fromCharCode(65 + ci) + "</span><span>" + escapeHtml(choiceText) + "</span>" +
+            (ci === q.answer ? '<span class="tag">✓ เฉลย</span>' : "") +
+          "</button>";
+        list.appendChild(li);
+      });
+      card.appendChild(list);
+      if (q.explanation){
+        card.appendChild(el('<div class="explain"><b>คำอธิบาย</b> — ' + escapeHtml(q.explanation) + "</div>"));
+      }
+      wrap.appendChild(card);
+    });
+  }
+
+  function renderWritingQuestionCard(q, qi, total){
+    var card = el('<div class="q-card"></div>');
+    card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + total + "</div>"));
+
+    var plainSentence = q.segments.map(function(seg){ return seg.text; }).join("");
+    card.appendChild(makeSpeakBtn(plainSentence, "ฟังประโยค"));
+    card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
+
+    var sentence = el('<div class="err-sentence"></div>');
+    q.segments.forEach(function(seg){
+      if (seg.n){
+        var span = document.createElement("span");
+        span.className = "seg" + (seg.n === q.answer ? " is-answer" : "");
+        span.innerHTML = escapeHtml(seg.text) + '<span class="seg-num">' + seg.n + "</span>";
+        sentence.appendChild(span);
+      } else {
+        sentence.appendChild(document.createTextNode(seg.text));
+      }
+    });
+    card.appendChild(sentence);
+
+    if (q.explanation){
+      card.appendChild(el('<div class="explain"><b>คำอธิบาย</b> — ' + escapeHtml(q.explanation) + "</div>"));
+    }
+    return card;
+  }
+
+  function renderWritingSection(){
+    var wrap = document.getElementById("writing-section");
+    var chapters = (DATA.writing && DATA.writing.chapters) || [];
+    var totalQuestions = chapters.reduce(function(sum, c){ return sum + (c.questions || []).length; }, 0);
+    wrap.appendChild(el(
+      '<div class="section-head" id="writing"><span class="part-badge">02</span><h2 class="part-title">Writing</h2></div>'
+    ));
+    wrap.appendChild(el('<p class="part-count">' + chapters.length + ' บท · ' + totalQuestions + ' ข้อ</p>'));
+
+    if (chapters.length === 0){
+      wrap.appendChild(renderEmpty("ยังไม่มีเนื้อหา Writing — รอเพิ่มเติม"));
+      return;
+    }
+
+    chapters.forEach(function(chapter){
+      var details = document.createElement("details");
+      details.className = "chapter";
+      var questions = chapter.questions || [];
+      var summary = el('<summary>' + escapeHtml(chapter.title) + '<span class="hint">' + questions.length + ' ข้อฝึกหัด</span></summary>');
+      details.appendChild(summary);
+
+      var body = el('<div class="chapter-body"></div>');
+      if (chapter.referenceHtml){
+        var ref = el('<div class="ref"></div>');
+        ref.innerHTML = chapter.referenceHtml;
+        body.appendChild(ref);
+      }
+      if (questions.length){
+        body.appendChild(el('<div class="exercises-label">แบบฝึกหัดท้ายบท</div>'));
+        questions.forEach(function(q, qi){
+          body.appendChild(renderWritingQuestionCard(q, qi, questions.length));
+        });
+      }
+      details.appendChild(body);
+      wrap.appendChild(details);
+    });
+  }
+
+  renderReadingSection();
+  renderWritingSection();
+})();
+</script>
+</body>
+</html>

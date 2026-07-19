@@ -317,6 +317,8 @@
     var header = el('<header class="bar"><div class="inner"></div></header>');
     var inner = header.querySelector(".inner");
     var crumbs = el('<div class="crumbs"></div>');
+    crumbs.appendChild(el('<a href="index.html">CU-TEP</a>'));
+    crumbs.appendChild(document.createTextNode(" / "));
     crumbs.appendChild(el('<a href="#/">Practice Test</a>'));
     if (route.formId){
       var form = getForm(route.formId);
@@ -332,6 +334,7 @@
     inner.appendChild(crumbs);
     inner.appendChild(el('<div class="spacer"></div>'));
     inner.appendChild(el('<a class="guide-link" href="cu-tep-guide.html">Tips &amp; Tricks →</a>'));
+    inner.appendChild(el('<a class="guide-link" href="content.html">เนื้อหา →</a>'));
     return header;
   }
 
