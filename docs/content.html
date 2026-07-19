@@ -254,13 +254,20 @@
   function renderReadingSection(){
     var wrap = document.getElementById("reading-section");
     var questions = (DATA.reading && DATA.reading.questions) || [];
+    var overviewHtml = DATA.reading && DATA.reading.overviewHtml;
     wrap.appendChild(el(
       '<div class="section-head" id="reading"><span class="part-badge">01</span><h2 class="part-title">Reading</h2></div>'
     ));
     wrap.appendChild(el('<p class="part-count">' + questions.length + ' ข้อ</p>'));
 
+    if (overviewHtml){
+      var overviewBox = el('<div class="ref"></div>');
+      overviewBox.innerHTML = overviewHtml;
+      wrap.appendChild(overviewBox);
+    }
+
     if (questions.length === 0){
-      wrap.appendChild(renderEmpty("ยังไม่มีเนื้อหา Reading — รอเพิ่มเติม"));
+      wrap.appendChild(renderEmpty("ยังไม่มีบทความ/โจทย์ Reading — รอเพิ่มเติม"));
       return;
     }
 
