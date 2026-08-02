@@ -30,6 +30,12 @@
   listening.audioParts: [{ id, label, src }]
       one entry per recording (normally 3: Part 1/2/3).
 
+  listening.tapescript: string (optional)
+      full transcript text for the recording(s), shown in a collapsible
+      "Tapescript" panel under the audio player on both the quiz and
+      results pages. Paste transcript text directly into this field in
+      your editor.
+
   listening.questions / reading.questions: [{
       id, partId (listening: id of the audioPart, or null if unmatched yet),
       type: (reading only) "cloze" | "comprehension",
@@ -2499,7 +2505,10 @@ window.EXAM_DATA = {
       label: "Form 2",
       listening: {
         expectedCount: 30,
-        audioParts: [],
+        audioParts: [
+          { id: "F2-L1", label: "Part 1 — Short Conversations", src: "mp3/F2.3.mp3" },
+        ],
+        tapescript: "", // paste the Form 2 listening tapescript text here
         questions: [
           {
             id: "f2-lis-1",
@@ -3352,9 +3361,7 @@ window.EXAM_DATA = {
       listening: {
         expectedCount: 30,
         audioParts: [
-          { id: "F3-L1", label: "Part 1 — Short Conversations", src: "mp3/F1.3.mp3" },
-          { id: "F3-L2", label: "Part 2 — Longer Conversations", src: "mp3/F2.3.mp3" },
-          { id: "F3-L3", label: "Part 3 — Monologues / Short Talks", src: "mp3/F3.3.mp3" },
+          { id: "F3-L1", label: "Part 1 — Short Conversations", src: "mp3/F3.3.mp3" },
         ],
         // Sample questions below are NOT yet matched to timestamps in the
         // recordings above — they are placeholders to demo the UI only.
@@ -3611,7 +3618,13 @@ window.EXAM_DATA = {
     {
       id: "form4",
       label: "Form 4",
-      listening: { expectedCount: 30, audioParts: [], questions: [] },
+      listening: {
+        expectedCount: 30,
+        audioParts: [
+          { id: "F4-L1", label: "Part 1 — Short Conversations", src: "mp3/F4.3.mp3" },
+        ],
+        questions: [],
+      },
       reading: { expectedCount: 60, questions: [] },
       writing: { expectedCount: 30, questions: [] },
     },
