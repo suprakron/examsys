@@ -77,6 +77,159 @@ window.EXAM_DATA = {
                         "src": "mp3/F1.3.mp3"
                   }
             ],
+            "tapescript":
+              "FORM 1 — Listening Comprehension Test\n" +
+              "This is the Chulalongkorn University Listening Comprehension Test. The test consists of 3 parts. Each part of the test will be spoken only once. Listen carefully to what the speakers say. You may take notes if you wish. Then, the questions will be asked. For each question, there will be 4 choices: 1, 2, 3 and 4. The four choices are printed in your test booklet. Decide which choice is the best answer. Then, find the number of the question on your answer sheet and blacken the space that corresponds to the answer you have chosen.\n" +
+              "\n" +
+              "First, listen to the following example.\n" +
+              "\n" +
+              "You will hear:\n" +
+              "(Woman) There was a large crowd at the auction. You must have collected a lot of money for your fund raising.\n" +
+              "(Man) Not as much as we would have liked.\n" +
+              "(Narrator) What does the man mean?\n" +
+              "\n" +
+              "You will read:\n" +
+              "1. He didn't have much fun at the auction.\n" +
+              "2. A lot of people sold more things than he did.\n" +
+              "3. He didn't collect as much money as the woman.\n" +
+              "4. They didn't make as much money as they had hoped.\n" +
+              "\n" +
+              "The correct answer is Number 4, so you should blacken Number 4 on your answer sheet.\n" +
+              "\n" +
+              "PART I\n" +
+              "Directions: You will hear short conversations between two people. After each conversation, a question will be asked. You will hear the conversation only once, so you must listen carefully to what each speaker says. After you hear the conversation and the question, read the four choices and choose the one which best answers the question.\n" +
+              "\n" +
+              "Question 1.\n" +
+              "W: I really think our new project is going to be a big success!\n" +
+              "M: I wish I could share your enthusiasm.\n" +
+              "(Narrator) How does the man most likely feel?\n" +
+              "\n" +
+              "Question 2.\n" +
+              "M: How was your exchange program? Was it a good experience?\n" +
+              "W: I'd do it again in a heartbeat!\n" +
+              "(Narrator) What can be INFERRED from the conversation?\n" +
+              "\n" +
+              "Question 3.\n" +
+              "W: OK, I've stitched up the cut. Make sure to keep the area dry. You should take antibiotics for a few days to make sure it doesn't get infected.\n" +
+              "M: From now on I will be more careful with kitchen knives. Umm...when can you remove the stitches?\n" +
+              "(Narrator) Where are the two speakers?\n" +
+              "\n" +
+              "Question 4.\n" +
+              "M: When is Michael going to be here? I told everyone to be here at 7.\n" +
+              "W: Well, he usually leaves work at 5 p.m., and it's about 30 minutes' drive from there. He said he'd make a quick stop to get a bottle of wine first though. Anyhow, he'll be here before everyone arrives for sure.\n" +
+              "(Narrator) What time can they most likely expect to see Michael?\n" +
+              "\n" +
+              "Question 5.\n" +
+              "M: What should we have for dinner—Thai, Japanese, Italian, or steak?\n" +
+              "W: Another steak dinner, and I'll go 'moo'.\n" +
+              "(Narrator) What does the woman imply?\n" +
+              "\n" +
+              "Question 6.\n" +
+              "W: I want to make a birthday cake for Pam, but we've run out of butter.\n" +
+              "M: If you can wait, I'll pick some up on the way back home from work tonight.\n" +
+              "(Narrator) What is the man most likely going to do next?\n" +
+              "\n" +
+              "Question 7.\n" +
+              "M: I just finished putting together the project report, and now I need to prepare slides for the presentation. I can do simple slides, but I want to do something more fancy.\n" +
+              "W: Peter is the one you should talk to.\n" +
+              "(Narrator) What does the woman mean?\n" +
+              "\n" +
+              "Question 8.\n" +
+              "W: I ran into your old buddy Kenneth. He runs a restaurant near my office.\n" +
+              "M: The last time I saw him was when we played against each other in a college basketball game. He broke his ankle and had to be taken to the hospital.\n" +
+              "(Narrator) When was the last time the man saw Kenneth?\n" +
+              "\n" +
+              "Question 9.\n" +
+              "W: John's throwing a party at his house tonight. Do you want to come and wish him happy birthday?\n" +
+              "M: I have an assignment which is due tomorrow.\n" +
+              "(Narrator) What is the man most likely going to do tonight?\n" +
+              "\n" +
+              "Question 10.\n" +
+              "M: Would you like to go trekking in the mountains? Think about it—fresh air, wild animals, the peace and quiet...\n" +
+              "W: I'm afraid that's not my cup of tea.\n" +
+              "(Narrator) What does the woman mean?\n" +
+              "\n" +
+              "Question 11.\n" +
+              "W: I have a lot of old books and magazines that I want to get rid of.\n" +
+              "M: The local library would appreciate them, I think.\n" +
+              "(Narrator) What is the man implying?\n" +
+              "\n" +
+              "Question 12.\n" +
+              "W: Hey, isn't your flight at 11? You should get going—it's already half past nine.\n" +
+              "M: It's in the evening.\n" +
+              "(Narrator) What time is the man's flight?\n" +
+              "\n" +
+              "Question 13.\n" +
+              "M: How was the film you saw yesterday—Child's Play, right? Was it fun?\n" +
+              "W: I actually thought it was a film for kids, but as it turned out it was about an evil toy, and it's very, very bloody.\n" +
+              "(Narrator) What kind of film is it?\n" +
+              "\n" +
+              "Question 14.\n" +
+              "W: The faucet in the kitchen's dripping and the water pressure is so weak I can't water the lawn.\n" +
+              "M: You'd better call Mr. Larson then.\n" +
+              "(Narrator) Who is Mr. Larson most likely to be?\n" +
+              "\n" +
+              "Question 15.\n" +
+              "W: Do you know anything about the merger?\n" +
+              "M: We're clearly being kept in the dark about it.\n" +
+              "(Narrator) How much does the man know about the merger?\n" +
+              "\n" +
+              "PART II\n" +
+              "Directions: In this part, you will hear longer conversations between two people. After each conversation, some questions will be asked. You will hear the conversations and the questions only once, so listen carefully to what is said. After you hear the question, read the four choices and choose the one which best answers the question.\n" +
+              "\n" +
+              "Conversation 1\n" +
+              "Woman: Hey, Barry. I'm afraid I can't make it to the opera tonight. Remember when I said Helen was flying in on Saturday? Well, she's actually arriving this evening. I'm going to go get her right now.\n" +
+              "Man: I'm not surprised. Your sister is always getting the dates of things wrong. I still remember last year when she showed up at the coffee shop to attend my birthday party, but she was two days late!\n" +
+              "Woman: Yeah, that's Helen. Our mother says I got the good memory in the family, while she got the good looks!\n" +
+              "Man: (laughs) Smart man. Anyway, let's go to the opera next week. I'll take you out to dinner afterwards. My treat. We can even go to that Italian restaurant you love.\n" +
+              "Woman: Great. I'll get their most expensive pasta! (laughs) Anyway, tell Helen I said hello when you go pick her up.\n" +
+              "\n" +
+              "Question 16. What is the relationship between the woman and Helen?\n" +
+              "Question 17. What can be INFERRED about the woman?\n" +
+              "Question 18. Where will the woman likely go next?\n" +
+              "\n" +
+              "Conversation 2\n" +
+              "Woman: Excuse me, can you tell me which aisle I can find pink salt in?\n" +
+              "Man: Well, the salt and other seasonings like black pepper and five-spice powder are in aisle six, but unfortunately, we do not carry pink salt, ma'am. Aside from regular white salt, we have only black salt and celery salt.\n" +
+              "Woman: Oh no! What a shame. Well, the recipe I'm using recommended using pink salt, but it said it's all right to substitute some other salt in. Or I suppose I could put in some onion powder or black pepper. I'll go over to aisle six and pick some up.\n" +
+              "Man: Yes, ma'am. I'm sorry to have to tell you that we've just run out of black pepper today, though. We'll restock it tomorrow, however.\n" +
+              "Woman: Ah, I see. The decision is made for me, then, since there is only one thing left. I hope the seafood soup I'm making for my family will taste good with this addition.\n" +
+              "Man: I'm sure that will taste delicious, ma'am. Actually, my father adds five-spice powder to his. My entire family loves it. I'm sure your family will love yours too.\n" +
+              "\n" +
+              "Question 19. Where are the speakers?\n" +
+              "Question 20. What has the woman decided to add to her seafood soup?\n" +
+              "Question 21. What can be INFERRED about the woman's soup?\n" +
+              "\n" +
+              "Conversation 3\n" +
+              "Man: Hey, give me a moment to catch my breath! You keep hitting the ball at my head!\n" +
+              "Woman: I am not! You're just really bad at tennis. Maybe if you raised your racket once in a while and hit the ball instead of running away from it, you wouldn't be so exhausted!\n" +
+              "Man: That's not nice! This is only my third time playing this sport. Not all of us can be high school tennis champions like you!\n" +
+              "Woman: You don't see me complaining when you're better than me in badminton or swimming. Come on. Get up. I want to finish the game before the sun sets. We won't be able to see anything in the next five minutes. This court isn't very well-lit.\n" +
+              "Man: You know, maybe we should try a sport that neither of us is good at, so we're on equal footing. How about boxing?\n" +
+              "Woman: Well, I'm sorry to tell you this, but I was a boxing champion at university!\n" +
+              "\n" +
+              "Question 22. What are the speakers currently doing?\n" +
+              "Question 23. What can be INFERRED from the conversation?\n" +
+              "Question 24. How many times has the man played tennis?\n" +
+              "\n" +
+              "PART III\n" +
+              "Directions: In this part of the test, you will hear two talks. After each talk, you will be asked some questions. You will hear each talk and the questions only once, so listen carefully to what is said. After you hear each question, read the four choices and choose the one which best answers the question.\n" +
+              "\n" +
+              "Talk I\n" +
+              "One social media user's complaint about a restaurant in the Turkish capital city of Istanbul that does not allow children sparked a public debate on child-free restaurants. There were numerous messages of support for the woman, who said that the owners refused to let her child in the restaurant, claiming their establishment was not open to those fourteen years and younger. The young mother said she was embarrassed and upset by the ban, and many social media users voiced their objection at how the owners treated her and her child. However, there were an equal number of messages that supported the ban on children in restaurants. People who advocate child-free restaurants said that customers should be permitted to enjoy a nice meal free of noisy and disruptive children. Some social media users said that they would happily pay more money to eat their food in a restaurant with a quiet atmosphere. Opponents to child-free restaurants say children and their families have the same rights as others, and that this is a form of discrimination. While child-free restaurants have been successfully launched in various countries, including the United States and Germany, the concept is not actually allowed under Turkish law. Legal experts says Turkish hotels and restaurants cannot commit discrimination, and customers have a right to file complaints to relevant authorities, such as ministries and municipalities in charge of issuing permits to such businesses. Businesses that violate this law may face fines. According to the country's consumer protection laws, without a justifiable reason, a business cannot refuse to serve a customer.\n" +
+              "\n" +
+              "Question 25. According to the talk, what is the main reason people support child-free restaurants?\n" +
+              "Question 26. According to the talk, in which country has child-free restaurants been opened successfully?\n" +
+              "Question 27. What can be INFERRED from the talk?\n" +
+              "\n" +
+              "Talk II\n" +
+              "If you are forgetful or make mistakes when in a hurry, a large-scale study in the United States found that meditation could help you to become less likely to make errors. The research tested how a form of meditation called \"open monitoring meditation\" altered brain activity in a way that suggests increased error recognition. The researchers were amazed to see how just one session of guided open monitoring meditation was able to help produce changes to brain activity in people who had never meditated previously. They discovered that just 20 minutes of this form of meditation was able to enhance the brain's ability to detect and pay attention to mistakes. According to the study's authors, open monitoring meditation differs from other forms of meditation because people are asked to focus awareness on their feelings, thoughts or sensations as they occur in their minds and bodies. Other forms of meditation have the person focus on a single object, commonly their breath, but in open monitoring meditation, people sit quietly and pay careful attention to the direction of their thoughts instead of looking at their surroundings or an object. The findings of the study also suggest that different forms of meditation can have different effects on the brain and thoughts, although there is currently a lack of research in this area.\n" +
+              "\n" +
+              "Question 28. This talk mainly discusses __________.\n" +
+              "Question 29. When people practice open monitoring meditation, what is focused on?\n" +
+              "Question 30. Based on this talk, who may benefit from open monitoring meditation?\n" +
+              "\n" +
+              "End of the Listening Test",
             "questions": [
                   {
                         "id": "f1-lis-1",
@@ -2508,16 +2661,75 @@ window.EXAM_DATA = {
         audioParts: [
           { id: "F2-L1", label: "Part 1 — Short Conversations", src: "mp3/F2.3.mp3" },
         ],
-        tapescript: "", // paste the Form 2 listening tapescript text here
+        tapescript:
+          "FORM 2 — Listening Comprehension Test\n" +
+          "This is the Chulalongkorn University Listening Comprehension Test. The test consists of 3 parts. Each part of the test will be spoken only once. Listen carefully to what the speakers say. You may take notes if you wish. Then, the questions will be asked. For each question, there will be 4 choices: 1, 2, 3 and 4 — choices are printed in your test booklet. Decide which choice is the best answer. Then, find the number of the question on your answer sheet and blacken the space that corresponds to the answer you have chosen.\n" +
+          "\n" +
+          "First, listen to the following example.\n" +
+          "\n" +
+          "(Woman) There was a large crowd at the auction. You must have collected a lot of money for your fund raising.\n" +
+          "(Man) Not as much as we would have liked.\n" +
+          "(Narrator) What does the man mean?\n" +
+          "\n" +
+          "You will read:\n" +
+          "1. He didn't have much fun at the auction.\n" +
+          "2. A lot of people sold more things than he did.\n" +
+          "3. He didn't collect as much money as the woman.\n" +
+          "4. They didn't make as much money as they had hoped.\n" +
+          "\n" +
+          "The correct answer is Number 4, so you should blacken Number 4 on your answer sheet.\n" +
+          "\n" +
+          "PART I\n" +
+          "Directions: You will hear short dialogues between two people. After each dialogue, a question will be asked. You will hear each dialogue only once. After hearing the dialogue and the question, select your answer from the four choices.\n" +
+          "\n" +
+          "Question 1.\n" +
+          "W: Do you want to go trekking this weekend?\n" +
+          "M: I'm so worn out. I've been doing overtime the whole week this term. Why don't you ask Kylie?\n" +
+          "(Narrator) What is the man most likely going to do this weekend?\n" +
+          "\n" +
+          "Question 2.\n" +
+          "M: Hey, shouldn't you be at the library working on your assignment?\n" +
+          "W: Why should I? It's not due until the end of the week.\n" +
+          "\n" +
+          "Question 3.\n" +
+          "W: Steve, I have some questions about the project. Do you have a few minutes?\n" +
+          "M: Yolanda's the person to talk to. She has been involved in it from the get-go.\n" +
+          "(Narrator) Why does the man suggest the woman talk to Yolanda?\n" +
+          "\n" +
+          "Question 4.\n" +
+          "M: Hi there! I don't see you around much these days. Let's have dinner sometime next week.\n" +
+          "W: I'd love to, but I have English classes Monday through Wednesday and work part-time at a restaurant Friday to Sunday.\n" +
+          "(Narrator) What day is the woman free?\n" +
+          "\n" +
+          "Question 5.\n" +
+          "W: There's so much to do before the product launch. I'm only halfway done with the press release and haven't started emailing invitations to the guests yet.\n" +
+          "M: Don't worry, I'm on it.\n" +
+          "(Narrator) What is the woman most likely going to do next?\n" +
+          "\n" +
+          "Question 6.\n" +
+          "W: Thanks, I guess I'm in the right profession, eh?\n" +
+          "M: Those pictures of wildflowers are truly beautiful. You captured the light so well.\n" +
+          "(Narrator) What is most likely the man's job?\n" +
+          "\n" +
+          "Question 7.\n" +
+          "M: Where's Jenny? She should have been here ages ago. She's irresponsible.\n" +
+          "W: You are one to talk!\n" +
+          "(Narrator) What does the woman mean?\n" +
+          "\n" +
+          "Question 8.\n" +
+          "W: Excuse me, do you offer discounts for purchases of 10 items or more?\n" +
+          "M: We give a 15% discount for bulk purchases of 20 items or more.\n" +
+          "(Narrator) How many items does the woman need to buy to get a discount?", // Q9-30 to be added as pages are transcribed
         questions: [
           {
             id: "f2-lis-1",
             partId: null,
             passageTitle: "Part I",
+            passage: "Directions: You will hear short conversations between two people. After each conversation, a question will be asked. You will hear the conversation only once, so you must listen carefully to what each speaker says. After you hear the conversation and the question, read the four choices and choose the one which best answers the question.",
             prompt: "",
             choices: ["Go trekking", "Do overtime", "Rest at home", "Ask Kylie for help"],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 ฝ่ายหญิงชวนฝ่ายชายไปเดินป่าสัปดาห์นี้ แต่ฝ่ายชายตอบว่าสัปดาห์นี้เหนื่อยมากเพราะทำงานล่วงเวลาตลอด จึงอนุมานได้ว่าฝ่ายชายน่าจะพักผ่อนอยู่ที่บ้าน",
           },
           {
             id: "f2-lis-2",
@@ -2526,7 +2738,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Lazy", "Calm", "Curious", "Visionary"],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 ฝ่ายชายถามว่าไม่ทำงานที่ต้องส่งครูใช่ไหม แต่ฝ่ายหญิงตอบว่ากำลังพักสัปดาห์ จึงอนุมานได้ว่าเธอมีนิสัยเกียจคร้าน",
           },
           {
             id: "f2-lis-3",
@@ -2540,7 +2752,7 @@ window.EXAM_DATA = {
               "Yolinda knows the project well.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายหญิงมีคำถามเกี่ยวกับโครงการและถามว่าฝ่ายชายพอจะมีคำตอบไหม เขาตอบว่าควรไปคุยกับโยลินดาเพราะเธอจับโครงการนี้มาตั้งแต่เริ่มต้น (get-go)",
           },
           {
             id: "f2-lis-4",
@@ -2549,7 +2761,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Tuesday", "Saturday", "Thursday", "Wednesday"],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 ฝ่ายหญิงเรียนภาษาอังกฤษภาคค่ำวันจันทร์ถึงวันพุธและทำงานที่ร้านอาหารวันศุกร์ถึงวันอาทิตย์ เธอจึงว่างเพียงวันพฤหัสบดี",
           },
           {
             id: "f2-lis-5",
@@ -2563,7 +2775,7 @@ window.EXAM_DATA = {
               "Email invitations to the guests",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายหญิงบ่นว่ามีงานยุ่งมาก ยังไม่ได้ส่งอีเมล์เชิญแขกเลย เดี๋ยวเธอจะจัดการเรื่องนั้นให้ (ส่งอีเมล์เชิญแขก)",
           },
           {
             id: "f2-lis-6",
@@ -2572,7 +2784,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["A florist", "A sculpture", "An electrician", "A photographer"],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายชมภาพถ่ายดอกไม้ป่าว่าสวยงามและจัดแสงเก่ง ฝ่ายหญิงบอกว่าถ้าเช่นนั้นเขาน่าจะเลือกอาชีพถูกแล้ว หมายความว่าเขาน่าจะเป็นช่างภาพ",
           },
           {
             id: "f2-lis-7",
@@ -2586,7 +2798,7 @@ window.EXAM_DATA = {
               "The man should talk to Jenny.",
             ],
             answer: 0,
-            explanation: "",
+            explanation: 'คำตอบที่ถูกคือข้อ 1 ฝ่ายชายบ่นว่าเจนนี่มาสายและไม่มีความรับผิดชอบ แต่ฝ่ายหญิงพูดว่า "You are one to talk!" หมายความว่าฝ่ายชายเองก็ไม่ต่างกัน (มาสายเช่นกัน)',
           },
           {
             id: "f2-lis-8",
@@ -2595,7 +2807,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["10", "15", "20", "50"],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 ฝ่ายชายถามว่าถ้าซื้อ 10 ชิ้นจะได้รับส่วนลดหรือไม่ ฝ่ายหญิงตอบว่าถ้าซื้อ 20 ชิ้นจะได้ส่วนลด 15%",
           },
           {
             id: "f2-lis-9",
@@ -2604,7 +2816,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Cold", "Rainy", "Sunny", "Cloudy"],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 2 ฝ่ายหญิงบ่นว่าท้องฟ้าไม่มีเมฆสักก้อน แต่เธอก็อุตส่าห์ใส่เสื้อกันฝนและสวมรองเท้าบูท ขณะที่ฝ่ายชายเตรียมร่มมาด้วย หมายความว่าทั้งสองฟังพยากรณ์อากาศที่เตือนว่าฝนจะตก",
           },
           {
             id: "f2-lis-10",
@@ -2618,7 +2830,7 @@ window.EXAM_DATA = {
               "She hasn't yet been chosen as the winner.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายแสดงความยินดีกับฝ่ายหญิงที่ได้รับแจ้งว่าจะได้รับตำแหน่งรางวัลผู้จัดการฝ่ายขายแห่งปี แต่ฝ่ายหญิงตอบว่าเธอยังไม่ได้รับเลือกให้เป็นผู้ชนะรางวัล",
           },
           {
             id: "f2-lis-11",
@@ -2632,7 +2844,7 @@ window.EXAM_DATA = {
               "It lacks information about her internship experience.",
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 ฝ่ายชายบอกว่าใน resume ของฝ่ายหญิงมีรายละเอียดเกี่ยวกับคอร์สเรียนและกิจกรรมฝึกงาน แต่ไม่มีข้อมูลเกี่ยวกับกิจกรรมเสริมหลักสูตร (extracurricular activities)",
           },
           {
             id: "f2-lis-12",
@@ -2646,7 +2858,7 @@ window.EXAM_DATA = {
               "The car was very expensive.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายบอกว่า \"It costs me an arm and a leg.\" หมายถึงเขาต้องจ่ายค่ารถราคาแพงมาก สำนวน cost an arm and a leg มีความหมายว่าแพงมาก",
           },
           {
             id: "f2-lis-13",
@@ -2660,7 +2872,7 @@ window.EXAM_DATA = {
               "The man doesn't want to eat what Lucy cooked.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายกระซิบว่าอย่าพูดดังเพราะลูซี่ทำอาหารอยู่ในครัว และถามว่าเขาควรสั่งพิซซ่าไหม จึงอนุมานได้ว่าเขาไม่อยากรับประทานอาหารที่ลูซี่ทำ",
           },
           {
             id: "f2-lis-14",
@@ -2674,7 +2886,7 @@ window.EXAM_DATA = {
               "The woman should contact another department.",
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 ฝ่ายชายพูดว่า \"It's not my department.\" ซึ่งเป็นสำนวนหมายความว่าไม่ใช่เรื่องที่เขาถนัด เมื่อฝ่ายหญิงขอให้เขาช่วยตรวจสอบเสียงดังในรถ",
           },
           {
             id: "f2-lis-15",
@@ -2683,16 +2895,17 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["A passenger", "A pedestrian", "An eye doctor", "A driving school instructor"],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายหญิงเตือนฝ่ายชายให้ลดความเร็วเพราะมีทางม้าลายข้างหน้า และบอกว่าถ้าเขาช่วยไม่ได้เธอจะไม่ได้รับใบอนุญาตขับขี่ เธอจึงน่าจะเป็นครูสอนขับรถ",
           },
           {
             id: "f2-lis-16",
             partId: null,
             passageTitle: "Part II — Conversation 1",
+            passage: "Directions: In this part, you will hear longer conversations between two people. After each conversation, some questions will be asked. You will hear the conversations and the questions only once, so listen carefully to what is said. After you hear the question, read the four choices and choose the one which best answers the question.",
             prompt: "",
             choices: ["Water grass", "Clean his car", "Water flowers", "Clean his engine"],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายกล่าวว่าจะ \"wash the engine of my car\" เมื่อฝ่ายหญิงถามว่าจะใช้สายยางทำอะไร",
           },
           {
             id: "f2-lis-17",
@@ -2706,7 +2919,7 @@ window.EXAM_DATA = {
               "They are completely natural.",
             ],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 ฝ่ายหญิงกล่าวว่าผลิตภัณฑ์ทำความสะอาดเครื่องยนต์ (degreaser) ที่ใช้นั้น a little pricey เช่นเดียวกับฝ่ายชายที่บอกว่า costs quite a bit",
           },
           {
             id: "f2-lis-18",
@@ -2720,7 +2933,7 @@ window.EXAM_DATA = {
               "He cares about the environment.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายชายกล่าวว่าเขาใช้ degreaser ที่ไม่ทำลายสิ่งแวดล้อม",
           },
           {
             id: "f2-lis-19",
@@ -2729,7 +2942,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["The post office", "A travel agency", "A clothing shop", "The supermarket"],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 ฝ่ายหญิงกล่าวว่าจะส่งกล่องไปต่างประเทศและมีการพูดถึงการติดแสตมป์",
           },
           {
             id: "f2-lis-20",
@@ -2738,7 +2951,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Hats", "Pants", "Gloves", "Scarves"],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 ฝ่ายหญิงบอกว่าในกล่องมี pants, socks, gloves และ hats จึงหมายความว่าไม่มี scarves อยู่ในกล่อง",
           },
           {
             id: "f2-lis-21",
@@ -2752,7 +2965,7 @@ window.EXAM_DATA = {
               "She bought the scarf she is wearing.",
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 She bought the scarf she is wearing เธอไม่ได้เป็นคนถักผ้าพันคอเอง",
           },
           {
             id: "f2-lis-22",
@@ -2761,7 +2974,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Mother and son", "Uncle and niece", "Brother and sister", "Husband and wife"],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 Mother and son ฝ่ายหญิงพูดกับฝ่ายชายว่า \"I did not raise you this way.\" หมายความว่าแม่ไม่ได้เลี้ยงเธอมาแบบนี้",
           },
           {
             id: "f2-lis-23",
@@ -2770,7 +2983,7 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["Tennis", "Soccer", "Baseball", "Basketball"],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 4 Basketball เมื่อฝ่ายหญิงบอกฝ่ายชายว่าห้ามใส่ basketball shorts ฝ่ายชายแย้งว่าทำไมเขาจะใส่กางเกงขาสั้นสำหรับเล่นบาสเกตบอลไม่ได้ ซึ่งคำว่า ones ในที่นี้หมายถึง shorts",
           },
           {
             id: "f2-lis-24",
@@ -2779,12 +2992,13 @@ window.EXAM_DATA = {
             prompt: "",
             choices: ["A wedding", "A graduation", "A sports game", "A birthday party"],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 บทสนทนากล่าวถึงคนที่กำลัง getting married และฝ่ายชายถกกันเรื่องเสื้อผ้าที่จะสวมไปงาน formal event ซึ่งท้ายบทสนทนาระบุว่าเป็นงานแต่งงาน",
           },
           {
             id: "f2-lis-25",
             partId: null,
             passageTitle: "Part III — Talk I",
+            passage: "Directions: In this part of the test, you will hear two talks. After each talk, you will be asked some questions. You will hear each talk and the questions only once, so listen carefully to what is said. After you hear each question, read the four choices and choose the one which best answers the question.",
             prompt: "",
             choices: [
               "How avocados aid eye function",
@@ -2793,7 +3007,7 @@ window.EXAM_DATA = {
               "Reducing eye inflammation with avocados",
             ],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 How avocados aid eye function บทพูดนี้เกี่ยวกับงานวิจัยที่มุ่งดูว่าการรับประทานอะโวคาโดมีผลต่อการทำงานของสายตาอย่างไร โดยกล่าวว่า \"A study found that eating one whole avocado a day helps improve eye function in healthy adults.\"",
           },
           {
             id: "f2-lis-26",
@@ -2807,7 +3021,7 @@ window.EXAM_DATA = {
               "They could choose to eat avocados, potatoes, or chickpeas.",
             ],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 They ate one avocado each day for half a year ในบทพูดกล่าวว่า \"They were asked to eat one whole avocado daily for a period of six months.\" ซึ่ง they ในที่นี้คือผู้เข้าร่วมงานวิจัย",
           },
           {
             id: "f2-lis-27",
@@ -2821,7 +3035,7 @@ window.EXAM_DATA = {
               "improve digestion, immunity, and concentration",
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 3 can increase the amount of lutein in the eyes ผลวิจัยพบว่าตาของกลุ่มทดลองมีลูทีนมากกว่าเดิม 25%",
           },
           {
             id: "f2-lis-28",
@@ -2835,7 +3049,7 @@ window.EXAM_DATA = {
               "People who do not leash their dogs",
             ],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 Dog owners in Korea บทพูดนี้เกี่ยวกับกฎหมายใหม่ที่เจ้าของสุนัขทุกคนในเกาหลีต้องปฏิบัติตาม",
           },
           {
             id: "f2-lis-29",
@@ -2849,7 +3063,7 @@ window.EXAM_DATA = {
               "keep their dogs on a leash that is shorter than two meters",
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 2 attend safety education classes for six months เจ้าของสุนัขที่ดุร้ายต้อง take three hours of safety education each year หมายถึงเข้ารับการอบรมเรื่องความปลอดภัยปีละ 3 ชั่วโมง",
           },
           {
             id: "f2-lis-30",
@@ -2863,7 +3077,7 @@ window.EXAM_DATA = {
               "They were issued by a different ministry.",
             ],
             answer: 0,
-            explanation: "",
+            explanation: "คำตอบที่ถูกคือข้อ 1 They are clearer กฎเดิม lack clarity หรือขาดความชัดเจน",
           },
         ],
       },
@@ -3363,6 +3577,160 @@ window.EXAM_DATA = {
         audioParts: [
           { id: "F3-L1", label: "Part 1 — Short Conversations", src: "mp3/F3.3.mp3" },
         ],
+        tapescript:
+          "FORM 3 — Listening Comprehension Test\n" +
+          "This is the Chulalongkorn University Listening Comprehension Test. The test consists of 3 parts. Each part of the test will be spoken only once. Listen carefully to what the speakers say. You may take notes if you wish. Then, the questions will be asked. For each question, there will be 4 choices: 1, 2, 3 and 4. The four choices are printed in your test booklet. Decide which choice is the best answer. Then, find the number of the question on your answer sheet and blacken the space that corresponds to the answer you have chosen.\n" +
+          "\n" +
+          "First, listen to the following example.\n" +
+          "\n" +
+          "You will hear:\n" +
+          "(Woman) There was a large crowd at the auction. You must have collected a lot of money for your fund raising.\n" +
+          "(Man) Not as much as we would have liked.\n" +
+          "(Narrator) What does the man mean?\n" +
+          "\n" +
+          "You will read:\n" +
+          "1. He didn't have much fun at the auction.\n" +
+          "2. A lot of people sold more things than he did.\n" +
+          "3. He didn't collect as much money as the woman.\n" +
+          "4. They didn't make as much money as they had hoped.\n" +
+          "\n" +
+          "The correct answer is Number 4, so you should blacken Number 4 on your answer sheet.\n" +
+          "\n" +
+          "PART I\n" +
+          "Directions: You will hear short conversations between two people. After each conversation, a question will be asked. You will hear the conversation only once, so you must listen carefully to what each speaker says. After you hear the conversation and the question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Question 1.\n" +
+          "W: Sheila wants to start a business, and she asked me to be her partner.\n" +
+          "M: If I were you, I'd think twice before agreeing to that.\n" +
+          "(Narrator) What does the man most likely mean?\n" +
+          "\n" +
+          "Question 2.\n" +
+          "M: This is the best Italian restaurant in the city.\n" +
+          "W: I beg to differ.\n" +
+          "(Narrator) What does the woman mean?\n" +
+          "\n" +
+          "Question 3.\n" +
+          "W: I wish there were 40 hours in a day. I don't seem to get anything done!\n" +
+          "M: Hey, you should really take it easy.\n" +
+          "(Narrator) What does the man mean?\n" +
+          "\n" +
+          "Question 4.\n" +
+          "M: Peter's not at his desk today. Do you know where I can find him?\n" +
+          "W: Oh. He's in charge of the exhibition, so he'll be at the venue until the end of the week getting things ready for the event this weekend. If it's something urgent, you can find him there or just wait till he comes in next week.\n" +
+          "(Narrator) What day will Peter be at the office?\n" +
+          "\n" +
+          "Question 5.\n" +
+          "M: I hate to ask, but a new game console just came out that I really want. I'm 10,000 baht short though.\n" +
+          "W: You're asking me? Do you think I have that kind of money lying around?\n" +
+          "(Narrator) What does the woman mean?\n" +
+          "\n" +
+          "Question 6.\n" +
+          "W: Did you hear that Global Airways wants to offer shares to the public?\n" +
+          "M: I heard. I don't suggest buying any though. Apparently the company has been in the red for some time now.\n" +
+          "(Narrator) What does the man say about the company?\n" +
+          "\n" +
+          "Question 7.\n" +
+          "M: Umm...I'm a size 44 usually, but I think it's a bit tight around the torso.\n" +
+          "W: Let me see if we still have a bigger size in stock.\n" +
+          "(Narrator) Who is the woman most likely to be?\n" +
+          "\n" +
+          "Question 8.\n" +
+          "W: This skin cream has good reviews, but can I really believe these online testimonials?\n" +
+          "M: My friend Ellen swears by it.\n" +
+          "(Narrator) What does the man say about Ellen?\n" +
+          "\n" +
+          "Question 9.\n" +
+          "W: Have you seen my reading glasses? Maybe I left them at work.\n" +
+          "M: Weren't you wearing them while reading the paper at breakfast?\n" +
+          "(Narrator) Where should the woman look for her glasses?\n" +
+          "\n" +
+          "Question 10.\n" +
+          "M: Hey, what do you say we try bungee-jumping? They say it gives such an adrenaline rush!\n" +
+          "W: You go ahead. I think you're out of your mind.\n" +
+          "(Narrator) How would the woman most likely describe the man?\n" +
+          "\n" +
+          "Question 11.\n" +
+          "W: So, John, how do you find living in a dormitory? It must be a big change from when you lived with your family. For me, the biggest change is having to do my own laundry and cooking. I really hate that.\n" +
+          "M: I don't mind that, but I do find it very hard to get used to having a roommate.\n" +
+          "(Narrator) How does the man feel about living in a dormitory?\n" +
+          "\n" +
+          "Question 12.\n" +
+          "W: Now that everyone's here, let's get the meeting started. The agenda and details about the exhibition venues are in the folder right in front of you. I know you are all very busy, so let's finish this meeting by 3 p.m. Ken, could you take the minutes?\n" +
+          "M: Of course.\n" +
+          "(Narrator) Who most likely is Ken?\n" +
+          "\n" +
+          "Question 13.\n" +
+          "W: Excuse me, who do I talk to if I want to book a meeting room?\n" +
+          "M: That'll be Sarah, but she's not at her desk right now. If you leave your contact number, I'll tell her to get back to you.\n" +
+          "(Narrator) What is the man most likely going to do next?\n" +
+          "\n" +
+          "Question 14.\n" +
+          "W: Finally, we've arrived! Wow...the beach looks so nice! What shall we do first—go for a stroll? Or do you fancy a swim?\n" +
+          "M: It's been a long drive. Let's check out the restaurant first.\n" +
+          "(Narrator) What can be INFERRED about the man?\n" +
+          "\n" +
+          "Question 15.\n" +
+          "W: Excuse me, is there another seat I can move to? The man next to me is snoring and I can't sleep.\n" +
+          "M: I'm really sorry, but the flight is fully booked. I'm afraid there's nothing I can do.\n" +
+          "(Narrator) Where are the two speakers?\n" +
+          "\n" +
+          "PART II\n" +
+          "Directions: In this part, you will hear longer conversations between two people. After each conversation, some questions will be asked. You will hear the conversations and the questions only once, so listen carefully to what is said. After you hear the question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Conversation 1\n" +
+          "Man: All right, ma'am, here is the antifungal medicine for your skin infection.\n" +
+          "Woman: Ah yes, thank you. Is it a cream or a gel?\n" +
+          "Man: It's a gel, ma'am. Would you prefer a cream? This medication is also available as a pill or even an injection although. You'll have to go back to the hospital for that one though.\n" +
+          "Woman: No, a gel is fine. Last month, when I had a similar skin infection, my doctor prescribed the cream, and I hated it. It smelled horrible.\n" +
+          "Man: Our customers do tell us the gel has a more pleasant scent than the cream. Now, will you be paying in cash or with a credit card?\n" +
+          "Woman: Cash. My husband borrowed my credit card and hasn't given it back to me yet!\n" +
+          "\n" +
+          "Question 16. Where are the speakers?\n" +
+          "Question 17. What is TRUE about the woman?\n" +
+          "Question 18. Which form of medicine can the man NOT offer the woman?\n" +
+          "\n" +
+          "Conversation 2\n" +
+          "Man: Hey, Celia, I need to ask you a big favor. Can you drive out to the airport and pick up Carina tomorrow?\n" +
+          "Woman: Sure I can, but I'm sure she'd prefer seeing her boyfriend instead of her sister first after six months in another country. I mean, I love her, but she must miss you more!\n" +
+          "Man: I hope so. I've really missed her, too, but I'm planning a huge surprise for her. I'll need that time to finish setting it up.\n" +
+          "Woman: Wait! Does this mean what I think it means? Should my parents and I get ready to attend a wedding?\n" +
+          "Man: Definitely! By this time next year, if things go well, Carina will be my wife, and you're going to be my sister-in-law.\n" +
+          "Woman: Of course, things will go well! I'm so excited that you're going to propose to Carina. She's going to be so happy tomorrow! I bet she won't even be jet lagged, which is great because I always get the worst jet lag when I come back from overseas.\n" +
+          "\n" +
+          "Question 19. What is the man planning to do?\n" +
+          "Question 20. What will be the man's future relationship with the woman?\n" +
+          "Question 21. What is NOT TRUE about the woman?\n" +
+          "\n" +
+          "Conversation 3\n" +
+          "Woman: Is this a new recipe? The pie tastes different.\n" +
+          "Man: Yes, I added a cup of strawberries along with the cloudberries, blackberries, and raspberries this time. What do you think? Do you like it?\n" +
+          "Woman: I do. It's a bit more sour than the original pie, but I like it. The color is also very pretty. The top of the pie looks like a rare jewel.\n" +
+          "Man: Thanks. Do you think Elizabeth will like it? I'm going to bake it for her birthday next week. She says she doesn't want a cake at her party this year.\n" +
+          "Woman: I've only met your girlfriend once. I highly doubt I am the best person to ask if she will like this pie. In my opinion, though, I bet she will. Who doesn't like eating pie? It's a great party food. And I bet that this will taste even better with some vanilla ice cream.\n" +
+          "Man: Good idea. I have some in the refrigerator. Let's try it.\n" +
+          "\n" +
+          "Question 22. What can be INFERRED about the woman?\n" +
+          "Question 23. All of the following berries are in the pie EXCEPT __________.\n" +
+          "Question 24. What will the speakers do next?\n" +
+          "\n" +
+          "PART III\n" +
+          "Directions: In this part of the test, you will hear two talks. After each talk, you will be asked some questions. You will hear each talk and the questions only once, so listen carefully to what is said. After you hear each question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Talk I\n" +
+          "For a long time, mushrooms have been a staple food during the autumn season in Japan. There is evidence of mushrooms being regularly consumed by the Japanese people as far back as 4,000 years ago. Mushrooms are highly-valued by the Japanese for their taste, smell, and nutritional properties, which include high concentrations of minerals like potassium and copper. In recent years, mushrooms have been found to reduce the effects of numerous diseases like obesity, which are mainly the result of unhealthy lifestyles. The humid Japanese climate supports over 5,000 varieties of mushrooms, but over 4,000 of these are poisonous or inedible. Aside from their health benefits, fresh and dried mushrooms are beneficial to Japanese cooking, as they add great flavor and fragrance to many Japanese dishes. Another benefit is that they can be used in a variety of dishes. For example, wood ear mushrooms are often put in soups, while butterscotch mushrooms and ram's head mushrooms are frequently seen in cold salads.\n" +
+          "\n" +
+          "Question 25. The people who would be most interested in this talk are people who are __________.\n" +
+          "Question 26. Which is NOT mentioned as a benefit of mushrooms?\n" +
+          "Question 27. Which mushrooms are often eaten in cold dishes?\n" +
+          "\n" +
+          "Talk II\n" +
+          "Parabens are a type of chemical preservative used by the skincare industry to increase how long products such as sunscreen, soaps, lotions, and creams can last and stay usable. However, beauty products for the hair and lips may contain parabens as well. These parabens can mimic the human hormone estrogen. This means that they may interfere with the hormone balance of people's bodies, even if the person is not female. The estrogenic activity of parabens has been shown to interfere with the way that people's body's hormones work. This is cause for concern because it could mean parabens influence reproductive activities, like pregnancy and menstruation. Research has also shown that parabens can be easily absorbed through the skin, and daily application of beauty products with parabens can cause them to accumulate in people's systems. Steady exposure to parabens may play a part in the growth of breast cancer cells in women. Some people may also experience an allergic reaction to parabens, resulting in redness or itchiness. Over the past decade, the side effects of long-term exposure to parabens have become a source of anxiety among consumers who want safe products. While nearly all beauty products use some kind of preservatives to make their products last longer, paraben-free cosmetics may be safer to use.\n" +
+          "\n" +
+          "Question 28. What is the main topic of this text?\n" +
+          "Question 29. Which product would be LEAST likely to contain parabens based on the talk?\n" +
+          "Question 30. Which of the following is NOT mentioned as being a possible effect of parabens?\n" +
+          "\n" +
+          "End of the Listening Test",
         // Sample questions below are NOT yet matched to timestamps in the
         // recordings above — they are placeholders to demo the UI only.
         questions: [
@@ -3623,6 +3991,158 @@ window.EXAM_DATA = {
         audioParts: [
           { id: "F4-L1", label: "Part 1 — Short Conversations", src: "mp3/F4.3.mp3" },
         ],
+        tapescript:
+          "FORM 4 — Listening Comprehension Test\n" +
+          "This is the Chulalongkorn University Listening Comprehension Test. The test consists of 3 parts. Each part of the test will be spoken only once. Listen carefully to what the speakers say. You may take notes if you wish. Then, the questions will be asked. For each question, there will be 4 choices: 1, 2, 3 and 4. The four choices are printed in your test booklet. Decide which choice is the best answer. Then, find the number of the question on your answer sheet and blacken the space that corresponds to the answer you have chosen.\n" +
+          "\n" +
+          "First, listen to the following example.\n" +
+          "\n" +
+          "You will hear:\n" +
+          "(Woman) There was a large crowd at the auction. You must have collected a lot of money for your fund raising.\n" +
+          "(Man) Not as much as we would have liked.\n" +
+          "(Narrator) What does the man mean?\n" +
+          "\n" +
+          "You will read:\n" +
+          "1. He didn't have much fun at the auction.\n" +
+          "2. A lot of people sold more things than he did.\n" +
+          "3. He didn't collect as much money as the woman.\n" +
+          "4. They didn't make as much money as they had hoped.\n" +
+          "\n" +
+          "The correct answer is Number 4, so you should blacken Number 4 on your answer sheet.\n" +
+          "\n" +
+          "PART I\n" +
+          "Directions: You will hear short conversations between two people. After each conversation, a question will be asked. You will hear the conversation only once, so you must listen carefully to what each speaker says. After you hear the conversation and the question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Question 1.\n" +
+          "W: Who's that man you were talking to? You two seem close.\n" +
+          "M: A colleague from work? Stephen? He lives next door.\n" +
+          "(Narrator) Who is Stephen?\n" +
+          "\n" +
+          "Question 2.\n" +
+          "M: Jenny, why is it that you never volunteer answers in class?\n" +
+          "W: I don't want to lose face if I give a wrong answer.\n" +
+          "(Narrator) What does the woman mean?\n" +
+          "\n" +
+          "Question 3.\n" +
+          "W: How come you've never invited me to your parties?\n" +
+          "M: (sounding surprised) Oh, do you want to come? We usually just drink and play cards all night. I didn't think it was your scene.\n" +
+          "(Narrator) Why hasn't the man invited the woman to his parties?\n" +
+          "\n" +
+          "Question 4.\n" +
+          "M: Did you have time to look at the report I put on your desk?\n" +
+          "W: It looks nicely done, and the data is accurate, but there may still be a few typos.\n" +
+          "(Narrator) What does the woman most likely want the man to do about the report?\n" +
+          "\n" +
+          "Question 5.\n" +
+          "W: Hmm... I'm afraid the cut is pretty deep. You'll need stitches. I'll also need you to come in to change the dressing every day for the first few days. You really ought to be more careful with knives.\n" +
+          "M: I shouldn't watch TV and chop at the same time, should I?\n" +
+          "(Narrator) Who is the woman most likely to be?\n" +
+          "\n" +
+          "Question 6.\n" +
+          "W: How was the match last night?\n" +
+          "M: I felt like my heart jumped out of my chest!\n" +
+          "(Narrator) How did the man most likely feel?\n" +
+          "\n" +
+          "Question 7.\n" +
+          "M: I need someone to be the emcee for this year's annual conference.\n" +
+          "W: What's wrong with Carla?\n" +
+          "(Narrator) What can be INFERRED from the conversation?\n" +
+          "\n" +
+          "Question 8.\n" +
+          "W: Every time I see Lisa she asks me when I plan to get married. I really don't think it's any of her business.\n" +
+          "M: I know. She always wants to know what's going on in other people's lives.\n" +
+          "(Narrator) How can Lisa be best described?\n" +
+          "\n" +
+          "Question 9.\n" +
+          "W: What do you want to do when you graduate?\n" +
+          "M: Well, I don't have anything specific in mind—anything that allows me to travel and meet people would be great.\n" +
+          "(Narrator) What kind of job would the man most likely enjoy?\n" +
+          "\n" +
+          "Question 10.\n" +
+          "M: Oh no, it's Thursday already! The report's due tomorrow, right?\n" +
+          "W: You haven't handed it in? It was due yesterday.\n" +
+          "(Narrator) What day is the due date for the report?\n" +
+          "\n" +
+          "Question 11.\n" +
+          "W: Congratulations! I heard your community playground proposal got approved by the committee.\n" +
+          "M: Thanks. I had to jump through all sorts of hoops to do it.\n" +
+          "(Narrator) What does the man mean?\n" +
+          "\n" +
+          "Question 12.\n" +
+          "W: Don't you just hate it when people make an appointment, confirm it, and then cancel at the last minute?\n" +
+          "M: Oh, I can't stand those people. Most of the time they don't even say they're sorry.\n" +
+          "(Narrator) How does the man most likely feel?\n" +
+          "\n" +
+          "Question 13.\n" +
+          "W: John, sorry to ask but something came up, and I won't be able to present the project to the client tomorrow morning. Will you do it? I have everything prepared already.\n" +
+          "M: I'll have to see if I can move things around. Can I let you know by the end of the day?\n" +
+          "(Narrator) What is the man most likely going to do next?\n" +
+          "\n" +
+          "Question 14.\n" +
+          "W: You're going to Pam's housewarming party this Saturday, right? I'm thinking of taking my car, but I'm really bad with directions. The party might be over by the time I find my way there.\n" +
+          "M: Why don't you just come pick me up then?\n" +
+          "(Narrator) What can be INFERRED from the conversation?\n" +
+          "\n" +
+          "Question 15.\n" +
+          "W: Good morning, sir. What can I get you? The Norwegian trout just came in. We also have salmon and Pacific cod.\n" +
+          "M: I'm having a barbecue so maybe 2 pounds of minced beef and some ribs.\n" +
+          "(Narrator) Where most likely are the two speakers?\n" +
+          "\n" +
+          "PART II\n" +
+          "Directions: In this part, you will hear longer conversations between two people. After each conversation, some questions will be asked. You will hear the conversations and the questions only once, so listen carefully to what is said. After you hear the question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Conversation 1\n" +
+          "Woman: Bridget asked if we are going to the party on Saturday. The restaurant needs a head count.\n" +
+          "Man: Party? What party? Her birthday was last month. We went to that Chinese restaurant that had that awful chicken dish. It tasted like soggy cardboard.\n" +
+          "Woman: It's not her birthday party. It's a party to celebrate her getting promoted. She just became a supervisor.\n" +
+          "Man: Oh, good for her! I know how long and hard she worked for it. I'm so happy she got promoted! Count me in, unless we are going back to that Chinese restaurant. I wouldn't mind another Chinese place, but I'll order some pork instead!\n" +
+          "Woman: It's a Lebanese place this time, and they don't have pork. Expect there to be chicken though. You know my sister loves chicken!\n" +
+          "\n" +
+          "Question 16. What is the party celebrating?\n" +
+          "Question 17. Where will the party be held?\n" +
+          "Question 18. What is NOT TRUE about the party?\n" +
+          "\n" +
+          "Conversation 2\n" +
+          "Woman: Did you take my car? I told you not to borrow it without my permission. Mom and dad taught us to respect other people's property. Don't you remember?\n" +
+          "Man: Don't lecture me. Dad told us that we can borrow each other's stuff for emergencies. He asked me to pick up some groceries after my Finnish class, and I didn't think I could transport everything with my motorcycle.\n" +
+          "Woman: You don't study Finnish on Tuesdays! Besides, I only see a dozen eggs and a bag of carrots. You couldn't fit these in the basket on your motorcycle?\n" +
+          "Man: I already put the cans of tuna fish and lettuce in the cupboard! And I left the durian in your car, though. It was too heavy for me to carry in by myself.\n" +
+          "Woman: I'm going to complain to mom about this. She's going to punish you for sure! I bet she'll make you wash my car.\n" +
+          "\n" +
+          "Question 19. What is the relationship between the speakers?\n" +
+          "Question 20. What is TRUE about the man?\n" +
+          "Question 21. Which of the following did the man purchase?\n" +
+          "\n" +
+          "Conversation 3\n" +
+          "Man: Good afternoon. Can I help you with anything?\n" +
+          "Woman: Yes, please. I need you to call me a taxi to Central Rama 3. I want to buy some bedsheets at that shopping mall.\n" +
+          "Man: Certainly, ma'am. Is there anything else I can assist you with?\n" +
+          "Woman: There is, actually. Could you tell the housekeeping service to bring up some fresh towels for my husband? Oh, and we'll need a wakeup call at 6 A.M. tomorrow. We want to get an early start. I'm dying to go sightseeing at the Grand Palace.\n" +
+          "Man: That won't be a problem, ma'am. Let me call you that taxi now. Would you like me to ring your room when it arrives?\n" +
+          "Woman: No, I'll pop downstairs and wait in the lobby. Don't forget to talk to the housekeeping service, alright?\n" +
+          "\n" +
+          "Question 22. Where are the speakers?\n" +
+          "Question 23. What do both the woman and her husband want?\n" +
+          "Question 24. What will the woman do next?\n" +
+          "\n" +
+          "PART III\n" +
+          "Directions: In this part of the test, you will hear two talks. After each talk, you will be asked some questions. You will hear each talk and the questions only once, so listen carefully to what is said. After you hear each question, read the four choices and choose the one which best answers the question.\n" +
+          "\n" +
+          "Talk I\n" +
+          "The sodium consumption of the average Japanese adult is approximately twice the amount that is recommended by the World Health Organization. While the body does need sodium to function, only a small amount is necessary. Consuming too much sodium can raise one's blood pressure, which is a major risk factor for both heart disease and stroke. The solution for Japanese adults' overconsumption of salt would then seem to be the reduction of the amount of salt used in cooking. However, since salt is a major component of traditional Japanese cuisine, decreasing the amount of salt in recipes negatively affects the taste of the food. Researchers at one Japanese food company have teamed up with a major university in Tokyo to develop a pair of electric chopsticks that could help solve this problem. Using the power of a device worn on the wrist, one of the chopsticks delivers a weak electrical charge that enhances the flavor of salt in reduced-salt foods. The amount of electricity used is very low and is not enough to affect the human body, but it can adjust the function of ions like sodium chloride in order to alter the perception of taste. This adjustment can be used to either make the taste of food stronger or milder. In taste tests, people on reduced sodium diets experienced greater flavor when using these chopsticks.\n" +
+          "\n" +
+          "Question 25. What does the talk mainly discuss?\n" +
+          "Question 26. All of the following are true about the chopsticks mentioned EXCEPT __________.\n" +
+          "Question 27. Based on the talk, which of the following people should use the chopsticks?\n" +
+          "\n" +
+          "Talk II\n" +
+          "On the morning of March 18, 1990, two men dressed as police officers parked their vehicle near the employee entrance of the Isabella Stewart Gardner Museum in Boston, Massachusetts, in the United States. The two men pushed the museum buzzer and said they were responding to a disturbance. They asked to enter the museum. Although it was against the rules, the security guard on duty permitted them through this side entrance. The two fake policemen asked the guard to step away from his watch desk. They then handcuffed and tied up both him and another security guard in the museum's basement. Eighty-one minutes later, the thieves left with thirteen works of art whose value totaled half a billion U.S. dollars. To this day, the crime remains unsolved. The museum offers a 10 million U.S. dollar reward for any information that would help lead to the safe return of the stolen art. These pieces include paintings by Dutch artists, an ancient Chinese bronze beaker, and charcoal sketches. However, a separate reward of 100,000 U.S. dollars is also being offered for information that leads to the return of a bronze eagle statue. If you have any information, you should contact the museum directly via email.\n" +
+          "\n" +
+          "Question 28. Who is this talk aimed at?\n" +
+          "Question 29. What mistake did the guard on duty at the Isabella Stewart Gardner Museum make?\n" +
+          "Question 30. For which artwork can someone receive a reward of 100,000 U.S. dollars?\n" +
+          "\n" +
+          "End of the Listening Test",
         questions: [],
       },
       reading: { expectedCount: 60, questions: [] },
