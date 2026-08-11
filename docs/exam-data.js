@@ -3082,7 +3082,877 @@ window.EXAM_DATA = {
         ],
       },
 
-      reading: { expectedCount: 60, questions: [] },
+      reading: {
+        expectedCount: 60,
+        // Cloze Test — Victim Blaming (Q31-45). Transcribed from Practice
+        // Test III photos. Choices for all 15 blanks are transcribed;
+        // answers/explanations are left blank (null / "") to be filled
+        // in later.
+        questions: [
+          {
+            id: "f2-rea-31",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (31).",
+            choices: ["apply", "confine", "integrate", "contribute"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 apply โดยปกติแล้ว คำว่า apply แปลว่า ประยุกต์ใช้ สมัคร หรือ ทา แต่ในบริบทนี้ ตรงกับความหมายใน Longman Dictionary ที่ว่า to have an effect on or to concern a particular person, group, or situation เราสามารถแปลประโยค \"Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can apply to cases of rape and sexual assault, but also to more mundane crimes\" ได้ว่าการกล่าวโทษเหยื่อมีหลายรูปแบบ บ่อยครั้งมักสังเกตเห็นได้ยากหรือเป็นสิ่งที่เราทำไปโดยไม่รู้ตัว การกล่าวโทษเหยื่อเป็นสิ่งที่เกิดขึ้นได้กับคดีข่มขืนหรือคดีล่วงละเมิดทางเพศ รวมถึงคดีทั่ว ๆ ไปด้วยเช่นกัน ตัวเลือกอื่น: 2. confine จำกัดขอบเขต 3. integrate รวมเข้าไว้ด้วยกัน 4. contribute ก่อให้เกิด มีส่วนช่วย ทำประโยชน์ให้",
+          },
+          {
+            id: "f2-rea-32",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (32).",
+            choices: ["yet", "then", "otherwise", "Meanwhile"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 then แปลว่า หลังจากนั้น ด้วยเหตุนั้น ใช้พูดถึงเหตุการณ์ที่เกิดขึ้นหลังอีกเหตุการณ์หนึ่ง ในที่นี้เป็นการพูดถึงเหตุการณ์ที่เหยื่อถูกล้วงกระเป๋า จากนั้นกลับถูกประณามหรือกล่าวโทษว่าเป็นเพราะเหยื่อเองที่ประมาทเลินเล่อและตัดสินใจใส่กระเป๋าสตางค์ของตัวเองไว้ในกระเป๋ากางเกงด้านหลัง",
+          },
+          {
+            id: "f2-rea-33",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (33).",
+            choices: ["audacity", "endurance", "recklessness", "procrastination"],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 recklessness แปลว่า ความประมาท การไม่คำนึงถึงผลที่จะตามมาเท่าที่ควร ซึ่งมีความหมายเข้ากับบริบทในประโยคนี้ ตัวเลือกอื่น: 1. audacity ความกล้า มุทะลุ 2. endurance ความอดทน 4. procrastination การผัดวันประกันพรุ่ง",
+          },
+          {
+            id: "f2-rea-34",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (34).",
+            choices: ["had done", "ought to do", "will have done", "could have done"],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 could have done เนื่องจากเป็นการกล่าวถึงเหตุการณ์ที่เกิดขึ้นในอดีต ประโยค \"Any time someone defaults to questioning what a victim could have done differently to prevent a crime, they are participating, to a certain degree, in the culture of victim blaming.\" มีความหมายว่าหากมีใครตั้งข้อสงสัยเกี่ยวกับการกระทำของเหยื่อในทำนองที่ว่าเหยื่อน่าจะทำอะไรให้ต่างออกไป (ในจุดนี้เป็นการกล่าวถึงเหตุการณ์ที่เกิดขึ้นไปแล้ว) เพื่อจะได้ไม่เกิดเหตุการณ์ร้าย ๆ หรือการกระทำผิดขึ้น ในระดับหนึ่งถือว่าบุคคลผู้นั้นมีการกล่าวโทษเหยื่อ (victim blaming) แล้ว",
+          },
+          {
+            id: "f2-rea-35",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (35).",
+            choices: ["degree", "conclusion", "possibility", "moderation"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 degree เพราะ to a certain degree แปลว่า ในระดับหนึ่ง ในประโยคนี้ทำหน้าที่ขยาย verb phrase ที่ว่า are participating in the culture of victim blaming",
+          },
+          {
+            id: "f2-rea-36",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (36).",
+            choices: ["detecting", "implying", "stipulating", "predetermining"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 implying บอกเป็นนัย เพราะการประณามหรือกล่าวโทษเหยื่อนั้นหมายรวมถึงการพูด การบอกเป็นนัยหรือการปฏิบัติต่อเหยื่อราวกับว่าสิ่งที่เหยื่อพูดหรือทำนั้นเป็นเหตุให้เกิดเหตุการณ์ร้ายแรงขึ้น แทนที่จะโทษผู้ที่ลงมือทำร้าย ตัวเลือกอื่น: 1. detecting ตรวจพบ 3. stipulating กำหนด ระบุ 4. predetermining กำหนดไว้ล่วงหน้า",
+          },
+          {
+            id: "f2-rea-37",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (37).",
+            choices: ["abusive", "persistent", "vulnerable", "misleading"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 abusive แปลว่า ที่โหดร้ายทารุณ ที่หยาบคาย เพราะมีความหมายเข้ากับบริบทนี้ ตัวเลือกอื่น: 2. persistent ที่ยังคงอยู่นาน ที่ทำต่อไปอย่างไม่ลดละ เรื้อรัง 3. vulnerable ที่อ่อนแอ เปราะบาง ถูกโจมตีได้ง่าย 4. misleading ที่ทำให้เข้าใจผิด ที่ทำให้เชื่อแบบผิด ๆ",
+          },
+          {
+            id: "f2-rea-38",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (38).",
+            choices: ["instead of", "regardless of", "on account of", "at the expense of"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 instead of แทนที่จะ เพราะประโยคนี้มีความหมายว่า การประณามหรือกล่าวโทษเหยื่อนั้นหมายรวมถึงการพูด การบอกเป็นนัยหรือการปฏิบัติต่อเหยื่อราวกับว่าสิ่งที่เหยื่อพูดหรือทำนั้นเป็นเหตุให้เกิดเหตุการณ์ร้ายแรงขึ้น แทนที่จะโทษคนที่ทำร้าย ตัวเลือกอื่น: 2. regardless of โดยไม่คำนึงถึง 3. on account of เพราะ เนื่องจาก 4. at the expense of โดยแลกมาด้วย",
+          },
+          {
+            id: "f2-rea-39",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (39).",
+            choices: ["harmed", "may harm", "could have harmed", "would have harmed"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 harmed เพราะตำแหน่งนี้ควรเป็นการเล่าถึงเหตุการณ์ที่เกิดขึ้นไปแล้วในอดีต (simple past tense กริยาช่อง 2) ตัวเลือกอื่น: 2. may harm แปลว่าอาจจะทำร้ายในปัจจุบันหรือในอนาคต 3. could have harmed แปลว่า อาจจะทำร้ายไปแล้วในอดีต 4. would have harmed แปลว่า อาจจะทำร้ายไปแล้วในอดีต (แต่ไม่ได้ทำ) ประโยคนี้แปลว่า การประณามหรือกล่าวโทษเหยื่อนั้นหมายรวมถึงการพูด การบอกเป็นนัย หรือการปฏิบัติต่อเหยื่อราวกับว่าสิ่งที่เหยื่อพูดหรือทำนั้นเป็นเหตุให้เกิดเหตุการณ์ร้ายแรงขึ้น แทนที่จะโทษคนที่ทำร้าย (ไปแล้วในอดีต)",
+          },
+          {
+            id: "f2-rea-40",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (40).",
+            choices: ["contributed", "is contributing", "that contributing", "which contributes"],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 which contributes ในประโยค \"One psychological phenomenon which contributes to this tendency to lay the blame on the victim is known as the fundamental attribution error.\" อนุประโยคย่อย which contributes to this tendency to lay the blame on the victim เป็น relative clause ทำหน้าที่ขยายนามวลี (noun phrase) One psychological phenomenon ที่อยู่ข้างหน้า เหตุผลที่ต้องตอบ 4. which contributes เพราะในประโยคนี้มีกริยาแท้ (finite verb) คือ is known อยู่แล้ว จะเติมตัวเลือก 1. is contributing และ 2. was contributed ซึ่งเป็นรูปกริยาแท้อีกไม่ได้ ส่วน 3. that contributing ถือเป็นตัวเลือกที่ผิด เพราะหลังคำว่า that ที่เป็น relative pronoun ควรต้องตามด้วยกริยาแท้ แต่ contributing ไม่ใช่กริยาแท้",
+          },
+          {
+            id: "f2-rea-41",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (41).",
+            choices: ["vary", "variety", "various", "variables"],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 variables แปลว่า ตัวแปร เพราะตำแหน่งนี้ต้องการคำนามที่ทำหน้าที่เป็นกรรมของกริยา ignoring นอกจากนี้ คำนามในตำแหน่งนี้ต้องเป็นคำนามที่ relative clause \"that also might have played a role\" ที่อยู่ด้านหลังขยายด้วย (ตามหลักไวยากรณ์แล้ว relative clause มีหน้าที่ขยายคำนามที่อยู่ด้านหน้า) เราไม่สามารถตอบตัวเลือกอื่นได้ เช่น vary เพราะเป็น verb ส่วนคำว่า various เป็น adjective ส่วนคำว่า variety แม้จะเป็น noun แต่หมายถึงความหลากหลาย ซึ่งไม่เข้ากับบริบทนี้",
+          },
+          {
+            id: "f2-rea-42",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (42).",
+            choices: ["in return", "for example", "in other words", "on the other hand"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 for example เนื่องจากประโยคนี้เป็นการยกตัวอย่าง ตัวเลือกอื่น: 1. in return หมายถึง เพื่อเป็นการตอบแทนหรือแลกเปลี่ยน 3. in other words หมายถึง กล่าวอีกนัยหนึ่ง 4. on the other hand หมายถึง ในทางตรงกันข้าม",
+          },
+          {
+            id: "f2-rea-43",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (43).",
+            choices: ["despite", "whereas", "however", "as opposed to"],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 however แปลว่า อย่างไรก็ตาม เพราะประโยคนี้สื่อความหมายที่ขัดแย้งกับประโยคก่อนหน้า กล่าวคือ เมื่อเพื่อนสอบตก เรามักโทษพฤติกรรมหรือลักษณะนิสัยของเพื่อนว่าไม่ขยัน ไม่ตั้งใจเรียนหรือเกียจคร้าน แต่พอถึงคราวที่ตัวเราเองสอบตก เรามักโทษเหตุปัจจัยภายนอก เช่น อากาศในห้องสอบร้อนเกินไปทำให้ขาดสมาธิ หรืออาจารย์ให้คะแนนไม่ยุติธรรม เป็นต้น",
+          },
+          {
+            id: "f2-rea-44",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (44).",
+            choices: ["Irrelevance", "misconduct", "negligibility", "performance"],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 performance แปลว่า สมรรถนะ ประสิทธิภาพในการเรียนหรือการทำงาน เพราะเป็นคำที่มีความหมายเข้ากับบริบทนี้ที่สุด ตัวเลือกอื่น: 1. irrelevance ความไม่เกี่ยวข้อง 2. misconduct การประพฤติตัวไม่เหมาะสม การประพฤติผิด 3. negligibility สิ่งเล็กน้อย ไม่สำคัญ",
+          },
+          {
+            id: "f2-rea-45",
+            type: "cloze",
+            passageTitle: "Cloze Test — Victim Blaming",
+            passage:
+              "Victim blaming comes in many forms, and is oftentimes subtle and unconscious. It can _____(31)_____ to cases of rape and sexual assault, but also to more mundane crimes, like a person who gets pickpocketed and is _____(32)_____ chided for their _____(33)_____ and decision to carry their wallet in their back pocket. Any time someone defaults to questioning what a victim _____(34)_____ differently to prevent a crime, they are participating, to a certain _____(35)_____, in the culture of victim blaming.\n\nVictim blaming can be defined as someone saying, _____(36)_____, or treating a person who has experienced harmful or _____(37)_____ behavior, e.g. a survivor of sexual violence, like it was a result of something they did or said, _____(38)_____ placing the responsibility where it belongs: on the person who _____(39)_____ them. One psychological phenomenon _____(40)_____ to this tendency to lay the blame on the victim is known as the fundamental attribution error. This bias involves attributing other people's behaviors to internal, personal characteristics while ignoring external forces and _____(41)_____ that also might have played a role. When a classmate flunks a test, _____(42)_____, you probably attribute their behavior to a variety of internal characteristics. You might believe that the other student didn't study hard enough, or is just plain lazy. If you were to fail a test, _____(43)_____, what would you blame your poor _____(44)_____ on? In many cases, people blame their failings on external _____(45)_____. You might protest that the room was too hot and you couldn't concentrate, or that the teacher didn't grade the test fairly.",
+            prompt: "Choose the best word or phrase to fill in blank (45).",
+            choices: ["sources", "properties", "authorities", "justifications"],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 sources สาเหตุจากภายนอก ตัวเลือกอื่น: 2. properties คุณสมบัติ ทรัพย์สิน 3. authorities ผู้มีอำนาจหน้าที่ อำนาจหน้าที่ ผู้เชี่ยวชาญ 4. justifications การให้เหตุผลอธิบาย",
+          },
+          {
+            id: "f2-rea-46",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Raising Teenagers",
+            passage:
+              "Teenagers go through a series of changes. Their lives are typically filled with emotional, physical, and social upheaval. This knowledge aids parents in navigating their children's new and challenging developmental stages.\n\nRaising teenagers is not much different from first-year parenthood. When raising our newborn, we tried to keep our days as joyful as possible. Of course, sometimes we succeeded; sometimes we failed. There was a lot of push-pull in my own mothering experience with teenage children. My children still really need me to hold their hands, but they are adamant that they know how to go to their destination. This can leave us parents feel perplexed and incompetent.\n\nTeenagers frequently rebel and oppose parental rules as they grow more autonomous. Nonetheless, their impulsivity and immaturity can be expected. If parents believe their children are simply growing up, they should not perceive their actions as personal attacks on them. You may assist teens to acquire maturity by adjusting some restrictions and granting additional privileges as they demonstrate improved judgment. Parents must accept that parenthood is more difficult than they anticipated.\n\nThe key to good parenting is open communication and a willingness to accept the pain of significant problems that can't be fixed promptly for a teenager. Remember that teens can be idealistic, energetic, and fun. Raising them might give you a similar sense of fulfillment.",
+            prompt: "What is the BEST title of the text?",
+            choices: [
+              "Raising Teens with Special Needs",
+              "Whirlwind Teens and Overwhelmed Parents",
+              "Embracing the Daunting Task of Raising Teens",
+              "How to Compose Yourself around Immature Teens",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 ชื่อเรื่องที่เหมาะสมกับใจความหลักของเรื่องคือ \"Embracing the Daunting Task of Raising Teens\" หรือการเปิดรับงานที่ท้าทายในการเลี้ยงดูวัยรุ่น",
+          },
+          {
+            id: "f2-rea-47",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Raising Teenagers",
+            passage:
+              "Teenagers go through a series of changes. Their lives are typically filled with emotional, physical, and social upheaval. This knowledge aids parents in navigating their children's new and challenging developmental stages.\n\nRaising teenagers is not much different from first-year parenthood. When raising our newborn, we tried to keep our days as joyful as possible. Of course, sometimes we succeeded; sometimes we failed. There was a lot of push-pull in my own mothering experience with teenage children. My children still really need me to hold their hands, but they are adamant that they know how to go to their destination. This can leave us parents feel perplexed and incompetent.\n\nTeenagers frequently rebel and oppose parental rules as they grow more autonomous. Nonetheless, their impulsivity and immaturity can be expected. If parents believe their children are simply growing up, they should not perceive their actions as personal attacks on them. You may assist teens to acquire maturity by adjusting some restrictions and granting additional privileges as they demonstrate improved judgment. Parents must accept that parenthood is more difficult than they anticipated.\n\nThe key to good parenting is open communication and a willingness to accept the pain of significant problems that can't be fixed promptly for a teenager. Remember that teens can be idealistic, energetic, and fun. Raising them might give you a similar sense of fulfillment.",
+            prompt: 'The word "adamant" (line 8) is closest in meaning to _____.',
+            choices: ["tolerant", "insistent", "innocent", "reluctant"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 insistent (adj.) มีความหมายว่า ยืนยัน ยืนกราน ซึ่งเข้ากับบริบทของประโยคในเรื่อง \"My children still really need me to hold their hands, but they are adamant that they know how to go to their destination.\" ที่ว่าลูก ๆ ของผู้เขียนยังต้องการพ่อแม่ให้อยู่เคียงข้าง แต่พวกเขายืนกรานชัดเจนว่าพวกเขารู้ว่าจะบรรลุเป้าหมายได้อย่างไร",
+          },
+          {
+            id: "f2-rea-48",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Raising Teenagers",
+            passage:
+              "Teenagers go through a series of changes. Their lives are typically filled with emotional, physical, and social upheaval. This knowledge aids parents in navigating their children's new and challenging developmental stages.\n\nRaising teenagers is not much different from first-year parenthood. When raising our newborn, we tried to keep our days as joyful as possible. Of course, sometimes we succeeded; sometimes we failed. There was a lot of push-pull in my own mothering experience with teenage children. My children still really need me to hold their hands, but they are adamant that they know how to go to their destination. This can leave us parents feel perplexed and incompetent.\n\nTeenagers frequently rebel and oppose parental rules as they grow more autonomous. Nonetheless, their impulsivity and immaturity can be expected. If parents believe their children are simply growing up, they should not perceive their actions as personal attacks on them. You may assist teens to acquire maturity by adjusting some restrictions and granting additional privileges as they demonstrate improved judgment. Parents must accept that parenthood is more difficult than they anticipated.\n\nThe key to good parenting is open communication and a willingness to accept the pain of significant problems that can't be fixed promptly for a teenager. Remember that teens can be idealistic, energetic, and fun. Raising them might give you a similar sense of fulfillment.",
+            prompt: "Based on the text, which of the following is NOT said to be a characteristic of teenagers?",
+            choices: [
+              "They can be unpredictable at times.",
+              "They tend to disobey the rules set by their parents.",
+              "They no longer rely on their parents for emotional support.",
+              "They can act immaturely while gaining greater independence.",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 \"They no longer rely on their parents for emotional support.\" เด็กวัยรุ่นไม่ต้องพึ่งพาการให้กำลังใจจากพ่อแม่อีกต่อไป",
+          },
+          {
+            id: "f2-rea-49",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Raising Teenagers",
+            passage:
+              "Teenagers go through a series of changes. Their lives are typically filled with emotional, physical, and social upheaval. This knowledge aids parents in navigating their children's new and challenging developmental stages.\n\nRaising teenagers is not much different from first-year parenthood. When raising our newborn, we tried to keep our days as joyful as possible. Of course, sometimes we succeeded; sometimes we failed. There was a lot of push-pull in my own mothering experience with teenage children. My children still really need me to hold their hands, but they are adamant that they know how to go to their destination. This can leave us parents feel perplexed and incompetent.\n\nTeenagers frequently rebel and oppose parental rules as they grow more autonomous. Nonetheless, their impulsivity and immaturity can be expected. If parents believe their children are simply growing up, they should not perceive their actions as personal attacks on them. You may assist teens to acquire maturity by adjusting some restrictions and granting additional privileges as they demonstrate improved judgment. Parents must accept that parenthood is more difficult than they anticipated.\n\nThe key to good parenting is open communication and a willingness to accept the pain of significant problems that can't be fixed promptly for a teenager. Remember that teens can be idealistic, energetic, and fun. Raising them might give you a similar sense of fulfillment.",
+            prompt: "The author suggests that compared to raising babies, parenting teenagers _____.",
+            choices: [
+              "can be more rewarding",
+              "involves the same challenging stages",
+              "requires similar understanding and effort",
+              "has fewer chances of things going wrong",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 ผู้เขียนมองว่าการเลี้ยงดูเด็กวัยรุ่นและเด็กทารกล้วนต้องอาศัยความเข้าใจและความพยายามแบบเดียวกัน",
+          },
+          {
+            id: "f2-rea-50",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Raising Teenagers",
+            passage:
+              "Teenagers go through a series of changes. Their lives are typically filled with emotional, physical, and social upheaval. This knowledge aids parents in navigating their children's new and challenging developmental stages.\n\nRaising teenagers is not much different from first-year parenthood. When raising our newborn, we tried to keep our days as joyful as possible. Of course, sometimes we succeeded; sometimes we failed. There was a lot of push-pull in my own mothering experience with teenage children. My children still really need me to hold their hands, but they are adamant that they know how to go to their destination. This can leave us parents feel perplexed and incompetent.\n\nTeenagers frequently rebel and oppose parental rules as they grow more autonomous. Nonetheless, their impulsivity and immaturity can be expected. If parents believe their children are simply growing up, they should not perceive their actions as personal attacks on them. You may assist teens to acquire maturity by adjusting some restrictions and granting additional privileges as they demonstrate improved judgment. Parents must accept that parenthood is more difficult than they anticipated.\n\nThe key to good parenting is open communication and a willingness to accept the pain of significant problems that can't be fixed promptly for a teenager. Remember that teens can be idealistic, energetic, and fun. Raising them might give you a similar sense of fulfillment.",
+            prompt: "Which of the following BEST describes the tone of the text?",
+            choices: ["Skeptical", "Nostalgic", "Optimistic", "Emotional"],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 น้ำเสียง Optimistic คือ มีการมองประเด็น/ปัญหาในแง่ดี ดังจะเห็นได้จากตอนท้ายของเรื่องที่ว่าการเลี้ยงดูวัยรุ่นอาจให้ความรู้สึกที่ดีในด้านต่าง ๆ พลังแห่งความเยาว์วัยของวัยรุ่นสามารถช่วยเติมเต็มพ่อแม่ได้ ส่วน Nostalgic = ชวนให้ระลึกถึงอดีต, Skeptical = มีความสงสัย ไม่เชื่อ, Emotional = ใช้อารมณ์ ใส่อารมณ์",
+          },
+          {
+            id: "f2-rea-51",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "What is the main idea of this text?",
+            choices: [
+              "There are several benefits of internet censorship.",
+              "Internet censorship has both advantages and disadvantages.",
+              "The drawbacks of internet censorship outweigh its benefits.",
+              "Imposing internet censorship is against freedom of the press.",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 There are several benefits of internet censorship. คำถามข้อนี้ถามถึงใจความสำคัญของบทความนี้ ถึงแม้ว่าบทความนี้จะขึ้นต้นว่าการเซนเซอร์ข้อมูลบนอินเทอร์เน็ตมีทั้งข้อดีและข้อเสีย แต่เนื้อหาส่วนใหญ่ของบทความนี้จะกล่าวถึงข้อดีของการเซนเซอร์ข้อมูลบนอินเทอร์เน็ตเป็นหลัก ข้อ 1 จึงเป็นคำตอบที่ถูกต้อง",
+          },
+          {
+            id: "f2-rea-52",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt:
+              "The first paragraph (lines 1-11) suggests that internet censorship is necessary because ____________.",
+            choices: [
+              "it can prevent abuse of freedom of the press",
+              "it aligns with international efforts to curb cybercrime",
+              "most users tend to post indecent content on the internet",
+              "some users lack the decency not to post offensive content online",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 some users lack the decency not to post offensive content online ผู้เขียนชี้ว่าการเซนเซอร์ข้อมูลบนอินเทอร์เน็ตเป็นสิ่งจำเป็นเพราะผู้ใช้งานบางส่วนไม่รู้จักความเหมาะสมในการโพสต์เนื้อหาที่ก้าวร้าวหรือสร้างความขุ่นเคืองแก่ผู้อื่นบนอินเทอร์เน็ต",
+          },
+          {
+            id: "f2-rea-53",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: 'What is the word "vulnerable" (line 15) closest in meaning to?',
+            choices: ["Deadly", "Exposed", "Sensitive", "Protected"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Exposed คำว่า vulnerable ในที่นี้มีความหมายว่า เปิดเผยในที่สาธารณะ ซึ่งสอดคล้องกับความหมายของคำว่า exposed ส่วนคำว่า deadly แปลว่า อันตรายร้ายแรง sensitive แปลว่า อ่อนไหวหรืออ่อนแอ และ protected แปลว่า มีการป้องกัน",
+          },
+          {
+            id: "f2-rea-54",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "What can be done to minimize the threat of cybercrime?",
+            choices: [
+              "Refrain from online activities",
+              "Implement total internet censorship",
+              "Remove the personal information from all websites",
+              "Restrict the amount of private information put online",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 Restrict the amount of private information put online คำถามข้อนี้ถามว่าเราจะปลอดภัยจากอาชญากรรมไซเบอร์ได้อย่างไร ซึ่งตรงกับคำตอบข้อ 4",
+          },
+          {
+            id: "f2-rea-55",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: 'The phrase "these tidbits" (line 19) refers to ____________.',
+            choices: ["criminals", "cyber attacks", "certain information", "falsified information"],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 certain information คำว่า tidbits ในที่นี้มีความหมายว่า ข้อมูลเล็ก ๆ น้อย ๆ ที่น่าสนใจ ตรงกับคำว่า certain information ในข้อ 3",
+          },
+          {
+            id: "f2-rea-56",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt:
+              "The author mentions The World Economic Forum in Paragraph 2 (lines 12-23) to ____________.",
+            choices: [
+              "highlight the impact of cybercrime on business",
+              "demonstrate the growing concern over cybercrime",
+              "urge governments across the world to fight cybercrime",
+              "exemplify an organization established to deal with cybercrime",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 demonstrate the growing concern over cybercrime ผู้เขียนเอ่ยถึง The World Economic Forum เพื่อย้ำถึงความกังวลในเรื่องอาชญากรรมไซเบอร์ที่เพิ่มมากขึ้น",
+          },
+          {
+            id: "f2-rea-57",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "Why are more websites publishing fake or misleading news?",
+            choices: [
+              "To gain profit",
+              "To commit cybercrimes",
+              "To add excitement to the news",
+              "To replace established news outlets",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 To gain profit บรรดาเว็บไซต์ต่าง ๆ มีการเผยแพร่ข่าวปลอมและข่าวที่สร้างความเข้าใจผิดเพื่อหวังกำไร",
+          },
+          {
+            id: "f2-rea-58",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "Which of the following would BEST be added in the blank in the last paragraph (line 29)?",
+            choices: [
+              "By protecting personal information",
+              "Without the enforcement of internet censorship",
+              "By enacting a reasonable program of internet controls",
+              "Through the strict use of automated internet censorship tools",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 By enacting a reasonable program of internet controls คำถามข้อนี้ถามว่าประโยคใดเหมาะสมที่จะเติมลงในช่องว่างเพื่อให้มีความสอดคล้องกัน ประโยคที่ตามหลังมา \"the amount of fake news that appears online could be reduced\" หมายความว่าการเซนเซอร์อาจช่วยลดจำนวนของข่าวปลอมบนออนไลน์ได้ ดังนั้น By enacting a reasonable program of internet controls หรือการบังคับใช้กฎหมายเซนเซอร์ข้อมูลทางอินเทอร์เน็ตที่สมเหตุสมผล จึงเป็นคำตอบที่เหมาะสมที่สุด",
+          },
+          {
+            id: "f2-rea-59",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "This text would most likely be found in ____________.",
+            choices: [
+              "a school newsletter",
+              "the IT section of an online newspaper",
+              "a website dedicated to internet-related issues",
+              "a chapter in a business and technology textbook",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 a website dedicated to internet-related issues คำถามข้อนี้ถามว่าบทความนี้น่าจะพบได้จากที่ใด คำตอบคือในเว็บไซต์เกี่ยวกับประเด็นที่เกี่ยวข้องกับอินเทอร์เน็ต เนื่องจากเนื้อหาในบทความมีใจความสำคัญเกี่ยวกับข้อดีของการเซนเซอร์ข้อมูลบนอินเทอร์เน็ต",
+          },
+          {
+            id: "f2-rea-60",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Internet Censorship",
+            passage:
+              "The purpose of internet censorship is to control or suppress information published online. Despite the fact that it can be misused to limit freedom of expression, the advantages of increased government control over the internet outweigh the disadvantages. First of all, internet censorship protects children from accessing harmful and inappropriate information. Most users have the decency and common sense not to post something online that society would consider unhealthy or inappropriate content. The key here is \"most users\". Internet users come in all varieties.\n\nInternet censorship offers a means of limiting the number of harmful videos or other forms of offensive content children have access to. In simple terms, internet censorship provides a tool to limit access or even block access to content that can cause irreparable harm to young people. Internet censorship also minimizes the risk of identity theft and other cybercrimes. In this digital era, people store a lot of their personal and private information on their computers. If they don't have the proper knowledge of passwords and privacy policies, internet users can leave themselves very vulnerable. Limiting the amount of information put online can certainly assist in minimizing the threat of these cyber-attacks. Criminals have become very good accessing certain information, such as a person's driver's license, mailing address, and Social Security number. With these tidbits, a number of financial crimes can be committed. If internet censorship is designed to prevent access to the information used to commit cybercrimes, there is clearly an advantage to it. The World Economic Forum has even pressured countries to implement more control over internet traffic for this reason.\n\nFinally, internet censorship can limit the amount of misleading or fake news that is posted online. With news media sites springing up all over the web, it can be hard to know what news is real and what is fake. Established news outlets like CNN, Fox, and CNBC are not the only players on the web anymore. There are countless sites that are just looking to cash in on providing false or misleading articles online. ____________, the amount of fake news that appears online could be reduced.",
+            prompt: "What is the tone of the text?",
+            choices: ["Skeptical", "Persuasive", "Informative", "Light-hearted"],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Persuasive ทัศนคติของผู้เขียนที่ถ่ายทอดออกมาในบทความนี้ออกไปในทางโน้มน้าวให้ผู้อ่านเห็นด้วยกับการเซนเซอร์ข้อมูลบนอินเทอร์เน็ต ส่วน Skeptical หมายถึงมีความเคลือบแคลง Informative หมายถึงให้ข้อมูล Light-hearted หมายถึงเบาสมอง",
+          },
+          {
+            id: "f2-rea-61",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "What does the text mainly discuss?",
+            choices: [
+              "How carbon nanotube threads were developed",
+              "Functions of an electrocardiogram monitoring device",
+              "A new material that could turn regular shirts into heart monitors",
+              "Characteristics of smart garments and their potential applications",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 A new material that could turn regular shirts into heart monitors คำถามข้อนี้ถามว่าบทความนี้เกี่ยวกับเรื่องอะไร คำตอบที่ถูกต้องคือเกี่ยวกับวัสดุใหม่ชนิดหนึ่งซึ่งสามารถนำไปถักทอเป็นเสื้อผ้าที่ตรวจจับการทำงานของหัวใจของผู้สวมใส่ได้",
+          },
+          {
+            id: "f2-rea-62",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "According to the text, what is one of the reasons for incorporating technology into apparel?",
+            choices: [
+              "To measure people's physical health",
+              "To improve athletes' physical endurance",
+              "To allow smart garments to be effectively packed",
+              "To manipulate the wearer's performance and behaviors",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 To measure people's physical health คำถามข้อนี้ถามว่าเหตุผลหลักข้อหนึ่งของการผสานเทคโนโลยีต่าง ๆ ไว้ในเสื้อผ้าคืออะไร คำตอบที่ถูกต้องคือเพื่อวัดสุขภาพร่างกายของผู้สวมใส่",
+          },
+          {
+            id: "f2-rea-63",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "To illustrate the strength of the newly developed material, the researchers ____________.",
+            choices: [
+              "compare it to Kevlar",
+              "explain the use of a zig-zag pattern",
+              "refer to their previous research on the material",
+              "mention the incorporation of carbon nanotube threads",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 compare it to Kevlar คำถามข้อนี้ถามว่าทีมนักวิจัยแสดงถึงความแข็งแรงของวัสดุที่พัฒนาขึ้นใหม่นี้อย่างไร คำตอบคือ เปรียบเทียบกับ Kevlar ซึ่งเป็นเส้นใยสังเคราะห์ที่มีความแข็งแรงคงทน",
+          },
+          {
+            id: "f2-rea-64",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "It can be INFERRED from Paragraph 2 (lines 7-12) that carbon nanotube threads ____________.",
+            choices: [
+              "must be in constant contact with the skin",
+              "are less expensive than an electrocardiogram monitoring device",
+              "can replace the wires in an electrocardiogram monitoring device",
+              "can be used to detect cardiac problems by monitoring heart beats",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 can be used to detect cardiac problems by monitoring heart beats คำถามข้อนี้ถามว่าเราสามารถอนุมานเกี่ยวกับ carbon nanotube threads ได้อย่างไรจากเนื้อหาในย่อหน้าที่ 2 คำตอบคือ วัสดุดังกล่าวสามารถตรวจจับความผิดปกติของการทำงานของหัวใจได้ เพราะในเรื่องกล่าวว่าวัสดุนี้ทำงานแบบเดียวกันกับ wires ซึ่งอยู่ในเครื่อง EKG",
+          },
+          {
+            id: "f2-rea-65",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "Which of the following is NOT a benefit of the new wearable sensors mentioned in the text?",
+            choices: [
+              "They are comfortable to wear.",
+              "They can be easily mass produced.",
+              "They can be used over and over again.",
+              "Data on heart activity can continuously be gathered.",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 They can be easily mass produced. คำถามข้อนี้ถามว่าข้อใดไม่ใช่ข้อดีของ wearable sensors ที่กล่าวถึงในบทความนี้ คำตอบคือ การสามารถผลิตเป็นจำนวนมากได้ง่าย",
+          },
+          {
+            id: "f2-rea-66",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "Which of the following statements BEST fits the blank in Paragraph 3 (line 15)?",
+            choices: [
+              "Worked into an athletic shirt, the fibers use their metal-like conductivity to act as integrated electrodes",
+              "At the time, the original fibers were incredibly fine, so they could not be used with any current manufacturing equipment",
+              "The team conducted experiments that compared the ability of its smart shirt to record live heart rate data to a typical chest-strap monitor",
+              "The fibers use their metal-like conductivity to act as integrated electrodes and signal transmission wires, opening up some interesting potential uses",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 At the time, the original fibers were incredibly fine, so they could not be used with any current manufacturing equipment. คำถามข้อนี้ถามว่าประโยคใดเหมาะสมที่จะนำไปเติมช่องว่างในย่อหน้าที่ 3 มากที่สุด จะเห็นว่าเนื้อหาในตอนต้นของย่อหน้านี้พูดถึงงานวิจัยเพื่อพัฒนา carbon nanotube fibers ที่เกิดขึ้นก่อนหน้านี้ จากนั้นจึงอธิบายรายละเอียดเกี่ยวกับงานวิจัยใหม่ที่เกิดขึ้นเพื่อพัฒนา carbon nanotube fibers ให้สามารถนำมาใช้กับ sewing machine ได้ ดังนั้น เนื้อหาที่ขาดหายไปในย่อหน้าที่ 2 คือรายละเอียดเกี่ยวกับงานวิจัยก่อนหน้า ซึ่งระบุเกี่ยวกับปัญหาที่เส้นใยดังกล่าวไม่สามารถนำไปใช้กับ sewing machine ได้",
+          },
+          {
+            id: "f2-rea-67",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "What does \"they\" (line 18) refer to?",
+            choices: [
+              "Fibers",
+              "Wearers",
+              "Researchers",
+              "Electrical circuits",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 Fibers จากรายละเอียดในบทความ เส้นใย (fiber) จะถูกทอเป็นผืนผ้า (fabric) ลายซิกแซกเพื่อไม่ให้เส้นใยขาดง่ายตอนยืด",
+          },
+          {
+            id: "f2-rea-68",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "With some modification, the researchers hope that garments using interwoven carbon nanotube fibers will be able to ____________.",
+            choices: [
+              "repair damaged hearts",
+              "be tracked more easily",
+              "detect important organs",
+              "measure other vital signs",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 measure other vital signs คำถามข้อนี้ถามว่าทีมนักวิจัยคาดว่าเสื้อผ้าที่มีการถักทอเส้นใย carbon nanotube เข้าไปจะทำสิ่งใดได้เมื่อมีการปรับเปลี่ยนบางอย่าง คำตอบคือ เสื้อผ้าดังกล่าวจะสามารถวัดหรือตรวจจับสัญญาณเตือนหรือความผิดปกติที่สำคัญอื่น ๆ นอกเหนือจากการทำงานของหัวใจ",
+          },
+          {
+            id: "f2-rea-69",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "The word \"bulky\" (line 24) is closest in meaning to ____________.",
+            choices: [
+              "large",
+              "robust",
+              "high-priced",
+              "sophisticated",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 large คำถามข้อนี้ถามว่าคำว่า bulky ในย่อหน้าที่ 4 มีความหมายใกล้เคียงกับคำใดมากที่สุด คำว่า bulky ในที่นี้ใช้บรรยายลักษณะของเครื่อง EKG ว่ามีขนาดใหญ่เทอะทะ ดังนั้นคำที่มีความหมายใกล้เคียงที่สุดคือคำว่า large ซึ่งแปลว่ามีขนาดใหญ่",
+          },
+          {
+            id: "f2-rea-70",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Smart Garments and Carbon Nanotube Threads",
+            passage:
+              "Over the years, we have seen many examples of smart garments packed with technology to monitor different aspects of a wearer's physical wellbeing. Recently, Rice University researchers have developed a new material they say is as soft as cotton but as strong as Kevlar and as conductive as many metals. It can be worn and washed like normal clothing and could eventually turn athletic apparel into smart wearables.\n\nThe technology used is called carbon nanotube threads. These threads work in the same way as the wires in an electrocardiogram (EKG) monitoring device, which measures heart rhythms to detect heart conditions. But instead of having to be patched onto the skin, they can be sewn into a t-shirt and worn like normal athletic wear. Unlike wires, the threads can comfortably move with the wearer. They can also be washed, stretched, and worn repeatedly without breaking down.\n\nThe Rice University lab has previously developed carbon nanotube fibers and explored their potential in cochlear implants, flexible antennas, and repairing broken electrical circuits in the heart. ____________ For this latest iteration, the researchers used a rope-making device to bundle the filaments together. These bundles were then woven into a fiber. From there, the fibers could be sewn into fabric. A zig-zag pattern was used so that they wouldn't break when stretched. The resulting smart shirt provides soft, wearable sensors for noninvasive and continuous electrocardiogram monitoring. With a few tweaks, apparel with these fibers could eventually be able to track other vital signs, according to the researchers.\n\nThough likely a ways off from going into production for consumers, the material could eventually help replace bulky EKG Holter monitors in medical settings and heart-rate monitoring watches and chest straps for athletes, in addition to other potential uses. \"You just don't find soft, flexible, threadlike materials that are comfortable to the touch, that you can work with, that you can build a bridge out of it or you can build a powerline out of it, but you can also run it through a sewing machine,\" said a member of the research team. \"Nothing else behaves like this.\"",
+            prompt: "Based on the text, what can be predicted about the new material in the future?",
+            choices: [
+              "It will change people's behaviors.",
+              "It will play an important role in medical settings.",
+              "Research will be conducted to explore uses in other areas.",
+              "It will soon be commercially available to consumers for various purposes.",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 Research will be conducted to explore uses in other areas. คำถามข้อนี้ถามว่าเราสามารถคาดการณ์เกี่ยวกับวัสดุชนิดใหม่นี้ได้อย่างไร จากเนื้อหาในย่อหน้าสุดท้ายเรายังไม่สามารถนำวัสดุนี้มาผลิตใช้งานสำหรับผู้บริโภคได้ในเร็ว ๆ นี้ ดังนั้น จึงคาดการณ์ได้ว่านักวิจัยจะทำการศึกษาเพิ่มเติมเพื่อหาวิธีนำวัสดุนี้ไปใช้งานด้านต่าง ๆ ในอนาคต",
+          },
+          {
+            id: "f2-rea-71",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "What is the BEST title for the text?",
+            choices: [
+              "Wildlife Impacted by Noise Pollution and Wildfires",
+              "Noise Pollution and Deadly Wildfires: The Unsolvable Problems",
+              "Environmental Concerns Caused by Noise Pollution and Wildfires",
+              "The Effects of Noise Pollution and Wildfires and How to Tackle Them",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 The Effects of Noise Pollution and Wildfires and How to Tackle Them ชื่อเรื่องที่เหมาะสมที่สุดสำหรับบทความนี้คือ \"ผลกระทบของมลพิษทางเสียงและไฟป่า และแนวทางการแก้ไขปัญหา\"",
+          },
+          {
+            id: "f2-rea-72",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "Which of the following BEST fits the blank in Paragraph 1 (line 2)?",
+            choices: [
+              "in order for the problems to be prevented",
+              "so these issues need to be urgently dealt with",
+              "and they could adversely affect the oceans and marine animals",
+              "but these are not as significant as other environmental problems",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 so these issues need to be urgently dealt with อนุประโยคที่เหมาะสมจะเติมลงในช่องว่างในย่อหน้าแรก (บรรทัดที่ 2) คือ \"ดังนั้น ปัญหาเหล่านี้จึงควรได้รับการแก้ไขอย่างเร่งด่วน\" เนื่องจากประโยคก่อนหน้าสอดคล้องกับอนุประโยคที่กล่าวว่า \"มลพิษทางเสียงและไฟป่าที่อันตรายสามารถสร้างความเสียหายในวงกว้าง\" โดยอนุประโยคทั้งสองมีความเชื่อมโยงเป็นเหตุและผลกัน",
+          },
+          {
+            id: "f2-rea-73",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "What is the word \"impair\" (line 7) is closest in meaning to?",
+            choices: [
+              "Risk",
+              "Harm",
+              "Exhaust",
+              "Decrease",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Harm คำว่า \"impair\" ในบรรทัดที่ 7 แปลว่า ทำให้แย่ลง จึงมีความหมายใกล้เคียงกับข้อ 2 \"Harm\" (ทำให้อ่อนแอลง) มากที่สุด",
+          },
+          {
+            id: "f2-rea-74",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "Which of the following is NOT mentioned as an effect of noise pollution on humans or animals?",
+            choices: [
+              "Irritability",
+              "Aggressive behavior",
+              "Problems with sleep",
+              "Communication issues",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Aggressive behavior ย่อหน้าที่ 2 ของบทความนี้กล่าวถึงผลกระทบของมลพิษทางเสียงที่มีต่อมนุษย์และสัตว์ ได้แก่ \"ความรู้สึกหงุดหงิดรำคาญต่อเนื่องยาวนาน\" (chronic annoyance) \"การรบกวนการนอน\" (sleep disturbance) และ \"การเปลี่ยนแปลงการสื่อสารของสัตว์\" (altering the communication) แต่ไม่ได้กล่าวถึง \"การแสดงพฤติกรรมก้าวร้าว\" (behaving aggressively) ดังนั้นข้อ 2 จึงเป็นคำตอบที่ถูกต้อง",
+          },
+          {
+            id: "f2-rea-75",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "It is suggested in Paragraph 3 (lines 13-17) that trees ____________.",
+            choices: [
+              "can help beautify landscapes",
+              "are capable of blocking noise",
+              "increase noise levels in the city",
+              "are the least effective in noise control",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 are capable of blocking noise ย่อหน้าที่ 3 กล่าวถึง The Frontiers Report ที่สนับสนุนให้สร้างโครงสร้างพื้นฐานต่าง ๆ เช่น กำแพงต้นไม้และเพิ่มพื้นที่สีเขียวให้มากขึ้นเพื่อช่วยลดเสียง ดังนั้น จึงอาจสรุปได้ว่าต้นไม้ช่วยกันเสียงได้",
+          },
+          {
+            id: "f2-rea-76",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "What does the word \"This\" (line 20) refer to?",
+            choices: [
+              "The burned area",
+              "The average wildfire",
+              "The Earth's land surface",
+              "The occurrence of wildfires",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 The burned area คำสรรพนาม \"this\" ในบรรทัดที่ 20 กล่าวถึง \"พื้นที่ที่ถูกไฟป่าเผาทำลาย\" (the burned area) ในช่วงหลายทศวรรษที่ผ่านมา ซึ่งกินพื้นที่มากถึง 423 ล้านเฮกตาร์ เทียบได้กับขนาดของสหภาพยุโรป",
+          },
+          {
+            id: "f2-rea-77",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "Between Paragraph 4 (lines 18-28) and the last paragraph (lines 29-31), the focus shifts from ____________.",
+            choices: [
+              "research on wildfires to its environmental implications",
+              "effects of wildfires to solutions to the growing problem",
+              "social impacts of wildfires to the effects of forestation on wildfires",
+              "the global wildfire statistics to campaigns to raise environmental awareness",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 effects of wildfires to solutions to the growing problem ย่อหน้าที่ 4 ของบทความนี้พูดถึงผลกระทบของไฟป่าก่อนที่จะเปลี่ยนมาพูดถึงแนวทางการแก้ไขปัญหาในย่อหน้าสุดท้าย",
+          },
+          {
+            id: "f2-rea-78",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "The final sentence of Paragraph 4 (lines 18-28) suggests which of the following?",
+            choices: [
+              "Wildfires are the main culprit of climate change.",
+              "Wildfires pose greater harm to the environment than health risks.",
+              "Pollutants generated from wildfires can cause serious noise pollution.",
+              "Wildfire impact could contribute to environmental degradation in various ways.",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 Wildfire impact could contribute to environmental degradation in various ways. ประโยคสุดท้ายในย่อหน้าที่ 4 ชี้ว่าผลกระทบที่เกิดจากไฟป่าอาจสร้างความเสียหายแก่สิ่งแวดล้อมในหลายด้าน",
+          },
+          {
+            id: "f2-rea-79",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "All of the following are mentioned as potential solutions to the wildfire problem EXCEPT ____________.",
+            choices: [
+              "minimizing wildfire hazards",
+              "devising plans to prevent wildfires",
+              "improving wildfire detection and monitoring tools",
+              "mobilizing funds from the public to combat wildfires",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 mobilizing funds from the public to combat wildfires คำถามถามว่าทุกข้อเป็นแนวทางในการแก้ปัญหาไฟป่ายกเว้นข้อใด คำตอบคือ \"การระดมทุนจากภาคเอกชนเพื่อมาต่อสู้กับไฟป่า\" แม้ว่าย่อหน้าสุดท้ายจะพูดถึงการลงทุนกับปัญหานี้ให้มากขึ้น (greater investment) แต่ไม่ได้ระบุว่าต้องเป็นเงินทุนจากภาคเอกชน",
+          },
+          {
+            id: "f2-rea-80",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Noise Pollution and Wildfires",
+            passage:
+              "Noise pollution and deadly wildfires could cause widespread damage to us and our planet, ____________, according to The Frontiers Report published by the UN Environment Programme (UNEP). The report identifies and offers solutions to two environmental issues that deserve attention and action from governments and the public at large.\n\nUnwanted, prolonged, and high-level sounds from road traffic, railways, or leisure activities, impair human health and well-being, according to the report. Chronic annoyance and sleep disturbance caused by traffic can result in severe heart disease and metabolic disorders among young people as well as the elderly. Noise pollution also threatens animals by altering the communication and behavior of various species, including birds, insects, and amphibians.\n\nThe report encourages urban planners to prioritize noise reduction by investing in urban infrastructure that creates positive soundscapes such as tree belts, green walls, and more green spaces in cities. London's Ultra-Low Emission Zone, Berlin's new cycle lanes on wide roads, and Egypt's national plan to combat noise, are positive examples that should be followed.\n\nWith respect to wildfires, the report states that in the past two decades, an average of 423 million hectares of the Earth's land surface has been burned annually. This is about the size of the European Union. The report also predicts that dangerous wildfires will likely become more frequent, intense, and longer lasting. Climate change can cause extreme wildfires and generate lightning that can ignite other fires far beyond the fire front. Long-term effects on human health and well-being extend beyond people who have fought wildfires, or those who have been evacuated and have lost homes. People with pre-existing illness, women, children, and the poor have also been impacted. At the same time, black carbon and other pollutants generated from wildfires can contaminate water sources, speed up glacier melt, and trigger landslides.\n\nTo address this, the report calls for greater investment in reducing wildfire risks, developing prevention measures, and improving remote sensing technologies, such as satellites and radar.",
+            prompt: "This text is most likely found in ____________.",
+            choices: [
+              "an environmental journal",
+              "a consumer complaint site",
+              "a government public records site",
+              "a brochure published by a fire department",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 an environmental journal บทความนี้น่าจะปรากฏในวารสารด้านสิ่งแวดล้อม เนื่องจากบทความนี้กล่าวถึงผลกระทบของปัญหาสิ่งแวดล้อมต่อมนุษย์และธรรมชาติ ตลอดจนเสนอแนวทางการแก้ไขปัญหา",
+          },
+          {
+            id: "f2-rea-81",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "What would be the most appropriate title of the text?",
+            choices: [
+              "Machu Picchu and Its Dancing Stones",
+              "Hiram Bingham: The Greatest Archeologist",
+              "The Architectural Heritage of the Inca Empire",
+              "A Trip to the Historic Sanctuary of Machu Picchu",
+            ],
+            answer: 2,
+            explanation: "คำตอบที่ถูกต้องคือ 3 The Architectural Heritage of the Inca Empire คำถามข้อนี้ถามว่าข้อใดน่าจะเป็นชื่อที่เหมาะสมที่สุดของบทความนี้ คำตอบที่ถูกต้องคือตัวเลือกข้อที่ 3 เนื่องจากบทความนี้เกี่ยวกับ Machu Picchu ที่สร้างขึ้นด้วยความรู้ด้านสถาปัตยกรรมของชาว Incas คำตอบข้อนี้จึงครอบคลุมเนื้อหาสำคัญของบทความได้อย่างครบถ้วน",
+          },
+          {
+            id: "f2-rea-82",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "The word \"baffled\" (line 6) is closest in meaning to ____________.",
+            choices: [
+              "puzzled",
+              "annoyed",
+              "frightened",
+              "disappointed",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 puzzled คำถามข้อนี้ถามว่าคำว่า baffled ในบรรทัดที่ 6 มีความหมายใกล้เคียงกับคำใดมากที่สุด คำตอบที่ถูกต้องคือตัวเลือกข้อที่ 1 ซึ่งแปลว่า รู้สึกสับสนหรือไม่เข้าใจ เช่นเดียวกับคำว่า baffled",
+          },
+          {
+            id: "f2-rea-83",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "Which of the following sentences could BEST fit the blank in Paragraph 3 (line 14)?",
+            choices: [
+              "Machu Picchu served many purposes during the Inca reign",
+              "Much has been debated about the exact function of Machu Picchu",
+              "Scholars have tried to study the way of life of the people living in Machu Picchu",
+              "Studies reveal that Machu Picchu was inhabited by only a small number of people",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Much has been debated about the exact function of Machu Picchu คำถามข้อนี้ถามว่าประโยคใดเหมาะสมที่จะเติมลงในช่องว่างในย่อหน้าที่ 3 มากที่สุด คำตอบที่ถูกต้องคือข้อ 2 เนื่องจากมีใจความที่สอดคล้องกับประโยคอื่น ๆ ในย่อหน้าเดียวกันที่กล่าวถึงการโต้แย้งของผู้ที่ศึกษาเกี่ยวกับวัตถุประสงค์ในการสร้าง Machu Picchu",
+          },
+          {
+            id: "f2-rea-84",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "All of the following are mentioned as possible reasons for the construction of Machu Picchu EXCEPT ____________.",
+            choices: [
+              "security",
+              "business",
+              "recreation",
+              "agriculture",
+            ],
+            answer: 0,
+            explanation: "คำตอบที่ถูกต้องคือ 1 security คำถามข้อนี้ถามว่า Machu Picchu สร้างขึ้นด้วยเหตุผลต่อไปนี้ยกเว้นข้อใด คำตอบที่ถูกต้องคือข้อ 1 เนื่องจากเหตุผลต่าง ๆ ที่กล่าวถึงในย่อหน้านี้ไม่มีเหตุผลด้านความมั่นคง (business = trading / recreation = retreat / agriculture = crop testing)",
+          },
+          {
+            id: "f2-rea-85",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "What is the most expensive part of the journey for a tourist to travel to Machu Picchu from Cusco?",
+            choices: [
+              "Bus fares",
+              "Entry fees",
+              "Train tickets",
+              "Trekking permit charges",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 Entry fees คำถามข้อนี้ถามว่าค่าใช้จ่ายส่วนใดแพงที่สุดสำหรับนักท่องเที่ยวที่จะเดินทางไป Machu Picchu จาก Cusco คำตอบที่ถูกต้องคือข้อ 2 เพราะจากเนื้อหาของบทความ ค่าเข้าชม (admission charges) มีราคาสูงที่สุด (ประมาณ $120 ถึง $150)",
+          },
+          {
+            id: "f2-rea-86",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "According to the text, Machu Picchu ____________.",
+            choices: [
+              "was built in 1911",
+              "was designed to endure the sudden ground shaking",
+              "is extremely strong because it was reinforced with steel",
+              "is located so high on the mountain that it is impossible to reach by hiking",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 was designed to endure the sudden ground shaking จากเนื้อหาในบทความ รายละเอียดที่กล่าวถึง Machu Picchu ที่ถูกต้องคือข้อ 2 ซึ่งระบุไว้ว่าก้อนหินที่ใช้สร้าง Machu Picchu ไม่พังทลายเมื่อเกิดแผ่นดินไหว",
+          },
+          {
+            id: "f2-rea-87",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "The word \"it\" (line 28) refers to ____________.",
+            choices: [
+              "a trip",
+              "the path",
+              "the climb",
+              "Machu Picchu",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 the path คำถามข้อนี้ถามว่าคำว่า it ในบรรทัดที่ 28 หมายถึงคำใด คำตอบที่ถูกต้องคือข้อ 2 เนื่องจากข้อความส่วนนี้กล่าวว่า เส้นทาง (path) ที่นำไปสู่ Machu Picchu (ในปัจจุบัน) มีทิวทัศน์ที่สวยงามเกือบเหมือนเมื่อครั้งที่ Bingham มาสำรวจ",
+          },
+          {
+            id: "f2-rea-88",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "It can be INFERRED from the text that ____________.",
+            choices: [
+              "there were only monks living in Machu Picchu",
+              "the Incas had advanced knowledge in construction",
+              "Machu Picchu will never be destroyed by a natural calamity",
+              "Hiram Bingham was the first person who knew of the existence of Machu Picchu",
+            ],
+            answer: 1,
+            explanation: "คำตอบที่ถูกต้องคือ 2 the Incas had advanced knowledge in construction คำถามข้อนี้ถามว่าเราสามารถสรุปอะไรได้จากบทความนี้ คำตอบที่ถูกต้องคือข้อ 2 เนื่องจากในย่อหน้าที่ 2 มีเนื้อความที่ระบุว่า หากปราศจากวิธีการที่ (ชาว Inca) ใช้สร้าง Machu Picchu สิ่งก่อสร้างหลายแห่งที่นี่คงพังทลายไปนานแล้ว (เนื่องจากแผ่นดินไหว)",
+          },
+          {
+            id: "f2-rea-89",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "This text is most likely found in a/an ____________.",
+            choices: [
+              "academic journal of architecture",
+              "chapter in a social science textbook",
+              "newspaper column about lost civilizations",
+              "website introducing world-famous tourist attractions",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 website introducing world-famous tourist attractions คำถามข้อนี้ถามว่าบทความนี้น่าจะพบได้ที่ใด คำตอบที่ถูกต้องคือข้อ 4 เนื่องจากบทความนี้มีเนื้อหาเกี่ยวกับ Machu Picchu ซึ่งเป็นสถานที่ท่องเที่ยว (tourist attraction) ชื่อดังอันดับต้น ๆ ของโลก",
+          },
+          {
+            id: "f2-rea-90",
+            type: "comprehension",
+            passageTitle: "Reading Passage — Machu Picchu",
+            passage:
+              "In 1911, Yale archeologist Hiram Bingham and his team set out to find the lost city of Vilcabamba but would soon find themselves led to one of the most fascinating places the world had never known. On their expedition, the team stumbled upon a local farmer who told them about the old mountain ruins known as Machu Picchu—this would soon prove to be the Lost City of the Incas.\n\nEven with today's technology, scientists are baffled as to how the Incas built this city without steel, mortar, or wheels. The stones were cut so precisely and wedged so closely together that a credit card cannot be inserted between them. Although Machu Picchu was built on an earthquake-prone area, its 500 stone buildings are still standing today. When an earthquake occurs, the stones are said to \"dance;\" that is, they bounce through the tremors and then fall back into place. Without this building method, many famous buildings at Machu Picchu would have collapsed long ago.\n\n____________. Due to its proximity to Cusco, some archeologists presume Machu Picchu was a retreat for nobles from the demands of city life. Others argue this place might have been used for more practical purposes, such as for crop testing, trading, or even possibly a prison. Even so, archeologists have projected that Machu Picchu was only able to hold 750 people, and only 200 skeletons were found there. This low population number—paired with religious buildings on the site—leads researchers to believe today that its sole purpose was for spiritual and religious ceremonies.\n\nA trip to Machu Picchu is many things, but cheap is not one of them. Train tickets from Cusco can run approximately a hundred dollars each, and admission charges range from $120 to $150. Besides, a bus trip up and down the mountain costs another $50. If you do not mind a workout, however, you can walk up and down for free. The climb takes about 90 minutes and may be strenuous, yet the steep path offers extraordinary views of the Machu Picchu Historical Sanctuary, which looks almost as it did in Bingham's time.",
+            prompt: "What is the tone of the text?",
+            choices: [
+              "Critical",
+              "Nostalgic",
+              "Persuasive",
+              "Informative",
+            ],
+            answer: 3,
+            explanation: "คำตอบที่ถูกต้องคือ 4 Informative คำถามข้อนี้ถามว่าบทความนี้มีลักษณะการเขียนเชิงใด คำตอบที่ถูกต้องคือข้อ 4 เนื่องจากเนื้อหาเป็นการให้ข้อเท็จจริงเกี่ยวกับ Machu Picchu ไม่ว่าจะเป็นการค้นพบ การก่อสร้าง วัตถุประสงค์ในการสร้าง และข้อมูลเกี่ยวกับการเดินทางไปยังสถานที่แห่งนี้",
+          },
+        ],
+      },
 
       writing: {
         expectedCount: 30,
@@ -3100,7 +3970,7 @@ window.EXAM_DATA = {
               { text: " the risk of Multisystem Inflammatory Syndrome in Children (MIS-C)." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ในที่นี้ต้องใช้คุณศัพท์ (adjective) other เพราะตามด้วยนามวลี (noun phrase) significant risks",
           },
           {
             id: "f2-wri-92",
@@ -3116,7 +3986,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ประโยคนี้มีประธานคือ Dalian กริยาคือ has ordered และกรรม (object) คือ all businesses ดังนั้น กริยา handle จึงต้องเป็นส่วนขยายในรูป -ing คือ handling ซึ่งลดรูปมาจาก relative clause คือ which handle",
           },
           {
             id: "f2-wri-93",
@@ -3132,7 +4002,7 @@ window.EXAM_DATA = {
               { text: " in work contexts." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 evidence เป็นนามนับไม่ได้ จึงใช้คำนำหน้านาม an ไม่ได้ ต้องแก้เป็น There's evidence ...",
           },
           {
             id: "f2-wri-94",
@@ -3148,7 +4018,7 @@ window.EXAM_DATA = {
               { text: " auction for a staggering $308,000." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ประโยคนี้มีประธานคือ The volleyball และกริยาคือ has sold ดังนั้น was stuck จึงเป็นส่วนขยายของนามวลี a lone survivor จึงต้องใช้ who was stuck หรือตัด who was ออก เหลือเพียง stuck ส่วน as ในที่นี้เป็น preposition ตามด้วยนามวลี a lone survivor แปลว่า เป็นผู้รอดชีวิตเพียงลำพัง",
           },
           {
             id: "f2-wri-95",
@@ -3164,7 +4034,7 @@ window.EXAM_DATA = {
               { text: " reducing deforestation." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ประโยคนี้มีประธานคือ Forests และกริยาคือ are ซึ่งตามด้วย complement ในรูปของคุณศัพท์วลี (adjective phrase) ... excellent at soaking CO2 up from the atmosphere ดังนั้น ข้อความส่วนที่เหลือหลังเครื่องหมาย comma ต้องอยู่ในรูป which is หรือตัด which is ออก เหลือเพียงนามวลี one reason ...",
           },
           {
             id: "f2-wri-96",
@@ -3180,7 +4050,7 @@ window.EXAM_DATA = {
               { text: " children in hospitals and clinics." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ... designed to ตามด้วยกริยาช่องที่ 1 จึงต้องเปลี่ยนคุณศัพท์ easy เป็นกริยา ease",
           },
           {
             id: "f2-wri-97",
@@ -3196,7 +4066,7 @@ window.EXAM_DATA = {
               { text: " with the caffeine high." },
             ],
             answer: 4,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 4 กริยา went ซึ่งเป็นกริยาช่อง 2 ของ go ในที่นี้เป็น linking verb จึงต้องใช้กับคุณศัพท์ wild ไม่ใช่ wildly",
           },
           {
             id: "f2-wri-98",
@@ -3212,7 +4082,7 @@ window.EXAM_DATA = {
               { text: " now received a second dose." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 ในที่นี้หมายถึง ประเทศนิวซีแลนด์ถูกวิจารณ์ จึงต้องอยู่ในรูป passive คือ has been criticized",
           },
           {
             id: "f2-wri-99",
@@ -3227,7 +4097,7 @@ window.EXAM_DATA = {
               { text: " rules for cyber-breaches." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ต้องใช้ there are หมายถึง มี ไม่ใช่ there have",
           },
           {
             id: "f2-wri-100",
@@ -3243,7 +4113,7 @@ window.EXAM_DATA = {
               { text: " in the United Kingdom." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ประธานของประโยคคือ Vertebrates ถูกจัดเป็นสัตว์ที่มีความรู้สึกเจ็บปวดได้ตามกฎหมายคุ้มครองสัตว์ฉบับใหม่ จึงต้องอยู่ในรูป passive เป็น ... are classified as ...",
           },
           {
             id: "f2-wri-101",
@@ -3259,7 +4129,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 ในที่นี้ต้องใช้ whether it is หรือ whether it be หมายถึง ไม่ว่าจะเป็น...",
           },
           {
             id: "f2-wri-102",
@@ -3275,7 +4145,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ต้องใช้ oil producing countries หมายถึง ประเทศที่ผลิตน้ำมัน",
           },
           {
             id: "f2-wri-103",
@@ -3291,7 +4161,7 @@ window.EXAM_DATA = {
               { text: " rainforests." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 ต้องใช้ to get เพื่อแสดงวัตถุประสงค์ว่า มีวิวัฒนาการเพื่อ...",
           },
           {
             id: "f2-wri-104",
@@ -3307,7 +4177,7 @@ window.EXAM_DATA = {
               { text: " and all-cause mortality." },
             ],
             answer: 4,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 4 suicidal เป็นคำคุณศัพท์ ในที่นี้ต้องใช้คำนาม suicide เพื่อให้โครงสร้างคู่ขนานกับคำนามอื่น ๆ ซึ่งเชื่อมด้วย and",
           },
           {
             id: "f2-wri-105",
@@ -3323,7 +4193,7 @@ window.EXAM_DATA = {
               { text: " in plants and animals." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ต้องใช้ known as หมายถึง เรียกว่า หากใช้ called ไม่ต้องมี as",
           },
           {
             id: "f2-wri-106",
@@ -3339,7 +4209,7 @@ window.EXAM_DATA = {
               { text: " cave city." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ประโยคนี้มีประธานคือ Vardzia แต่ยังขาดกริยาแท้ของประโยค ดังนั้นจึงต้องเปลี่ยน where เป็น is",
           },
           {
             id: "f2-wri-107",
@@ -3355,7 +4225,7 @@ window.EXAM_DATA = {
               { text: " fake charities." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ต้องใช้ take advantage of ซึ่งเป็นสำนวนหมายถึง ใช้ประโยชน์หรือเอาเปรียบ",
           },
           {
             id: "f2-wri-108",
@@ -3371,7 +4241,7 @@ window.EXAM_DATA = {
               { text: " gambling industry." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 ประโยคนี้กล่าวถึงเหตุการณ์ในอดีตที่จบไปแล้ว จึงต้องใช้กริยาช่อง 2 คือ obtained",
           },
           {
             id: "f2-wri-109",
@@ -3387,7 +4257,7 @@ window.EXAM_DATA = {
               { text: " supermarkets and living spaces." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ประโยคนี้มีประธานคือ A Dubai-based company กริยาแท้คือ has created และกรรมคือ Aqua Pods จึงต้องเปลี่ยน they เป็น which เพื่อเป็น adjective clause ขยายนาม Aqua Pods",
           },
           {
             id: "f2-wri-110",
@@ -3402,7 +4272,7 @@ window.EXAM_DATA = {
               { text: " food distribution." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 event เป็นนามนับได้ จึงต้องอยู่ในรูปพหูพจน์ events",
           },
           {
             id: "f2-wri-111",
@@ -3418,7 +4288,7 @@ window.EXAM_DATA = {
               { text: " the growing population." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 ต้องเอา do not ออก เพราะมีคำว่า not อยู่หน้าประธาน all desert plants แล้ว",
           },
           {
             id: "f2-wri-112",
@@ -3433,7 +4303,7 @@ window.EXAM_DATA = {
               { text: " bone marrow." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 คำว่า they หมายถึง all types of leukemia ซึ่งเป็นประธานของประโยคนี้ และมีกริยา 2 คำ คือ are และ start จึงควรใช้ and แทนคำว่า they เพื่อเชื่อมระหว่าง are และ start หากใช้ they จะทำให้ประโยคนี้มี 2 clauses โดยที่ไม่มีคำเชื่อมหรือเครื่องหมายวรรคตอนที่ถูกต้อง ซึ่งเรียกความผิดแบบนี้ว่า run-on",
           },
           {
             id: "f2-wri-113",
@@ -3449,7 +4319,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 ต้องใช้ with เพื่อหมายถึง คุณแม่ตั้งครรภ์ที่ติดโรคทางเพศสัมพันธ์",
           },
           {
             id: "f2-wri-114",
@@ -3465,7 +4335,7 @@ window.EXAM_DATA = {
               { text: " archipelagic nation." },
             ],
             answer: 4,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 4 the world's second largest archipelagic nation หมายถึงประเทศหมู่เกาะที่ใหญ่เป็นอันดับสองของโลก คำว่า second ขยายคำว่า largest จึงควรอยู่หน้า largest",
           },
           {
             id: "f2-wri-115",
@@ -3481,7 +4351,7 @@ window.EXAM_DATA = {
               { text: " their 14th child." },
             ],
             answer: 1,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 1 กริยา build มีรูปกริยา 3 ช่องคือ build built built ในที่นี้ต้องใช้กริยาช่อง 3 built ในโครงสร้างของ passive คือ be + V3 เพื่อหมายถึง ทัชมาฮาลถูกสร้าง จึงต้องใช้ว่า was built",
           },
           {
             id: "f2-wri-116",
@@ -3497,7 +4367,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 กริยา are seeing มีกรรม (object) คือ an exodus of workers จึงไม่ควรมี it ต่อท้าย",
           },
           {
             id: "f2-wri-117",
@@ -3512,7 +4382,7 @@ window.EXAM_DATA = {
               { text: "." },
             ],
             answer: 3,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 3 although ต้องตามด้วยอนุประโยค (clause) คือประกอบด้วยประธานและกริยา แต่ในที่นี้ the many hurdles still to be overcome เป็นเพียงนามวลี จึงต้องเปลี่ยน although เป็น despite",
           },
           {
             id: "f2-wri-118",
@@ -3528,7 +4398,7 @@ window.EXAM_DATA = {
               { text: " in the UK." },
             ],
             answer: 2,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 2 ประธานของกริยา are facing คือ An Australian firm ไม่ใช่ images หมายถึง บริษัทออสเตรเลียแห่งหนึ่งกำลังประสบกับการถูกปรับ ดังนั้นจึงต้องใช้ is facing",
           },
           {
             id: "f2-wri-119",
@@ -3544,7 +4414,7 @@ window.EXAM_DATA = {
               { text: " first detected in South Africa." },
             ],
             answer: 4,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 4 the omicron variant เป็น object ของบุพบท over จึงตามด้วยกริยาแท้ was first detected ทันทีเลยไม่ได้ ต้องอยู่ในโครงสร้างที่เป็นส่วนขยาย คือ which was first detected หรือตัด which was ออก เหลือเพียง over the omicron variant first detected ...",
           },
           {
             id: "f2-wri-120",
@@ -3560,7 +4430,7 @@ window.EXAM_DATA = {
               { text: " new drugs and medicines." },
             ],
             answer: 4,
-            explanation: "",
+            explanation: "คำตอบที่ถูกต้องคือ 4 such as หมายถึง เช่น ใช้ในการยกตัวอย่าง ต้องตามด้วยนามวลี ดังนั้น กริยา develop จึงต้องอยู่ในรูป -ing เป็น developing ในที่นี้หมายความว่า งานที่ซับซ้อน เช่น การพัฒนายาใหม่ ๆ",
           },
         ],
       },

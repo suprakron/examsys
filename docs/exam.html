@@ -226,6 +226,7 @@
   "use strict";
   var DATA = window.EXAM_DATA;
   var PART_LABEL = { listening: "Listening", reading: "Reading", writing: "Writing" };
+  var PART_Q_OFFSET = { listening: 0, reading: 30, writing: 90 };
   var PART_ICON = { listening: "L", reading: "R", writing: "W" };
 
   function el(html){ var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
@@ -499,13 +500,14 @@
       wrap.querySelector("#prog-fill").style.width = Math.round((answered / questions.length) * 100) + "%";
     }
 
+    var qOffset = PART_Q_OFFSET[partKey] || 0;
     questions.forEach(function(q, qi){
       if (q.passage && (qi === 0 || questions[qi - 1].passageTitle !== q.passageTitle)){
         wrap.appendChild(buildPassageCard(q));
       }
 
       var card = el('<div class="q-card"></div>');
-      card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + questions.length + "</div>"));
+      card.appendChild(el('<div class="q-num">' + (qOffset + qi + 1) + " / " + (qOffset + questions.length) + "</div>"));
 
       if (partKey === "writing"){
         var sentence = el('<div class="err-sentence"></div>');
@@ -619,6 +621,7 @@
       wrap.appendChild(buildTapescriptCard(part.tapescript));
     }
 
+    var qOffset = PART_Q_OFFSET[partKey] || 0;
     questions.forEach(function(q, qi){
       if (q.passage && (qi === 0 || questions[qi - 1].passageTitle !== q.passageTitle)){
         wrap.appendChild(buildPassageCard(q));
@@ -628,7 +631,7 @@
       var isCorrect = given === q.answer;
       var card = el('<div class="q-card"></div>');
       card.appendChild(el(
-        '<div class="q-num">' + (qi + 1) + " / " + questions.length +
+        '<div class="q-num">' + (qOffset + qi + 1) + " / " + (qOffset + questions.length) +
         '<span class="tag ' + (isCorrect ? "ok" : "no") + '" style="float:right">' +
         (given === undefined ? "ไม่ได้ตอบ" : (isCorrect ? "✓ ถูก" : "✗ ผิด")) +
         "</span></div>"
