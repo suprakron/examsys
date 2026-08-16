@@ -121,9 +121,38 @@
     font-family:var(--font-mono); font-size:14px; background:var(--surface-2);
     border-radius:10px; padding:14px 16px; line-height:2.1; margin-bottom:14px;
   }
-  .seg{ padding:2px 5px; border-radius:5px; text-decoration:underline; text-decoration-color:var(--text-muted); text-underline-offset:3px; }
-  .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin-left:2px; }
-  .seg.is-answer{ background:var(--gold-soft); border:1px solid var(--gold); font-weight:700; text-decoration-color:var(--gold); }
+  .seg-btn{
+    all:unset; cursor:pointer; font-family:var(--font-mono); font-size:14px;
+    padding:2px 5px; border-radius:5px; border:1px solid transparent;
+    text-decoration:underline; text-decoration-color:var(--text-muted); text-underline-offset:3px;
+  }
+  .seg-btn .seg-num{ font-size:9px; vertical-align:super; color:var(--text-muted); margin-left:2px; }
+  .seg-btn.selected{ background:var(--accent-soft); border-color:var(--accent); text-decoration-color:var(--accent); }
+  .seg-btn:focus-visible{ outline:2px solid var(--accent); outline-offset:1px; }
+  .seg-btn.reviewed.is-answer{ background:var(--gold-soft); border-color:var(--gold); font-weight:700; text-decoration-color:var(--gold); }
+  .seg-btn.reviewed.wrong-pick{ background:var(--error-soft); border-color:var(--error); text-decoration-line:underline line-through; text-decoration-color:var(--error); }
+
+  button.btn{
+    all:unset; cursor:pointer; box-sizing:border-box; text-align:center;
+    font-family:var(--font-sans); font-weight:700; font-size:13.5px;
+    padding:9px 16px; border-radius:9px; border:1px solid var(--border); background:var(--surface);
+  }
+  button.btn:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  button.btn.primary{ background:var(--accent); color:#fff; border-color:var(--accent); }
+  button.btn.primary:disabled{ opacity:.45; cursor:not-allowed; }
+  .result-tag{ font-size:13px; font-weight:700; margin-top:8px; }
+  .result-tag.correct{ color:var(--gold); }
+  .result-tag.wrong{ color:var(--error); }
+
+  .quiz-progress{
+    font-size:13px; color:var(--text-muted); font-family:var(--font-mono);
+    margin:0 0 14px; position:sticky; top:0; background:var(--bg); padding:6px 0; z-index:1;
+  }
+  .quiz-actions{
+    display:flex; align-items:center; gap:12px; flex-wrap:wrap;
+    margin:18px 0 4px; padding-top:16px; border-top:1px solid var(--border);
+  }
+  .score-tag{ font-size:14.5px; font-weight:700; color:var(--accent-strong); }
 
   .explain{ font-size:14px; background:var(--surface-2); border-radius:10px; padding:12px 14px; margin-top:12px; }
   .explain b{ color:var(--accent-strong); }
@@ -184,7 +213,7 @@
     <div class="masthead">
       <div class="eyebrow">CU-TEP · เนื้อหาเต็ม</div>
       <h1 class="title">เนื้อหา Reading &amp; Writing</h1>
-      <p class="subtitle">บทความ โจทย์ และเฉลยฉบับเต็ม ไว้อ่านทบทวน — แสดงคำตอบและคำอธิบายให้เลยโดยไม่ต้องกดส่งคำตอบเหมือนหน้า Practice Test</p>
+      <p class="subtitle">บทความ โจทย์ และเฉลยฉบับเต็ม ไว้อ่านทบทวน — ฝั่ง Reading แสดงเฉลยไว้ให้เลย ส่วนฝั่ง Writing ให้เลือกคำตอบให้ครบทุกข้อในบท แล้วกด “ส่งคำตอบ” เพื่อดูเฉลยพร้อมกันทีเดียว หรือกด “เคลียร์คำตอบ” เพื่อลองใหม่</p>
       <nav class="tabs">
         <a href="#reading"><b>01</b>Reading</a>
         <a href="#writing"><b>02</b>Writing</a>
@@ -197,7 +226,7 @@
     <div id="writing-section"></div>
   </main>
 
-  <footer class="foot">โหมดอ่านเนื้อหา — เฉลยและคำอธิบายแสดงไว้ให้พร้อมกันทั้งหมด</footer>
+  <footer class="foot">Reading: เฉลยแสดงไว้ให้พร้อมกันทั้งหมด · Writing: ตอบครบแล้วกด “ส่งคำตอบ” เพื่อดูเฉลยทั้งบท หรือ “เคลียร์คำตอบ” เพื่อเริ่มใหม่</footer>
 </div>
 
 <script src="content-data.js"></script>
@@ -301,7 +330,7 @@
     });
   }
 
-  function renderWritingQuestionCard(q, qi, total){
+  function renderWritingQuestionCard(q, qi, total, onSelect){
     var card = el('<div class="q-card"></div>');
     card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + total + "</div>"));
 
@@ -309,23 +338,83 @@
     card.appendChild(makeSpeakBtn(plainSentence, "ฟังประโยค"));
     card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
 
+    var selected = null;
+    var revealed = false;
+    var segBtns = [];
+
     var sentence = el('<div class="err-sentence"></div>');
     q.segments.forEach(function(seg){
       if (seg.n){
-        var span = document.createElement("span");
-        span.className = "seg" + (seg.n === q.answer ? " is-answer" : "");
-        span.innerHTML = escapeHtml(seg.text) + '<span class="seg-num">' + seg.n + "</span>";
-        sentence.appendChild(span);
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "seg-btn";
+        btn.innerHTML = escapeHtml(seg.text) + '<span class="seg-num">' + seg.n + "</span>";
+        btn.dataset.n = seg.n;
+        btn.addEventListener("click", function(){
+          if (revealed) return;
+          selected = seg.n;
+          segBtns.forEach(function(b){ b.classList.toggle("selected", Number(b.dataset.n) === selected); });
+          if (onSelect) onSelect();
+        });
+        segBtns.push(btn);
+        sentence.appendChild(btn);
       } else {
         sentence.appendChild(document.createTextNode(seg.text));
       }
     });
     card.appendChild(sentence);
 
+    var resultTag = document.createElement("div");
+    resultTag.className = "result-tag";
+    resultTag.style.display = "none";
+    card.appendChild(resultTag);
+
+    var explainBox = null;
     if (q.explanation){
-      card.appendChild(el('<div class="explain"><b>คำอธิบาย</b> — ' + escapeHtml(q.explanation) + "</div>"));
+      explainBox = el('<div class="explain" style="display:none"><b>คำอธิบาย</b> — ' + escapeHtml(q.explanation) + "</div>");
+      card.appendChild(explainBox);
     }
-    return card;
+
+    function reveal(){
+      if (revealed) return;
+      revealed = true;
+      segBtns.forEach(function(b){
+        var n = Number(b.dataset.n);
+        b.classList.add("reviewed");
+        if (n === q.answer) b.classList.add("is-answer");
+        if (n === selected && selected !== q.answer) b.classList.add("wrong-pick");
+      });
+      resultTag.style.display = "block";
+      if (selected == null){
+        resultTag.textContent = "○ ยังไม่ได้เลือกคำตอบ — เฉลยคือข้อ " + q.answer;
+        resultTag.classList.add("wrong");
+      } else if (selected === q.answer){
+        resultTag.textContent = "✓ ตอบถูก";
+        resultTag.classList.add("correct");
+      } else {
+        resultTag.textContent = "✗ ตอบผิด — เฉลยคือข้อ " + q.answer;
+        resultTag.classList.add("wrong");
+      }
+      if (explainBox) explainBox.style.display = "block";
+    }
+
+    function reset(){
+      selected = null;
+      revealed = false;
+      segBtns.forEach(function(b){ b.classList.remove("selected", "reviewed", "is-answer", "wrong-pick"); });
+      resultTag.style.display = "none";
+      resultTag.textContent = "";
+      resultTag.classList.remove("correct", "wrong");
+      if (explainBox) explainBox.style.display = "none";
+    }
+
+    return {
+      el: card,
+      isAnswered: function(){ return selected != null; },
+      isCorrect: function(){ return selected === q.answer; },
+      reveal: reveal,
+      reset: reset,
+    };
   }
 
   function renderWritingSection(){
@@ -355,12 +444,55 @@
         ref.innerHTML = chapter.referenceHtml;
         body.appendChild(ref);
       }
+
       if (questions.length){
         body.appendChild(el('<div class="exercises-label">แบบฝึกหัดท้ายบท</div>'));
-        questions.forEach(function(q, qi){
-          body.appendChild(renderWritingQuestionCard(q, qi, questions.length));
+
+        var progressEl = el('<div class="quiz-progress"></div>');
+        body.appendChild(progressEl);
+
+        function updateProgress(){
+          var answered = qcards.filter(function(c){ return c.isAnswered(); }).length;
+          progressEl.textContent = "ตอบแล้ว " + answered + " / " + questions.length + " ข้อ";
+        }
+
+        var qcards = questions.map(function(q, qi){
+          return renderWritingQuestionCard(q, qi, questions.length, function(){ updateProgress(); });
         });
+        qcards.forEach(function(c){ body.appendChild(c.el); });
+        updateProgress();
+
+        var quizActions = el('<div class="quiz-actions"></div>');
+        var submitBtn = document.createElement("button");
+        submitBtn.type = "button";
+        submitBtn.className = "btn primary";
+        submitBtn.textContent = "ส่งคำตอบ";
+        var clearBtn = document.createElement("button");
+        clearBtn.type = "button";
+        clearBtn.className = "btn";
+        clearBtn.textContent = "เคลียร์คำตอบ";
+        var scoreTag = document.createElement("span");
+        scoreTag.className = "score-tag";
+
+        submitBtn.addEventListener("click", function(){
+          qcards.forEach(function(c){ c.reveal(); });
+          var correct = qcards.filter(function(c){ return c.isCorrect(); }).length;
+          scoreTag.textContent = "ได้ " + correct + " / " + questions.length + " ข้อ";
+          submitBtn.disabled = true;
+        });
+        clearBtn.addEventListener("click", function(){
+          qcards.forEach(function(c){ c.reset(); });
+          scoreTag.textContent = "";
+          submitBtn.disabled = false;
+          updateProgress();
+        });
+
+        quizActions.appendChild(submitBtn);
+        quizActions.appendChild(clearBtn);
+        quizActions.appendChild(scoreTag);
+        body.appendChild(quizActions);
       }
+
       details.appendChild(body);
       wrap.appendChild(details);
     });

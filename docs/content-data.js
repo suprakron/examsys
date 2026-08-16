@@ -1348,6 +1348,3446 @@ window.CONTENT_DATA = {
             "explanation": "“during” ควรแก้เป็น “while” เพราะ “exports in July surged” เป็นประโยค (มีประธาน exports และกริยา surged) ซึ่ง during ต้องตามด้วยคำนาม/วลีเท่านั้น ไม่ใช่ประโยค จึงต้องใช้ while แทน"
           }
         ]
+      },
+      {
+        "title": "บทที่ 12: การเปรียบเทียบ (Comparison)",
+        "referenceHtml": "<h4>การเปรียบเทียบ (Comparison)</h4><p>ประโยคเปรียบเทียบในภาษาอังกฤษมี 3 รูปแบบ</p><h4>1. การเปรียบเทียบในสิ่งที่เท่ากัน</h4><p>ใช้ as ... as ซึ่งสามารถเติม Adjective หรือ Adverb ลงไปได้</p><ul><li>กรณีที่ใช้ Adjective: This exam is not as difficult as the one in the last semester. (ใช้ difficult เพราะเป็น Adjective ซึ่งตามหลัง is)</li><li>กรณีที่ใช้ Adverb: He works as effectively as you. (ใช้ effectively เพราะเป็น Adverb ซึ่งใช้ขยายคำว่า works (Verb) แปลว่า ทำงานอย่างมีประสิทธิภาพ)</li></ul><h4>2. การเปรียบเทียบขั้นกว่า</h4><p>ใช้ more หรือเติม -er บางคำเปลี่ยนรูปไปเลย และมักจะมี than ตามหลังด้วย ซึ่งใช้เปรียบเทียบกับของ 2 สิ่ง หรือ 2 กลุ่ม เช่น</p><ul><li>The weather today is warmer than the weather yesterday. (warm เป็น Adjective เติม -er เป็นขั้นกว่า วางหลัง Verb to be)</li><li>She is more intelligent than her sister. (intelligent เป็น Adjective ใส่ more เพื่อให้เป็นขั้นกว่า วางหลัง Verb to be)</li><li>These books are more expensive than those sold online. (expensive เป็น Adjective ใส่ more เพื่อให้เป็นขั้นกว่า วางหลัง Verb to be)</li><li>The teacher spoke more slowly to help us to understand. (slowly เป็น Adverb ใส่ more เพื่อให้เป็นขั้นกว่า ใช้ขยายคำกริยา คือ spoke)</li></ul><h4>3. การเปรียบเทียบขั้นสูงสุด</h4><p>เป็นการเปรียบเทียบที่มีมากกว่า 2 คน หรือ 2 สิ่งขึ้นไป โดยใช้ the most หรือเติม -est บางคำเปลี่ยนรูปไปเลย เช่น</p><ul><li>Jessy is the tallest student in her class. (the tallest เป็น Adjective ขั้นสูงสุด วางหลัง Verb to be)</li><li>He is the best performer among others in the team. (the best เปลี่ยนรูปมาจาก good เป็น Adjective ขั้นสูงสุด ใช้วางหลัง Verb to be)</li><li>Cruel Summer is the most impressive song by Taylor Swift. (the most impressive เป็น Adjective ขั้นสูงสุด ใช้ขยายคำนามคือ song)</li></ul><h4>ตัวอย่างคำศัพท์ Adjective ขั้นกว่า และขั้นสูงสุด</h4><div class=\"tbl-wrap\"><table><tr><th>Adjective</th><th>ขั้นกว่า</th><th>ขั้นสูงสุด</th></tr><tr><td>hot</td><td>hotter</td><td>the hottest</td></tr><tr><td>large</td><td>larger</td><td>the largest</td></tr><tr><td>nice</td><td>nicer</td><td>the nicest</td></tr><tr><td>pretty</td><td>prettier</td><td>the prettiest</td></tr><tr><td>attractive</td><td>more attractive</td><td>the most attractive</td></tr><tr><td>expensive</td><td>more expensive</td><td>the most expensive</td></tr><tr><td>famous</td><td>more famous</td><td>the most famous</td></tr><tr><td>good</td><td>better</td><td>the best</td></tr><tr><td>bad</td><td>worse</td><td>the worst</td></tr></table></div><h4>ตัวอย่างคำศัพท์ Adverb ขั้นกว่า และขั้นสูงสุด</h4><div class=\"tbl-wrap\"><table><tr><th>Adverb</th><th>ขั้นกว่า</th><th>ขั้นสูงสุด</th></tr><tr><td>hard</td><td>harder</td><td>hardest</td></tr><tr><td>fast</td><td>faster</td><td>fastest</td></tr><tr><td>late</td><td>later</td><td>latest</td></tr><tr><td>impressively</td><td>more impressively</td><td>most impressively</td></tr><tr><td>quietly</td><td>more quietly</td><td>most quietly</td></tr><tr><td>slowly</td><td>more slowly</td><td>most slowly</td></tr><tr><td>seriously</td><td>more seriously</td><td>most seriously</td></tr><tr><td>well</td><td>better</td><td>best</td></tr><tr><td>badly</td><td>worse</td><td>worst</td></tr><tr><td>little</td><td>less</td><td>least</td></tr></table></div>",
+        "questions": [
+          {
+            "id": "cw12-1",
+            "segments": [
+              {
+                "text": "China is the "
+              },
+              {
+                "text": "largest",
+                "n": 1
+              },
+              {
+                "text": " producer of gallium and germanium whose outputs accounts for "
+              },
+              {
+                "text": "more than",
+                "n": 2
+              },
+              {
+                "text": " 90 percent of the global total which are "
+              },
+              {
+                "text": "more",
+                "n": 3
+              },
+              {
+                "text": " larger than those in "
+              },
+              {
+                "text": "a",
+                "n": 4
+              },
+              {
+                "text": " decade ago, official data showed."
+              }
+            ],
+            "answer": 3,
+            "explanation": "more ไม่ถูกต้อง แก้ไขโดยตัดออกเลย เพราะขั้นกว่าของ large คือ larger อยู่แล้ว จึงไม่จำเป็นต้องมี more ซ้ำอีก (largest ถูกต้องเพราะมี the นำหน้าบ่งบอกขั้นสูงสุด, more than ถูกต้องเพราะเมื่อใช้ติดกันสามารถนำหน้าตัวเลขเพื่อบอกปริมาณได้, a decade ถูกต้องเพราะ a นำหน้า decade ที่ไม่เติม s หมายถึงระยะเวลา 1 ทศวรรษ)"
+          },
+          {
+            "id": "cw12-2",
+            "segments": [
+              {
+                "text": "Romance scammers often say they are in the construction industry overseas that makes it "
+              },
+              {
+                "text": "easier",
+                "n": 1
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "than",
+                "n": 2
+              },
+              {
+                "text": " avoid meeting in person -- and "
+              },
+              {
+                "text": "more",
+                "n": 3
+              },
+              {
+                "text": " plausible when they ask their victims for help, this is one of the tricks scammers use to get more "
+              },
+              {
+                "text": "money",
+                "n": 4
+              },
+              {
+                "text": " from you."
+              }
+            ],
+            "answer": 2,
+            "explanation": "than ไม่ถูกต้อง แก้ไขเป็น to เพราะ avoid เป็น V.1 ที่ควรตามหลัง to ('makes it easier to avoid meeting in person' แปลว่า ทำให้ง่ายขึ้นที่จะหลีกเลี่ยงการนัดเจอตัวจริง) (easier ถูกต้องเพราะมาจากโครงสร้าง make something Adjective, more ถูกต้องเพราะใช้กับ plausible (Adjective) ได้ แปลว่าน่าเชื่อถือมากกว่า, money ถูกต้องเพราะ more ใช้กับคำนามได้)"
+          },
+          {
+            "id": "cw12-3",
+            "segments": [
+              {
+                "text": "In the "
+              },
+              {
+                "text": "worse",
+                "n": 1
+              },
+              {
+                "text": " cases, Schizophrenia can "
+              },
+              {
+                "text": "be",
+                "n": 2
+              },
+              {
+                "text": " a devastating diagnosis for sufferers and their family members because "
+              },
+              {
+                "text": "the",
+                "n": 3
+              },
+              {
+                "text": " disease robs people of their identity "
+              },
+              {
+                "text": "in",
+                "n": 4
+              },
+              {
+                "text": " cruel, disruptive ways."
+              }
+            ],
+            "answer": 1,
+            "explanation": "worse ไม่ถูกต้อง แก้ไขเป็น worst เพราะมี the นำหน้า แสดงว่ากำลังเปรียบเทียบขั้นสูงสุด แต่ worse เป็นขั้นกว่า จึงต้องแก้เป็น worst (be ถูกต้องเพราะ Verb to be หลัง Modal Verb ต้องอยู่ในรูป Infinitive, the ถูกต้องเพราะ the disease หมายถึงโรคจิตเภทที่กล่าวมาแล้วข้างต้น, in ถูกต้องเพราะใช้คู่กับความหมาย 'ในวิถีทางที่โหดร้ายและยุ่งเหยิง')"
+          }
+        ]
+      },
+      {
+        "title": "บทที่ 13: ประโยคเงื่อนไข (If-Clause)",
+        "referenceHtml": "<h4>ประโยคเงื่อนไข (If-Clause)</h4><p>ในภาษาอังกฤษมีประโยคสมมติหรือเงื่อนไขเหมือนคำว่า “ถ้า” ในภาษาไทยเช่นกัน แต่มีความแตกต่าง คือ ประโยคเงื่อนไขในภาษาอังกฤษมีหลายแบบ ซึ่งแต่ละแบบก็ใช้ในสถานการณ์ที่ต่างกัน โดยหลักๆ มี 4 แบบ</p><h4>ชนิดของประโยคเงื่อนไข</h4><div class=\"tbl-wrap\"><table><tr><th>ชนิด</th><th>โครงสร้าง</th><th>ตัวอย่าง</th></tr><tr><td>TYPE 0 - Zero</td><td>If + subject + V.1 (s/es), subject + V.1 (s/es)</td><td>If water reaches 100 degrees, it boils.</td></tr><tr><td>TYPE 1 - Future Possible</td><td>If + subject + V.1 (s/es), subject + will + V.1</td><td>If I study hard, I will pass the test.</td></tr><tr><td>TYPE 2 - Present Unreal</td><td>If + subject + V.2, subject + would + V.1</td><td>If I were a bird, I would sing all day.</td></tr><tr><td>TYPE 3 - Past Unreal</td><td>If + subject + had + V.3, subject + would + have + V.3</td><td>If I had been in Japan longer, I would have visited Osaka.</td></tr></table></div><p><b>TYPE 0</b> ถ้าน้ำมีอุณหภูมิถึง 100 องศา น้ำก็เดือด เป็นเงื่อนไขที่มีผลลัพธ์ทางเดียว มักใช้อธิบายปรากฏการณ์ธรรมชาติ</p><p><b>TYPE 1</b> ถ้าฉันเรียนหนัก ฉันจะสอบผ่าน เป็นเงื่อนไขที่มีผลลัพธ์เกิดขึ้นได้หลายทาง ผลลัพธ์จะเกิดขึ้นในอนาคต</p><p class=\"note\">จุดสังเกต Type 0 กับ Type 1 มีความคล้ายคลึงกัน ต่างตรงที่ผลลัพธ์ Type 0 เป็นจริงเสมอ จึงใช้ Present Simple ในขณะที่ Type 1 ผลลัพธ์จะเกิดขึ้นในอนาคต จึงใช้ Future Simple (will + V.1)</p><p><b>TYPE 2</b> ถ้าฉันเป็นนก ฉันจะร้องเพลงทั้งวัน เป็นเงื่อนไขที่เป็นไปไม่ได้เลยในปัจจุบัน จุดสังเกตที่น่าสนใจคือ ถ้าสมมติว่า “เป็น” อะไรก็ตามต้องใช้ were เสมอ เช่น ถ้าฉันเป็นผู้จัดการ (If I were a manager, ...) แต่ถ้าเป็นคำกริยาอื่นๆ ก็ใช้คำกริยาช่อง 2 ได้ตามปกติ เช่น ถ้าฉันบินไปดวงจันทร์ได้ (If I flew to the moon, ...)</p><p><b>TYPE 3</b> ถ้าฉันอยู่นานกว่านี้ ฉันคงได้ไปเที่ยวโอซากะแล้ว เป็นการสมมติในสิ่งที่เลยผ่านไปแล้วในแง่ของกาลเวลา ไม่สามารถย้อนเวลากลับไปเปลี่ยนแปลงได้ ความรู้สึกเหมือนว่าผู้พูดเสียดายในสิ่งที่ผ่านเลยไปในอดีต</p><h4>จุดสังเกตที่น่าสนใจ</h4><ol><li>เหตุผลที่เรียงลำดับ If-Clause ให้เป็น TYPE 0, 1, 2, และ 3 ก็เพื่อให้ง่ายต่อการจำ กล่าวคือ<br>TYPE 0 ใช้คำกริยาช่องที่ 1 &rarr; If + subject + V.1, subject + V.1<br>TYPE 1 ใช้คำกริยาช่องที่ 1 &rarr; If + subject + V.1, subject + will + V.1<br>TYPE 2 ใช้คำกริยาช่องที่ 2 &rarr; If + subject + V.2, subject + would + V.1<br>TYPE 3 ใช้คำกริยาช่องที่ 3 &rarr; If + subject + had + V.3, subject + would have + V.3</li><li>ประโยค If-Clause สามารถสลับส่วนเงื่อนไขและผลลัพธ์ได้ โดยที่โครงสร้างประโยคภายในต้องเหมือนเดิม ห้ามเปลี่ยนแปลง เช่น<br>If the firm offers the product discount to customers, the sales volume will increase.<br>= The sales volume will increase if the firm offers the product discount to customers.</li><li>บางครั้งข้อสอบใช้คำว่า unless (= ถ้าไม่) ก็ให้ถือว่าเป็นรูปปฏิเสธของ if แค่นั้น ซึ่งรูปแบบก็ยังคงเดิมตาม If-Clause 4 แบบ</li><li>ส่วนมากข้อสอบไม่ค่อยสนใจความหมายของ If-Clause แต่ข้อสอบจะสนใจว่าผู้สอบเลือกคำกริยาได้ตรงตามคู่ของ If-Clause หรือไม่</li><li>การลดรูปประโยค If-Clause คือการตัด If ออก แล้วใช้ Should, Were, Had มาวางแทนที่ If ซึ่งมีรูปแบบดังนี้<br>TYPE 0: Should you have any question, please let me know.<br>TYPE 1: Should we go by train, it will be faster.<br>TYPE 2: Were I a bird, I would sing all day.<br>TYPE 3: Had I worked hard when I was young, I might have succeeded.</li></ol>",
+        "questions": [
+          {
+            "id": "cw13-1",
+            "segments": [
+              {
+                "text": "If",
+                "n": 1
+              },
+              {
+                "text": " Alan "
+              },
+              {
+                "text": "had",
+                "n": 2
+              },
+              {
+                "text": " enough vacation days left this year, he will "
+              },
+              {
+                "text": "take",
+                "n": 3
+              },
+              {
+                "text": " two weeks off to USA and "
+              },
+              {
+                "text": "visit",
+                "n": 4
+              },
+              {
+                "text": " his mother in Japan as well."
+              }
+            ],
+            "answer": 2,
+            "explanation": "had ไม่ถูกต้อง แก้ไขเป็น has เพราะเป็น If-Clause แบบที่ 1 (สังเกตจาก will ในประโยคหลัง) ประโยคหลัง If จึงควรอยู่ในรูป Present Tense แต่ had เป็นกริยาในรูป Past Tense (If ถูกต้องเพราะเป็นประโยคเงื่อนไข, take ถูกต้องเพราะ If-Clause แบบที่ 1 ประโยคผลลัพธ์อยู่ในรูป will + V.1 ไม่ผัน, visit ถูกต้องเพราะละคำว่า will ได้หลัง and เนื่องจากประธานตัวเดียวกัน)"
+          },
+          {
+            "id": "cw13-2",
+            "segments": [
+              {
+                "text": "The show organizers "
+              },
+              {
+                "text": "will have",
+                "n": 1
+              },
+              {
+                "text": " to cancel the musical performance "
+              },
+              {
+                "text": "unless",
+                "n": 2
+              },
+              {
+                "text": " they "
+              },
+              {
+                "text": "sold",
+                "n": 3
+              },
+              {
+                "text": " more show tickets "
+              },
+              {
+                "text": "at",
+                "n": 4
+              },
+              {
+                "text": " the last minute."
+              }
+            ],
+            "answer": 3,
+            "explanation": "sold ไม่ถูกต้อง แก้ไขเป็น sell เพราะประโยคแรกอยู่ในรูป Future Tense แสดงว่าเป็น If-Clause แบบที่ 1 (unless ใช้เหมือน if แต่ให้ความหมายเชิงปฏิเสธ) กริยาในประโยคหลัง unless จึงควรอยู่ในรูป Present Tense (will have ถูกต้องเพราะหลัง will ต้องตามด้วย Infinitive, unless ถูกต้องเพราะหมายถึง ถ้าพวกเขาไม่สามารถขายบัตรได้มากกว่านี้ในนาทีสุดท้าย, at the last minute ถูกต้องเพราะเป็นสำนวนแปลว่า ในช่วงสุดท้าย)"
+          },
+          {
+            "id": "cw13-3",
+            "segments": [
+              {
+                "text": "Were",
+                "n": 1
+              },
+              {
+                "text": " the employees "
+              },
+              {
+                "text": "been informed",
+                "n": 2
+              },
+              {
+                "text": " of the management team's decision, they "
+              },
+              {
+                "text": "might",
+                "n": 3
+              },
+              {
+                "text": " have "
+              },
+              {
+                "text": "understood",
+                "n": 4
+              },
+              {
+                "text": " of the situation and the direction of the company clearly."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Were ไม่ถูกต้อง แก้ไขเป็น Had เพราะเป็น If-Clause แบบที่ 3 (ลดรูป) สังเกตจาก might have understood ในอีกประโยคหนึ่ง ซึ่งมีโครงสร้างเดียวกับ would + have + V.3 (been informed ถูกต้องเพราะเป็น Passive, might ถูกต้องเพราะเป็น If-Clause แบบที่ 3 ลดรูป, understood ถูกต้องเพราะเป็น If-Clause แบบที่ 3 ลดรูปเช่นกัน)"
+          }
+        ]
+      },
+      {
+        "title": "บทที่ 14: คำกริยาที่ใช้เป็นคำคุณศัพท์ (Participle)",
+        "referenceHtml": "<h4>คำกริยาที่ใช้เป็นคำคุณศัพท์ (Participle)</h4><h4>Present Participle</h4><p>Present Participle คือ คำกริยาที่อยู่ในรูป V-ing โดยทำหน้าที่ดังนี้</p><ul><li>ทำหน้าที่เป็นคำคุณศัพท์ (Adjective) ขยายคำนาม (Noun) เช่น The crying girl has dropped her ice cream. (crying ในที่นี้ขยายคำว่า girl เพื่อบอกว่า เด็กหญิงคนนี้กำลังร้องไห้)</li><li>ทำหน้าที่เป็น Participle Phrase ขยายคำนามในประโยคหลัก เช่น Starting in the new year, the new policy bans plastic bags in the city. (Starting in the new year ขยายประโยคหลักเพื่อบอกว่า นโยบายแบนถุงพลาสติกนี้จะเริ่มตอนปีใหม่)</li></ul><h4>Present Participle Phrase</h4><p>การใช้ V-ing และกลุ่มคำเพื่อทำหน้าที่ขยายประโยคหลัก (ความหมายของประโยคจะเป็น Active Voice) โดยในประโยคจะแบ่งเป็น 2 ส่วน คือส่วนที่เป็นใจความหลัก และส่วนขยายที่เป็น Present Participle Clause</p><p><b>ส่วนขยายอยู่ท่อนหน้า</b><br>Arriving at the hotel, Patty was surprised to see a lot of Japanese tourists.<br>ประธานในประโยคนี้มีเพียงคนเดียวคือ Patty และมีกริยาหลักคือ was (ใจความหลักทั้งหมดอยู่หลังเครื่องหมาย comma) ด้วยความที่ Patty เป็นคนเดินทางมาถึงโรงแรมเอง ดังนั้น arriving จึงอยู่ในรูป V-ing</p><p><b>ส่วนขยายอยู่หลังประธาน (ใจกลางประโยค)</b><br>The boy playing with a cat is my brother.<br>ประธานในประโยคนี้มีเพียงคำเดียว คือ The boy ใจความขยายคือ playing with a cat ส่วนใจความหลักจริงๆ มีเพียง The boy is my brother.</p><p><b>ส่วนขยายอยู่หลังสุด</b><br>The University of York created a new campus in 2003, introducing new subjects such as law and dentistry.<br>ใจความหลักของประโยคนี้คือประโยคแรก โดยมี The University of York เป็นประธาน และมี created เป็นกริยาหลัก ส่วนขยายจะอยู่หลังเครื่องหมาย comma เป็นต้นไป ด้วยความที่มหาวิทยาลัยเป็นคนแนะนำวิชาใหม่เอง กริยา introducing จึงอยู่ในรูป V-ing</p><h4>Past Participle</h4><p>Past Participle คือ คำกริยาที่อยู่ในรูป V.3 โดยทำหน้าที่ดังนี้</p><ul><li>ทำหน้าที่เป็นคำคุณศัพท์ (Adjective) ขยายคำนาม (Noun) เช่น I won't buy a stolen car. (stolen ในที่นี้ขยายคำว่า car เพื่อบอกว่า รถคันนี้ถูกขโมยมา)</li><li>ทำหน้าที่เป็น Participle Phrase ขยายคำนามในประโยคหลัก เช่น Kim came here to visit the boy injured in the car accident. (injured ในที่นี้ขยายคำว่า the boy เพื่อบอกว่าเด็กคนนี้ได้รับบาดเจ็บในอุบัติเหตุรถยนต์)</li></ul><h4>Past Participle Phrase</h4><p>การใช้ V.3 และกลุ่มคำทำหน้าที่ขยายคำนามที่อยู่ในประโยคหลัก (ความหมายของประโยคจะเป็น Passive Voice) โดยในประโยคจะแบ่งเป็น 2 ส่วน ส่วนที่เป็นใจความหลัก และส่วนขยายที่เป็น Past Participle Phrase</p><p><b>ส่วนขยายอยู่ท่อนหน้า</b><br>Destroyed by a fire, the shopping mall was never rebuilt.<br>ประธานในประโยคนี้มีเพียงสิ่งเดียวคือ The shopping mall มีกริยาหลักคือ was never rebuilt ถ้าแปลความหมายประโยคนี้ “ห้างสรรพสินค้าที่ถูกทำลายโดยเปลวไฟ ไม่ได้รับการบูรณะอีกเลย” ความหมายของ destroyed เป็นแบบ Passive Voice จึงต้องอยู่ในรูป V.3</p><p><b>ส่วนขยายอยู่ท่อนกลางประโยค</b><br>The smartphone ordered last night from SHOPPA will arrive tomorrow.<br>ในประโยคนี้มีประธานคือ The smartphone โดยมีกริยาหลักคือ will arrive ส่วน ordered ทำหน้าที่ขยาย The smartphone แต่ด้วยความที่ประธานคือ โทรศัพท์สมาร์ตโฟนถูกสั่ง ดังนั้นกริยา order จึงเป็นแบบ Past Participle ซึ่งอยู่ในรูป V.3</p><p><b>ส่วนขยายอยู่ท่อนหลังสุด</b><br>Carol didn't like the thriller movie released last night. (ใจความหลัก: Carol didn't like the thriller movie | ส่วนขยาย: released last night)<br>ใจความหลักของประโยคนี้ Carol เป็นประธาน และมี didn't like เป็นกริยาหลัก ส่วนขยายเริ่มตั้งแต่คำว่า released เป็นต้นไป ด้วยความที่ภาพยนตร์ไม่สามารถทำกริยา release เองได้ จึงต้องอยู่ในโครงสร้าง Passive Voice ในรูป V.3</p><p class=\"note\">หมายเหตุ: Participle ไม่ขึ้นกับ Tense ไม่ว่าประโยคนั้นจะเป็น Tense ใดก็ตาม อย่าได้สนใจ ให้เราหาคำนามที่ Participle นั้นกำลังขยายให้เจอ แล้วใช้หลักการ Active Voice &amp; Passive Voice ตามที่กล่าวมา</p>",
+        "questions": [
+          {
+            "id": "cw14-1",
+            "segments": [
+              {
+                "text": "Extremely",
+                "n": 1
+              },
+              {
+                "text": " high temperatures pose critical "
+              },
+              {
+                "text": "challenges",
+                "n": 2
+              },
+              {
+                "text": " to children in Thailand, "
+              },
+              {
+                "text": "limited",
+                "n": 3
+              },
+              {
+                "text": " outdoor activities and "
+              },
+              {
+                "text": "disrupting",
+                "n": 4
+              },
+              {
+                "text": " education."
+              }
+            ],
+            "answer": 3,
+            "explanation": "limited ไม่ถูกต้อง แก้ไขเป็น limiting เพราะ Participle อยู่หลังเครื่องหมาย comma ประธานของประโยคแรกคือ Extremely high temperatures ซึ่งเป็นผู้กระทำกริยานี้เอง (อากาศร้อนจัดจำกัดการทำกิจกรรมกลางแจ้งเอง) ส่วนขยายจึงควรอยู่ในรูป Present Participle (Extremely ถูกต้องเพราะเป็น Adverb ขยาย high, challenges ถูกต้องเพราะเติม s ได้เนื่องจากมีความท้าทายหลายอย่าง, disrupting ถูกต้องเพราะเป็น Present Participle ขยายประโยคแรกเช่นกัน)"
+          },
+          {
+            "id": "cw14-2",
+            "segments": [
+              {
+                "text": "Voting",
+                "n": 1
+              },
+              {
+                "text": " as the world's best island, Santorini is recommended "
+              },
+              {
+                "text": "in",
+                "n": 2
+              },
+              {
+                "text": " more articles than any "
+              },
+              {
+                "text": "other",
+                "n": 3
+              },
+              {
+                "text": " destinations and doesn't "
+              },
+              {
+                "text": "suffer",
+                "n": 4
+              },
+              {
+                "text": " from light pollution like major cities."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Voting ไม่ถูกต้อง แก้ไขเป็น Voted เพราะส่วนขยายอยู่หน้าสุดของประโยค และประธาน (Santorini) อยู่หลัง comma โดยเป็นผู้ถูกกระทำ (ได้รับการโหวตว่าเป็นเกาะที่ดีที่สุดในโลก) กริยาจึงควรอยู่ในรูป V.3 ตามหลัก Past Participle (in ถูกต้องเพราะ in ตามด้วย articles, other ถูกต้องเพราะ any other + คำนามพหูพจน์ destinations, doesn't ถูกต้องเพราะผันตามประธานเอกพจน์ Santorini)"
+          }
+        ]
+      },
+      {
+        "title": "บทที่ 15: ประเด็นที่ออกข้อสอบบ่อยๆ",
+        "referenceHtml": "<h4>ประเด็นที่ออกข้อสอบบ่อยๆ</h4><p>สำหรับบทนี้เป็นการรวบยอดประเด็นปลีกย่อยต่างๆ ที่นำมาออกข้อสอบเป็นประจำ หากจดจำได้ก็จะช่วยให้ทำข้อสอบได้เร็วขึ้น และเก็บคะแนนในส่วนนี้เพิ่มขึ้นได้อย่างมาก</p><h4>One of the + คำนามพหูพจน์</h4><p>การใช้ One of the หมายถึง หนึ่งใน (สิ่งเหล่านั้น) สิ่งเหล่านั้นย่อมมีมากกว่าหนึ่ง ดังนั้นคำนามที่ตามมาต้องอยู่ในรูปคำนามพหูพจน์ เช่น</p><ul><li>Killer whales are one of the most fascinating marine mammals in the world. (วาฬเพชฌฆาตเป็นหนึ่งในสัตว์เลี้ยงลูกด้วยนมที่อาศัยอยู่ในน้ำที่น่าหลงใหลที่สุดในโลก แสดงว่าสัตว์เลี้ยงลูกด้วยนมบนโลกมีหลายชนิด คำว่า mammals จึงเติม s)</li><li>One of the students in our class will be selected to visit United Nations headquarters. (นักเรียนมีหลายคน และจะถูกเลือกไปเพียงคนเดียว ดังนั้น student จึงต้องเติม s เพื่อแสดงความเป็นพหูพจน์)</li></ul><h4>Each/Every + คำนามนับได้เอกพจน์</h4><p>Each/Every ออกในข้อสอบ CU-TEP บ่อย ซึ่งทั้งสองคำนี้ต้องตามหลังด้วยคำนามเอกพจน์ เช่น</p><ul><li>We visit our grandmother every month.</li><li>You do not need to take your luggage with you at every stop when changing your connecting flight.</li></ul><p class=\"note\">ข้อยกเว้น ถ้าหลัง every เป็นตัวเลข คำนามที่ตามมาจะอยู่ในรูปพหูพจน์ เช่น every two hours — We should visit the dentist every six months.</p><h4>Much/Many</h4><ul><li><b>Much</b> + คำนามนับไม่ได้ — As far as I know, I don't have much time for getting exercise this month. / There was much discussion about the reasons for the failure. / Due to the economic recession, I don't earn much money this year.</li><li><b>Many</b> + คำนามนับได้ พหูพจน์ — Many Japanese restaurants in China import seafood from Japan. / Many people would disagree with your ideas. / New drivers have twice as many accidents as experienced drivers.</li></ul><h4>Amount/Number</h4><ul><li><b>Amount</b> + คำนามนับไม่ได้ เช่น the amount of water — Last year I had a certain amount of difficulty finding a new job. / The new tax policy caused a huge amount of public anger.</li><li><b>Number</b> + คำนามนับได้ พหูพจน์ เช่น the number of students — Thailand expects a total number of visitors close to 25 million by the end of the year. / The estimated number of companies is approximately 333.34 million worldwide in 2023.</li></ul><h4>Another/Other/Others</h4><ul><li><b>Another</b> + คำนามนับได้ เอกพจน์ เช่น another person, another car — Would you like another cup of coffee? / We are planning to have another trip abroad this year.</li><li><b>Other</b> + คำนามนับได้ พหูพจน์ เช่น other students, other companies — The new model of NTC smartphone has many other interesting features. / The city plan has been opposed by the public, businesses and other local organizations.</li><li><b>Others</b> จะไม่มีคำนามตามหลัง เพราะผู้อ่านรู้อยู่แล้วว่าหมายถึงอะไร เช่น Some men buy clothes on their own while others ask their partners to go with them to the shopping mall. (others ในที่นี้คือ other men)</li></ul><p class=\"note\">ข้อควรระวัง บางทีคำนามที่ตามหลัง other ก็อยู่ห่างออกไป เพราะมี Adjective นำหน้า เช่น other respiratory viral infections ถ้าตัด Adjective ออกไปทั้งหมด จะเหลือเพียงคำนามคือ infections ซึ่งอยู่ในรูปพหูพจน์</p><h4>Affect/Effect</h4><ul><li><b>Affect</b> (Verb) ส่งผลกระทบ — Plastic pollution affects almost every marine species. / Education has been severely affected by the current economic decline.</li><li><b>Effect</b> (Noun) ผลกระทบ — Covid has a negative effect on labour productivity. / Modern farming methods can have an adverse effect on the environment.</li></ul><h4>Because/Because of</h4><ul><li><b>Because of</b> + Noun แปลว่า เพราะว่า เนื่องจาก โดยคำนามอาจจะมี Adjective นำหน้า หรือเป็นกลุ่มคำนามก็ได้ — The flight was delayed because of bad weather. / The local shrimp industry is not good this year because of persistent disease and unfavourable weather.</li><li><b>Because</b> + Subject + Verb (ประโยค) แปลว่า เพราะว่า เนื่องจาก — Because recycling is free, consumers are encouraged to buy things that can be recycled. / Classes have been cancelled today because the instructors have a staff meeting.</li></ul><h4>Like/Unlike/Alike</h4><ul><li><b>Like</b> + Noun แปลว่า เหมือน — Some tasks, like interviewing and training, will always be done best by humans.</li><li><b>Unlike</b> + Noun แปลว่า ไม่เหมือน — Hippos cannot swim or breathe underwater, and unlike most mammals they are so heavy that they cannot float.</li><li><b>Alike</b> แปลว่า เหมือน แต่ไวยากรณ์ต่างจาก 2 คำแรก คือ alike จะไม่ตามด้วยคำนาม แต่อยู่หลังสุดของประโยคเท่านั้น — Dolphins and whales are alike in the sense that they both are marine mammals and they both belong to the order of cetacean.</li></ul><p class=\"note\">ในข้อสอบจะวาง alike ผิดตำแหน่ง เช่น [X] The girls become more alike boys when they enter the school system. ที่ถูกต้องคือ [&#10003;] The girls become more like boys when they enter the school system.</p><h4>Despite/In spite of &amp; Although/Even though</h4><p>สองกลุ่มนี้ใช้บอกถึงความขัดแย้งกัน แปลไทยได้ว่า “ทั้งๆ ที่” “ถึงแม้ว่า” แต่มีโครงสร้างไวยากรณ์ต่างกัน</p><ul><li><b>Despite/In spite of</b> + Noun หรือกลุ่มคำนาม — Despite the limitations of the study, the research provides new findings about the potential role of changes in alcohol consumption in cancer risk. / In spite of the technological advancement in agriculture, millions of children around the world are still starving due to poverty.</li><li><b>Although/Even though</b> + Subject + Verb (ประโยค) — Although tortoises enjoy soaking in water, they don't swim and cannot even float. / Even though sea lions have teeth, they like to swallow their food whole.</li></ul><h4>Rise/Raise</h4><ul><li><b>Rise</b> (Verb) แปลว่า เพิ่มขึ้น เป็นกริยาที่ไม่ต้องการกรรม — College tuition is rising so fast. / Sea levels are rising as a result of global warming.</li><li><b>Raise</b> (Verb) แปลว่า ทำให้มากขึ้น เป็นกริยาที่ต้องการกรรม — The student raised her hand to ask a question. / The government plans to raise minimum wage by 5-8%.</li></ul><h4>Enough</h4><p>Enough แปลว่า เพียงพอ จะออกสอบในบางรอบ โดยมีโครงสร้างไวยากรณ์ดังนี้</p><ul><li>Enough + Noun — There are enough seats in the lecture room.</li><li>Adjective + Enough — Parker is not tall enough to be a soldier.</li></ul><h4>โครงสร้างคู่ขนาน (Parallel Structure/Parallelism)</h4><p>โครงสร้างคู่ขนาน คือ การใช้โครงสร้างทางไวยากรณ์ที่มีลักษณะเหมือนกัน ในรูปประโยคเดียวกัน เช่น [X] She is mad about watching TV more than to read a book. [&#10003;] She is mad about watching TV more than reading a book. — ถ้าคำแรกคือ watching อยู่ในรูป V-ing แล้ว อีกคำที่ถูกเปรียบเทียบก็ควรอยู่ในรูป V-ing เช่นกัน คือ reading</p><p>โดยปกติแล้วในข้อสอบจะมีตัวเชื่อมให้สังเกตคือคำว่า and เช่น [X] Kim is healthy, wealthy, and happiness. (Adjective, Adjective, Noun) [&#10003;] Kim is healthy, wealthy, and happy. (Adjective, Adjective, Adjective)</p><h4>ตัวเลขที่ทำหน้าที่ Adjective</h4><p>กรณีที่ตัวเลขบอกเวลาหรือปริมาณ โดยทำหน้าที่เป็น Adjective ขยายคำนาม จะไม่มีการเติม s แม้ว่าตัวเลขนั้นจะอยู่ในรูปพหูพจน์ก็ตาม เช่น</p><ul><li>a three-year contract — three-year ทำหน้าที่ Adjective ขยายคำนาม contract เพื่อบอกว่าสัญญานี้มีระยะเวลา 3 ปี คำนามหลักคือ contract ดังนั้นคำว่า year ในฐานะ Adjective ขยายคำนาม จึงไม่ต้องเติม s</li><li>a 10-month-old boy — 10-month-old ทำหน้าที่ Adjective ขยายคำนาม boy เพื่อบอกว่าเด็กผู้ชายคนนี้อายุ 10 เดือน คำนามหลักคือ boy ดังนั้นคำว่า month ในฐานะ Adjective ขยายคำนาม จึงไม่ต้องเติม s</li></ul>",
+        "questions": [
+          {
+            "id": "cw15-1",
+            "segments": [
+              {
+                "text": "Singapore Changi Airport, commonly "
+              },
+              {
+                "text": "known",
+                "n": 1
+              },
+              {
+                "text": " as Changi Airport, is one of the largest transportation "
+              },
+              {
+                "text": "hub",
+                "n": 2
+              },
+              {
+                "text": " in Asia and is renowned for "
+              },
+              {
+                "text": "its",
+                "n": 3
+              },
+              {
+                "text": " unrivalled passenger "
+              },
+              {
+                "text": "experiences",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "hub ไม่ถูกต้อง แก้ไขเป็น hubs เพราะตามโครงสร้าง one of the + คำนามพหูพจน์ (สนามบินชางกีเป็นหนึ่งในศูนย์การคมนาคมที่ใหญ่ที่สุดในเอเชีย แสดงว่าในเอเชียมีศูนย์การคมนาคมหลายแห่ง) (commonly ถูกต้องเพราะเป็น Adverb ขยาย known, its ถูกต้องเพราะหมายถึงสนามบินชางกีซึ่งเป็นคำนามเอกพจน์, experiences ถูกต้องเพราะหมายถึงประสบการณ์ของผู้โดยสารหลายคน)"
+          },
+          {
+            "id": "cw15-2",
+            "segments": [
+              {
+                "text": "Mariah Carey makes a lot of "
+              },
+              {
+                "text": "money",
+                "n": 1
+              },
+              {
+                "text": " every "
+              },
+              {
+                "text": "year",
+                "n": 2
+              },
+              {
+                "text": " thanks to her festive hit 'All I want for Christmas is you' "
+              },
+              {
+                "text": "when",
+                "n": 3
+              },
+              {
+                "text": " is one of the most streamed Christmas "
+              },
+              {
+                "text": "songs",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 3,
+            "explanation": "when ไม่ถูกต้อง แก้ไขเป็น which เพราะตำแหน่งนี้ต้องการ Relative Pronoun ที่มาขยายเพลง All I want for Christmas is you (when จะไม่ตามด้วยกริยาโดยตรง แต่จะตามด้วยประโยค) (a lot of ถูกต้องเพราะนำหน้าคำนามนับไม่ได้และคำนามนับได้พหูพจน์ได้, every year ถูกต้องเพราะ every + นามเอกพจน์, songs ถูกต้องเพราะเป็นหนึ่งในเพลงคริสต์มาสที่ถูกสตรีมมากที่สุด แสดงว่าต้องมีหลายเพลง)"
+          },
+          {
+            "id": "cw15-3",
+            "segments": [
+              {
+                "text": "Every "
+              },
+              {
+                "text": "times",
+                "n": 1
+              },
+              {
+                "text": " you open Google Photos, you can "
+              },
+              {
+                "text": "easily",
+                "n": 2
+              },
+              {
+                "text": " look back on photos from years past, "
+              },
+              {
+                "text": "recent",
+                "n": 3
+              },
+              {
+                "text": " highlights, and "
+              },
+              {
+                "text": "moments",
+                "n": 4
+              },
+              {
+                "text": " with your loved ones."
+              }
+            ],
+            "answer": 1,
+            "explanation": "times ไม่ถูกต้อง แก้ไขเป็น time เพราะหลัง every ต้องเป็นคำนามเอกพจน์ (easily ถูกต้องเพราะเป็น Adverb ขยายกริยา look back, recent ถูกต้องเพราะเป็น Adjective ขยายคำนาม highlights, moments ถูกต้องเพราะคำนามที่อยู่หน้า and ทั้ง photos และ highlights เติม s กันหมด ตามหลักโครงสร้างคู่ขนาน moments จึงควรเติม s ด้วย)"
+          },
+          {
+            "id": "cw15-4",
+            "segments": [
+              {
+                "text": "Farmed fish, like "
+              },
+              {
+                "text": "much",
+                "n": 1
+              },
+              {
+                "text": " industrially farmed animals, produce "
+              },
+              {
+                "text": "massive",
+                "n": 2
+              },
+              {
+                "text": " amounts of waste, polluting the "
+              },
+              {
+                "text": "surrounding areas",
+                "n": 3
+              },
+              {
+                "text": " and potentially spreading diseases to wild "
+              },
+              {
+                "text": "species",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 1,
+            "explanation": "much ไม่ถูกต้อง แก้ไขเป็น many เพราะคำนามที่ตามหลังมาคือ animals ซึ่งอยู่ในรูปพหูพจน์ (massive ถูกต้องเพราะเป็น Adjective ขยาย amounts, surrounding areas ถูกต้องเพราะ surrounding เป็น Adjective ขยาย areas, species ถูกต้องเพราะ species เติม s เสมอไม่ว่าจะเป็นเอกพจน์หรือพหูพจน์)"
+          },
+          {
+            "id": "cw15-5",
+            "segments": [
+              {
+                "text": "Cyberbullying takes place over "
+              },
+              {
+                "text": "many",
+                "n": 1
+              },
+              {
+                "text": " digital devices "
+              },
+              {
+                "text": "such as",
+                "n": 2
+              },
+              {
+                "text": " cell phones and tablets and involves posting "
+              },
+              {
+                "text": "hurt",
+                "n": 3
+              },
+              {
+                "text": " comments and sharing "
+              },
+              {
+                "text": "embarrassing",
+                "n": 4
+              },
+              {
+                "text": " photos."
+              }
+            ],
+            "answer": 3,
+            "explanation": "hurt ไม่ถูกต้อง แก้ไขเป็น hurtful เพราะตำแหน่งนี้อยู่หน้าคำนาม comments จึงควรอยู่ในรูป Adjective ที่มาขยายคำนาม (hurt เป็นรูปกริยา) (many ถูกต้องเพราะนำหน้าคำนามพหูพจน์ devices, such as ถูกต้องเพราะแปลว่า เช่น, embarrassing ถูกต้องเพราะเป็น Adjective ขยาย photos แปลว่า รูปภาพที่น่าอาย)"
+          },
+          {
+            "id": "cw15-6",
+            "segments": [
+              {
+                "text": "The "
+              },
+              {
+                "text": "amount",
+                "n": 1
+              },
+              {
+                "text": " of undergraduate students enrolled in "
+              },
+              {
+                "text": "distance",
+                "n": 2
+              },
+              {
+                "text": " education course was 97% "
+              },
+              {
+                "text": "higher",
+                "n": 3
+              },
+              {
+                "text": " in 2020, when the coronavirus pandemic began, than "
+              },
+              {
+                "text": "prior to",
+                "n": 4
+              },
+              {
+                "text": " the pandemic in fall 2019."
+              }
+            ],
+            "answer": 1,
+            "explanation": "amount ไม่ถูกต้อง แก้ไขเป็น number เพราะคำนามที่ตามมาคือ students ซึ่งเป็นคำนามนับได้ ขัดกับหลักไวยากรณ์ของ amount ที่ตามด้วยคำนามนับไม่ได้เท่านั้น (distance ถูกต้องเพราะ distance education เป็น Compound Noun แปลว่า การศึกษาทางไกล, higher ถูกต้องเพราะเป็นการเปรียบเทียบจำนวนนักเรียนระหว่าง 2 ปี สังเกตจาก than ท้ายประโยค, prior to ถูกต้องเพราะเป็นคำที่ใช้คู่กันเสมอ แปลว่า ก่อน)"
+          },
+          {
+            "id": "cw15-7",
+            "segments": [
+              {
+                "text": "Microsoft has been "
+              },
+              {
+                "text": "competing",
+                "n": 1
+              },
+              {
+                "text": " with Google to strike lucrative partnerships with ExxonMobil, "
+              },
+              {
+                "text": "and",
+                "n": 2
+              },
+              {
+                "text": " other energy firms, supplying "
+              },
+              {
+                "text": "them",
+                "n": 3
+              },
+              {
+                "text": " not only with remote data storage "
+              },
+              {
+                "text": "and",
+                "n": 4
+              },
+              {
+                "text": " artificial intelligence tools."
+              }
+            ],
+            "answer": 4,
+            "explanation": "and ไม่ถูกต้อง แก้ไขเป็น but also เพราะในโจทย์มี not only อยู่แล้ว ซึ่งต้องใช้คู่กับ but also (has been competing ถูกต้องเพราะอยู่ในโครงสร้าง Present Perfect Continuous, other ถูกต้องเพราะคำนามที่ตามหลังคือ firms อยู่ในรูปพหูพจน์, them ถูกต้องเพราะหมายถึง ExxonMobil และบริษัทพลังงานอื่นๆ)"
+          },
+          {
+            "id": "cw15-8",
+            "segments": [
+              {
+                "text": "COVID-19 can cause "
+              },
+              {
+                "text": "a range of",
+                "n": 1
+              },
+              {
+                "text": " breathing problems from mild "
+              },
+              {
+                "text": "to",
+                "n": 2
+              },
+              {
+                "text": " critical and can have serious "
+              },
+              {
+                "text": "long-term",
+                "n": 3
+              },
+              {
+                "text": " effects on people who have "
+              },
+              {
+                "text": "another",
+                "n": 4
+              },
+              {
+                "text": " health conditions like heart disease and cancer."
+              }
+            ],
+            "answer": 4,
+            "explanation": "another ไม่ถูกต้อง แก้ไขเป็น other เพราะคำนามที่ตามหลังมาคือ conditions ซึ่งอยู่ในรูปพหูพจน์ (health ทำหน้าที่เป็น Adjective ขยาย conditions ไม่ใช่คำนามหลัก) (a range of ถูกต้องเพราะหมายถึง ช่วงหรือขอบเขต, to ถูกต้องเพราะใช้คู่กับ from, long-term ถูกต้องเพราะเป็น Adjective แปลว่า ในระยะยาว)"
+          },
+          {
+            "id": "cw15-9",
+            "segments": [
+              {
+                "text": "One",
+                "n": 1
+              },
+              {
+                "text": " of the short-term "
+              },
+              {
+                "text": "affects",
+                "n": 2
+              },
+              {
+                "text": " of cannabis on the body can include increased "
+              },
+              {
+                "text": "heart rate",
+                "n": 3
+              },
+              {
+                "text": ", which can "
+              },
+              {
+                "text": "lead to",
+                "n": 4
+              },
+              {
+                "text": " an increased risk of heart attack."
+              }
+            ],
+            "answer": 2,
+            "explanation": "affects ไม่ถูกต้อง แก้ไขเป็น effects เพราะตำแหน่งนี้ต้องการคำนามตามหลัง the (One ถูกต้องเพราะ one of the เป็นโครงสร้างที่ใช้ด้วยกัน, heart rate ถูกต้องเพราะเป็นคำนามเฉพาะหมายถึง อัตราการเต้นของหัวใจ, lead to ถูกต้องเพราะ can ตามด้วย Infinitive และ lead ใช้คู่กับบุพบท to)"
+          },
+          {
+            "id": "cw15-10",
+            "segments": [
+              {
+                "text": "A tortoise cannot "
+              },
+              {
+                "text": "adapt",
+                "n": 1
+              },
+              {
+                "text": " to spend more time in the water, or "
+              },
+              {
+                "text": "to swim",
+                "n": 2
+              },
+              {
+                "text": ", "
+              },
+              {
+                "text": "because of",
+                "n": 3
+              },
+              {
+                "text": " it lacks a turtle's unique "
+              },
+              {
+                "text": "body parts",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 3,
+            "explanation": "because of ไม่ถูกต้อง แก้ไขเป็น because เพราะสิ่งที่ตามมามีโครงสร้างเป็นประโยค (it เป็นประธาน lacks เป็นกริยา) (cannot ถูกต้องเพราะไม่สามารถแก้ไขได้, to swim ถูกต้องเพราะใช้โครงสร้างคู่ขนานเดียวกับ to spend ที่อยู่ก่อนหน้า, body parts ถูกต้องเพราะหมายถึงส่วนประกอบของร่างกายเต่าน้ำ)"
+          },
+          {
+            "id": "cw15-11",
+            "segments": [
+              {
+                "text": "Employee activism and outside pressure "
+              },
+              {
+                "text": "have pushed",
+                "n": 1
+              },
+              {
+                "text": " big tech companies "
+              },
+              {
+                "text": "like",
+                "n": 2
+              },
+              {
+                "text": " Amazon, Microsoft, and Google into "
+              },
+              {
+                "text": "promising",
+                "n": 3
+              },
+              {
+                "text": " to slash "
+              },
+              {
+                "text": "its",
+                "n": 4
+              },
+              {
+                "text": " carbon emissions."
+              }
+            ],
+            "answer": 4,
+            "explanation": "its ไม่ถูกต้อง แก้ไขเป็น their เพราะ its ใช้แทนคำนามเอกพจน์ แต่โจทย์กำลังกล่าวถึงบริษัทยักษ์ใหญ่หลายแห่ง (big tech companies) ซึ่งอยู่ในรูปพหูพจน์ (have pushed ถูกต้องเพราะประธานเป็นพหูพจน์และตามโครงสร้าง Present Perfect Tense, like ถูกต้องเพราะเป็นไปตามโครงสร้าง like + Noun, promising ถูกต้องเพราะหลังคำบุพบทกริยามักอยู่ในรูป V-ing)"
+          },
+          {
+            "id": "cw15-12",
+            "segments": [
+              {
+                "text": "Unlike",
+                "n": 1
+              },
+              {
+                "text": " styrofoam, Mushroom Packaging "
+              },
+              {
+                "text": "consisting of",
+                "n": 2
+              },
+              {
+                "text": " 100 percent biodegradable and "
+              },
+              {
+                "text": "renewable",
+                "n": 3
+              },
+              {
+                "text": " material that can "
+              },
+              {
+                "text": "be recycled",
+                "n": 4
+              },
+              {
+                "text": " directly in and by nature."
+              }
+            ],
+            "answer": 2,
+            "explanation": "consisting of ไม่ถูกต้อง แก้ไขเป็น consists of เพราะตำแหน่งนี้ต้องการกริยาแท้ (consisting of อยู่ในรูป V-ing ไม่ใช่กริยาแท้) (Unlike ถูกต้องเพราะเป็นไปตามโครงสร้าง Unlike + Noun, renewable ถูกต้องเพราะเป็น Adjective แบบเดียวกับ biodegradable ตามหลักโครงสร้างคู่ขนาน, be recycled ถูกต้องเพราะประธานคือ material ซึ่งถูกรีไซเคิล จึงใช้ Passive Voice)"
+          },
+          {
+            "id": "cw15-13",
+            "segments": [
+              {
+                "text": "Alike",
+                "n": 1
+              },
+              {
+                "text": " the sunrise, the koala "
+              },
+              {
+                "text": "at",
+                "n": 2
+              },
+              {
+                "text": " the Featherdale Wildlife Park is "
+              },
+              {
+                "text": "a sign of",
+                "n": 3
+              },
+              {
+                "text": " brighter times ahead for "
+              },
+              {
+                "text": "Australia's",
+                "n": 4
+              },
+              {
+                "text": " beleaguered tourism industry."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Alike ไม่ถูกต้อง แก้ไขเป็น Like เพราะ Alike ไม่สามารถนำหน้าคำนามได้ (at ถูกต้องเพราะใช้ระบุสถานที่ที่ชัดเจน, a sign of ถูกต้องเพราะหมายถึง เป็นสัญญาณของบางสิ่ง, Australia's ถูกต้องเพราะหมายถึง อะไรบางอย่างของออสเตรเลีย)"
+          },
+          {
+            "id": "cw15-14",
+            "segments": [
+              {
+                "text": "Despite",
+                "n": 1
+              },
+              {
+                "text": " contrary beliefs, people "
+              },
+              {
+                "text": "are working",
+                "n": 2
+              },
+              {
+                "text": " remotely report a "
+              },
+              {
+                "text": "higher level",
+                "n": 3
+              },
+              {
+                "text": " of productivity than their office "
+              },
+              {
+                "text": "counterparts",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "are working ไม่ถูกต้อง แก้ไขเป็น who are working หรือ working เพราะประธานคือ people และกริยาแท้ของประโยคคือ report ส่วน are working remotely ควรทำหน้าที่ขยายคำว่า people เท่านั้น (Despite ถูกต้องเพราะตามด้วยคำนาม beliefs, higher level ถูกต้องเพราะด้านหลังมีคำว่า than บ่งบอกการเปรียบเทียบขั้นกว่า, counterparts ถูกต้องเพราะหมายถึงคนอีกกลุ่มที่ไม่ได้ทำงานจากที่บ้าน)"
+          },
+          {
+            "id": "cw15-15",
+            "segments": [
+              {
+                "text": "Although",
+                "n": 1
+              },
+              {
+                "text": " their potential benefits, many people "
+              },
+              {
+                "text": "are worried",
+                "n": 2
+              },
+              {
+                "text": " about the effects that "
+              },
+              {
+                "text": "automation",
+                "n": 3
+              },
+              {
+                "text": " of simple labor tasks may have on the "
+              },
+              {
+                "text": "economy",
+                "n": 4
+              },
+              {
+                "text": " and workforce."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Although ไม่ถูกต้อง แก้ไขเป็น Despite เพราะ Although ต้องตามด้วยประโยค แต่ในโจทย์ their potential benefits เป็นเพียงกลุ่มคำนาม (are worried ถูกต้องเพราะบ่งบอกความรู้สึกของประธาน, automation ถูกต้องเพราะทำหน้าที่เป็นคำนามอยู่หน้า of, economy ถูกต้องเพราะทำหน้าที่เป็นคำนามอยู่หลัง the)"
+          },
+          {
+            "id": "cw15-16",
+            "segments": [
+              {
+                "text": "COVID-19 cases are "
+              },
+              {
+                "text": "raising",
+                "n": 1
+              },
+              {
+                "text": " and experts predict that a peak is "
+              },
+              {
+                "text": "three weeks away",
+                "n": 2
+              },
+              {
+                "text": ", with "
+              },
+              {
+                "text": "as many as",
+                "n": 3
+              },
+              {
+                "text": " 3.5 million of Taiwan's 24.5 million people expected to "
+              },
+              {
+                "text": "eventually",
+                "n": 4
+              },
+              {
+                "text": " be infected."
+              }
+            ],
+            "answer": 1,
+            "explanation": "raising ไม่ถูกต้อง แก้ไขเป็น rising เพราะ raising มาจาก raise ซึ่งเป็นกริยาที่ต้องการกรรม แต่จำนวนเคสโควิดเพิ่มขึ้นเอง จึงไม่มีกรรมตามหลัง (three weeks away ถูกต้องเพราะหมายถึงเวลาอีกสามสัปดาห์ข้างหน้า, as many as ถูกต้องเพราะเป็นการเปรียบเทียบขั้นปกตินำหน้าจำนวน, eventually ถูกต้องเพราะเป็น Adverb ขยาย infected)"
+          },
+          {
+            "id": "cw15-17",
+            "segments": [
+              {
+                "text": "The Loch Ness Lake holds "
+              },
+              {
+                "text": "more water",
+                "n": 1
+              },
+              {
+                "text": " than all the lakes in England and there is "
+              },
+              {
+                "text": "water enough",
+                "n": 2
+              },
+              {
+                "text": " here to submerge "
+              },
+              {
+                "text": "every",
+                "n": 3
+              },
+              {
+                "text": " human being "
+              },
+              {
+                "text": "on",
+                "n": 4
+              },
+              {
+                "text": " the planet."
+              }
+            ],
+            "answer": 2,
+            "explanation": "water enough ไม่ถูกต้อง แก้ไขเป็น enough water เพราะ enough จะวางหน้าคำนามเสมอ (more water ถูกต้องเพราะใช้คู่กับ than ที่ตามมาด้านหลัง, every ถูกต้องเพราะ every + คำนามเอกพจน์ human being, on ถูกต้องเพราะ on the planet แปลว่า บนดาวเคราะห์ดวงนี้)"
+          },
+          {
+            "id": "cw15-18",
+            "segments": [
+              {
+                "text": "James Cameron "
+              },
+              {
+                "text": "says",
+                "n": 1
+              },
+              {
+                "text": " that 'The Way of Water' is "
+              },
+              {
+                "text": "successful enough",
+                "n": 2
+              },
+              {
+                "text": " to make the "
+              },
+              {
+                "text": "next",
+                "n": 3
+              },
+              {
+                "text": " three Avatar movies, "
+              },
+              {
+                "text": "expecting",
+                "n": 4
+              },
+              {
+                "text": " to be released in 2024, 2026, and 2028."
+              }
+            ],
+            "answer": 4,
+            "explanation": "expecting ไม่ถูกต้อง แก้ไขเป็น expected เพราะกริยา expect กำลังขยายคำนาม movies ซึ่งไม่สามารถทำกริยา release เองได้ ตามหลัก Past Participle (says ถูกต้องเพราะประธานเอกพจน์ตามหลัก Present Simple, successful enough ถูกต้องเพราะเป็นไปตามโครงสร้าง Adjective + enough, next ถูกต้องเพราะหมายถึงภาพยนตร์ 3 เรื่องถัดไป)"
+          },
+          {
+            "id": "cw15-19",
+            "segments": [
+              {
+                "text": "Lower fertility rate and "
+              },
+              {
+                "text": "aging",
+                "n": 1
+              },
+              {
+                "text": " population have become worldwide "
+              },
+              {
+                "text": "concerns",
+                "n": 2
+              },
+              {
+                "text": " but Denmark has assisted "
+              },
+              {
+                "text": "seniors",
+                "n": 3
+              },
+              {
+                "text": " to land a job and "
+              },
+              {
+                "text": "engaging",
+                "n": 4
+              },
+              {
+                "text": " in social activities."
+              }
+            ],
+            "answer": 4,
+            "explanation": "engaging ไม่ถูกต้อง แก้ไขเป็น to engage เพราะตามหลักโครงสร้างคู่ขนาน คำที่อยู่หน้าและหลัง and ควรอยู่ในโครงสร้างเดียวกัน เมื่อกริยาตัวหน้าคือ to land กริยาตัวหลังก็ควรอยู่ในรูป To-Infinitive เช่นกัน (aging ถูกต้องเพราะเป็น Adjective ขยาย population, concerns ถูกต้องเพราะเติม s ได้เนื่องจากมีความกังวลหลายอย่าง, seniors ถูกต้องเพราะหมายถึงผู้สูงวัยและอยู่ในรูปพหูพจน์)"
+          },
+          {
+            "id": "cw15-20",
+            "segments": [
+              {
+                "text": "A "
+              },
+              {
+                "text": "2-weeks-old",
+                "n": 1
+              },
+              {
+                "text": " kitten becomes more "
+              },
+              {
+                "text": "aware of",
+                "n": 2
+              },
+              {
+                "text": " the surroundings and will begin to interact "
+              },
+              {
+                "text": "more",
+                "n": 3
+              },
+              {
+                "text": " with "
+              },
+              {
+                "text": "its",
+                "n": 4
+              },
+              {
+                "text": " siblings."
+              }
+            ],
+            "answer": 1,
+            "explanation": "2-weeks-old ไม่ถูกต้อง แก้ไขเป็น 2-week-old เพราะตัวเลขทำหน้าที่เป็น Adjective ขยายคำนาม kitten (ลูกแมวอายุ 2 สัปดาห์) คำว่า week จึงไม่ต้องเติม s (aware of ถูกต้องเพราะ aware ใช้คู่กับ of เสมอ, more ถูกต้องเพราะสอดคล้องกับความหมายที่มี more อยู่ในประโยคแรกแล้ว, its ถูกต้องเพราะหมายถึงประธาน A kitten ซึ่งเป็นเอกพจน์)"
+          }
+        ]
+      },
+      {
+        "title": "บทที่ 16: เทคนิคในการทำข้อสอบ CU-TEP Writing (Error Identification)",
+        "referenceHtml": "<h4>เทคนิคในการทำข้อสอบ CU-TEP Writing (Error Identification)</h4><p>สำหรับข้อสอบ Error Identification หรือที่เรียกสั้นๆ ว่า “ข้อสอบจับผิด” แต่ละคนก็มีมุมมองต่อข้อสอบลักษณะนี้แตกต่างกันไป คนที่ชอบก็จะมองว่าเป็นของหวาน คือรู้สึกสนุกและชอบฝึกทำข้อสอบนี้เป็นประจำ เพราะเมื่อทำถึงจุดหนึ่ง ก็จะสามารถจับทางข้อสอบรูปแบบนี้ได้ (แต่แน่นอนว่า จุดหนึ่งของแต่ละคนก็ไม่เท่ากัน) ในทางตรงกันข้าม หลายคนก็มองว่าต้อง “จำใจและทำใจ” ที่ต้องทำข้อสอบแบบนี้และผ่านเกณฑ์ให้ได้</p><p>ดังนั้น ในบทนี้จะนำเสนอกลยุทธ์หรือหลักคิดที่มุ่งตอบโจทย์แก่คนทั้งสองกลุ่มนี้ เพื่อเป็นแนวทางในการทำแบบฝึกหัดและข้อสอบจริงอย่างแม่นยำที่สุดและภายในเวลาที่กำหนด</p><ul><li>จดจำเรื่องเด่น</li><li>มองเห็นกุญแจ</li><li>แลหน้า-หลัง</li></ul><h4>1. จดจำเรื่องเด่น</h4><p>สิ่งที่เรามักจะรู้สึกกังวลเวลาทำข้อสอบ Error Identification ก็คือกลัวว่าจะจำกฎไวยากรณ์ไม่ได้ทั้งหมด และไม่รู้ว่าจะเจอไวยากรณ์เรื่องไหนบ้าง สิ่งสำคัญที่จะช่วยให้สบายใจมากขึ้นก็คือ ไวยากรณ์บางเรื่องสามารถอ่านผ่านๆ ได้ เพราะมักจะไม่ออกสอบ เช่น</p><ul><li><b>Tense</b>: ที่เราเรียนกันคือ Tense 12 แบบ แต่ Tense ที่เรามักพบในข้อสอบนั้นมีเพียงประมาณ 7-8 รูปเท่านั้น ได้แก่ Present (3): Present Simple, Present Continuous, Present Perfect / Past (3): Past Simple, Past Continuous, Past Perfect / Future (2): Future Simple, Future Continuous</li><li><b>Article</b>: เรื่อง A – An – The เป็นเรื่องที่เราเรียนและใช้กันมานาน ผ่านการเขียนเป็นหลัก และมักเจอปัญหาที่ไม่สามารถจำกฎเกณฑ์ได้ทั้งหมด อย่างไรก็ตาม ขอให้สบายใจได้ว่าสำหรับ Error Identification แทบจะไม่ใช้ Article ในการสอบเลย หมายความว่าอาจมีการขีดเส้นใต้เป็นตัวเลือก แต่โดยมากมักไม่ใช่ตัวเลือกที่ผิด</li><li><b>การเลือกใช้คำ (Word of Choice)</b>: เช่น make หรือ do — ในข้อสอบ Error Identification ของสถาบันต่างๆ ในประเทศไทย มักไม่ค่อยออกในจุดนี้ แต่จะมุ่งเน้นการออกข้อสอบวัดเรื่องกฎไวยากรณ์เป็นหลัก</li></ul><p>หากจะวิเคราะห์ตัวเลือก make ในประโยคตัวอย่างข้อ 1 ด้านล่าง ให้ดูเรื่องไวยากรณ์เป็นหลัก ได้แก่ การใช้รูปพหูพจน์นี้ถูกต้องหรือไม่ รูป Present Simple นี้ถูกต้องหรือไม่ ใช้ Active Voice หรือควรจะเป็น Passive Voice — โดยไม่ต้องวิเคราะห์ว่าในประโยคนี้ควรใช้ make หรือ do</p><h4>2. มองเห็นกุญแจ</h4><p>ในข้อสอบแต่ละข้อจะมีกุญแจซ่อนอยู่ ซึ่งโดยส่วนมาก (อย่างน้อยเกินครึ่งหนึ่งของจำนวนข้อสอบในแต่ละชุด) มักจะขีดเส้นใต้คำสำคัญ หรือหัวข้อไวยากรณ์ที่เราเรียนรู้ เช่น much-many / few-little / since-for / due to-because เป็นต้น ขอให้ระวังและตรวจสอบก่อนเลย เพราะมีโอกาสที่จะเป็นจุดที่ผิดได้สูงมาก เพราะคำเหล่านี้มีหลักเกณฑ์ กฎการใช้ชัดเจน เช่น much ใช้กับคำนามนับไม่ได้ ในขณะที่ many ใช้กับคำนามนับได้พหูพจน์ ดังนั้น หากหาคำนามเจอ ก็จะตรวจสอบได้ทันทีว่าควรใช้ much หรือ many</p><h4>3. แลหน้า-หลัง</h4><p>นอกจากคำสำคัญ (กุญแจ) แล้ว สิ่งที่จะช่วยเราได้มากก็คือ คำที่อยู่หน้าและหลังของคำที่ขีดเส้นใต้ ซึ่งโดยมาก หากมองดีๆ จะพบว่าเป็นรูปแบบไวยากรณ์ที่มาเป็นโครงสร้าง เช่น หากพบว่าคำที่ขีดเส้นใต้อยู่ระหว่างคำว่า are และ by ก็จะสันนิษฐานได้ทันทีว่าน่าจะเป็นประโยครูปแบบ Passive Voice</p><p>จากหลักการทั้ง 3 ข้อ จะพบว่าหากเราลองเปิดใจและปฏิบัติตาม นอกจากจะทำให้ทำข้อสอบถูกและมั่นใจแล้ว เราจะรู้สึกสบายใจที่น่าจะสามารถทำข้อสอบได้ตามเวลาที่กำหนดอีกด้วย</p>",
+        "questions": [
+          {
+            "id": "cw16-1",
+            "segments": [
+              {
+                "text": "Some jellyfish "
+              },
+              {
+                "text": "make",
+                "n": 1
+              },
+              {
+                "text": " daily journeys from "
+              },
+              {
+                "text": "deep",
+                "n": 2
+              },
+              {
+                "text": " water to the surface and back, while "
+              },
+              {
+                "text": "others",
+                "n": 3
+              },
+              {
+                "text": " migrate "
+              },
+              {
+                "text": "horizontal",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 4,
+            "explanation": "horizontal ไม่ถูกต้อง แก้ไขเป็น horizontally เพราะทำหน้าที่เป็น Adverb ขยายกริยา migrate ไม่ใช่ Adjective (make, deep, others ถูกต้องแล้ว — จุดที่ผิดในข้อนี้ไม่เกี่ยวกับการเลือกใช้คำ make หรือ do แต่เป็นเรื่องรูปคำ Adverb/Adjective)"
+          },
+          {
+            "id": "cw16-2",
+            "segments": [
+              {
+                "text": "Many",
+                "n": 1
+              },
+              {
+                "text": " heavy work that was once "
+              },
+              {
+                "text": "done",
+                "n": 2
+              },
+              {
+                "text": " by hand can now be done more "
+              },
+              {
+                "text": "easily",
+                "n": 3
+              },
+              {
+                "text": " with the help of "
+              },
+              {
+                "text": "automation",
+                "n": 4
+              },
+              {
+                "text": " or machines."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Many ไม่ถูกต้อง แก้ไขเป็น much เพราะคำนามที่ตามมาคือ work ซึ่งเป็นคำนามนับไม่ได้ (เป็นตัวอย่างของหลัก 'มองเห็นกุญแจ' — เห็นคำว่า Many ต้องตรวจสอบทันทีว่าคำนามที่ตามมาคืออะไร) (done, easily, automation ถูกต้องแล้ว)"
+          },
+          {
+            "id": "cw16-3",
+            "segments": [
+              {
+                "text": "The "
+              },
+              {
+                "text": "disastrous",
+                "n": 1
+              },
+              {
+                "text": " and violent "
+              },
+              {
+                "text": "conflicts",
+                "n": 2
+              },
+              {
+                "text": " derive from poverty and discrimination while both issues are "
+              },
+              {
+                "text": "causing",
+                "n": 3
+              },
+              {
+                "text": " by the rich "
+              },
+              {
+                "text": "West",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 3,
+            "explanation": "causing ไม่ถูกต้อง แก้ไขเป็น caused เพราะคำหน้าและหลัง คือ are และ by บ่งบอกว่าเป็นโครงสร้าง Passive Voice (เป็นตัวอย่างของหลัก 'แลหน้า-หลัง') (disastrous, conflicts, West ถูกต้องแล้ว)"
+          }
+        ]
+      },
+      {
+        "title": "แบบทดสอบชุดที่ 1",
+        "referenceHtml": "<p>แบบทดสอบเสมือนจริงรูปแบบ Error Identification จำนวน 30 ข้อ พร้อมเฉลยและคำอธิบายละเอียดทุกตัวเลือก</p>",
+        "questions": [
+          {
+            "id": "set1-1",
+            "segments": [
+              {
+                "text": "A woman in New Zealand "
+              },
+              {
+                "text": "needed",
+                "n": 1
+              },
+              {
+                "text": " surgery and 14 stitches "
+              },
+              {
+                "text": "on",
+                "n": 2
+              },
+              {
+                "text": " her face "
+              },
+              {
+                "text": "after",
+                "n": 3
+              },
+              {
+                "text": " she was attacked by a crocodile while "
+              },
+              {
+                "text": "walked",
+                "n": 4
+              },
+              {
+                "text": " her dog."
+              }
+            ],
+            "answer": 4,
+            "explanation": "walked ไม่ถูกต้อง แก้ไขเป็น walking เพราะหลังคำว่า while มักตามด้วยประโยค (while + Subject + Verb) หรือตามด้วย V-ing (while + V-ing) (needed ถูกต้องเพราะเหตุการณ์เกิดขึ้นในอดีต, on ถูกต้องเพราะ 14 stitches on her face คือเย็บแผล 14 เข็มบนใบหน้า, after ถูกต้องเพราะบอกลำดับเวลาหลังถูกจระเข้ทำร้าย)"
+          },
+          {
+            "id": "set1-2",
+            "segments": [
+              {
+                "text": "Beijing's subway system is "
+              },
+              {
+                "text": "second",
+                "n": 1
+              },
+              {
+                "text": " only "
+              },
+              {
+                "text": "to",
+                "n": 2
+              },
+              {
+                "text": " Tokyo in terms of rider "
+              },
+              {
+                "text": "density",
+                "n": 3
+              },
+              {
+                "text": ", with 4.1 billion rides "
+              },
+              {
+                "text": "were taken",
+                "n": 4
+              },
+              {
+                "text": " in 2020."
+              }
+            ],
+            "answer": 4,
+            "explanation": "were taken ไม่ถูกต้อง แก้ไขเป็น taken เพราะตั้งแต่เครื่องหมาย comma เป็นต้นไปเป็นส่วนขยายที่ไม่มีประธาน จึงไม่สามารถใช้กริยาแท้ were taken ได้ ต้องใช้ Past Participle คือ taken (second ถูกต้องเพราะบอกลำดับที่สอง, to ถูกต้องเพราะเป็น preposition บอกว่าเป็นรองแค่โตเกียว, density ถูกต้องเพราะเป็นคำนามแปลว่า ความหนาแน่น)"
+          },
+          {
+            "id": "set1-3",
+            "segments": [
+              {
+                "text": "Those",
+                "n": 1
+              },
+              {
+                "text": " who want to grow cannabis for "
+              },
+              {
+                "text": "commercial purposes",
+                "n": 2
+              },
+              {
+                "text": " must be Thai nationals "
+              },
+              {
+                "text": "aged",
+                "n": 3
+              },
+              {
+                "text": " at least 20 years and they must seek "
+              },
+              {
+                "text": "permit",
+                "n": 4
+              },
+              {
+                "text": " from authorities."
+              }
+            ],
+            "answer": 4,
+            "explanation": "permit ไม่ถูกต้อง แก้ไขเป็น permission เพราะ seek เป็นกริยาที่ต้องการกรรมเป็นคำนาม ควรแก้ไขเป็น permission (Those ถูกต้องเพราะเป็นประธานที่แปลว่า กลุ่มคน, commercial purposes ถูกต้องเพราะ commercial ขยาย purposes, aged ถูกต้องเพราะเป็น Adjective ขยาย nationals ซึ่งวางไว้หลังคำนามที่ขยายได้)"
+          },
+          {
+            "id": "set1-4",
+            "segments": [
+              {
+                "text": "A man "
+              },
+              {
+                "text": "has been arrested",
+                "n": 1
+              },
+              {
+                "text": " after "
+              },
+              {
+                "text": "repeat",
+                "n": 2
+              },
+              {
+                "text": " punching a cat "
+              },
+              {
+                "text": "in",
+                "n": 3
+              },
+              {
+                "text": " the face in "
+              },
+              {
+                "text": "a",
+                "n": 4
+              },
+              {
+                "text": " public park."
+              }
+            ],
+            "answer": 2,
+            "explanation": "repeat ไม่ถูกต้อง แก้ไขเป็น repeatedly เพราะอยู่หน้าคำว่า punching ซึ่งเป็นกริยา จึงควรเป็น Adverb ขยายกริยา (has been arrested ถูกต้องเพราะประธานถูกกระทำจึงเป็น Passive Voice, in ถูกต้องเพราะ in the face หมายถึงต่อยเข้าที่หน้า, a ถูกต้องเพราะนำหน้าคำนามที่ไม่เฉพาะเจาะจง)"
+          },
+          {
+            "id": "set1-5",
+            "segments": [
+              {
+                "text": "Two women and "
+              },
+              {
+                "text": "their",
+                "n": 1
+              },
+              {
+                "text": " pets had a miraculous "
+              },
+              {
+                "text": "escape",
+                "n": 2
+              },
+              {
+                "text": " after a tree crashed "
+              },
+              {
+                "text": "through",
+                "n": 3
+              },
+              {
+                "text": " their home in Maryland as they "
+              },
+              {
+                "text": "watched",
+                "n": 4
+              },
+              {
+                "text": " TV."
+              }
+            ],
+            "answer": 4,
+            "explanation": "watched ไม่ถูกต้อง แก้ไขเป็น were watching เพราะเหตุการณ์นี้กำลังดำเนินอยู่ขณะต้นไม้ล้มทับบ้าน (สังเกตคำว่า as ที่มักนำหน้า Continuous Tense) (their ถูกต้องเพราะหมายถึง Two women ที่เป็นพหูพจน์, escape ถูกต้องเพราะทำหน้าที่คำนาม แปลว่า การหลบหนี, through ถูกต้องเพราะหมายถึงต้นไม้ล้มทะลุกลางบ้าน)"
+          },
+          {
+            "id": "set1-6",
+            "segments": [
+              {
+                "text": "A "
+              },
+              {
+                "text": "80-year-old",
+                "n": 1
+              },
+              {
+                "text": " South Carolina woman "
+              },
+              {
+                "text": "who",
+                "n": 2
+              },
+              {
+                "text": " was robbed of her life "
+              },
+              {
+                "text": "saving",
+                "n": 3
+              },
+              {
+                "text": " by a Jamaican lottery scam says she "
+              },
+              {
+                "text": "has been paid",
+                "n": 4
+              },
+              {
+                "text": " back only $356 of the $200,000 she has owed."
+              }
+            ],
+            "answer": 3,
+            "explanation": "saving ไม่ถูกต้อง แก้ไขเป็น savings เพราะ life savings เป็นคำนามเฉพาะที่อยู่ในรูปพหูพจน์เสมอ (80-year-old ถูกต้องเพราะขยายอายุด้วยเครื่องหมาย hyphen, who ถูกต้องเพราะขยายคำนาม woman ที่เป็นคน, has been paid ถูกต้องเพราะยังไม่ได้รับเงินคืน จึงเป็น Passive Voice ในรูป Present Perfect)"
+          },
+          {
+            "id": "set1-7",
+            "segments": [
+              {
+                "text": "Rhinoceros poaching in Africa could cause a "
+              },
+              {
+                "text": "species",
+                "n": 1
+              },
+              {
+                "text": " to collapse quickly — perhaps "
+              },
+              {
+                "text": "even before",
+                "n": 2
+              },
+              {
+                "text": " wildlife authorities "
+              },
+              {
+                "text": "become",
+                "n": 3
+              },
+              {
+                "text": " fully aware of "
+              },
+              {
+                "text": "a",
+                "n": 4
+              },
+              {
+                "text": " problem."
+              }
+            ],
+            "answer": 4,
+            "explanation": "a ไม่ถูกต้อง แก้ไขเป็น the เพราะหมายถึงปัญหาการล่าแรดที่กล่าวถึงไปแล้วก่อนหน้า จึงต้องชี้เฉพาะด้วย the (species ถูกต้องเพราะเติม s ได้ทั้งเอกพจน์และพหูพจน์, even before ถูกต้องเพราะเป็นคำเชื่อมบอกเวลาที่รวดเร็วมาก, become ถูกต้องเพราะผันตามประธานพหูพจน์ authorities)"
+          },
+          {
+            "id": "set1-8",
+            "segments": [
+              {
+                "text": "A surfer has made a "
+              },
+              {
+                "text": "remarkable escape",
+                "n": 1
+              },
+              {
+                "text": " from the jaws of a shark by "
+              },
+              {
+                "text": "gouging",
+                "n": 2
+              },
+              {
+                "text": " its eyes before driving "
+              },
+              {
+                "text": "him",
+                "n": 3
+              },
+              {
+                "text": " more than an hour "
+              },
+              {
+                "text": "for help",
+                "n": 4
+              },
+              {
+                "text": " in far north Miami."
+              }
+            ],
+            "answer": 3,
+            "explanation": "him ไม่ถูกต้อง แก้ไขเป็น himself เพราะนักโต้คลื่นขับรถพาตัวเองไปหาหมอ ต้องใช้ reflexive pronoun himself (remarkable escape ถูกต้องเพราะเป็น Adjective ขยาย escape, gouging ถูกต้องเพราะกริยาหลัง by อยู่ในรูป V-ing, for help ถูกต้องเพราะ for + Noun แปลว่า เพื่อขอความช่วยเหลือ)"
+          },
+          {
+            "id": "set1-9",
+            "segments": [
+              {
+                "text": "Package sales",
+                "n": 1
+              },
+              {
+                "text": " to South Korea had dropped dramatically "
+              },
+              {
+                "text": "over the past",
+                "n": 2
+              },
+              {
+                "text": " week after more tourists were "
+              },
+              {
+                "text": "unable of",
+                "n": 3
+              },
+              {
+                "text": " received "
+              },
+              {
+                "text": "refunds",
+                "n": 4
+              },
+              {
+                "text": " from tour companies."
+              }
+            ],
+            "answer": 3,
+            "explanation": "unable of ไม่ถูกต้อง แก้ไขเป็น unable to เพราะ unable ต้องใช้คู่กับ to เสมอ (Package sales ถูกต้องเพราะหมายถึงการขายแพ็กเกจทัวร์, over the past ถูกต้องเพราะหมายถึงเป็นเวลากว่าสัปดาห์ที่ผ่านมา, refunds ถูกต้องเพราะหมายถึงเงินคืนจากบริษัททัวร์)"
+          },
+          {
+            "id": "set1-10",
+            "segments": [
+              {
+                "text": "A suspension bridge "
+              },
+              {
+                "text": "was collapsed",
+                "n": 1
+              },
+              {
+                "text": " into a river in "
+              },
+              {
+                "text": "southwestern",
+                "n": 2
+              },
+              {
+                "text": " Germany on Friday plunging the vehicles traveling across "
+              },
+              {
+                "text": "it",
+                "n": 3
+              },
+              {
+                "text": " into the water below and "
+              },
+              {
+                "text": "killing",
+                "n": 4
+              },
+              {
+                "text": " a 16-year-old girl."
+              }
+            ],
+            "answer": 1,
+            "explanation": "was collapsed ไม่ถูกต้อง แก้ไขเป็น collapsed เพราะสะพานถล่มลงมาเอง ไม่ได้ถูกกระทำ จึงต้องใช้ Active Voice (southwestern ถูกต้องเพราะเป็นทิศตะวันตกเฉียงใต้, it ถูกต้องเพราะหมายถึง A suspension bridge ที่เป็นเอกพจน์, killing ถูกต้องเพราะเป็น Present Participle ขยายประโยคแรก)"
+          },
+          {
+            "id": "set1-11",
+            "segments": [
+              {
+                "text": "As "
+              },
+              {
+                "text": "Thai workers",
+                "n": 1
+              },
+              {
+                "text": " feel the pinch of soaring "
+              },
+              {
+                "text": "living",
+                "n": 2
+              },
+              {
+                "text": " expenses, the government has announced "
+              },
+              {
+                "text": "plans",
+                "n": 3
+              },
+              {
+                "text": " to "
+              },
+              {
+                "text": "rise",
+                "n": 4
+              },
+              {
+                "text": " the daily minimum wage."
+              }
+            ],
+            "answer": 4,
+            "explanation": "rise ไม่ถูกต้อง แก้ไขเป็น raise เพราะ rise เป็นกริยาที่ไม่ต้องการกรรม แต่ในที่นี้ต้องการกริยาที่ตามด้วยกรรม (ทำให้ค่าแรงสูงขึ้น) จึงต้องใช้ raise (Thai workers ถูกต้องเพราะหมายถึงคนทำงานชาวไทย, living ถูกต้องเพราะขยาย expenses หมายถึงค่าครองชีพ, plans ถูกต้องเพราะเป็นคำนามพหูพจน์)"
+          },
+          {
+            "id": "set1-12",
+            "segments": [
+              {
+                "text": "Ukraine is "
+              },
+              {
+                "text": "preparing",
+                "n": 1
+              },
+              {
+                "text": " for possible "
+              },
+              {
+                "text": "intensified attacks",
+                "n": 2
+              },
+              {
+                "text": " by Russia on Wednesday, "
+              },
+              {
+                "text": "when",
+                "n": 3
+              },
+              {
+                "text": " marks six months "
+              },
+              {
+                "text": "since",
+                "n": 4
+              },
+              {
+                "text": " the invasion began."
+              }
+            ],
+            "answer": 3,
+            "explanation": "when ไม่ถูกต้อง แก้ไขเป็น which เพราะ when เป็นคำเชื่อมที่ต้องตามด้วยประโยค แต่ตำแหน่งนี้ต้องการ Relative Pronoun (preparing ถูกต้องเพราะยูเครนเป็นผู้กระทำเอง, intensified attacks ถูกต้องเพราะ attacks เป็นคำนามที่ intensified ขยาย, since ถูกต้องเพราะบอกว่าตั้งแต่การรุกรานเริ่มต้นขึ้น)"
+          },
+          {
+            "id": "set1-13",
+            "segments": [
+              {
+                "text": "Shipments of "
+              },
+              {
+                "text": "home appliances",
+                "n": 1
+              },
+              {
+                "text": " in Japan rose in July "
+              },
+              {
+                "text": "from a year",
+                "n": 2
+              },
+              {
+                "text": " earlier "
+              },
+              {
+                "text": "because of",
+                "n": 3
+              },
+              {
+                "text": " factories in Shanghai restarted production after coronavirus restrictions "
+              },
+              {
+                "text": "were lifted",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 3,
+            "explanation": "because of ไม่ถูกต้อง แก้ไขเป็น because เพราะสิ่งที่ตามมาเป็นประโยค (factories ... restarted) จึงต้องใช้ because ไม่ใช่ because of (home appliances ถูกต้องเพราะหมายถึงเครื่องใช้ในบ้าน, from a year ถูกต้องเพราะหมายถึงจากปีก่อนหน้านี้, were lifted ถูกต้องเพราะมาตรการถูกยกเลิก จึงเป็น Passive Voice)"
+          },
+          {
+            "id": "set1-14",
+            "segments": [
+              {
+                "text": "British",
+                "n": 1
+              },
+              {
+                "text": " consumer price inflation "
+              },
+              {
+                "text": "is set",
+                "n": 2
+              },
+              {
+                "text": " to peak at 18 percent in early 2023 – nine "
+              },
+              {
+                "text": "time",
+                "n": 3
+              },
+              {
+                "text": " the Bank of England's target, "
+              },
+              {
+                "text": "according to",
+                "n": 4
+              },
+              {
+                "text": " an economist at US bank Citi."
+              }
+            ],
+            "answer": 3,
+            "explanation": "time ไม่ถูกต้อง แก้ไขเป็น times เพราะ time ในความหมายว่า เท่า/ครั้ง ของตัวเลขสามารถเติม s ได้ (British ถูกต้องเพราะขยาย consumer หมายถึงผู้บริโภคชาวอังกฤษ, is set ถูกต้องเพราะ set เป็นรูปเดียวกันทั้ง 3 ช่อง, according to ถูกต้องเพราะใช้คู่กันเสมอเมื่ออ้างอิงแหล่งข้อมูล)"
+          },
+          {
+            "id": "set1-15",
+            "segments": [
+              {
+                "text": "Apple Inc. plans to begin "
+              },
+              {
+                "text": "manufacturing",
+                "n": 1
+              },
+              {
+                "text": " the iPhone 14 in India "
+              },
+              {
+                "text": "about",
+                "n": 2
+              },
+              {
+                "text": " two months after the product's initial release "
+              },
+              {
+                "text": "out of",
+                "n": 3
+              },
+              {
+                "text": " China, "
+              },
+              {
+                "text": "narrowed",
+                "n": 4
+              },
+              {
+                "text": " the gap between the two countries."
+              }
+            ],
+            "answer": 4,
+            "explanation": "narrowed ไม่ถูกต้อง แก้ไขเป็น narrowing เพราะอยู่หลังเครื่องหมาย comma และทำหน้าที่ขยายประโยคหลัก จึงต้องอยู่ในรูป Present Participle (manufacturing ถูกต้องเพราะหลัง begin ตามด้วย V-ing ได้, about ถูกต้องเพราะบอกจำนวนคร่าวๆ, out of ถูกต้องเพราะหมายถึงออกจากประเทศจีน)"
+          },
+          {
+            "id": "set1-16",
+            "segments": [
+              {
+                "text": "In recent years",
+                "n": 1
+              },
+              {
+                "text": ", Beijing has threatened force "
+              },
+              {
+                "text": "against",
+                "n": 2
+              },
+              {
+                "text": " the Taiwanese "
+              },
+              {
+                "text": "if",
+                "n": 3
+              },
+              {
+                "text": " they declare "
+              },
+              {
+                "text": "independent",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 4,
+            "explanation": "independent ไม่ถูกต้อง แก้ไขเป็น independence เพราะ declare ต้องการกรรมที่เป็นคำนาม (declare independence แปลว่า ประกาศอิสรภาพ) (In recent years ถูกต้องเพราะหมายถึงไม่กี่ปีที่ผ่านมา, against ถูกต้องเพราะเป็น preposition บอกการต่อต้าน, if ถูกต้องเพราะบอกเงื่อนไข)"
+          },
+          {
+            "id": "set1-17",
+            "segments": [
+              {
+                "text": "Japanese obsession "
+              },
+              {
+                "text": "with",
+                "n": 1
+              },
+              {
+                "text": " packaging has "
+              },
+              {
+                "text": "culture roots",
+                "n": 2
+              },
+              {
+                "text": " related to concepts of "
+              },
+              {
+                "text": "presentation",
+                "n": 3
+              },
+              {
+                "text": " and respect, especially when "
+              },
+              {
+                "text": "giving gifts",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "culture roots ไม่ถูกต้อง แก้ไขเป็น cultural roots เพราะต้องใช้ Adjective (cultural) ขยายคำนาม roots (with ถูกต้องเพราะ obsession ใช้คู่กับ with, presentation ถูกต้องเพราะเป็นคำนาม, giving gifts ถูกต้องเพราะตามหลัง when สามารถตามด้วย V-ing ได้)"
+          },
+          {
+            "id": "set1-18",
+            "segments": [
+              {
+                "text": "While",
+                "n": 1
+              },
+              {
+                "text": " the impact on humans "
+              },
+              {
+                "text": "are",
+                "n": 2
+              },
+              {
+                "text": " still unknown, microplastics "
+              },
+              {
+                "text": "have been detected",
+                "n": 3
+              },
+              {
+                "text": " in blood, placenta, and "
+              },
+              {
+                "text": "breast milk",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "are ไม่ถูกต้อง แก้ไขเป็น is เพราะประธานคือ the impact ซึ่งเป็นเอกพจน์ (While ถูกต้องเพราะเชื่อมประโยคความหมาย ในขณะที่, have been detected ถูกต้องเพราะเป็น Passive Voice, breast milk ถูกต้องเพราะหมายถึงน้ำนมแม่)"
+          },
+          {
+            "id": "set1-19",
+            "segments": [
+              {
+                "text": "Air New Zealand say that the "
+              },
+              {
+                "text": "worse",
+                "n": 1
+              },
+              {
+                "text": " of the coronavirus crisis "
+              },
+              {
+                "text": "is now",
+                "n": 2
+              },
+              {
+                "text": " behind them, "
+              },
+              {
+                "text": "even though",
+                "n": 3
+              },
+              {
+                "text": " they posted annual losses for a third year "
+              },
+              {
+                "text": "in a row",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 1,
+            "explanation": "worse ไม่ถูกต้อง แก้ไขเป็น worst เพราะมี the นำหน้า บ่งบอกการเปรียบเทียบขั้นสูงสุด (is now ถูกต้องเพราะแสดง Present Tense, even though ถูกต้องเพราะตามด้วยประโยคได้, in a row ถูกต้องเพราะแปลว่า ต่อเนื่องติดต่อกัน)"
+          },
+          {
+            "id": "set1-20",
+            "segments": [
+              {
+                "text": "With vast distances and "
+              },
+              {
+                "text": "lack of",
+                "n": 1
+              },
+              {
+                "text": " an inter-city rail network, flying is the only "
+              },
+              {
+                "text": "realistic",
+                "n": 2
+              },
+              {
+                "text": " way to "
+              },
+              {
+                "text": "get around",
+                "n": 3
+              },
+              {
+                "text": " Greenland if you are "
+              },
+              {
+                "text": "on",
+                "n": 4
+              },
+              {
+                "text": " a hurry."
+              }
+            ],
+            "answer": 4,
+            "explanation": "on ไม่ถูกต้อง แก้ไขเป็น in เพราะสำนวนที่แปลว่ากำลังรีบร้อนคือ in a hurry (lack of ถูกต้องเพราะทำหน้าที่คำนามใช้กับคำนาม, realistic ถูกต้องเพราะเป็น Adjective ขยาย way, get around ถูกต้องเพราะแปลว่า เดินทางไปรอบๆ)"
+          },
+          {
+            "id": "set1-21",
+            "segments": [
+              {
+                "text": "People who increased the "
+              },
+              {
+                "text": "amount",
+                "n": 1
+              },
+              {
+                "text": " of alcohol they drank had a "
+              },
+              {
+                "text": "higher",
+                "n": 2
+              },
+              {
+                "text": " risk of all cancers than the group that "
+              },
+              {
+                "text": "did",
+                "n": 3
+              },
+              {
+                "text": " no changes to their "
+              },
+              {
+                "text": "drinking habits",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 3,
+            "explanation": "did ไม่ถูกต้อง แก้ไขเป็น made เพราะสำนวนที่แปลว่า ไม่เปลี่ยนแปลงอะไรเลย คือ made no changes (amount ถูกต้องเพราะใช้กับคำนามนับไม่ได้ alcohol, higher ถูกต้องเพราะมี than ตามหลังบ่งบอกขั้นกว่า, drinking habits ถูกต้องเพราะ drinking เป็น Adjective ขยาย habits)"
+          },
+          {
+            "id": "set1-22",
+            "segments": [
+              {
+                "text": "Mack Rutherford has "
+              },
+              {
+                "text": "broken",
+                "n": 1
+              },
+              {
+                "text": " two Guinness World Records, becoming the youngest person to fly "
+              },
+              {
+                "text": "around",
+                "n": 2
+              },
+              {
+                "text": " the world solo, "
+              },
+              {
+                "text": "as well",
+                "n": 3
+              },
+              {
+                "text": " the youngest "
+              },
+              {
+                "text": "to circumnavigate",
+                "n": 4
+              },
+              {
+                "text": " the globe in a microlight plane."
+              }
+            ],
+            "answer": 3,
+            "explanation": "as well ไม่ถูกต้อง แก้ไขเป็น as well as เพราะต้องการสื่อว่า นอกจากจะเป็นคนที่อายุน้อยที่สุดที่บินรอบโลกแล้ว ยังเป็นคนที่อายุน้อยที่สุดที่บินด้วยเครื่องบินไมโครไลต์ด้วย (broken ถูกต้องเพราะอยู่ในรูป Present Perfect Tense, around ถูกต้อง, to circumnavigate ถูกต้อง)"
+          },
+          {
+            "id": "set1-23",
+            "segments": [
+              {
+                "text": "China issued its first national "
+              },
+              {
+                "text": "drought",
+                "n": 1
+              },
+              {
+                "text": " last week, after "
+              },
+              {
+                "text": "areas",
+                "n": 2
+              },
+              {
+                "text": " in the Yangtze Delta region and Sichuan in "
+              },
+              {
+                "text": "southwest",
+                "n": 3
+              },
+              {
+                "text": " China experienced weeks of extreme "
+              },
+              {
+                "text": "hot",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 4,
+            "explanation": "hot ไม่ถูกต้อง แก้ไขเป็น heat เพราะตำแหน่งนี้ต้องการคำนาม (สังเกตจาก extreme ที่เป็น Adjective นำหน้า) (drought ถูกต้องเพราะแปลว่า ความแห้งแล้ง และเป็นคำนาม, areas ถูกต้องเพราะความแห้งแล้งเกิดในหลายพื้นที่จึงเป็นพหูพจน์, southwest ถูกต้องเพราะเป็น Adjective ขยาย China)"
+          },
+          {
+            "id": "set1-24",
+            "segments": [
+              {
+                "text": "Britney Spears has released her "
+              },
+              {
+                "text": "first",
+                "n": 1
+              },
+              {
+                "text": " new music since "
+              },
+              {
+                "text": "being released",
+                "n": 2
+              },
+              {
+                "text": " from a conservatorship that "
+              },
+              {
+                "text": "controlled",
+                "n": 3
+              },
+              {
+                "text": " almost every "
+              },
+              {
+                "text": "aspects",
+                "n": 4
+              },
+              {
+                "text": " of her life."
+              }
+            ],
+            "answer": 4,
+            "explanation": "aspects ไม่ถูกต้อง แก้ไขเป็น aspect เพราะ every ต้องตามด้วยคำนามเอกพจน์ (first ถูกต้อง, being released ถูกต้องเพราะหมายถึงได้รับการปลดปล่อยจากการควบคุม เป็น Passive Voice, controlled ถูกต้องเพราะการควบคุมจบลงแล้วในอดีต)"
+          },
+          {
+            "id": "set1-25",
+            "segments": [
+              {
+                "text": "A few",
+                "n": 1
+              },
+              {
+                "text": " years ago, the 'dopamine fast' trend found "
+              },
+              {
+                "text": "a number of",
+                "n": 2
+              },
+              {
+                "text": " followers "
+              },
+              {
+                "text": "especially",
+                "n": 3
+              },
+              {
+                "text": " in the tech industry, "
+              },
+              {
+                "text": "as",
+                "n": 4
+              },
+              {
+                "text": " Silicon Valley."
+              }
+            ],
+            "answer": 4,
+            "explanation": "as ไม่ถูกต้อง แก้ไขเป็น such as เพราะต้องการยกตัวอย่างอุตสาหกรรมเทคโนโลยี (A few ถูกต้องเพราะตามด้วยคำนามพหูพจน์เสมอ, a number of ถูกต้องเพราะต้องการคำนามพหูพจน์, especially ถูกต้องเพราะเป็น Adverb ขยายประโยค)"
+          },
+          {
+            "id": "set1-26",
+            "segments": [
+              {
+                "text": "Anyone "
+              },
+              {
+                "text": "they",
+                "n": 1
+              },
+              {
+                "text": " can suffer "
+              },
+              {
+                "text": "under",
+                "n": 2
+              },
+              {
+                "text": " the isolation of remote work, spending "
+              },
+              {
+                "text": "workdays",
+                "n": 3
+              },
+              {
+                "text": " with only a webcam to contact people they "
+              },
+              {
+                "text": "once",
+                "n": 4
+              },
+              {
+                "text": " saw all the time."
+              }
+            ],
+            "answer": 1,
+            "explanation": "they ไม่ถูกต้อง แก้ไขโดยตัดออก เพราะประธานของประโยคนี้คือ Anyone ซึ่งไม่จำเป็นต้องมี Pronoun ซ้ำตามหลัง (under ถูกต้องเพราะ under the isolation แปลว่า ภายใต้การแยกตัว, workdays ถูกต้องเพราะแปลว่า วันทำงาน, once ถูกต้องเพราะเป็น Adverb ขยายกริยา saw)"
+          },
+          {
+            "id": "set1-27",
+            "segments": [
+              {
+                "text": "Pakistan is racing to prevent "
+              },
+              {
+                "text": "further loss",
+                "n": 1
+              },
+              {
+                "text": " of life from floodwater, threatening "
+              },
+              {
+                "text": "to cover",
+                "n": 2
+              },
+              {
+                "text": " up to "
+              },
+              {
+                "text": "the",
+                "n": 3
+              },
+              {
+                "text": " third of the country of 220 million people "
+              },
+              {
+                "text": "by the end of",
+                "n": 4
+              },
+              {
+                "text": " the monsoon season."
+              }
+            ],
+            "answer": 3,
+            "explanation": "the ไม่ถูกต้อง แก้ไขเป็น a เพราะความหมายในโจทย์คือน้ำท่วมเศษ 1 ใน 3 ของพื้นที่ (a third) ไม่ใช่อันดับที่ 3 (the third) (further loss ถูกต้องเพราะ further ขยาย loss, to cover ถูกต้องเพราะตามหลัง threatening, by the end of ถูกต้องเพราะแปลว่า ภายในช่วงเวลาสิ้นสุด)"
+          },
+          {
+            "id": "set1-28",
+            "segments": [
+              {
+                "text": "Although there are campaigns "
+              },
+              {
+                "text": "warn",
+                "n": 1
+              },
+              {
+                "text": " parents about the "
+              },
+              {
+                "text": "dangers",
+                "n": 2
+              },
+              {
+                "text": " of small lithium batteries, visits to emergency rooms "
+              },
+              {
+                "text": "as a result of",
+                "n": 3
+              },
+              {
+                "text": " battery poisonings keep "
+              },
+              {
+                "text": "increasing",
+                "n": 4
+              },
+              {
+                "text": " every year."
+              }
+            ],
+            "answer": 1,
+            "explanation": "warn ไม่ถูกต้อง แก้ไขเป็น warning เพราะทำหน้าที่ขยายคำนาม campaigns จึงต้องเป็น Present Participle (dangers ถูกต้องเพราะเป็นคำนามพหูพจน์, as a result of ถูกต้องเพราะเป็นสำนวนแปลว่า เป็นผลมาจาก, increasing ถูกต้องเพราะ keep ตามด้วย V-ing)"
+          },
+          {
+            "id": "set1-29",
+            "segments": [
+              {
+                "text": "South Korean authorities "
+              },
+              {
+                "text": "admitted",
+                "n": 1
+              },
+              {
+                "text": " that they "
+              },
+              {
+                "text": "had not",
+                "n": 2
+              },
+              {
+                "text": " guidelines to handle the huge crowds that gathered for Halloween festivities in Itaewon where "
+              },
+              {
+                "text": "over",
+                "n": 3
+              },
+              {
+                "text": " 100 people have died in a crush among huge "
+              },
+              {
+                "text": "crowds",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "had not ไม่ถูกต้อง แก้ไขเป็น had no เพราะคำที่ตามมาคือ guidelines ซึ่งเป็นคำนาม ไม่ใช่กริยา (admitted ถูกต้องเพราะเหตุการณ์จบลงแล้ว, over ถูกต้องเพราะนำหน้าตัวเลขแปลว่า มากกว่า, crowds ถูกต้องเพราะหมายถึงผู้คนหลายกลุ่ม)"
+          },
+          {
+            "id": "set1-30",
+            "segments": [
+              {
+                "text": "A doctor has been suspended from "
+              },
+              {
+                "text": "duty",
+                "n": 1
+              },
+              {
+                "text": " at Chiang Saen Hospital and "
+              },
+              {
+                "text": "is facing",
+                "n": 2
+              },
+              {
+                "text": " an investigation "
+              },
+              {
+                "text": "from",
+                "n": 3
+              },
+              {
+                "text": " the Medical Council of Thailand after a loud "
+              },
+              {
+                "text": "argue",
+                "n": 4
+              },
+              {
+                "text": " with a patient."
+              }
+            ],
+            "answer": 4,
+            "explanation": "argue ไม่ถูกต้อง แก้ไขเป็น argument เพราะตำแหน่งนี้ต้องการคำนามตามโครงสร้าง a + Adjective (loud) + Noun (duty ถูกต้องเพราะแปลว่า หน้าที่, is facing ถูกต้องเพราะประธานเอกพจน์ A doctor, from ถูกต้องเพราะเป็นบุพบทบอกว่าถูกสอบสวนโดยหน่วยงานใด)"
+          }
+        ]
+      },
+      {
+        "title": "แบบทดสอบชุดที่ 2",
+        "referenceHtml": "<p>แบบทดสอบเสมือนจริงรูปแบบ Error Identification จำนวน 30 ข้อ พร้อมเฉลยและคำอธิบายละเอียดทุกตัวเลือก</p>",
+        "questions": [
+          {
+            "id": "set2-1",
+            "segments": [
+              {
+                "text": "Chinese authorities charged 28 people and "
+              },
+              {
+                "text": "detained",
+                "n": 1
+              },
+              {
+                "text": " eight police officials "
+              },
+              {
+                "text": "followed",
+                "n": 2
+              },
+              {
+                "text": " a brutal assault on "
+              },
+              {
+                "text": "a group of",
+                "n": 3
+              },
+              {
+                "text": " women earlier this summer that provoked widespread "
+              },
+              {
+                "text": "anger",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "followed ไม่ถูกต้อง แก้ไขเป็น following เพราะประโยคมีกริยาแท้แล้ว 2 ตัวคือ charged และ detained ตำแหน่งนี้จึงควรเป็นคำบุพบทที่แปลว่า หลังจาก (detained ถูกต้องเพราะเป็น Past Tense, a group of ถูกต้องเพราะเป็นการบอกขอบเขตของประโยคในรูปเอกพจน์, anger ถูกต้องเพราะเป็นคำนามตามหลัง widespread)"
+          },
+          {
+            "id": "set2-2",
+            "segments": [
+              {
+                "text": "Negative economic "
+              },
+              {
+                "text": "grow",
+                "n": 1
+              },
+              {
+                "text": " in this year's first half "
+              },
+              {
+                "text": "may be",
+                "n": 2
+              },
+              {
+                "text": " a foreshock to a "
+              },
+              {
+                "text": "much deeper",
+                "n": 3
+              },
+              {
+                "text": " downturn that could "
+              },
+              {
+                "text": "last",
+                "n": 4
+              },
+              {
+                "text": " into 2024."
+              }
+            ],
+            "answer": 1,
+            "explanation": "grow ไม่ถูกต้อง แก้ไขเป็น growth เพราะตำแหน่งนี้ต้องการคำนามมาเป็นประธานของประโยค (may be ถูกต้องเพราะ may ตามด้วย Infinitive, much deeper ถูกต้องเพราะ much เพิ่มระดับ deeper ให้มากขึ้น, last ถูกต้องเพราะเป็นกริยาแปลว่า คงอยู่ยาวนานต่อเนื่อง)"
+          },
+          {
+            "id": "set2-3",
+            "segments": [
+              {
+                "text": "Lazada is preparing "
+              },
+              {
+                "text": "to make",
+                "n": 1
+              },
+              {
+                "text": " its first foray into Europe, building on the "
+              },
+              {
+                "text": "success",
+                "n": 2
+              },
+              {
+                "text": " of e-commerce platform in Southeast Asia, "
+              },
+              {
+                "text": "that",
+                "n": 3
+              },
+              {
+                "text": " it seeks to "
+              },
+              {
+                "text": "take on",
+                "n": 4
+              },
+              {
+                "text": " rivals such as Amazon and Shopee."
+              }
+            ],
+            "answer": 3,
+            "explanation": "that ไม่ถูกต้อง แก้ไขเป็น as เพราะถ้าใช้ that เป็น Relative Pronoun จะไม่มีเครื่องหมาย comma นำหน้า ในที่นี้ที่ถูกต้องคือ as ซึ่งแปลว่า ในขณะที่ (to make ถูกต้องเพราะ prepare ตามด้วย To-Infinitive, success ถูกต้องเพราะเป็นคำนามตามหลัง the, take on ถูกต้องเพราะแปลว่า แข่งขัน ต่อสู้)"
+          },
+          {
+            "id": "set2-4",
+            "segments": [
+              {
+                "text": "The pandemic and technological "
+              },
+              {
+                "text": "advancements",
+                "n": 1
+              },
+              {
+                "text": " have begun to shift "
+              },
+              {
+                "text": "some",
+                "n": 2
+              },
+              {
+                "text": " employers' mindsets to one "
+              },
+              {
+                "text": "so that",
+                "n": 3
+              },
+              {
+                "text": " is more open and "
+              },
+              {
+                "text": "trusting",
+                "n": 4
+              },
+              {
+                "text": " of their workforces."
+              }
+            ],
+            "answer": 3,
+            "explanation": "so that ไม่ถูกต้อง แก้ไขเป็น that เพราะตำแหน่งนี้ต้องการ Relative Pronoun ที่ขยายคำว่า one (mindsets) ไม่ใช่คำเชื่อม so that (advancements ถูกต้องเพราะเป็นคำนามพหูพจน์ตามหลัง technological, some ถูกต้องเพราะเป็น Adjective, trusting ถูกต้องเพราะขนานกับ open ตามหลักโครงสร้างคู่ขนาน)"
+          },
+          {
+            "id": "set2-5",
+            "segments": [
+              {
+                "text": "When Microsoft "
+              },
+              {
+                "text": "trialed",
+                "n": 1
+              },
+              {
+                "text": " a four-day week with no "
+              },
+              {
+                "text": "lost",
+                "n": 2
+              },
+              {
+                "text": " of pay in their Japan office, the company claimed "
+              },
+              {
+                "text": "productivity",
+                "n": 3
+              },
+              {
+                "text": " went up "
+              },
+              {
+                "text": "by",
+                "n": 4
+              },
+              {
+                "text": " 40% and electricity costs fell by 23%."
+              }
+            ],
+            "answer": 2,
+            "explanation": "lost ไม่ถูกต้อง แก้ไขเป็น loss เพราะหลัง no ต้องตามด้วยคำนาม (trialed ถูกต้องเพราะเป็นกริยาแปลว่า ทดลอง อยู่ในรูป Past Tense, productivity ถูกต้องเพราะเป็นคำนามตามหลัง claimed, by ถูกต้องเพราะใช้นำหน้าตัวเลขบอกปริมาณ)"
+          },
+          {
+            "id": "set2-6",
+            "segments": [
+              {
+                "text": "After steady rain from "
+              },
+              {
+                "text": "late",
+                "n": 1
+              },
+              {
+                "text": " Tuesday afternoon, "
+              },
+              {
+                "text": "many",
+                "n": 2
+              },
+              {
+                "text": " roads were inundated with "
+              },
+              {
+                "text": "the",
+                "n": 3
+              },
+              {
+                "text": " water reported to be over one meter "
+              },
+              {
+                "text": "depth",
+                "n": 4
+              },
+              {
+                "text": " in some areas of Pathum Thani."
+              }
+            ],
+            "answer": 4,
+            "explanation": "depth ไม่ถูกต้อง แก้ไขเป็น deep เพราะตำแหน่งนี้ต้องการ Adjective ขยาย one meter เพื่อบอกว่าน้ำท่วมลึกกว่า 1 เมตร (late ถูกต้องเพราะบอกช่วงเวลาบ่ายวันอังคาร, many ถูกต้องเพราะขยายคำนามพหูพจน์ roads, the ถูกต้องเพราะชี้เฉพาะว่าเป็นน้ำจากฝนที่ตก)"
+          },
+          {
+            "id": "set2-7",
+            "segments": [
+              {
+                "text": "An old woman who slipped and "
+              },
+              {
+                "text": "fell",
+                "n": 1
+              },
+              {
+                "text": " into the Chao Phraya River was found alive and "
+              },
+              {
+                "text": "save",
+                "n": 2
+              },
+              {
+                "text": " four hours later and 20 kilometers downstream, "
+              },
+              {
+                "text": "clutching",
+                "n": 3
+              },
+              {
+                "text": " the side of a "
+              },
+              {
+                "text": "floating",
+                "n": 4
+              },
+              {
+                "text": " fish basket."
+              }
+            ],
+            "answer": 2,
+            "explanation": "save ไม่ถูกต้อง แก้ไขเป็น safe เพราะตำแหน่งนี้ต้องการ Adjective ตามหลังกริยา found (ขนานกับ alive ที่เป็น Adjective เช่นกัน) (fell ถูกต้องเพราะเป็นกริยาช่อง 2 ไม่เติม -ed, clutching ถูกต้องเพราะเป็น Present Participle ขยายประธาน, floating ถูกต้องเพราะเป็น Adjective ขยาย fish basket)"
+          },
+          {
+            "id": "set2-8",
+            "segments": [
+              {
+                "text": "A football match at Cadiz was halted "
+              },
+              {
+                "text": "for",
+                "n": 1
+              },
+              {
+                "text": " 50 minutes "
+              },
+              {
+                "text": "because",
+                "n": 2
+              },
+              {
+                "text": " a fan "
+              },
+              {
+                "text": "had",
+                "n": 3
+              },
+              {
+                "text": " a medical emergency and "
+              },
+              {
+                "text": "taken",
+                "n": 4
+              },
+              {
+                "text": " to hospital by ambulance."
+              }
+            ],
+            "answer": 4,
+            "explanation": "taken ไม่ถูกต้อง แก้ไขเป็น was taken เพราะตำแหน่งนี้ต้องการกริยาแท้ในรูป Passive Voice (แฟนบอลถูกนำตัวส่งโรงพยาบาล) (for ถูกต้องเพราะบอกความยาวนานของเวลา, because ถูกต้องเพราะตามด้วยประโยค, had ถูกต้องเพราะบ่งบอกเหตุการณ์ในอดีต)"
+          },
+          {
+            "id": "set2-9",
+            "segments": [
+              {
+                "text": "Japan has barred "
+              },
+              {
+                "text": "most",
+                "n": 1
+              },
+              {
+                "text": " foreign visitors to "
+              },
+              {
+                "text": "slow",
+                "n": 2
+              },
+              {
+                "text": " the spread of Covid, however "
+              },
+              {
+                "text": "the number of",
+                "n": 3
+              },
+              {
+                "text": " foreign tourists "
+              },
+              {
+                "text": "was allowed",
+                "n": 4
+              },
+              {
+                "text": " to enter the country was raised to 50,000 per day this month."
+              }
+            ],
+            "answer": 4,
+            "explanation": "was allowed ไม่ถูกต้อง แก้ไขเป็น allowed เพราะประโยคมีกริยาแท้อยู่แล้วคือ was raised ตำแหน่งนี้จึงควรลดรูปเป็น Past Participle เพื่อขยายประธาน (most ถูกต้องเพราะตามด้วยคำนามได้ แปลว่า ส่วนใหญ่, slow ถูกต้องเพราะเป็นกริยาใน To-Infinitive, the number of ถูกต้องเพราะแปลว่า จำนวน)"
+          },
+          {
+            "id": "set2-10",
+            "segments": [
+              {
+                "text": "An associate professor "
+              },
+              {
+                "text": "at",
+                "n": 1
+              },
+              {
+                "text": " Portland State University, "
+              },
+              {
+                "text": "whose",
+                "n": 2
+              },
+              {
+                "text": " specializes in East Asian popular culture said that the "
+              },
+              {
+                "text": "use",
+                "n": 3
+              },
+              {
+                "text": " of English terms in the lyrics to Korean songs may sound "
+              },
+              {
+                "text": "too sexual",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "whose ไม่ถูกต้อง แก้ไขเป็น who เพราะ specializes ทำหน้าที่เป็นกริยา จึงต้องใช้ Relative Pronoun who ไม่ใช่ whose ซึ่งแสดงความเป็นเจ้าของ (at ถูกต้องเพราะบอกว่าอาจารย์ทำงานอยู่ที่มหาวิทยาลัยใด, use ถูกต้องเพราะเป็นคำนามตามหลัง the, too sexual ถูกต้องเพราะหมายถึงสื่อไปในทางเพศมากเกินไป)"
+          },
+          {
+            "id": "set2-11",
+            "segments": [
+              {
+                "text": "The government has instructed agencies to monitor "
+              },
+              {
+                "text": "flood-prone",
+                "n": 1
+              },
+              {
+                "text": " areas and "
+              },
+              {
+                "text": "clearly",
+                "n": 2
+              },
+              {
+                "text": " possible "
+              },
+              {
+                "text": "obstructions",
+                "n": 3
+              },
+              {
+                "text": " in drainage systems "
+              },
+              {
+                "text": "as well as",
+                "n": 4
+              },
+              {
+                "text": " riverbanks."
+              }
+            ],
+            "answer": 2,
+            "explanation": "clearly ไม่ถูกต้อง แก้ไขเป็น clear เพราะตามหลักโครงสร้างคู่ขนานกับ to monitor ที่อยู่ก่อนหน้า (to monitor ... and (to) clear ...) ตำแหน่งนี้จึงควรเป็นกริยา clear (flood-prone ถูกต้องเพราะเป็น Adjective ขยาย areas, obstructions ถูกต้องเพราะเป็นคำนามพหูพจน์ แปลว่า สิ่งกีดขวาง, as well as ถูกต้องเพราะมีความหมายเหมือน and)"
+          },
+          {
+            "id": "set2-12",
+            "segments": [
+              {
+                "text": "After slamming "
+              },
+              {
+                "text": "into",
+                "n": 1
+              },
+              {
+                "text": " the Philippines, Noru is predicted to make landfall as "
+              },
+              {
+                "text": "a",
+                "n": 2
+              },
+              {
+                "text": " super typhoon before Friday and "
+              },
+              {
+                "text": "then",
+                "n": 3
+              },
+              {
+                "text": " subside to a severe typhoon as it "
+              },
+              {
+                "text": "made",
+                "n": 4
+              },
+              {
+                "text": " its way inland."
+              }
+            ],
+            "answer": 4,
+            "explanation": "made ไม่ถูกต้อง แก้ไขเป็น makes เพราะพายุยังไม่เข้าสู่แผ่นดิน และกริยาอื่นในประโยคอยู่ในรูป Present Simple Tense ทั้งหมด (into ถูกต้องเพราะหมายถึงพายุพัดเข้าสู่ประเทศ, a ถูกต้องเพราะนำหน้าคำนาม typhoon, then ถูกต้องเพราะแปลว่า หลังจากนั้น)"
+          },
+          {
+            "id": "set2-13",
+            "segments": [
+              {
+                "text": "Robots can work "
+              },
+              {
+                "text": "virtually",
+                "n": 1
+              },
+              {
+                "text": " nonstop, "
+              },
+              {
+                "text": "unlike",
+                "n": 2
+              },
+              {
+                "text": " human workers who need "
+              },
+              {
+                "text": "costly",
+                "n": 3
+              },
+              {
+                "text": " perks like health benefits, "
+              },
+              {
+                "text": "times",
+                "n": 4
+              },
+              {
+                "text": " to eat and sleep, and wages."
+              }
+            ],
+            "answer": 4,
+            "explanation": "times ไม่ถูกต้อง แก้ไขเป็น time เพราะตำแหน่งนี้หมายถึงเวลาในการกินและนอน ซึ่งเป็นคำนามนับไม่ได้ ไม่เติม s (virtually ถูกต้องเพราะเป็น Adverb ขยาย nonstop, unlike ถูกต้องเพราะนำหน้าคำนามได้, costly ถูกต้องเพราะเป็น Adjective ขยาย perks)"
+          },
+          {
+            "id": "set2-14",
+            "segments": [
+              {
+                "text": "Although",
+                "n": 1
+              },
+              {
+                "text": " their potential benefits, many people "
+              },
+              {
+                "text": "are worried",
+                "n": 2
+              },
+              {
+                "text": " about the effects that "
+              },
+              {
+                "text": "automation",
+                "n": 3
+              },
+              {
+                "text": " of simple labor tasks may have on the "
+              },
+              {
+                "text": "economy",
+                "n": 4
+              },
+              {
+                "text": " and workforce."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Although ไม่ถูกต้อง แก้ไขเป็น Despite เพราะ Although ต้องตามด้วยประโยค แต่ their potential benefits เป็นเพียงกลุ่มคำนาม (are worried ถูกต้องเพราะบ่งบอกความรู้สึกของประธาน, automation ถูกต้องเพราะเป็นคำนามตามหลัง that, economy ถูกต้องเพราะเป็นคำนามตามหลัง the)"
+          },
+          {
+            "id": "set2-15",
+            "segments": [
+              {
+                "text": "Every years",
+                "n": 1
+              },
+              {
+                "text": ", more businesses replace their "
+              },
+              {
+                "text": "unskilled",
+                "n": 2
+              },
+              {
+                "text": " workers with automated machines and "
+              },
+              {
+                "text": "these",
+                "n": 3
+              },
+              {
+                "text": " workers have to learn new skills to "
+              },
+              {
+                "text": "adapt to",
+                "n": 4
+              },
+              {
+                "text": " changes."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Every years ไม่ถูกต้อง แก้ไขเป็น Every year เพราะ every ต้องตามด้วยคำนามเอกพจน์ (unskilled ถูกต้องเพราะเป็น Adjective ขยาย workers, these ถูกต้องเพราะนำหน้าคำนามพหูพจน์, adapt to ถูกต้องเพราะกริยา adapt ใช้กับบุพบท to เสมอ)"
+          },
+          {
+            "id": "set2-16",
+            "segments": [
+              {
+                "text": "Various methods "
+              },
+              {
+                "text": "have developed",
+                "n": 1
+              },
+              {
+                "text": " to support the global campaign "
+              },
+              {
+                "text": "against",
+                "n": 2
+              },
+              {
+                "text": " climate change, ranging "
+              },
+              {
+                "text": "from",
+                "n": 3
+              },
+              {
+                "text": " adopting carbon capture to "
+              },
+              {
+                "text": "using",
+                "n": 4
+              },
+              {
+                "text": " clean energy at the petroleum platform."
+              }
+            ],
+            "answer": 1,
+            "explanation": "have developed ไม่ถูกต้อง แก้ไขเป็น have been developed เพราะประธาน methods ไม่สามารถทำกริยานี้ได้เอง จึงต้องอยู่ในรูป Passive Voice (against ถูกต้องเพราะเป็นบุพบทแปลว่า ต่อต้าน, from ถูกต้องเพราะใช้คู่กับ range เสมอ, using ถูกต้องเพราะขนานกับ adopting ตามโครงสร้าง from...to...)"
+          },
+          {
+            "id": "set2-17",
+            "segments": [
+              {
+                "text": "Tom Brady and supermodel Gisele Bündchen are getting "
+              },
+              {
+                "text": "divorced",
+                "n": 1
+              },
+              {
+                "text": " after 13 years of "
+              },
+              {
+                "text": "marry",
+                "n": 2
+              },
+              {
+                "text": " but they "
+              },
+              {
+                "text": "will continue",
+                "n": 3
+              },
+              {
+                "text": " to work together as parents to "
+              },
+              {
+                "text": "take care of",
+                "n": 4
+              },
+              {
+                "text": " their children."
+              }
+            ],
+            "answer": 2,
+            "explanation": "marry ไม่ถูกต้อง แก้ไขเป็น marriage เพราะตำแหน่งนี้ต้องการคำนามตามหลัง years of (divorced ถูกต้องเพราะตามหลัง getting บ่งบอกการเปลี่ยนสถานะ, will continue ถูกต้องเพราะบ่งบอกอนาคต, take care of ถูกต้องเพราะแปลว่า ดูแล)"
+          },
+          {
+            "id": "set2-18",
+            "segments": [
+              {
+                "text": "Most ancient "
+              },
+              {
+                "text": "civilizations",
+                "n": 1
+              },
+              {
+                "text": " had no word for the color blue, "
+              },
+              {
+                "text": "possibly",
+                "n": 2
+              },
+              {
+                "text": " because blue doesn't appear much in nature – "
+              },
+              {
+                "text": "they",
+                "n": 3
+              },
+              {
+                "text": " aren't blue animals and blue flowers are "
+              },
+              {
+                "text": "mostly",
+                "n": 4
+              },
+              {
+                "text": " human creations."
+              }
+            ],
+            "answer": 3,
+            "explanation": "they ไม่ถูกต้อง แก้ไขเป็น there เพราะ they ไม่ได้หมายถึงคำนามใดในประโยค ต้องใช้ there aren't เพื่อให้ความหมายสมบูรณ์ (civilizations ถูกต้องเพราะเติม s ตามหลัง Most, possibly ถูกต้องเพราะขยาย because, mostly ถูกต้องเพราะเป็น Adverb ขยาย are)"
+          },
+          {
+            "id": "set2-19",
+            "segments": [
+              {
+                "text": "Regions, "
+              },
+              {
+                "text": "which",
+                "n": 1
+              },
+              {
+                "text": " like South-East Asia or Latin America "
+              },
+              {
+                "text": "have seen",
+                "n": 2
+              },
+              {
+                "text": " a great "
+              },
+              {
+                "text": "increase",
+                "n": 3
+              },
+              {
+                "text": " in online enrollment and a "
+              },
+              {
+                "text": "rise",
+                "n": 4
+              },
+              {
+                "text": " in university applications after the pandemic."
+              }
+            ],
+            "answer": 1,
+            "explanation": "which ไม่ถูกต้อง แก้ไขเป็น like (ตัดคำเชื่อมออก) เพราะความหมายต้องการยกตัวอย่างภูมิภาค ไม่ใช่การใช้ Relative Pronoun (have seen ถูกต้องเพราะเป็น Present Perfect Tense บ่งบอกเหตุการณ์ต่อเนื่องถึงปัจจุบัน, increase ถูกต้องเพราะเป็นคำนามตามหลัง great, rise ถูกต้องเพราะเป็นคำนามตามหลัง a)"
+          },
+          {
+            "id": "set2-20",
+            "segments": [
+              {
+                "text": "Small mammals, "
+              },
+              {
+                "text": "including",
+                "n": 1
+              },
+              {
+                "text": " rodents, "
+              },
+              {
+                "text": "may",
+                "n": 2
+              },
+              {
+                "text": " swarm locally on occasions probably "
+              },
+              {
+                "text": "because",
+                "n": 3
+              },
+              {
+                "text": " their predators have become "
+              },
+              {
+                "text": "rarely",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 4,
+            "explanation": "rarely ไม่ถูกต้อง แก้ไขเป็น rare เพราะ become เป็น Linking Verb ต้องตามด้วย Adjective (including ถูกต้องเพราะแปลว่า รวมทั้ง, may ถูกต้องเพราะเป็นกริยาของประธาน small mammals, because ถูกต้องเพราะบอกเหตุผล)"
+          },
+          {
+            "id": "set2-21",
+            "segments": [
+              {
+                "text": "In Japan and Australia, hydroquinone "
+              },
+              {
+                "text": "has been removed",
+                "n": 1
+              },
+              {
+                "text": " from "
+              },
+              {
+                "text": "over-the-counter",
+                "n": 2
+              },
+              {
+                "text": " skin products and substituted with other chemicals "
+              },
+              {
+                "text": "due to",
+                "n": 3
+              },
+              {
+                "text": " concerns about "
+              },
+              {
+                "text": "healthy risks",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 4,
+            "explanation": "healthy risks ไม่ถูกต้อง แก้ไขเป็น health risks เพราะ health risks เป็นคำที่ใช้คู่กันแปลว่า ความเสี่ยงทางด้านสุขภาพ ไม่ใช่ healthy ที่แปลว่า มีสุขภาพดี (has been removed ถูกต้องเพราะเป็น Passive Voice, over-the-counter ถูกต้องเพราะแปลว่า ที่วางขายทั่วไป, due to ถูกต้องเพราะเป็นบุพบทแสดงเหตุผล)"
+          },
+          {
+            "id": "set2-22",
+            "segments": [
+              {
+                "text": "Lightening creams are not effectively "
+              },
+              {
+                "text": "regulating",
+                "n": 1
+              },
+              {
+                "text": " in Jamaica, "
+              },
+              {
+                "text": "where",
+                "n": 2
+              },
+              {
+                "text": " roadside vendors are selling "
+              },
+              {
+                "text": "unlabeled",
+                "n": 3
+              },
+              {
+                "text": " tubes and ointments from cardboard boxes along sidewalks in market "
+              },
+              {
+                "text": "districts",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 1,
+            "explanation": "regulating ไม่ถูกต้อง แก้ไขเป็น regulated เพราะประธานคือครีมฟอกผิวขาวซึ่งถูกควบคุม ไม่ได้ทำกริยาเอง จึงต้องเป็น Passive Voice (where ถูกต้องเพราะขยายสถานที่จาไมกา, unlabeled ถูกต้องเพราะเป็น Adjective ขยาย tubes, districts ถูกต้องเพราะหมายถึงหลายเขต)"
+          },
+          {
+            "id": "set2-23",
+            "segments": [
+              {
+                "text": "With "
+              },
+              {
+                "text": "hundreds",
+                "n": 1
+              },
+              {
+                "text": " of homes flooded in Windsor, "
+              },
+              {
+                "text": "safe officials",
+                "n": 2
+              },
+              {
+                "text": " are warning residents to wear protective "
+              },
+              {
+                "text": "clothing",
+                "n": 3
+              },
+              {
+                "text": " like rubber boots every time they "
+              },
+              {
+                "text": "walk through",
+                "n": 4
+              },
+              {
+                "text": " floodwater."
+              }
+            ],
+            "answer": 2,
+            "explanation": "safe officials ไม่ถูกต้อง แก้ไขเป็น safety officials เพราะหมายถึงเจ้าหน้าที่ดูแลความปลอดภัย ซึ่งเป็น Compound Noun (hundreds ถูกต้องเพราะเป็นจำนวน, clothing ถูกต้องเพราะเป็นคำนามตามหลัง protective, walk through ถูกต้องเพราะแปลว่า เดินฝ่า)"
+          },
+          {
+            "id": "set2-24",
+            "segments": [
+              {
+                "text": "Emirates "
+              },
+              {
+                "text": "have announced",
+                "n": 1
+              },
+              {
+                "text": " plans to debut its new A380 aircraft "
+              },
+              {
+                "text": "featuring",
+                "n": 2
+              },
+              {
+                "text": " its "
+              },
+              {
+                "text": "latest",
+                "n": 3
+              },
+              {
+                "text": " premium economy cabins to "
+              },
+              {
+                "text": "five new cities",
+                "n": 4
+              },
+              {
+                "text": " from December."
+              }
+            ],
+            "answer": 1,
+            "explanation": "have announced ไม่ถูกต้อง แก้ไขเป็น has announced เพราะประธาน Emirates เป็นเอกพจน์ (สังเกตจากคำสรรพนาม its ในประโยค) (featuring ถูกต้องเพราะเป็น Present Participle ขยาย aircraft, latest ถูกต้องเพราะหมายถึงรุ่นล่าสุด, five new cities ถูกต้องเพราะหมายถึงเส้นทางการบิน 5 เมืองใหม่)"
+          },
+          {
+            "id": "set2-25",
+            "segments": [
+              {
+                "text": "Research",
+                "n": 1
+              },
+              {
+                "text": " shows that melatonin may "
+              },
+              {
+                "text": "help",
+                "n": 2
+              },
+              {
+                "text": " people with insomnia to fall asleep "
+              },
+              {
+                "text": "slight",
+                "n": 3
+              },
+              {
+                "text": " faster and may have bigger benefits for "
+              },
+              {
+                "text": "those",
+                "n": 4
+              },
+              {
+                "text": " with delayed sleep phase syndrome."
+              }
+            ],
+            "answer": 3,
+            "explanation": "slight ไม่ถูกต้อง แก้ไขเป็น slightly เพราะตำแหน่งนี้ต้องการ Adverb ขยาย faster ซึ่งเป็น Adjective (Research ถูกต้องเพราะเป็นคำนามนับไม่ได้ ไม่ต้องมี Article นำหน้า, help ถูกต้องเพราะ may ตามด้วยกริยารูป infinitive without to, those ถูกต้องเพราะใช้แทนบุคคลอื่นๆ)"
+          },
+          {
+            "id": "set2-26",
+            "segments": [
+              {
+                "text": "Guangzhou "
+              },
+              {
+                "text": "has become",
+                "n": 1
+              },
+              {
+                "text": " the first Chinese city "
+              },
+              {
+                "text": "and bans",
+                "n": 2
+              },
+              {
+                "text": " the sale and consumption of dog and cat meat "
+              },
+              {
+                "text": "after",
+                "n": 3
+              },
+              {
+                "text": " the coronavirus outbreak "
+              },
+              {
+                "text": "was linked",
+                "n": 4
+              },
+              {
+                "text": " to wildlife meat."
+              }
+            ],
+            "answer": 2,
+            "explanation": "and bans ไม่ถูกต้อง แก้ไขเป็น to ban เพราะต้องการสื่อว่ากวางโจวเป็นเมืองแรกของจีนที่จะห้ามการขายและรับประทานเนื้อหมาและแมว (has become ถูกต้องเพราะประธานเอกพจน์อยู่ในรูป Present Perfect Tense, after ถูกต้องเพราะบอกลำดับเหตุการณ์, was linked ถูกต้องเพราะแปลว่า ถูกเชื่อมโยงเข้ากับเนื้อสัตว์ป่า)"
+          },
+          {
+            "id": "set2-27",
+            "segments": [
+              {
+                "text": "Many "
+              },
+              {
+                "text": "nonfood",
+                "n": 1
+              },
+              {
+                "text": " companies in Thailand have started to diversify into "
+              },
+              {
+                "text": "wellness food",
+                "n": 2
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "despite",
+                "n": 3
+              },
+              {
+                "text": " the pandemic has encourages people to "
+              },
+              {
+                "text": "take more",
+                "n": 4
+              },
+              {
+                "text": " food supplement."
+              }
+            ],
+            "answer": 3,
+            "explanation": "despite ไม่ถูกต้อง แก้ไขเป็น because เพราะความหมายในประโยคเป็นเหตุผล (โรคระบาดส่งเสริมให้คนกินอาหารเสริมมากขึ้น) ไม่ใช่ความขัดแย้งกัน (nonfood ถูกต้องเพราะเป็น Adjective ขยาย companies, wellness food ถูกต้องเพราะเป็นคำนามเฉพาะ, take more ถูกต้องเพราะ take ตามหลัง to และ more ขยาย food)"
+          },
+          {
+            "id": "set2-28",
+            "segments": [
+              {
+                "text": "Walk",
+                "n": 1
+              },
+              {
+                "text": " is a great form of "
+              },
+              {
+                "text": "exercise",
+                "n": 2
+              },
+              {
+                "text": " that can help you lose weight and is "
+              },
+              {
+                "text": "associated with",
+                "n": 3
+              },
+              {
+                "text": " "
+              },
+              {
+                "text": "lower",
+                "n": 4
+              },
+              {
+                "text": " levels of belly fat."
+              }
+            ],
+            "answer": 1,
+            "explanation": "Walk ไม่ถูกต้อง แก้ไขเป็น Walking เพราะตำแหน่งนี้ต้องการคำนามมาเป็นประธานของประโยค (exercise ถูกต้องเพราะเป็นคำนามตามหลัง of, associated with ถูกต้องเพราะกริยา associated ใช้กับ with, lower ถูกต้องเพราะขยายคำนาม levels)"
+          },
+          {
+            "id": "set2-29",
+            "segments": [
+              {
+                "text": "In major cities, the "
+              },
+              {
+                "text": "major",
+                "n": 1
+              },
+              {
+                "text": " source of air pollution is "
+              },
+              {
+                "text": "not longer",
+                "n": 2
+              },
+              {
+                "text": " from factories, "
+              },
+              {
+                "text": "rather",
+                "n": 3
+              },
+              {
+                "text": " it is from vehicle "
+              },
+              {
+                "text": "exhaust pipes",
+                "n": 4
+              },
+              {
+                "text": "."
+              }
+            ],
+            "answer": 2,
+            "explanation": "not longer ไม่ถูกต้อง แก้ไขเป็น no longer เพราะสำนวนที่แปลว่า ไม่อีกต่อไปแล้ว คือ no longer (major ถูกต้องเพราะเป็น Adjective ขยาย source, rather ถูกต้องเพราะแปลว่า เกิดจากสิ่งอื่นมากกว่า, exhaust pipes ถูกต้องเพราะแปลว่า ท่อไอเสีย)"
+          },
+          {
+            "id": "set2-30",
+            "segments": [
+              {
+                "text": "When you go to a dental clinic for "
+              },
+              {
+                "text": "anything",
+                "n": 1
+              },
+              {
+                "text": " from a regular cleaning to a root canal, the dentists "
+              },
+              {
+                "text": "use generally",
+                "n": 2
+              },
+              {
+                "text": " a small, "
+              },
+              {
+                "text": "hand-held",
+                "n": 3
+              },
+              {
+                "text": " concave mirror to see teeth and "
+              },
+              {
+                "text": "other areas",
+                "n": 4
+              },
+              {
+                "text": " in your mouth."
+              }
+            ],
+            "answer": 2,
+            "explanation": "use generally ไม่ถูกต้อง แก้ไขเป็น generally use เพราะ generally เป็น Adverb ที่ปกติจะวางไว้หน้าคำกริยา (anything ถูกต้องเพราะกล่าวถึงโดยรวม, hand-held ถูกต้องเพราะเป็น Adjective ขยาย concave mirror, other areas ถูกต้องเพราะ other ตามด้วยคำนามพหูพจน์)"
+          }
+        ]
       }
     ],
   },
