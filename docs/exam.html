@@ -108,6 +108,28 @@
   .audio-card .lbl{ font-weight:700; font-size:14.5px; margin-bottom:8px; }
   audio{ width:100%; height:36px; }
 
+  .tapescript-card{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    margin:0 0 14px; box-shadow:var(--shadow); overflow:hidden;
+  }
+  .tapescript-toggle{
+    all:unset; cursor:pointer; box-sizing:border-box; width:100%;
+    display:flex; align-items:center; gap:8px;
+    padding:12px 16px; font-family:var(--font-sans); font-weight:700; font-size:14px; color:var(--accent);
+  }
+  .tapescript-toggle:focus-visible{ outline:2px solid var(--accent); outline-offset:-2px; }
+  .tapescript-toggle .chev{ margin-left:auto; font-family:var(--font-mono); transition:transform .15s ease; }
+  @media (prefers-reduced-motion: reduce){ .tapescript-toggle .chev{ transition:none; } }
+  .tapescript-card.open .tapescript-toggle .chev{ transform:rotate(90deg); }
+  .tapescript-body{
+    display:none; margin:0 16px 16px; padding:12px 14px;
+    background:var(--surface-2); border-radius:10px;
+    font-size:13.6px; line-height:1.85; color:var(--text); white-space:pre-line;
+    max-height:420px; overflow-y:auto;
+  }
+  .tapescript-card.open .tapescript-body{ display:block; }
+  .tapescript-body.empty{ color:var(--text-muted); font-style:italic; }
+
   .q-card{
     background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
     padding:16px 18px; margin:14px 0; box-shadow:var(--shadow);
@@ -198,12 +220,13 @@
 
 <div id="app"></div>
 
-<script src="exam-data.js"></script>
+<script src="exam-data.js?v=20260812c"></script>
 <script>
 (function(){
   "use strict";
   var DATA = window.EXAM_DATA;
   var PART_LABEL = { listening: "Listening", reading: "Reading", writing: "Writing" };
+  var PART_Q_OFFSET = { listening: 0, reading: 30, writing: 90 };
   var PART_ICON = { listening: "L", reading: "R", writing: "W" };
 
   function el(html){ var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
@@ -211,6 +234,34 @@
     return String(s).replace(/[&<>"']/g, function(c){
       return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[c];
     });
+  }
+
+  function buildTapescriptCard(text){
+    var card = el(
+      '<div class="tapescript-card">' +
+        '<button type="button" class="tapescript-toggle">📄 บทเสียง (Tapescript)<span class="chev">›</span></button>' +
+        '<div class="tapescript-body"></div>' +
+      "</div>"
+    );
+    var body = card.querySelector(".tapescript-body");
+    if (text && text.trim()){
+      body.textContent = text;
+    } else {
+      body.textContent = "ยังไม่มีบทเสียงสำหรับส่วนนี้";
+      body.classList.add("empty");
+    }
+    card.querySelector(".tapescript-toggle").addEventListener("click", function(){
+      card.classList.toggle("open");
+    });
+    return card;
+  }
+
+  function buildPassageCard(q){
+    var card = el('<div class="q-card"></div>');
+    card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
+    card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
+    card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+    return card;
   }
 
   // ---------- Read-aloud (Web Speech API) ----------
@@ -309,7 +360,7 @@
 
     var foot = document.createElement("footer");
     foot.className = "foot";
-    foot.textContent = "โหมดฝึกทำข้อสอบ — ไม่จับเวลา เฉลยและคำอธิบายจะแสดงหลังกดส่งคำตอบเท่านั้น";
+    foot.textContent = "โหมดฝึกทำข้อสอบ ";
     app.appendChild(foot);
   }
 
@@ -414,6 +465,16 @@
       "</div>"
     ));
 
+    if (partKey === "listening" && part.audioParts && part.audioParts.length){
+      part.audioParts.forEach(function(ap){
+        wrap.appendChild(el(
+          '<div class="audio-card"><div class="lbl">🎧 ' + escapeHtml(ap.label) + '</div>' +
+          '<audio controls preload="none" src="' + encodeURI(ap.src) + '"></audio></div>'
+        ));
+      });
+      wrap.appendChild(buildTapescriptCard(part.tapescript));
+    }
+
     if (questions.length === 0){
       wrap.appendChild(el(
         '<div class="empty-state"><div class="big">📭</div>' +
@@ -433,24 +494,20 @@
     );
     wrap.appendChild(progressBar);
 
-    if (partKey === "listening" && part.audioParts && part.audioParts.length){
-      part.audioParts.forEach(function(ap){
-        wrap.appendChild(el(
-          '<div class="audio-card"><div class="lbl">🎧 ' + escapeHtml(ap.label) + '</div>' +
-          '<audio controls preload="none" src="' + encodeURI(ap.src) + '"></audio></div>'
-        ));
-      });
-    }
-
     function updateProgress(){
       var answered = Object.keys(answers).length;
       wrap.querySelector("#prog-label").textContent = "ตอบแล้ว " + answered + " / " + questions.length + " ข้อ";
       wrap.querySelector("#prog-fill").style.width = Math.round((answered / questions.length) * 100) + "%";
     }
 
+    var qOffset = PART_Q_OFFSET[partKey] || 0;
     questions.forEach(function(q, qi){
+      if (q.passage && (qi === 0 || questions[qi - 1].passageTitle !== q.passageTitle)){
+        wrap.appendChild(buildPassageCard(q));
+      }
+
       var card = el('<div class="q-card"></div>');
-      card.appendChild(el('<div class="q-num">' + (qi + 1) + " / " + questions.length + "</div>"));
+      card.appendChild(el('<div class="q-num">' + (qOffset + qi + 1) + " / " + (qOffset + questions.length) + "</div>"));
 
       if (partKey === "writing"){
         var sentence = el('<div class="err-sentence"></div>');
@@ -480,12 +537,8 @@
         card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
         card.appendChild(sentence);
       } else {
-        if (q.passageTitle){
+        if (q.passageTitle && !q.passage){
           card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
-        }
-        if (q.passage){
-          card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
-          card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
         }
         card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
         var list = el('<ul class="choices"></ul>');
@@ -565,14 +618,20 @@
           '<audio controls preload="none" src="' + encodeURI(ap.src) + '"></audio></div>'
         ));
       });
+      wrap.appendChild(buildTapescriptCard(part.tapescript));
     }
 
+    var qOffset = PART_Q_OFFSET[partKey] || 0;
     questions.forEach(function(q, qi){
+      if (q.passage && (qi === 0 || questions[qi - 1].passageTitle !== q.passageTitle)){
+        wrap.appendChild(buildPassageCard(q));
+      }
+
       var given = answers[q.id];
       var isCorrect = given === q.answer;
       var card = el('<div class="q-card"></div>');
       card.appendChild(el(
-        '<div class="q-num">' + (qi + 1) + " / " + questions.length +
+        '<div class="q-num">' + (qOffset + qi + 1) + " / " + (qOffset + questions.length) +
         '<span class="tag ' + (isCorrect ? "ok" : "no") + '" style="float:right">' +
         (given === undefined ? "ไม่ได้ตอบ" : (isCorrect ? "✓ ถูก" : "✗ ผิด")) +
         "</span></div>"
@@ -597,10 +656,8 @@
         card.appendChild(el('<div class="q-prompt" style="margin-bottom:0">แตะส่วนที่มีข้อผิดพลาดทางไวยากรณ์</div>'));
         card.appendChild(sentence);
       } else {
-        if (q.passageTitle) card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
-        if (q.passage){
-          card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
-          card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        if (q.passageTitle && !q.passage){
+          card.appendChild(el('<div class="q-passage-title">' + escapeHtml(q.passageTitle) + "</div>"));
         }
         card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
         var list = el('<ul class="choices reviewed"></ul>');
