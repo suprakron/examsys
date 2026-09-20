@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8" />
+<title>CU-TEP เนื้อหาพื้นฐาน</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style>
+  :root{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --violet:#6a4c93; --violet-soft:#ece5f5; --coral:#a8501e; --coral-soft:#f6e6dc;
+    --radius:14px;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+    --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
+    --font-mono: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+      --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+      --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+      --violet:#b79ee0; --violet-soft:#2b2340; --coral:#e0a17e; --coral-soft:#3a2718;
+      --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
+    --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
+    --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+    --violet:#b79ee0; --violet-soft:#2b2340; --coral:#e0a17e; --coral-soft:#3a2718;
+    --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+  }
+  :root[data-theme="light"]{
+    --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
+    --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
+    --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --violet:#6a4c93; --violet-soft:#ece5f5; --coral:#a8501e; --coral-soft:#f6e6dc;
+    --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+  body{ margin:0; }
+  #app{ font-family:var(--font-sans); background:var(--bg); color:var(--text); line-height:1.7; font-size:16px; min-height:100vh; }
+  main{ max-width:720px; margin:0 auto; padding:0 20px 100px; }
+
+  header.bar{
+    position:sticky; top:0; z-index:20;
+    background:color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter:saturate(160%) blur(10px);
+    border-bottom:1px solid var(--border);
+  }
+  header.bar .inner{
+    max-width:720px; margin:0 auto; padding:14px 20px;
+    display:flex; align-items:center; gap:12px;
+  }
+  header.bar .crumbs{ font-size:13.5px; color:var(--text-muted); display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  header.bar .crumbs a{ color:var(--text-muted); text-decoration:none; }
+  header.bar .crumbs a:hover{ color:var(--accent); }
+  header.bar .crumbs b{ color:var(--text); font-weight:600; }
+  header.bar .spacer{ flex:1; }
+
+  .masthead{ padding:34px 0 22px; }
+  .eyebrow{ font-family:var(--font-mono); letter-spacing:.14em; text-transform:uppercase; font-size:12px; color:var(--accent); font-weight:600; }
+  h1.title{ font-size:clamp(26px,6vw,34px); line-height:1.15; margin:10px 0 8px; font-weight:700; letter-spacing:-.01em; text-wrap:balance; }
+  .subtitle{ color:var(--text-muted); font-size:15px; max-width:56ch; }
+
+  nav.tabs{ display:flex; gap:8px; overflow-x:auto; margin:18px 0 0; padding-bottom:2px; flex-wrap:wrap; }
+  nav.tabs a{
+    flex:none; text-decoration:none; color:var(--text); font-size:13.5px; font-weight:600;
+    padding:8px 14px; border-radius:999px; border:1px solid var(--border); background:var(--surface);
+    white-space:nowrap;
+  }
+  nav.tabs a:hover{ border-color:var(--accent); }
+
+  .card-grid{ display:grid; gap:14px; grid-template-columns:repeat(auto-fill, minmax(220px, 1fr)); margin-top:10px; }
+  a.topic-card{
+    display:block; text-decoration:none; color:inherit; position:relative;
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:20px 18px; box-shadow:var(--shadow);
+  }
+  a.topic-card:hover{ border-color:var(--accent); }
+  a.topic-card .badge{ font-family:var(--font-mono); font-size:11px; color:var(--accent); text-transform:uppercase; letter-spacing:.06em; font-weight:700; }
+  a.topic-card .arrow{ position:absolute; top:18px; right:18px; color:var(--accent); }
+  a.topic-card .t{ font-weight:700; font-size:17px; margin-top:8px; }
+  a.topic-card .s{ font-size:13px; color:var(--text-muted); margin-top:6px; }
+
+  .back-link{
+    display:inline-flex; align-items:center; gap:6px; text-decoration:none;
+    color:var(--text-muted); font-size:13.5px; font-weight:600; margin:18px 0 0;
+  }
+  .back-link:hover{ color:var(--accent); }
+
+  article.post{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    margin:18px 0; box-shadow:var(--shadow); overflow:hidden;
+  }
+  article.post .post-head{ padding:20px 22px 0; }
+  article.post .post-eyebrow{ font-family:var(--font-mono); font-size:11.5px; font-weight:700; color:var(--accent); letter-spacing:.06em; text-transform:uppercase; }
+  article.post h2.post-title{ font-size:22px; margin:8px 0 6px; letter-spacing:-.01em; }
+  article.post .post-summary{ font-size:14.6px; color:var(--text-muted); margin:0 0 16px; }
+  article.post .post-body{ padding:0 22px 22px; border-top:1px solid var(--border); }
+  article.post .post-body > *:first-child{ margin-top:18px; }
+
+  .ref h4{ font-size:16px; margin:22px 0 8px; }
+  .ref h4:first-child{ margin-top:0; }
+  .ref p{ font-size:14.6px; margin:0 0 12px; }
+  .ref p.note{
+    font-size:12.8px; color:var(--text-muted); border-left:2px solid var(--border);
+    padding-left:10px; margin:10px 0 18px; font-style:italic;
+  }
+  .ref ul, .ref ol{ padding-left:1.2em; margin:0 0 12px; font-size:14.6px; }
+  .ref li{ margin-bottom:6px; }
+  .ref .mnemonics{
+    background:var(--surface-2); border-radius:10px; padding:14px 16px 6px; margin-top:18px;
+  }
+  .ref .mnemonics h4{ margin-top:0; }
+
+  .ref .examples-box{ margin-top:26px; padding-top:20px; border-top:1px solid var(--border); }
+  .ref .examples-box h4{ margin-top:0; }
+  .ref .ex-pair{ background:var(--surface-2); border-radius:10px; padding:12px 14px; margin:10px 0; }
+  .ref .tense-tag{
+    display:inline-block; font-family:var(--font-mono); font-size:11px; font-weight:700;
+    padding:3px 10px; border-radius:999px; margin-bottom:8px;
+  }
+  .ref .tense-tag.present{ color:var(--accent-strong); background:var(--accent-soft); }
+  .ref .tense-tag.past{ color:var(--gold); background:var(--gold-soft); }
+  .ref .tense-tag.future{ color:var(--coral); background:var(--coral-soft); }
+  .ref .ex-pair p{ margin:4px 0; font-size:14px; }
+  .ref .ex-pair p b{
+    font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.04em;
+    color:var(--text-muted); margin-right:6px;
+  }
+  .ref .ex-pair .caveat{ font-size:12px; color:var(--text-muted); font-style:italic; margin:6px 0 0; }
+  .ref .tbl-wrap{ overflow-x:auto; margin:12px 0; border:1px solid var(--border); border-radius:10px; }
+  .ref table{ border-collapse:collapse; width:100%; font-size:13.4px; }
+  .ref table th, .ref table td{ text-align:left; padding:8px 11px; border-bottom:1px solid var(--border); vertical-align:top; }
+  .ref table th{ background:var(--surface-2); font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-muted); }
+  .ref table tr:last-child td{ border-bottom:none; }
+
+  .ref .k-v, .ref .k-be, .ref .k-have, .ref .k-will,
+  .ref .k-agreeB, .ref .k-agreePl, .ref .k-clause, .ref .k-nounonly,
+  .ref .hl-a, .ref .hl-b, .ref .hl-c, .ref .hl-d{
+    font-weight:700; padding:1px 5px; border-radius:5px; white-space:nowrap;
+  }
+  .ref .k-v i.tg, .ref .k-be i.tg, .ref .k-have i.tg, .ref .k-will i.tg{
+    font-style:normal; font-size:9px; font-weight:700; opacity:.75;
+    margin-left:3px; vertical-align:super;
+  }
+  .ref .k-v, .ref .k-agreeB, .ref .hl-a{ color:var(--accent-strong); background:var(--accent-soft); }
+  .ref .k-be, .ref .k-agreePl, .ref .hl-b{ color:var(--gold); background:var(--gold-soft); }
+  .ref .k-have, .ref .k-clause, .ref .hl-c{ color:var(--violet); background:var(--violet-soft); }
+  .ref .k-will, .ref .k-nounonly, .ref .hl-d{ color:var(--coral); background:var(--coral-soft); }
+  .ref .k-agreeB, .ref .k-agreePl, .ref .k-clause, .ref .k-nounonly,
+  .ref .hl-a, .ref .hl-b, .ref .hl-c, .ref .hl-d{ white-space:normal; }
+  .ref s.hl-d{ text-decoration:line-through; text-decoration-thickness:1.5px; }
+
+  .ref .legend{ display:flex; flex-wrap:wrap; gap:8px 14px; font-size:12.8px; margin:0 0 14px; }
+  .ref .legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .ref .legend .dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+  .ref .legend .dot.v, .ref .legend .dot.agreeb, .ref .legend .dot.a{ background:var(--accent-strong); }
+  .ref .legend .dot.be, .ref .legend .dot.agreepl, .ref .legend .dot.b{ background:var(--gold); }
+  .ref .legend .dot.have, .ref .legend .dot.clause, .ref .legend .dot.c{ background:var(--violet); }
+  .ref .legend .dot.will, .ref .legend .dot.nounonly, .ref .legend .dot.d{ background:var(--coral); }
+
+  .exercise-box{ margin-top:26px; padding-top:20px; border-top:1px solid var(--border); }
+  .exercise-box h3{ font-size:17px; margin:0 0 6px; }
+  .exercise-box .ex-intro{ font-size:14px; color:var(--text-muted); margin:0 0 14px; }
+  .exercise-progress{ font-size:12.8px; color:var(--text-muted); font-family:var(--font-mono); margin-bottom:10px; }
+  ul.ex-list{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
+  ul.ex-list li{
+    display:flex; gap:10px; align-items:flex-start;
+    background:var(--surface-2); border-radius:9px; padding:10px 12px;
+  }
+  ul.ex-list li label{ display:flex; gap:10px; align-items:flex-start; cursor:pointer; width:100%; }
+  ul.ex-list li input[type="checkbox"]{ margin-top:3px; accent-color:var(--accent); flex:none; }
+  ul.ex-list li .ex-num{ font-family:var(--font-mono); color:var(--text-muted); font-size:12.5px; flex:none; }
+  ul.ex-list li .ex-text{ font-size:14.4px; }
+  ul.ex-list li .ex-tense{ display:block; font-size:11.5px; color:var(--accent); font-family:var(--font-mono); margin-top:3px; }
+  ul.ex-list li.done .ex-text{ color:var(--text-muted); text-decoration:line-through; }
+
+  .method-toggle{
+    all:unset; cursor:pointer; display:inline-block; margin-top:14px;
+    font-family:var(--font-sans); font-size:12.8px; font-weight:700; color:var(--accent);
+    border:1px solid var(--border); border-radius:999px; padding:6px 13px;
+  }
+  .method-toggle:hover{ border-color:var(--accent); }
+  .method-box{
+    display:none; font-size:13.6px; background:var(--gold-soft); color:var(--accent-strong);
+    border-radius:10px; padding:12px 14px; margin-top:10px;
+  }
+  .method-box.open{ display:block; }
+
+  .empty-state{ text-align:center; padding:60px 20px; color:var(--text-muted); }
+  .empty-state .big{ font-size:34px; margin-bottom:10px; }
+
+  footer.foot{ max-width:720px; margin:40px auto 0; padding:24px 20px 0; border-top:1px solid var(--border); color:var(--text-muted); font-size:12.8px; }
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="bar">
+    <div class="inner">
+      <div class="crumbs"><a href="index.html">CU-TEP</a> / <b>เนื้อหาพื้นฐาน</b></div>
+      <div class="spacer"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="masthead">
+      <div class="eyebrow">CU-TEP · พื้นฐาน</div>
+      <h1 class="title">เนื้อหาพื้นฐาน</h1>
+      <p class="subtitle" id="subtitle">ปูพื้นฐานไวยากรณ์และทักษะที่ต้องรู้ก่อนลงข้อสอบจริง เลือกหัวข้อที่ต้องการด้านล่าง</p>
+      <nav class="tabs">
+        <a href="cu-tep-guide.html">Tips &amp; Tricks →</a>
+        <a href="content.html">เนื้อหาฉบับเต็ม →</a>
+        <a href="exam.html">Practice Test →</a>
+      </nav>
+    </div>
+
+    <div id="view"></div>
+  </main>
+
+  <footer class="foot">แบบฝึกหัดในแต่ละหัวข้อ ติ๊กเพื่อบันทึกความคืบหน้าไว้ในเบราว์เซอร์นี้</footer>
+</div>
+
+<script src="basics-data.js"></script>
+<script>
+(function(){
+  "use strict";
+  var DATA = window.BASICS_DATA;
+  var STORAGE_KEY = "cutep-basics-progress";
+
+  function el(html){ var d = document.createElement("div"); d.innerHTML = html.trim(); return d.firstChild; }
+  function escapeHtml(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;" })[c];
+    });
+  }
+  function loadProgress(){
+    try{ return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; }
+    catch(e){ return {}; }
+  }
+  function saveProgress(progress){
+    try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(progress)); }
+    catch(e){ /* ignore (private mode / storage blocked) */ }
+  }
+
+  function renderEmpty(msg){
+    return el('<div class="empty-state"><div class="big">📭</div>' + escapeHtml(msg) + '</div>');
+  }
+
+  function renderExercise(article, progress){
+    var ex = article.exercise;
+    if (!ex || !ex.items || !ex.items.length) return null;
+    var box = el('<div class="exercise-box"></div>');
+    box.appendChild(el('<h3>' + escapeHtml(ex.title) + '</h3>'));
+    if (ex.intro) box.appendChild(el('<p class="ex-intro">' + escapeHtml(ex.intro) + '</p>'));
+
+    var progressEl = el('<div class="exercise-progress"></div>');
+    box.appendChild(progressEl);
+
+    var list = el('<ul class="ex-list"></ul>');
+    var key = article.id;
+    var done = progress[key] || {};
+
+    function updateProgress(){
+      var count = Object.keys(done).filter(function(k){ return done[k]; }).length;
+      progressEl.textContent = "ทำแล้ว " + count + " / " + ex.items.length + " ข้อ";
+    }
+
+    ex.items.forEach(function(item, i){
+      var li = document.createElement("li");
+      if (done[i]) li.classList.add("done");
+      li.innerHTML =
+        '<label>' +
+          '<input type="checkbox"' + (done[i] ? " checked" : "") + ' />' +
+          '<span><span class="ex-num">' + (i + 1) + '.</span> <span class="ex-text">' + escapeHtml(item.text) + '</span>' +
+          '<span class="ex-tense">(' + escapeHtml(item.tense) + ')</span></span>' +
+        '</label>';
+      var checkbox = li.querySelector("input");
+      checkbox.addEventListener("change", function(){
+        done[i] = checkbox.checked;
+        li.classList.toggle("done", checkbox.checked);
+        progress[key] = done;
+        saveProgress(progress);
+        updateProgress();
+      });
+      list.appendChild(li);
+    });
+    box.appendChild(list);
+    updateProgress();
+
+    if (ex.method){
+      var toggle = document.createElement("button");
+      toggle.type = "button";
+      toggle.className = "method-toggle";
+      toggle.textContent = "ดูวิธีเฉลย";
+      var methodBox = el('<div class="method-box">' + escapeHtml(ex.method) + '</div>');
+      toggle.addEventListener("click", function(){
+        methodBox.classList.toggle("open");
+        toggle.textContent = methodBox.classList.contains("open") ? "ซ่อนวิธีเฉลย" : "ดูวิธีเฉลย";
+      });
+      box.appendChild(toggle);
+      box.appendChild(methodBox);
+    }
+
+    return box;
+  }
+
+  function renderGrid(wrap, articles){
+    document.getElementById("subtitle").textContent =
+      "ปูพื้นฐานไวยากรณ์และทักษะที่ต้องรู้ก่อนลงข้อสอบจริง เลือกหัวข้อที่ต้องการด้านล่าง";
+    if (!articles.length){
+      wrap.appendChild(renderEmpty("ยังไม่มีเนื้อหาพื้นฐาน — รอเพิ่มเติม"));
+      return;
+    }
+    var grid = el('<div class="card-grid"></div>');
+    articles.forEach(function(article, ai){
+      var card = el(
+        '<a class="topic-card" href="#' + encodeURIComponent(article.id) + '">' +
+          '<span class="arrow">→</span>' +
+          '<div class="badge">หัวข้อที่ ' + (ai + 1) + '</div>' +
+          '<div class="t">' + escapeHtml(article.cardTitle || article.title) + '</div>' +
+          '<div class="s">' + escapeHtml(article.summary || "") + '</div>' +
+        '</a>'
+      );
+      grid.appendChild(card);
+    });
+    wrap.appendChild(grid);
+  }
+
+  function renderDetail(wrap, article, progress){
+    document.getElementById("subtitle").textContent = article.cardTitle || article.title;
+
+    wrap.appendChild(el('<a class="back-link" href="#">← เนื้อหาพื้นฐานทั้งหมด</a>'));
+
+    var post = el('<article class="post"></article>');
+    var head = el('<div class="post-head"></div>');
+    head.appendChild(el('<div class="post-eyebrow">' + escapeHtml(article.cardTitle || "") + '</div>'));
+    head.appendChild(el('<h2 class="post-title">' + escapeHtml(article.title) + '</h2>'));
+    if (article.summary) head.appendChild(el('<p class="post-summary">' + escapeHtml(article.summary) + '</p>'));
+    post.appendChild(head);
+
+    var body = el('<div class="post-body"></div>');
+    var ref = el('<div class="ref"></div>');
+    ref.innerHTML = article.bodyHtml || "";
+    body.appendChild(ref);
+
+    var exerciseBox = renderExercise(article, progress);
+    if (exerciseBox) body.appendChild(exerciseBox);
+
+    post.appendChild(body);
+    wrap.appendChild(post);
+  }
+
+  function route(){
+    var wrap = document.getElementById("view");
+    wrap.innerHTML = "";
+    var articles = (DATA && DATA.articles) || [];
+    var id = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+    var article = id ? articles.filter(function(a){ return a.id === id; })[0] : null;
+
+    if (article){
+      renderDetail(wrap, article, loadProgress());
+    } else {
+      renderGrid(wrap, articles);
+    }
+  }
+
+  window.addEventListener("hashchange", route);
+  route();
+})();
+</script>
+</body>
+</html>

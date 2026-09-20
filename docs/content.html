@@ -9,6 +9,7 @@
     --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
     --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
     --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --violet:#6a4c93; --violet-soft:#ece5f5; --coral:#a8501e; --coral-soft:#f6e6dc;
     --radius:14px;
     --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
     --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans Thai", "Sarabun", "Leelawadee UI", Tahoma, sans-serif;
@@ -19,6 +20,7 @@
       --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
       --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
       --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+      --violet:#b79ee0; --violet-soft:#2b2340; --coral:#e0a17e; --coral-soft:#3a2718;
       --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
     }
   }
@@ -26,12 +28,14 @@
     --bg:#12171a; --surface:#1a2124; --surface-2:#212a2d; --text:#e7ebe9; --text-muted:#98a5a3;
     --border:#2b3538; --accent:#6fb0af; --accent-strong:#8fc7c6; --accent-soft:#1e3234;
     --gold:#d9b458; --gold-soft:#332a15; --error:#e08585; --error-soft:#3a2323;
+    --violet:#b79ee0; --violet-soft:#2b2340; --coral:#e0a17e; --coral-soft:#3a2718;
     --shadow: 0 1px 2px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
   }
   :root[data-theme="light"]{
     --bg:#f5f6f4; --surface:#ffffff; --surface-2:#eef0ee; --text:#1c2226; --text-muted:#5b6570;
     --border:#dde1de; --accent:#2a5c63; --accent-strong:#1c4147; --accent-soft:#e3edee;
     --gold:#8a6a1f; --gold-soft:#f4ecd8; --error:#a83a3a; --error-soft:#f6e6e4;
+    --violet:#6a4c93; --violet-soft:#ece5f5; --coral:#a8501e; --coral-soft:#f6e6dc;
     --shadow: 0 1px 2px rgba(20,30,30,.06), 0 8px 24px rgba(20,30,30,.06);
   }
 
@@ -100,9 +104,25 @@
   .q-passage-title{ font-size:12.5px; font-weight:700; color:var(--text-muted); text-transform:uppercase; letter-spacing:.04em; margin-bottom:6px; }
   .q-passage{
     background:var(--surface-2); border-left:3px solid var(--accent); border-radius:0 10px 10px 0;
-    padding:12px 14px; font-size:14px; margin-bottom:12px; white-space:pre-line;
+    padding:12px 14px; font-size:14px; line-height:1.8; margin-bottom:12px; white-space:pre-line;
   }
+  .q-passage mark{ padding:0 3px; border-radius:4px; font-weight:700; }
+  .q-passage mark.sig-contrast{ color:var(--coral); background:var(--coral-soft); }
+  .q-passage mark.sig-cause{ color:var(--gold); background:var(--gold-soft); }
+  .q-passage mark.sig-example{ color:var(--accent-strong); background:var(--accent-soft); }
+  .q-passage mark.sig-emphasis{ color:var(--violet); background:var(--violet-soft); }
   .q-prompt{ font-weight:700; font-size:15px; margin-bottom:10px; white-space:pre-line; }
+
+  .sig-legend{
+    display:flex; flex-wrap:wrap; gap:8px 14px; font-size:12px; color:var(--text-muted);
+    margin:0 0 16px; padding:10px 14px; background:var(--surface-2); border-radius:10px;
+  }
+  .sig-legend span{ display:inline-flex; align-items:center; gap:6px; }
+  .sig-legend .dot{ width:9px; height:9px; border-radius:50%; flex:none; }
+  .sig-legend .dot.contrast{ background:var(--coral); }
+  .sig-legend .dot.cause{ background:var(--gold); }
+  .sig-legend .dot.example{ background:var(--accent-strong); }
+  .sig-legend .dot.emphasis{ background:var(--violet); }
 
   ul.choices{ list-style:none; padding:0; margin:0; display:grid; gap:8px; }
   ul.choices button.choice{
@@ -242,6 +262,37 @@
     });
   }
 
+  // ---------- Signal-word highlighting (Reading passages) ----------
+  var SIGNAL_WORDS = [
+    ["on the other hand", "sig-contrast"], ["in contrast", "sig-contrast"], ["nevertheless", "sig-contrast"],
+    ["however", "sig-contrast"], ["although", "sig-contrast"], ["despite", "sig-contrast"],
+    ["whereas", "sig-contrast"], ["unlike", "sig-contrast"], ["though", "sig-contrast"],
+    ["but", "sig-contrast"], ["yet", "sig-contrast"],
+    ["as a result", "sig-cause"], ["due to", "sig-cause"], ["so that", "sig-cause"],
+    ["consequently", "sig-cause"], ["therefore", "sig-cause"], ["because", "sig-cause"],
+    ["since", "sig-cause"], ["thus", "sig-cause"],
+    ["for example", "sig-example"], ["for instance", "sig-example"], ["such as", "sig-example"],
+    ["in addition", "sig-example"], ["moreover", "sig-example"], ["furthermore", "sig-example"],
+    ["including", "sig-example"], ["besides", "sig-example"], ["also", "sig-example"],
+    ["in conclusion", "sig-emphasis"], ["in summary", "sig-emphasis"], ["in fact", "sig-emphasis"],
+    ["indeed", "sig-emphasis"], ["clearly", "sig-emphasis"], ["overall", "sig-emphasis"],
+    ["significantly", "sig-emphasis"], ["notably", "sig-emphasis"]
+  ];
+  var SIGNAL_MAP = {};
+  SIGNAL_WORDS.forEach(function(p){ SIGNAL_MAP[p[0]] = p[1]; });
+  var SIGNAL_RE = new RegExp(
+    "\\b(" + SIGNAL_WORDS.slice().sort(function(a, b){ return b[0].length - a[0].length; })
+      .map(function(p){ return p[0].replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); })
+      .join("|") + ")\\b",
+    "gi"
+  );
+  function highlightSignals(escapedText){
+    return escapedText.replace(SIGNAL_RE, function(m){
+      var cls = SIGNAL_MAP[m.toLowerCase()];
+      return cls ? '<mark class="' + cls + '">' + m + "</mark>" : m;
+    });
+  }
+
   // ---------- Read-aloud (Web Speech API) ----------
   var currentSpeakBtn = null;
   function sanitizeForSpeech(text){
@@ -288,6 +339,14 @@
       '<div class="section-head" id="reading"><span class="part-badge">01</span><h2 class="part-title">Reading</h2></div>'
     ));
     wrap.appendChild(el('<p class="part-count">' + questions.length + ' ข้อ</p>'));
+    wrap.appendChild(el(
+      '<div class="sig-legend">' +
+        '<span><i class="dot contrast"></i>คำบอกความขัดแย้ง (however, but, although…)</span>' +
+        '<span><i class="dot cause"></i>คำบอกเหตุผล (because, therefore, as a result…)</span>' +
+        '<span><i class="dot example"></i>คำบอกตัวอย่าง/เพิ่มเติม (for example, such as, also…)</span>' +
+        '<span><i class="dot emphasis"></i>คำเน้นย้ำ/สรุป (in fact, clearly, in conclusion…)</span>' +
+      '</div>'
+    ));
 
     if (overviewHtml){
       var overviewBox = el('<div class="ref"></div>');
@@ -308,7 +367,7 @@
       }
       if (q.passage){
         card.appendChild(makeSpeakBtn(q.passage, "ฟังเนื้อหา"));
-        card.appendChild(el('<div class="q-passage">' + escapeHtml(q.passage) + "</div>"));
+        card.appendChild(el('<div class="q-passage">' + highlightSignals(escapeHtml(q.passage)) + "</div>"));
       }
       card.appendChild(el('<div class="q-prompt">' + escapeHtml(q.prompt) + "</div>"));
       var list = el('<ul class="choices"></ul>');
