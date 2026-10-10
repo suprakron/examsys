@@ -92,6 +92,95 @@
   .badge.empty{ background:var(--surface-2); color:var(--text-muted); }
   .part-icon{ font-family:var(--font-mono); font-size:12px; color:var(--accent); font-weight:700; margin-bottom:8px; }
 
+  .exam-summary{
+    background:var(--surface); border:1px solid var(--border); border-radius:var(--radius);
+    padding:20px; margin:24px 0; box-shadow:var(--shadow);
+  }
+  .study-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin:16px 0; }
+  .study-item{ border:1px solid var(--border); border-radius:10px; padding:14px; }
+  .study-heading{ display:flex; align-items:center; justify-content:space-between; gap:8px; }
+  .study-heading span{ color:var(--accent-strong); background:var(--accent-soft); border-radius:99px; padding:2px 8px; font-size:12px; white-space:nowrap; }
+  .summary-part .study-english{ color:var(--accent-strong); font-weight:600; margin-top:10px; }
+  .summary-part .study-meaning{ font-size:16px; margin:4px 0 10px; }
+  .summary-part .study-action{ color:var(--text-muted); font-size:13px; }
+  .study-details{ margin:12px 0; border:1px solid var(--border); border-radius:10px; padding:12px 14px; }
+  .study-details summary{ cursor:pointer; font-size:14px; font-weight:600; color:var(--accent-strong); }
+  .study-details summary:focus-visible{ outline:2px solid var(--accent); outline-offset:4px; }
+  .study-details[open] summary{ margin-bottom:14px; }
+  @media (max-width:560px){ .study-grid{ grid-template-columns:1fr; } }
+  .exam-summary h2{ font-size:20px; line-height:1.4; margin:0 0 6px; }
+  .exam-summary .intro{ color:var(--text-muted); font-size:13.6px; margin:0 0 16px; }
+  .summary-part + .summary-part{ border-top:1px solid var(--border); margin-top:16px; padding-top:16px; }
+  .summary-part h3{ display:flex; flex-wrap:wrap; align-items:center; gap:8px; font-size:16px; margin:0 0 8px; }
+  .summary-count{ font-family:var(--font-mono); font-size:12px; font-weight:600; background:var(--accent-soft); color:var(--accent-strong); border-radius:999px; padding:2px 9px; }
+  .summary-part p{ font-size:14px; margin:6px 0; }
+  .summary-part .memory-rule{ background:var(--accent-soft); color:var(--accent-strong); padding:10px 14px; border-radius:9px; font-size:19px; font-weight:700; margin:10px 0 14px; }
+  .memory-list{ list-style:none; padding:0; margin:0; display:grid; gap:10px; font-size:14px; }
+  .memory-list li{ display:grid; grid-template-columns:110px minmax(0,1fr); gap:10px; }
+  .listening-table-wrap{ overflow-x:auto; margin:12px 0; }
+  .listening-table{ width:100%; border-collapse:collapse; font-size:12.8px; }
+  .listening-table caption{ text-align:left; color:var(--text-muted); padding-bottom:8px; }
+  .listening-table th, .listening-table td{ border-bottom:1px solid var(--border); padding:8px 6px; text-align:center; }
+  .listening-table th:first-child{ text-align:left; min-width:155px; }
+  .listening-table thead, .listening-table tfoot{ background:var(--accent-soft); }
+  .listening-outline{ padding-left:22px; margin:10px 0 16px; font-size:14px; }
+  .listening-outline li + li{ margin-top:12px; }
+  .listening-outline b{ color:var(--accent-strong); }
+  .memory-list span{ color:var(--text-muted); }
+  .memory-pairs{ background:var(--surface-2); padding:10px 14px; border-radius:9px; margin:12px 0; }
+  .memory-review{ border-top:1px solid var(--border); padding-top:16px; margin:20px 0 0; font-size:14px; }
+  @media (max-width:420px){ .memory-list li{ grid-template-columns:1fr; gap:2px; } .exam-summary{ padding:16px; } }
+  .summary-example{ background:var(--surface-2); border-left:3px solid var(--accent); border-radius:0 10px 10px 0; padding:12px 14px; margin-top:12px; }
+  .summary-example p{ overflow-wrap:anywhere; }
+  .summary-part .summary-tip{ color:var(--text-muted); font-size:13.6px; }
+  .summary-link{ display:inline-block; margin-top:16px; color:var(--accent); font-size:13.6px; font-weight:600; text-underline-offset:3px; }
+  .summary-link:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+
+  /* Study colors: blue = listening, purple = reading, green = writing. */
+  .summary-listening{ --study-color:#245db0; --study-bright:#9ac3ff; }
+  .summary-reading{ --study-color:#7042a3; --study-bright:#d1b1ff; }
+  .summary-writing{ --study-color:#22694a; --study-bright:#97d9b6; }
+  .summary-part{
+    --accent:var(--study-color); --accent-strong:var(--study-color);
+    --accent-soft:color-mix(in srgb, var(--study-color) 10%, var(--surface));
+    --meaning-color:#175f6b; --rule-color:#77520f;
+    border-left:4px solid var(--study-color); padding-left:16px;
+  }
+  .summary-part h3{ color:var(--study-color); font-size:19px; }
+  .study-item{ background:var(--surface); border-top:3px solid var(--study-color); }
+  .study-heading b{ color:var(--study-color); }
+  .summary-part .study-english{ background:var(--accent-soft); border-radius:6px; padding:6px 8px; }
+  .summary-part .study-meaning{ color:var(--meaning-color); }
+  .summary-part .study-action{
+    color:var(--rule-color); background:color-mix(in srgb, var(--gold) 11%, var(--surface));
+    border-radius:6px; padding:8px; line-height:1.8;
+  }
+  .memory-list b{ color:var(--study-color); }
+  .memory-pairs b{ color:var(--study-color); }
+  .summary-part .summary-tip{ border-left:3px solid var(--gold); padding-left:10px; }
+  .study-color-key{ display:flex; flex-wrap:wrap; gap:8px; margin:12px 0 20px; font-size:12.8px; }
+  .study-color-key span{ border:1px solid var(--border); border-radius:99px; padding:4px 10px; }
+  @media (prefers-color-scheme:dark){
+    :root:not([data-theme="light"]) .summary-part{ --study-color:var(--study-bright); --meaning-color:#9bd9df; --rule-color:#eac77c; }
+  }
+  :root[data-theme="dark"] .summary-part{ --study-color:var(--study-bright); --meaning-color:#9bd9df; --rule-color:#eac77c; }
+  @media (max-width:420px){ .summary-part{ padding-left:10px; } }
+
+  .idiom-library{ margin:24px 0; }
+  .idiom-library h4{ font-size:20px; color:var(--study-color); margin:0 0 8px; }
+  .idiom-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+  .idiom-item{ background:var(--surface); border:1px solid var(--border); border-top:3px solid var(--study-color); border-radius:10px; padding:14px; overflow-wrap:anywhere; }
+  .summary-part .idiom-phrase{ color:var(--study-color); font-weight:700; font-size:16px; margin:0 0 7px; }
+  .summary-part .idiom-meaning{ color:var(--meaning-color); font-size:15px; margin:0 0 10px; }
+  .summary-part .idiom-example{ background:var(--accent-soft); border-radius:6px; padding:8px; font-size:13px; line-height:1.8; }
+  .summary-part .idiom-source{ color:var(--text-muted); font-size:12px; margin-top:8px; }
+  .idiom-search-label{ display:block; font-weight:600; font-size:14px; margin:14px 0 6px; }
+  .idiom-search{ width:100%; min-height:44px; padding:10px 12px; font:inherit; color:var(--text); background:var(--surface); border:1px solid var(--border); border-radius:9px; }
+  .idiom-search:focus-visible{ outline:2px solid var(--study-color); outline-offset:2px; }
+  .idiom-item[hidden], .idiom-group[hidden]{ display:none; }
+  @media (max-width:560px){ .idiom-grid{ grid-template-columns:1fr; } }
+
   .progress-bar{
     position:sticky; top:53px; z-index:15;
     background:var(--bg); border-bottom:1px solid var(--border); padding:10px 0;
@@ -422,6 +511,379 @@
       grid.appendChild(tile);
     });
     wrap.appendChild(grid);
+    wrap.appendChild(el(
+      '<section class="exam-summary" aria-labelledby="exam-summary-title">' +
+      '<h2 id="exam-summary-title">สูตรจำก่อนสอบ CU-TEP</h2>' +
+      '<p class="intro">ฟังจับเรื่อง · อ่านหาหลักฐาน · เขียนตรวจโครงสร้าง</p>' +
+      '<div class="study-color-key" aria-label="สีช่วยอ่าน"><span>🔵 Listening</span><span>🟣 Reading</span><span>🟢 Writing</span><span>คำอังกฤษ → คำแปล → สูตรจำสีทอง</span></div>' +
+      '<div class="summary-part summary-listening">' +
+      '<h3>Listening <span class="summary-count">30 ข้อ</span></h3>' +
+      '<details class="study-details"><summary>ดูจำนวนข้อ Listening แต่ละส่วน</summary>' +
+      '<p><b>แบ่งเป็น 3 ส่วน</b></p>' +
+      '<ul class="listening-outline">' +
+      '<li><b>บทสนทนาสั้น — 15 ข้อ</b><br>15 บท × บทละ 1 คำถาม<br>เรื่องชีวิตประจำวัน การเรียน และการทำงาน</li>' +
+      '<li><b>บทสนทนายาว — 9 ข้อ</b><br>3 บท × บทละ 3 คำถาม<br>คุยระหว่างเพื่อน เพื่อนร่วมงาน หรือใช้บริการ เช่น ร้านค้า โรงแรม สนามบิน</li>' +
+      '<li><b>บทพูดคนเดียว — 6 ข้อ</b><br>2 บท × บทละ 3 คำถาม<br>ข่าว ประกาศ การให้ข้อมูล หรือเชิญชวนเข้าร่วมกิจกรรม</li>' +
+      '</ul>' +
+      '</details>' +
+      '<p class="memory-rule">เจอบ่อยสุด: รายละเอียด → ตีความ → ใคร</p>' +
+      '<p><b>สำรวจ Listening ทั้ง 4 Form: อ่านข้อความคำถามได้ 97 / 120 ข้อ</b></p>' +
+      '<p class="summary-tip">Form 1, 3, 4 ครบ · Form 2 มีข้อความคำถาม 7 ข้อ อีก 23 ข้อยังขาด</p>' +
+      '<div class="study-grid">' +
+      '<div class="study-item"><div class="study-heading"><b>รายละเอียด</b><span>29 ข้อ</span></div><p class="study-english" lang="en">Where / When / How many</p><p class="study-meaning">ที่ไหน / เมื่อไร / จำนวนเท่าไร</p><p class="study-action">จำ: จับสถานที่ เวลา ตัวเลข</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ตีความ</b><span>23 ข้อ</span></div><p class="study-english" lang="en">Mean / Imply / Infer</p><p class="study-meaning">หมายความว่า / สื่อเป็นนัย / อนุมาน</p><p class="study-action">จำ: ฟังบริบทและสำนวน</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>บุคคล</b><span>13 ข้อ</span></div><p class="study-english" lang="en">Who / Relationship</p><p class="study-meaning">ใคร / ความสัมพันธ์อะไร</p><p class="study-action">จำ: จับบทบาทและคำเรียก</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ทำอะไรต่อ</b><span>11 ข้อ</span></div><p class="study-english" lang="en">Do next / Planning to</p><p class="study-meaning">ทำอะไรต่อ / วางแผนอะไร</p><p class="study-action">จำ: แยกสิ่งที่ทำแล้วกับแผน</p></div>' +
+      '</div>' +
+      '<details class="study-details"><summary>ดูตาราง Listening แยกทั้ง 4 Form</summary>' +
+      '<p class="summary-tip">ใช้คำถามจาก Tapescript ใน exam-data.js เพราะช่องโจทย์บางชุดว่างหรือใช้ถ้อยคำต่างจากบทเสียง ไม่นับคำถามสาธิตก่อนข้อ 1; Form 2 ขาดข้อความคำถามข้อ 2 และ 9–30 จึงยังสรุปครบ 120 ข้อไม่ได้</p>' +
+      '<div class="listening-table-wrap"><table class="listening-table"><caption>จำนวนตามประเภทคำถาม — จัดแต่ละข้อเข้ากลุ่มหลักเพียงกลุ่มเดียว</caption><thead><tr><th scope="col">ประเภท</th><th scope="col">F1</th><th scope="col">F2*</th><th scope="col">F3</th><th scope="col">F4</th><th scope="col">รวม</th></tr></thead><tbody>' +
+      '<tr><th scope="row">รายละเอียด / สถานที่ / เวลา</th><td>11</td><td>2</td><td>6</td><td>10</td><td><b>29</b></td></tr>' +
+      '<tr><th scope="row">ความหมาย / อนุมาน</th><td>10</td><td>1</td><td>8</td><td>4</td><td><b>23</b></td></tr>' +
+      '<tr><th scope="row">บุคคล / ความสัมพันธ์ / ผู้ฟัง</th><td>3</td><td>1</td><td>4</td><td>5</td><td><b>13</b></td></tr>' +
+      '<tr><th scope="row">การกระทำ / แผน / สิ่งที่ต้องการให้ทำ</th><td>3</td><td>2</td><td>3</td><td>3</td><td><b>11</b></td></tr>' +
+      '<tr><th scope="row">NOT / EXCEPT / LEAST</th><td>0</td><td>0</td><td>6</td><td>2</td><td><b>8</b></td></tr>' +
+      '<tr><th scope="row">ความรู้สึก / ลักษณะ / ความชอบ</th><td>1</td><td>0</td><td>2</td><td>4</td><td><b>7</b></td></tr>' +
+      '<tr><th scope="row">เหตุผล</th><td>1</td><td>1</td><td>0</td><td>1</td><td><b>3</b></td></tr>' +
+      '<tr><th scope="row">ใจความหลัก</th><td>1</td><td>0</td><td>1</td><td>1</td><td><b>3</b></td></tr>' +
+      '</tbody><tfoot><tr><th scope="row">ตรวจได้</th><td>30</td><td>7*</td><td>30</td><td>30</td><td>97</td></tr></tfoot></table></div>' +
+      '<p class="summary-tip">* Form 2 นับเฉพาะข้อ 1, 3–8 ที่มีคำถามในบทเสียง ตัวเลขเป็นการจัดกลุ่มเพื่อทบทวนจากชุดนี้ ไม่ใช่สถิติข้อสอบทั่วไป</p>' +
+      '</details>' +
+      '<details class="study-details"><summary>อ่านตัวอย่าง Listening พร้อมคำแปล</summary>' +
+      '<p><b>คำถามจริง + ความหมาย + วิธีจับคำตอบ</b></p>' +
+      '<ol class="listening-outline">' +
+      "<li><b>รายละเอียด / สถานที่ / เวลา — 29 ข้อ</b><br>“Where are the speakers?” = ผู้พูดอยู่ที่ไหน? (F1 ข้อ 19)<br>“What time is the man's flight?” = เที่ยวบินของผู้ชายออกกี่โมง? (F1 ข้อ 12)<br>“How many times has the man played tennis?” = ผู้ชายเคยเล่นเทนนิสกี่ครั้ง? (F1 ข้อ 24)<br>→ จับสถานที่ วัน เวลา จำนวน และรายละเอียดที่ถูกแก้ภายหลัง</li>" +
+      '<li><b>ความหมาย / อนุมาน — 23 ข้อ</b><br>“What does the woman mean?” = ผู้หญิงหมายความว่าอะไร? (F3 ข้อ 2)<br>“What can be INFERRED from the conversation?” = อนุมานอะไรได้จากบทสนทนา? (F4 ข้อ 7)<br>→ ฟังความหมายแฝงและสำนวน เช่น I beg to differ = ฉันเห็นต่าง</li>' +
+      '<li><b>บุคคล / ความสัมพันธ์ / ผู้ฟัง — 13 ข้อ</b><br>“Who is the woman most likely to be?” = ผู้หญิงน่าจะเป็นใคร / มีอาชีพอะไร? (F4 ข้อ 5)<br>“What is the relationship between the speakers?” = ผู้พูดมีความสัมพันธ์กันอย่างไร? (F4 ข้อ 19)<br>“Who is this talk aimed at?” = บทพูดนี้มุ่งสื่อสารกับใคร? (F4 ข้อ 28)<br>→ ฟังบทบาท คำเรียกกัน และว่าเนื้อหาเหมาะกับผู้ฟังกลุ่มไหน</li>' +
+      '<li><b>การกระทำ / แผน — 11 ข้อ</b><br>“What is the man most likely going to do next?” = ผู้ชายน่าจะทำอะไรต่อไป? (F4 ข้อ 13)<br>“What is the man planning to do?” = ผู้ชายวางแผนจะทำอะไร? (F3 ข้อ 19)<br>→ แยกสิ่งที่ทำไปแล้วออกจากสิ่งที่จะทำต่อ</li>' +
+      '<li><b>NOT / EXCEPT / LEAST — 8 ข้อ</b><br>“What is NOT TRUE about the party?” = ข้อใดไม่จริงเกี่ยวกับงานเลี้ยง? (F4 ข้อ 18)<br>“All of the following berries are in the pie EXCEPT …” = ผลไม้เบอร์รีต่อไปนี้อยู่ในพายทั้งหมด ยกเว้น… (F3 ข้อ 23)<br>“Which product would be LEAST likely to contain parabens based on the talk?” = จากบทพูด ผลิตภัณฑ์ใดมีโอกาสน้อยที่สุดที่จะมีพาราเบน? (F3 ข้อ 29)<br>→ NOT = ไม่ · EXCEPT = ยกเว้น · LEAST = น้อยที่สุด; อย่าเผลอเลือกข้อที่ถูกกล่าวถึง</li>' +
+      "<li><b>ความรู้สึก / ลักษณะ / ความชอบ — 7 ข้อ</b><br>“How does the man most likely feel?” = ผู้ชายน่าจะรู้สึกอย่างไร? (F1 ข้อ 1)<br>“How can Lisa be best described?” = คำใดอธิบายลักษณะของ Lisa ได้ตรงที่สุด? (F4 ข้อ 8)<br>→ ฟังน้ำเสียงและถ้อยคำ เช่น I can't stand … = ฉันทน…ไม่ได้</li>" +
+      '<li><b>เหตุผล — 3 ข้อ</b><br>“Why does the man suggest the woman talk to Yolanda?” = ทำไมผู้ชายแนะนำให้ผู้หญิงคุยกับ Yolanda? (F2 ข้อ 3)<br>→ ตอบสาเหตุ ไม่ใช่เหตุการณ์ที่เกิดตามมา</li>' +
+      '<li><b>ใจความหลัก — 3 ข้อ</b><br>“What does the talk mainly discuss?” = บทพูดกล่าวถึงเรื่องอะไรเป็นหลัก? (F4 ข้อ 25)<br>→ เลือกภาพรวมของทั้งเรื่อง ไม่เลือกเพียงรายละเอียดเดียว</li>' +
+      '</ol>' +
+      '</details>' +
+      '<div class="memory-pairs"><p><b>ศัพท์โจทย์ที่จำแล้วใช้ได้ทันที</b></p><p>most likely = น่าจะมากที่สุด · imply = สื่อเป็นนัย · infer = อนุมานจากข้อมูล</p><p>mainly = เป็นหลัก · according to the talk = ตามที่บทพูดกล่าว · next = ต่อไป</p><p>TRUE = เป็นจริง · NOT mentioned = ไม่ได้กล่าวถึง · aimed at = มุ่งสื่อสารกับ</p></div>' +
+      '<section class="idiom-library" aria-labelledby="idiom-title">' +
+      '<h4 id="idiom-title">คลังสำนวน Listening · 80 สำนวน</h4>' +
+      '<p class="summary-tip">รวม idioms, phrasal verbs และวลีสนทนา: 20 สำนวนที่พบในบทเสียงของ Form + 60 สำนวนเสริมสำหรับติว ไม่ใช่รายการรับรองว่าจะออกสอบ</p>' +
+      '<p class="memory-rule">จำความหมายทั้งวลี → ไม่แปลทีละคำ</p>' +
+      '<label class="idiom-search-label" for="idiom-search">ค้นหาสำนวนหรือความหมายไทย</label>' +
+      '<input id="idiom-search" class="idiom-search" type="search" placeholder="เช่น งาน, เหนื่อย, in the red" autocomplete="off">' +
+      '<p class="summary-tip" id="idiom-search-status" role="status" aria-live="polite">80 สำนวน · เปิดหมวดที่ต้องการอ่าน</p>' +
+      '<details class="study-details idiom-group" open><summary>⭐ เริ่มจาก 20 สำนวนที่พบใน Form</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="in a heartbeat ทันที / โดยไม่ลังเล I would join again in a heartbeat."><p class="idiom-phrase" lang="en">in a heartbeat</p><p class="idiom-meaning">ทันที / โดยไม่ลังเล</p><p class="idiom-example" lang="en">I would join again in a heartbeat.</p><p class="idiom-source">พบใน F1 ข้อ 2</p></article>' +
+      '<article class="idiom-item" data-idiom-search="not my cup of tea ไม่ใช่สิ่งที่ฉันชอบ Camping is not my cup of tea."><p class="idiom-phrase" lang="en">not my cup of tea</p><p class="idiom-meaning">ไม่ใช่สิ่งที่ฉันชอบ</p><p class="idiom-example" lang="en">Camping is not my cup of tea.</p><p class="idiom-source">พบใน F1 ข้อ 10</p></article>' +
+      '<article class="idiom-item" data-idiom-search="keep someone in the dark ไม่บอกข้อมูลให้ใครรู้ They kept us in the dark about the merger."><p class="idiom-phrase" lang="en">keep someone in the dark</p><p class="idiom-meaning">ไม่บอกข้อมูลให้ใครรู้</p><p class="idiom-example" lang="en">They kept us in the dark about the merger.</p><p class="idiom-source">พบใน F1 ข้อ 15</p></article>' +
+      '<article class="idiom-item" data-idiom-search="catch my breath พักให้หายหอบ Give me a minute to catch my breath."><p class="idiom-phrase" lang="en">catch my breath</p><p class="idiom-meaning">พักให้หายหอบ</p><p class="idiom-example" lang="en">Give me a minute to catch my breath.</p><p class="idiom-source">พบใน F1 บทสนทนา 3</p></article>' +
+      '<article class="idiom-item" data-idiom-search="on equal footing อยู่ในฐานะเท่าเทียมกัน We want to compete on equal footing."><p class="idiom-phrase" lang="en">on equal footing</p><p class="idiom-meaning">อยู่ในฐานะเท่าเทียมกัน</p><p class="idiom-example" lang="en">We want to compete on equal footing.</p><p class="idiom-source">พบใน F1 บทสนทนา 3</p></article>' +
+      '<article class="idiom-item" data-idiom-search="my treat ฉันเลี้ยงเอง / ฉันจ่ายให้ Lunch is my treat today."><p class="idiom-phrase" lang="en">my treat</p><p class="idiom-meaning">ฉันเลี้ยงเอง / ฉันจ่ายให้</p><p class="idiom-example" lang="en">Lunch is my treat today.</p><p class="idiom-source">พบใน F1 บทสนทนา 1</p></article>' +
+      '<article class="idiom-item" data-idiom-search="worn out เหนื่อยมาก / หมดแรง I am worn out after work."><p class="idiom-phrase" lang="en">worn out</p><p class="idiom-meaning">เหนื่อยมาก / หมดแรง</p><p class="idiom-example" lang="en">I am worn out after work.</p><p class="idiom-source">พบใน F2 ข้อ 1</p></article>' +
+      '<article class="idiom-item" data-idiom-search="from the get-go ตั้งแต่เริ่มต้น She was involved from the get-go."><p class="idiom-phrase" lang="en">from the get-go</p><p class="idiom-meaning">ตั้งแต่เริ่มต้น</p><p class="idiom-example" lang="en">She was involved from the get-go.</p><p class="idiom-source">พบใน F2 ข้อ 3</p></article>' +
+      '<article class="idiom-item" data-idiom-search="I&#x27;m on it ฉันกำลังจัดการให้ You need the invitations sent? I am on it."><p class="idiom-phrase" lang="en">I&#x27;m on it</p><p class="idiom-meaning">ฉันกำลังจัดการให้</p><p class="idiom-example" lang="en">You need the invitations sent? I am on it.</p><p class="idiom-source">พบใน F2 ข้อ 5</p></article>' +
+      '<article class="idiom-item" data-idiom-search="You are one to talk! คุณก็เป็นเหมือนกัน ยังจะมาว่าคนอื่น! You are one to talk! You were late too."><p class="idiom-phrase" lang="en">You are one to talk!</p><p class="idiom-meaning">คุณก็เป็นเหมือนกัน ยังจะมาว่าคนอื่น!</p><p class="idiom-example" lang="en">You are one to talk! You were late too.</p><p class="idiom-source">พบใน F2 ข้อ 7</p></article>' +
+      '<article class="idiom-item" data-idiom-search="think twice คิดให้รอบคอบก่อนตัดสินใจ Think twice before signing."><p class="idiom-phrase" lang="en">think twice</p><p class="idiom-meaning">คิดให้รอบคอบก่อนตัดสินใจ</p><p class="idiom-example" lang="en">Think twice before signing.</p><p class="idiom-source">พบใน F3 ข้อ 1</p></article>' +
+      '<article class="idiom-item" data-idiom-search="I beg to differ ฉันขอเห็นต่าง I beg to differ; the food was excellent."><p class="idiom-phrase" lang="en">I beg to differ</p><p class="idiom-meaning">ฉันขอเห็นต่าง</p><p class="idiom-example" lang="en">I beg to differ; the food was excellent.</p><p class="idiom-source">พบใน F3 ข้อ 2</p></article>' +
+      '<article class="idiom-item" data-idiom-search="take it easy ผ่อนคลาย / อย่าหักโหม You have been working all day. Take it easy."><p class="idiom-phrase" lang="en">take it easy</p><p class="idiom-meaning">ผ่อนคลาย / อย่าหักโหม</p><p class="idiom-example" lang="en">You have been working all day. Take it easy.</p><p class="idiom-source">พบใน F3 ข้อ 3</p></article>' +
+      '<article class="idiom-item" data-idiom-search="in the red ขาดทุน / บัญชีติดลบ The company has been in the red."><p class="idiom-phrase" lang="en">in the red</p><p class="idiom-meaning">ขาดทุน / บัญชีติดลบ</p><p class="idiom-example" lang="en">The company has been in the red.</p><p class="idiom-source">พบใน F3 ข้อ 6</p></article>' +
+      '<article class="idiom-item" data-idiom-search="swear by something เชื่อมั่นมากว่าสิ่งนั้นใช้ดีหรือได้ผล Ellen swears by this cream."><p class="idiom-phrase" lang="en">swear by something</p><p class="idiom-meaning">เชื่อมั่นมากว่าสิ่งนั้นใช้ดีหรือได้ผล</p><p class="idiom-example" lang="en">Ellen swears by this cream.</p><p class="idiom-source">พบใน F3 ข้อ 8</p></article>' +
+      '<article class="idiom-item" data-idiom-search="out of your mind บ้าไปแล้ว / คิดไม่เข้าท่า Jump without a safety rope? Are you out of your mind?"><p class="idiom-phrase" lang="en">out of your mind</p><p class="idiom-meaning">บ้าไปแล้ว / คิดไม่เข้าท่า</p><p class="idiom-example" lang="en">Jump without a safety rope? Are you out of your mind?</p><p class="idiom-source">พบใน F3 ข้อ 10</p></article>' +
+      '<article class="idiom-item" data-idiom-search="lose face เสียหน้า He did not want to lose face in class."><p class="idiom-phrase" lang="en">lose face</p><p class="idiom-meaning">เสียหน้า</p><p class="idiom-example" lang="en">He did not want to lose face in class.</p><p class="idiom-source">พบใน F4 ข้อ 2</p></article>' +
+      '<article class="idiom-item" data-idiom-search="jump through hoops ผ่านขั้นตอนยุ่งยากมากมาย We jumped through hoops to get approval."><p class="idiom-phrase" lang="en">jump through hoops</p><p class="idiom-meaning">ผ่านขั้นตอนยุ่งยากมากมาย</p><p class="idiom-example" lang="en">We jumped through hoops to get approval.</p><p class="idiom-source">พบใน F4 ข้อ 11</p></article>' +
+      '<article class="idiom-item" data-idiom-search="not your scene ไม่ใช่แนวหรือกิจกรรมที่คุณชอบ I thought card games were not your scene."><p class="idiom-phrase" lang="en">not your scene</p><p class="idiom-meaning">ไม่ใช่แนวหรือกิจกรรมที่คุณชอบ</p><p class="idiom-example" lang="en">I thought card games were not your scene.</p><p class="idiom-source">พบใน F4 ข้อ 3</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be dying to do something อยากทำบางอย่างมาก I am dying to visit the palace."><p class="idiom-phrase" lang="en">be dying to do something</p><p class="idiom-meaning">อยากทำบางอย่างมาก</p><p class="idiom-example" lang="en">I am dying to visit the palace.</p><p class="idiom-source">พบใน F4 บทสนทนา 3</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>😌 อารมณ์และสภาพร่างกาย · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="under the weather รู้สึกไม่สบาย I am feeling under the weather today."><p class="idiom-phrase" lang="en">under the weather</p><p class="idiom-meaning">รู้สึกไม่สบาย</p><p class="idiom-example" lang="en">I am feeling under the weather today.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="on cloud nine มีความสุขมาก She was on cloud nine after passing."><p class="idiom-phrase" lang="en">on cloud nine</p><p class="idiom-meaning">มีความสุขมาก</p><p class="idiom-example" lang="en">She was on cloud nine after passing.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="down in the dumps เศร้า / หดหู่ He has been down in the dumps lately."><p class="idiom-phrase" lang="en">down in the dumps</p><p class="idiom-meaning">เศร้า / หดหู่</p><p class="idiom-example" lang="en">He has been down in the dumps lately.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="have butterflies in your stomach ตื่นเต้นประหม่า I had butterflies in my stomach before the interview."><p class="idiom-phrase" lang="en">have butterflies in your stomach</p><p class="idiom-meaning">ตื่นเต้นประหม่า</p><p class="idiom-example" lang="en">I had butterflies in my stomach before the interview.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be fed up with เบื่อหรือเอือมระอา I am fed up with these delays."><p class="idiom-phrase" lang="en">be fed up with</p><p class="idiom-meaning">เบื่อหรือเอือมระอา</p><p class="idiom-example" lang="en">I am fed up with these delays.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="at your wits’ end จนปัญญา ไม่รู้จะทำอย่างไร I am at my wits’ end with this problem."><p class="idiom-phrase" lang="en">at your wits’ end</p><p class="idiom-meaning">จนปัญญา ไม่รู้จะทำอย่างไร</p><p class="idiom-example" lang="en">I am at my wits’ end with this problem.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="blow off steam ระบายความเครียดหรืออารมณ์ I go running to blow off steam."><p class="idiom-phrase" lang="en">blow off steam</p><p class="idiom-meaning">ระบายความเครียดหรืออารมณ์</p><p class="idiom-example" lang="en">I go running to blow off steam.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="get cold feet ลังเลเพราะกลัวก่อนลงมือ He got cold feet before the performance."><p class="idiom-phrase" lang="en">get cold feet</p><p class="idiom-meaning">ลังเลเพราะกลัวก่อนลงมือ</p><p class="idiom-example" lang="en">He got cold feet before the performance.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="have a lot on your plate มีเรื่องหรืองานต้องรับผิดชอบมาก She has a lot on her plate this week."><p class="idiom-phrase" lang="en">have a lot on your plate</p><p class="idiom-meaning">มีเรื่องหรืองานต้องรับผิดชอบมาก</p><p class="idiom-example" lang="en">She has a lot on her plate this week.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="burn out หมดไฟจากความเครียดหรือทำงานหนัก You will burn out if you never rest."><p class="idiom-phrase" lang="en">burn out</p><p class="idiom-meaning">หมดไฟจากความเครียดหรือทำงานหนัก</p><p class="idiom-example" lang="en">You will burn out if you never rest.</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>📚 เรียน งาน และความยากง่าย · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="a piece of cake ง่ายมาก The first exercise was a piece of cake."><p class="idiom-phrase" lang="en">a piece of cake</p><p class="idiom-meaning">ง่ายมาก</p><p class="idiom-example" lang="en">The first exercise was a piece of cake.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="hit the books ตั้งใจอ่านหนังสือ I need to hit the books tonight."><p class="idiom-phrase" lang="en">hit the books</p><p class="idiom-meaning">ตั้งใจอ่านหนังสือ</p><p class="idiom-example" lang="en">I need to hit the books tonight.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="burn the midnight oil ทำงานหรืออ่านหนังสือจนดึก We burned the midnight oil to finish the report."><p class="idiom-phrase" lang="en">burn the midnight oil</p><p class="idiom-meaning">ทำงานหรืออ่านหนังสือจนดึก</p><p class="idiom-example" lang="en">We burned the midnight oil to finish the report.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="learn the ropes เรียนรู้วิธีทำงานหรือขั้นตอนพื้นฐาน The new assistant is learning the ropes."><p class="idiom-phrase" lang="en">learn the ropes</p><p class="idiom-meaning">เรียนรู้วิธีทำงานหรือขั้นตอนพื้นฐาน</p><p class="idiom-example" lang="en">The new assistant is learning the ropes.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="get the hang of เริ่มเข้าใจวิธีทำ / เริ่มทำเป็น You will get the hang of this software."><p class="idiom-phrase" lang="en">get the hang of</p><p class="idiom-meaning">เริ่มเข้าใจวิธีทำ / เริ่มทำเป็น</p><p class="idiom-example" lang="en">You will get the hang of this software.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be in the same boat อยู่ในสถานการณ์ลำบากแบบเดียวกัน We are in the same boat; neither of us has finished."><p class="idiom-phrase" lang="en">be in the same boat</p><p class="idiom-meaning">อยู่ในสถานการณ์ลำบากแบบเดียวกัน</p><p class="idiom-example" lang="en">We are in the same boat; neither of us has finished.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="go the extra mile ทุ่มเทเกินกว่าที่ต้องทำ She goes the extra mile for her customers."><p class="idiom-phrase" lang="en">go the extra mile</p><p class="idiom-meaning">ทุ่มเทเกินกว่าที่ต้องทำ</p><p class="idiom-example" lang="en">She goes the extra mile for her customers.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="cut corners ลัดขั้นตอนจนลดคุณภาพหรือความปลอดภัย Do not cut corners when checking the equipment."><p class="idiom-phrase" lang="en">cut corners</p><p class="idiom-meaning">ลัดขั้นตอนจนลดคุณภาพหรือความปลอดภัย</p><p class="idiom-example" lang="en">Do not cut corners when checking the equipment.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="back to square one กลับไปเริ่มใหม่ตั้งแต่ต้น The plan failed, so we are back to square one."><p class="idiom-phrase" lang="en">back to square one</p><p class="idiom-meaning">กลับไปเริ่มใหม่ตั้งแต่ต้น</p><p class="idiom-example" lang="en">The plan failed, so we are back to square one.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="call it a day หยุดงานหรือกิจกรรมสำหรับวันนี้ We have done enough. Let us call it a day."><p class="idiom-phrase" lang="en">call it a day</p><p class="idiom-meaning">หยุดงานหรือกิจกรรมสำหรับวันนี้</p><p class="idiom-example" lang="en">We have done enough. Let us call it a day.</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>🕒 เวลา แผน และการตัดสินใจ · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="at the last minute ในนาทีสุดท้าย / กระชั้นชิด They canceled at the last minute."><p class="idiom-phrase" lang="en">at the last minute</p><p class="idiom-meaning">ในนาทีสุดท้าย / กระชั้นชิด</p><p class="idiom-example" lang="en">They canceled at the last minute.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="in the nick of time ทันเวลาพอดีก่อนจะสายเกินไป We caught the train in the nick of time."><p class="idiom-phrase" lang="en">in the nick of time</p><p class="idiom-meaning">ทันเวลาพอดีก่อนจะสายเกินไป</p><p class="idiom-example" lang="en">We caught the train in the nick of time.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="once in a blue moon นาน ๆ ครั้ง I eat there once in a blue moon."><p class="idiom-phrase" lang="en">once in a blue moon</p><p class="idiom-meaning">นาน ๆ ครั้ง</p><p class="idiom-example" lang="en">I eat there once in a blue moon.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="on the spur of the moment ตัดสินใจทันทีโดยไม่ได้วางแผน We booked the trip on the spur of the moment."><p class="idiom-phrase" lang="en">on the spur of the moment</p><p class="idiom-meaning">ตัดสินใจทันทีโดยไม่ได้วางแผน</p><p class="idiom-example" lang="en">We booked the trip on the spur of the moment.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="play it by ear ตัดสินใจตามสถานการณ์ We have no fixed plan; we will play it by ear."><p class="idiom-phrase" lang="en">play it by ear</p><p class="idiom-meaning">ตัดสินใจตามสถานการณ์</p><p class="idiom-example" lang="en">We have no fixed plan; we will play it by ear.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="sleep on it ขอเวลาคิดก่อน โดยค่อยตัดสินใจวันถัดไป Let me sleep on it before I decide."><p class="idiom-phrase" lang="en">sleep on it</p><p class="idiom-meaning">ขอเวลาคิดก่อน โดยค่อยตัดสินใจวันถัดไป</p><p class="idiom-example" lang="en">Let me sleep on it before I decide.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="up in the air ยังไม่แน่นอน / ยังไม่ตกลง Our travel dates are still up in the air."><p class="idiom-phrase" lang="en">up in the air</p><p class="idiom-meaning">ยังไม่แน่นอน / ยังไม่ตกลง</p><p class="idiom-example" lang="en">Our travel dates are still up in the air.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="on the fence ยังลังเลระหว่างตัวเลือก I am on the fence about accepting the job."><p class="idiom-phrase" lang="en">on the fence</p><p class="idiom-meaning">ยังลังเลระหว่างตัวเลือก</p><p class="idiom-example" lang="en">I am on the fence about accepting the job.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="put something off เลื่อนออกไป We put off the meeting until Monday."><p class="idiom-phrase" lang="en">put something off</p><p class="idiom-meaning">เลื่อนออกไป</p><p class="idiom-example" lang="en">We put off the meeting until Monday.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="take a rain check ขอเลื่อนไปรับข้อเสนอหรือคำชวนครั้งหน้า Can I take a rain check on dinner?"><p class="idiom-phrase" lang="en">take a rain check</p><p class="idiom-meaning">ขอเลื่อนไปรับข้อเสนอหรือคำชวนครั้งหน้า</p><p class="idiom-example" lang="en">Can I take a rain check on dinner?</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>💬 ความเห็นและการสื่อสาร · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="get to the point เข้าประเด็น Please get to the point; we have little time."><p class="idiom-phrase" lang="en">get to the point</p><p class="idiom-meaning">เข้าประเด็น</p><p class="idiom-example" lang="en">Please get to the point; we have little time.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="beat around the bush พูดอ้อมค้อม Stop beating around the bush and tell me."><p class="idiom-phrase" lang="en">beat around the bush</p><p class="idiom-meaning">พูดอ้อมค้อม</p><p class="idiom-example" lang="en">Stop beating around the bush and tell me.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="read between the lines เข้าใจความหมายแฝง Read between the lines of his reply."><p class="idiom-phrase" lang="en">read between the lines</p><p class="idiom-meaning">เข้าใจความหมายแฝง</p><p class="idiom-example" lang="en">Read between the lines of his reply.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="see eye to eye เห็นตรงกัน We do not see eye to eye on this issue."><p class="idiom-phrase" lang="en">see eye to eye</p><p class="idiom-meaning">เห็นตรงกัน</p><p class="idiom-example" lang="en">We do not see eye to eye on this issue.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be on the same page เข้าใจตรงกัน Let us make sure we are on the same page."><p class="idiom-phrase" lang="en">be on the same page</p><p class="idiom-meaning">เข้าใจตรงกัน</p><p class="idiom-example" lang="en">Let us make sure we are on the same page.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="ring a bell ฟังดูคุ้น / ทำให้นึกขึ้นได้ราง ๆ That name rings a bell."><p class="idiom-phrase" lang="en">ring a bell</p><p class="idiom-meaning">ฟังดูคุ้น / ทำให้นึกขึ้นได้ราง ๆ</p><p class="idiom-example" lang="en">That name rings a bell.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be all ears ตั้งใจฟังเต็มที่ Tell me your idea. I am all ears."><p class="idiom-phrase" lang="en">be all ears</p><p class="idiom-meaning">ตั้งใจฟังเต็มที่</p><p class="idiom-example" lang="en">Tell me your idea. I am all ears.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="spill the beans เผลอหรือเปิดเผยความลับ Do not spill the beans about the surprise."><p class="idiom-phrase" lang="en">spill the beans</p><p class="idiom-meaning">เผลอหรือเปิดเผยความลับ</p><p class="idiom-example" lang="en">Do not spill the beans about the surprise.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="break the ice ทำให้เริ่มคุยกันได้อย่างผ่อนคลาย The host told a joke to break the ice."><p class="idiom-phrase" lang="en">break the ice</p><p class="idiom-meaning">ทำให้เริ่มคุยกันได้อย่างผ่อนคลาย</p><p class="idiom-example" lang="en">The host told a joke to break the ice.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="take something with a grain of salt ฟังไว้แต่ยังไม่เชื่อทั้งหมด Take that rumor with a grain of salt."><p class="idiom-phrase" lang="en">take something with a grain of salt</p><p class="idiom-meaning">ฟังไว้แต่ยังไม่เชื่อทั้งหมด</p><p class="idiom-example" lang="en">Take that rumor with a grain of salt.</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>💰 เงิน ราคา และการซื้อของ · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="cost an arm and a leg แพงมาก That hotel costs an arm and a leg."><p class="idiom-phrase" lang="en">cost an arm and a leg</p><p class="idiom-meaning">แพงมาก</p><p class="idiom-example" lang="en">That hotel costs an arm and a leg.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="break the bank แพงจนเกินกำลังจ่ายหรือกระทบเงินมาก This small trip will not break the bank."><p class="idiom-phrase" lang="en">break the bank</p><p class="idiom-meaning">แพงจนเกินกำลังจ่ายหรือกระทบเงินมาก</p><p class="idiom-example" lang="en">This small trip will not break the bank.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="make ends meet หาเงินให้พอค่าใช้จ่าย They work extra hours to make ends meet."><p class="idiom-phrase" lang="en">make ends meet</p><p class="idiom-meaning">หาเงินให้พอค่าใช้จ่าย</p><p class="idiom-example" lang="en">They work extra hours to make ends meet.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="on a shoestring ด้วยงบประมาณน้อยมาก We traveled on a shoestring."><p class="idiom-phrase" lang="en">on a shoestring</p><p class="idiom-meaning">ด้วยงบประมาณน้อยมาก</p><p class="idiom-example" lang="en">We traveled on a shoestring.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="tighten your belt ลดรายจ่าย / ประหยัดขึ้น We need to tighten our belts this month."><p class="idiom-phrase" lang="en">tighten your belt</p><p class="idiom-meaning">ลดรายจ่าย / ประหยัดขึ้น</p><p class="idiom-example" lang="en">We need to tighten our belts this month.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="foot the bill เป็นคนจ่ายค่าใช้จ่าย The company will foot the bill."><p class="idiom-phrase" lang="en">foot the bill</p><p class="idiom-meaning">เป็นคนจ่ายค่าใช้จ่าย</p><p class="idiom-example" lang="en">The company will foot the bill.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="chip in ช่วยออกเงินหรือช่วยสมทบ Everyone chipped in for the gift."><p class="idiom-phrase" lang="en">chip in</p><p class="idiom-meaning">ช่วยออกเงินหรือช่วยสมทบ</p><p class="idiom-example" lang="en">Everyone chipped in for the gift.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="save for a rainy day เก็บเงินไว้เผื่อจำเป็นหรือฉุกเฉิน I save a little for a rainy day."><p class="idiom-phrase" lang="en">save for a rainy day</p><p class="idiom-meaning">เก็บเงินไว้เผื่อจำเป็นหรือฉุกเฉิน</p><p class="idiom-example" lang="en">I save a little for a rainy day.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="in the black มีกำไร / บัญชีเป็นบวก The business is finally in the black."><p class="idiom-phrase" lang="en">in the black</p><p class="idiom-meaning">มีกำไร / บัญชีเป็นบวก</p><p class="idiom-example" lang="en">The business is finally in the black.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="a rip-off ของหรือบริการที่คิดราคาแพงไม่คุ้ม That tiny meal was a rip-off."><p class="idiom-phrase" lang="en">a rip-off</p><p class="idiom-meaning">ของหรือบริการที่คิดราคาแพงไม่คุ้ม</p><p class="idiom-example" lang="en">That tiny meal was a rip-off.</p></article>' +
+      '</div></details>' +
+      '<details class="study-details idiom-group"><summary>🤝 ปัญหา ความช่วยเหลือ และโอกาส · 10 สำนวนเสริม</summary><div class="idiom-grid">' +
+      '<article class="idiom-item" data-idiom-search="give someone a hand ช่วยเหลือ Could you give me a hand with these boxes?"><p class="idiom-phrase" lang="en">give someone a hand</p><p class="idiom-meaning">ช่วยเหลือ</p><p class="idiom-example" lang="en">Could you give me a hand with these boxes?</p></article>' +
+      '<article class="idiom-item" data-idiom-search="lend an ear รับฟังอย่างใส่ใจ Thank you for lending an ear when I was upset."><p class="idiom-phrase" lang="en">lend an ear</p><p class="idiom-meaning">รับฟังอย่างใส่ใจ</p><p class="idiom-example" lang="en">Thank you for lending an ear when I was upset.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="be in hot water กำลังมีปัญหาหรือเดือดร้อน He is in hot water for missing the deadline."><p class="idiom-phrase" lang="en">be in hot water</p><p class="idiom-meaning">กำลังมีปัญหาหรือเดือดร้อน</p><p class="idiom-example" lang="en">He is in hot water for missing the deadline.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="get out of hand ควบคุมไม่อยู่ The argument got out of hand."><p class="idiom-phrase" lang="en">get out of hand</p><p class="idiom-meaning">ควบคุมไม่อยู่</p><p class="idiom-example" lang="en">The argument got out of hand.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="hit a snag เจออุปสรรคที่ทำให้สะดุด We hit a snag during installation."><p class="idiom-phrase" lang="en">hit a snag</p><p class="idiom-meaning">เจออุปสรรคที่ทำให้สะดุด</p><p class="idiom-example" lang="en">We hit a snag during installation.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="a blessing in disguise สิ่งที่ดูแย่ตอนแรกแต่กลับนำผลดีมา Missing that job was a blessing in disguise."><p class="idiom-phrase" lang="en">a blessing in disguise</p><p class="idiom-meaning">สิ่งที่ดูแย่ตอนแรกแต่กลับนำผลดีมา</p><p class="idiom-example" lang="en">Missing that job was a blessing in disguise.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="bite off more than you can chew รับงานหรือภาระเกินกำลัง I bit off more than I could chew."><p class="idiom-phrase" lang="en">bite off more than you can chew</p><p class="idiom-meaning">รับงานหรือภาระเกินกำลัง</p><p class="idiom-example" lang="en">I bit off more than I could chew.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="miss the boat พลาดโอกาส I waited too long and missed the boat."><p class="idiom-phrase" lang="en">miss the boat</p><p class="idiom-meaning">พลาดโอกาส</p><p class="idiom-example" lang="en">I waited too long and missed the boat.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="keep an eye on คอยดู / เฝ้าระวัง Please keep an eye on my bag."><p class="idiom-phrase" lang="en">keep an eye on</p><p class="idiom-meaning">คอยดู / เฝ้าระวัง</p><p class="idiom-example" lang="en">Please keep an eye on my bag.</p></article>' +
+      '<article class="idiom-item" data-idiom-search="go out of your way พยายามเป็นพิเศษเพื่อช่วยหรือทำบางอย่าง She went out of her way to help me."><p class="idiom-phrase" lang="en">go out of your way</p><p class="idiom-meaning">พยายามเป็นพิเศษเพื่อช่วยหรือทำบางอย่าง</p><p class="idiom-example" lang="en">She went out of her way to help me.</p></article>' +
+      '</div></details>' +
+      '<div class="memory-pairs"><p><b>ระวังคำที่ดูคล้ายกัน</b></p><p>in the <b>red</b> = ขาดทุน ↔ in the <b>black</b> = มีกำไร</p><p>give a <b>hand</b> = ช่วยเหลือ ↔ lend an <b>ear</b> = รับฟัง</p><p><b>my treat</b> = ฉันเลี้ยง ↔ <b>chip in</b> = ช่วยกันออกเงิน</p></div>' +
+      '<p class="summary-tip"><b>วิธีทวน:</b> วันละ 10 สำนวน อ่านอังกฤษ → ปิดคำแปลแล้วนึกความหมาย → อ่านตัวอย่าง → ทวนสำนวนที่ยังจำไม่ได้ ความหมายอาจเปลี่ยนตามบริบท</p>' +
+      '</section>' +
+      '<p class="memory-rule">ดู → จับ → เช็ก</p>' +
+      '<ul class="memory-list">' +
+      '<li><b>ดูตัวเลือก</b><span>ก่อนฟังเมื่อมีเวลา รู้ว่าต้องหาใคร / ที่ไหน / เมื่อไร</span></li>' +
+      '<li><b>จับเรื่อง</b><span>ใครทำอะไร → มีปัญหาอะไร → จะทำอะไรต่อ</span></li>' +
+      '<li><b>เช็กจุดเปลี่ยน</b><span>but / actually → ระวังข้อมูลที่แก้จากเดิม</span></li>' +
+      '</ul>' +
+      '<div class="summary-example"><p>Friday → <b>but moved to Monday</b><br>ถามวันประชุม → ตอบ <b>Monday</b></p></div>' +
+      '<p class="summary-tip">⚠ คำเหมือนในเสียงอาจเป็นตัวลวง ให้เลือกความหมายที่ตรง</p>' +
+      '</div>' +
+      '<div class="summary-part summary-reading">' +
+      '<h3>Reading <span class="summary-count">60 ข้อ</span></h3>' +
+      '<p class="memory-rule">เติมคำ → รายละเอียด → อนุมาน</p>' +
+      '<p><b>ตรวจครบ 4 Form: 240 ข้อ</b><br>แต่ละ Form: Cloze Test 15 ข้อ + Reading Comprehension 45 ข้อ</p>' +
+      '<div class="study-grid">' +
+      '<div class="study-item"><div class="study-heading"><b>เติมคำ</b><span>60 ข้อ</span></div><p class="study-english" lang="en">Fill in the blank</p><p class="study-meaning">เติมคำในช่องว่าง</p><p class="study-action">จำ: รูปคำ + ความหมาย</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>รายละเอียด</b><span>34 ข้อ</span></div><p class="study-english" lang="en">According to / Why / How</p><p class="study-meaning">ตามที่กล่าว / ทำไม / อย่างไร</p><p class="study-action">จำ: หาหลักฐานในบทความ</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>อนุมาน</b><span>29 ข้อ</span></div><p class="study-english" lang="en">Infer / Suggest / Predict</p><p class="study-meaning">อนุมาน / สื่อว่า / คาดการณ์</p><p class="study-action">จำ: สรุปจากข้อมูล ไม่คิดเพิ่ม</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ข้อยกเว้น</b><span>22 ข้อ</span></div><p class="study-english" lang="en">NOT / EXCEPT</p><p class="study-meaning">ไม่ / ยกเว้น</p><p class="study-action">จำ: แยกไม่จริงกับไม่ได้กล่าวถึง</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ใจความหลัก</b><span>20 ข้อ</span></div><p class="study-english" lang="en">Main idea / Title / Purpose</p><p class="study-meaning">ใจความหลัก / ชื่อเรื่อง / จุดประสงค์</p><p class="study-action">จำ: เลือกให้ครอบคลุมทั้งบท</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ศัพท์</b><span>20 ข้อ</span></div><p class="study-english" lang="en">Closest in meaning</p><p class="study-meaning">ความหมายใกล้ที่สุด</p><p class="study-action">จำ: ใช้บริบท ลองแทนคำ</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>คำอ้างอิง</b><span>16 ข้อ</span></div><p class="study-english" lang="en">Refers to</p><p class="study-meaning">อ้างถึงอะไร</p><p class="study-action">จำ: ย้อนหาคำหรือข้อความที่ตรงกัน</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>เติมประโยค</b><span>15 ข้อ</span></div><p class="study-english" lang="en">BEST fits the blank</p><p class="study-meaning">ประโยคใดเหมาะกับช่องว่าง</p><p class="study-action">จำ: อ่านก่อน–หลัง ดูคำเชื่อม</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>แหล่งบทความ</b><span>10 ข้อ</span></div><p class="study-english" lang="en">Appear / Found in</p><p class="study-meaning">น่าจะพบในแหล่งใด</p><p class="study-action">จำ: ดูหัวข้อและกลุ่มผู้อ่าน</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>น้ำเสียง</b><span>9 ข้อ</span></div><p class="study-english" lang="en">Tone / Attitude</p><p class="study-meaning">น้ำเสียง / ทัศนคติ</p><p class="study-action">จำ: ดูคำแสดงความรู้สึก</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ยกตัวอย่าง</b><span>5 ข้อ</span></div><p class="study-english" lang="en">Author mentions … to</p><p class="study-meaning">ผู้เขียนกล่าวถึง…เพื่ออะไร</p><p class="study-action">จำ: ดูว่าช่วยอธิบายเรื่องใด</p></div>' +
+      '</div>' +
+      '<details class="study-details"><summary>ดูตาราง Reading แยกทั้ง 4 Form</summary>' +
+      '<div class="listening-table-wrap"><table class="listening-table"><caption>ประเภทคำถาม Reading จาก exam-data.js — หนึ่งข้ออยู่ในกลุ่มหลักเดียว</caption><thead><tr><th scope="col">ประเภท</th><th scope="col">F1</th><th scope="col">F2</th><th scope="col">F3</th><th scope="col">F4</th><th scope="col">รวม</th></tr></thead><tbody>' +
+      '<tr><th scope="row">เติมคำในบทความ</th><td>15</td><td>15</td><td>15</td><td>15</td><td><b>60</b></td></tr>' +
+      '<tr><th scope="row">รายละเอียด / เหตุผล / วิธีการ</th><td>9</td><td>8</td><td>8</td><td>9</td><td><b>34</b></td></tr>' +
+      '<tr><th scope="row">อนุมาน / คาดการณ์</th><td>8</td><td>7</td><td>6</td><td>8</td><td><b>29</b></td></tr>' +
+      '<tr><th scope="row">NOT / EXCEPT</th><td>5</td><td>5</td><td>7</td><td>5</td><td><b>22</b></td></tr>' +
+      '<tr><th scope="row">ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก</th><td>5</td><td>5</td><td>5</td><td>5</td><td><b>20</b></td></tr>' +
+      '<tr><th scope="row">ความหมายศัพท์</th><td>5</td><td>5</td><td>5</td><td>5</td><td><b>20</b></td></tr>' +
+      '<tr><th scope="row">คำอ้างอิง</th><td>4</td><td>4</td><td>4</td><td>4</td><td><b>16</b></td></tr>' +
+      '<tr><th scope="row">เติมประโยคในบทความ</th><td>4</td><td>4</td><td>3</td><td>4</td><td><b>15</b></td></tr>' +
+      '<tr><th scope="row">แหล่งที่พบบทความ</th><td>2</td><td>3</td><td>3</td><td>2</td><td><b>10</b></td></tr>' +
+      '<tr><th scope="row">น้ำเสียง / ทัศนคติ</th><td>2</td><td>3</td><td>2</td><td>2</td><td><b>9</b></td></tr>' +
+      '<tr><th scope="row">เหตุผลที่ผู้เขียนยกตัวอย่าง</th><td>1</td><td>1</td><td>2</td><td>1</td><td><b>5</b></td></tr>' +
+      '</tbody><tfoot><tr><th scope="row">รวม</th><td>60</td><td>60</td><td>60</td><td>60</td><td>240</td></tr></tfoot></table></div>' +
+      '<p class="summary-tip">กลุ่มอนุมานรวมโจทย์ suggests และการคาดการณ์; กลุ่มใจความหลักรวมชื่อเรื่องและจุดประสงค์ของทั้งบทความ ตัวเลขสะท้อนชุดฝึกนี้</p>' +
+      '</details>' +
+      '<details class="study-details"><summary>อ่านตัวอย่าง Reading พร้อมคำแปล</summary>' +
+      '<p><b>คำถามจริง → ความหมาย → วิธีตอบ</b></p>' +
+      '<ol class="listening-outline">' +
+      '<li><b>เติมคำ — 60 ข้อ</b><br>Choose the best word or phrase to fill in blank (31).<br><b>แปล:</b> เลือกคำหรือวลีที่เหมาะที่สุดเติมช่องว่างข้อ 31<br>→ ดูชนิดคำ → ไวยากรณ์ → ความหมายรอบช่องว่าง<br><span class="summary-tip">F1 ข้อ 31</span></li>' +
+      '<li><b>รายละเอียด / เหตุผล / วิธีการ — 34 ข้อ</b><br>Why can homeschooling cause income loss for the family?<br><b>แปล:</b> ทำไมการเรียนที่บ้านจึงทำให้ครอบครัวสูญเสียรายได้ได้?<br>→ หาคำสำคัญและคำที่มีความหมายใกล้กัน แล้วอ่านประโยคก่อน–หลัง<br><span class="summary-tip">F1 ข้อ 55</span></li>' +
+      '<li><b>อนุมาน / คาดการณ์ — 29 ข้อ</b><br>What can be INFERRED from Paragraph 3?<br><b>แปล:</b> อนุมานอะไรได้จากย่อหน้า 3?<br>→ ใช้หลักฐานในข้อความ ไม่เติมข้อมูลเอง; ถ้าถามย่อหน้าถัดไป ให้ดูเรื่องที่ย่อหน้าสุดท้ายปูไว้<br><span class="summary-tip">F1 ข้อ 54</span></li>' +
+      '<li><b>NOT / EXCEPT — 22 ข้อ</b><br>Which of the following is NOT mentioned as an effect of soil pollutants in the text?<br><b>แปล:</b> ข้อใดไม่ได้กล่าวถึงว่าเป็นผลของสารมลพิษในดิน?<br>→ NOT TRUE = ไม่จริง; NOT mentioned = ไม่ได้กล่าวถึง; EXCEPT = ยกเว้น แยกสามคำนี้ให้ชัด<br><span class="summary-tip">F3 ข้อ 74</span></li>' +
+      '<li><b>ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก — 20 ข้อ</b><br>What is the main idea of the text?<br><b>แปล:</b> ใจความหลักของบทความคืออะไร?<br>→ main idea = ใจความหลัก; BEST title = ชื่อเรื่องที่เหมาะที่สุด; main purpose = จุดประสงค์หลัก เลือกให้ครอบคลุมทั้งบท<br><span class="summary-tip">F1 ข้อ 46</span></li>' +
+      '<li><b>ความหมายศัพท์ — 20 ข้อ</b><br>The word &quot;tools&quot; (paragraph 3) is closest in meaning to<br><b>แปล:</b> คำว่า tools ในย่อหน้า 3 มีความหมายใกล้กับคำใดที่สุด?<br>→ อ่านบริบท ลองแทนคำตอบลงไป อย่ายึดความหมายแรกที่ท่องมา<br><span class="summary-tip">F1 ข้อ 49</span></li>' +
+      '<li><b>คำอ้างอิง — 16 ข้อ</b><br>The word &quot;they&quot; (paragraph 2) refers to<br><b>แปล:</b> คำว่า they ในย่อหน้า 2 อ้างถึงอะไร?<br>→ ย้อนหาคำนามหรือข้อความที่ความหมายและจำนวนสอดคล้องกัน ไม่ใช่แค่คำที่ใกล้ที่สุด<br><span class="summary-tip">F1 ข้อ 53</span></li>' +
+      '<li><b>เติมประโยคในบทความ — 15 ข้อ</b><br>Which of the following BEST fits the blank in the first paragraph (line 6)?<br><b>แปล:</b> ข้อใดเหมาะที่สุดกับช่องว่างในย่อหน้าแรก บรรทัด 6?<br>→ อ่านทั้งก่อนและหลังช่องว่าง เช็กคำเชื่อม สรรพนาม และลำดับความคิด<br><span class="summary-tip">F3 ข้อ 73</span></li>' +
+      '<li><b>แหล่งที่พบบทความ — 10 ข้อ</b><br>This text would most likely appear in a ________.<br><b>แปล:</b> บทความนี้น่าจะปรากฏในแหล่งใด?<br>→ ดูหัวข้อ รูปแบบภาษา และกลุ่มผู้อ่าน เช่น ข่าว บทความสุขภาพ หรือประวัติบุคคล<br><span class="summary-tip">F3 ข้อ 59</span></li>' +
+      '<li><b>น้ำเสียง / ทัศนคติ — 9 ข้อ</b><br>What is the tone of the text?<br><b>แปล:</b> บทความมีน้ำเสียงอย่างไร?<br>→ ดูคำที่แสดงความรู้สึกหรือการประเมิน เช่น informative = ให้ข้อมูล; critical = วิพากษ์วิจารณ์; supportive = สนับสนุน<br><span class="summary-tip">F1 ข้อ 50</span></li>' +
+      '<li><b>เหตุผลที่ผู้เขียนยกตัวอย่าง — 5 ข้อ</b><br>The author mentions the Industrial Revolution in Paragraph 4 (lines 18-23) to ________.<br><b>แปล:</b> ผู้เขียนกล่าวถึงการปฏิวัติอุตสาหกรรมในย่อหน้า 4 เพื่ออะไร?<br>→ ถามหน้าที่ของตัวอย่างว่าใช้สนับสนุน อธิบาย หรือเปรียบเทียบประเด็นใด<br><span class="summary-tip">F3 ข้อ 78</span></li>' +
+      '</ol>' +
+      '</details>' +
+      '<div class="memory-pairs"><p><b>ศัพท์โจทย์จำง่าย</b></p><p>according to = ตามที่กล่าว · based on = จากข้อมูล · paragraph = ย่อหน้า</p><p>closest in meaning = ความหมายใกล้ที่สุด · refers to = อ้างถึง · suggests = สื่อว่า</p><p>tone = น้ำเสียง · attitude = ทัศนคติ · purpose = จุดประสงค์ · predicted = คาดการณ์</p></div>' +
+      '<details><summary>ดูหมายเลขข้อที่ใช้จัดกลุ่มในแต่ละ Form</summary>' +
+      '<p><b>Form 1</b> · เติมคำข้อ 31–45</p><ul class="listening-outline">' +
+      '<li><b>รายละเอียด / เหตุผล / วิธีการ:</b> 48, 55, 57, 63, 65, 67, 72, 86, 88</li>' +
+      '<li><b>อนุมาน / คาดการณ์:</b> 54, 59, 60, 66, 70, 74, 78, 83</li>' +
+      '<li><b>NOT / EXCEPT:</b> 47, 52, 75, 77, 87</li>' +
+      '<li><b>ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก:</b> 46, 51, 61, 71, 81</li>' +
+      '<li><b>ความหมายศัพท์:</b> 49, 56, 62, 79, 82</li>' +
+      '<li><b>คำอ้างอิง:</b> 53, 69, 73, 85</li>' +
+      '<li><b>เติมประโยคในบทความ:</b> 58, 68, 76, 84</li>' +
+      '<li><b>แหล่งที่พบบทความ:</b> 80, 89</li>' +
+      '<li><b>น้ำเสียง / ทัศนคติ:</b> 50, 90</li>' +
+      '<li><b>เหตุผลที่ผู้เขียนยกตัวอย่าง:</b> 64</li>' +
+      '</ul>' +
+      '<p><b>Form 2</b> · เติมคำข้อ 31–45</p><ul class="listening-outline">' +
+      '<li><b>รายละเอียด / เหตุผล / วิธีการ:</b> 54, 57, 62, 63, 68, 77, 85, 86</li>' +
+      '<li><b>อนุมาน / คาดการณ์:</b> 49, 52, 64, 70, 75, 78, 88</li>' +
+      '<li><b>NOT / EXCEPT:</b> 48, 65, 74, 79, 84</li>' +
+      '<li><b>ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก:</b> 46, 51, 61, 71, 81</li>' +
+      '<li><b>ความหมายศัพท์:</b> 47, 53, 69, 73, 82</li>' +
+      '<li><b>คำอ้างอิง:</b> 55, 67, 76, 87</li>' +
+      '<li><b>เติมประโยคในบทความ:</b> 58, 66, 72, 83</li>' +
+      '<li><b>แหล่งที่พบบทความ:</b> 59, 80, 89</li>' +
+      '<li><b>น้ำเสียง / ทัศนคติ:</b> 50, 60, 90</li>' +
+      '<li><b>เหตุผลที่ผู้เขียนยกตัวอย่าง:</b> 56</li>' +
+      '</ul>' +
+      '<p><b>Form 3</b> · เติมคำข้อ 31–45</p><ul class="listening-outline">' +
+      '<li><b>รายละเอียด / เหตุผล / วิธีการ:</b> 52, 55, 57, 65, 67, 69, 75, 84</li>' +
+      '<li><b>อนุมาน / คาดการณ์:</b> 56, 60, 62, 70, 77, 88</li>' +
+      '<li><b>NOT / EXCEPT:</b> 47, 53, 66, 74, 79, 85, 86</li>' +
+      '<li><b>ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก:</b> 46, 51, 61, 71, 81</li>' +
+      '<li><b>ความหมายศัพท์:</b> 48, 54, 68, 76, 83</li>' +
+      '<li><b>คำอ้างอิง:</b> 58, 63, 72, 82</li>' +
+      '<li><b>เติมประโยคในบทความ:</b> 64, 73, 87</li>' +
+      '<li><b>แหล่งที่พบบทความ:</b> 59, 80, 89</li>' +
+      '<li><b>น้ำเสียง / ทัศนคติ:</b> 50, 90</li>' +
+      '<li><b>เหตุผลที่ผู้เขียนยกตัวอย่าง:</b> 49, 78</li>' +
+      '</ul>' +
+      '<p><b>Form 4</b> · เติมคำข้อ 31–45</p><ul class="listening-outline">' +
+      '<li><b>รายละเอียด / เหตุผล / วิธีการ:</b> 47, 52, 65, 66, 67, 68, 75, 78, 87</li>' +
+      '<li><b>อนุมาน / คาดการณ์:</b> 58, 60, 69, 70, 74, 76, 79, 88</li>' +
+      '<li><b>NOT / EXCEPT:</b> 48, 54, 73, 85, 86</li>' +
+      '<li><b>ใจความหลัก / ชื่อเรื่อง / จุดประสงค์หลัก:</b> 46, 51, 61, 71, 81</li>' +
+      '<li><b>ความหมายศัพท์:</b> 49, 55, 62, 77, 82</li>' +
+      '<li><b>คำอ้างอิง:</b> 56, 64, 80, 84</li>' +
+      '<li><b>เติมประโยคในบทความ:</b> 53, 63, 72, 83</li>' +
+      '<li><b>แหล่งที่พบบทความ:</b> 59, 89</li>' +
+      '<li><b>น้ำเสียง / ทัศนคติ:</b> 50, 90</li>' +
+      '<li><b>เหตุผลที่ผู้เขียนยกตัวอย่าง:</b> 57</li>' +
+      '</ul>' +
+      '</details>' +
+      '<p class="summary-tip">ข้อเติมคำ 44 ของ Form 3 และ 4 มีหมายเหตุว่าต้นฉบับขาดหรืออ่านไม่ชัด จึงนับตามรูปแบบคำถามได้ แต่ยังใช้ตรวจเนื้อหาโจทย์เต็มไม่ได้</p>' +
+      '<p class="memory-rule">ถาม → หา → ยืนยัน</p>' +
+      '<ul class="memory-list">' +
+      '<li><b>ถามอะไร?</b><span>Main idea = ภาพรวม · Detail = รายละเอียด</span></li>' +
+      '<li><b>หาจุดตอบ</b><span>ใช้คำสำคัญ แล้วอ่านประโยคก่อน–หลังด้วย</span></li>' +
+      '<li><b>ยืนยันหลักฐาน</b><span>คำตอบต้องตรงกับบทความ ไม่เติมเรื่องเอง</span></li>' +
+      '</ul>' +
+      '<div class="memory-pairs"><p><b>เติมคำ:</b> รูปคำ → ความหมาย → อ่านทั้งประโยค</p><p><b>because</b> = เหตุผล · <b>although</b> = แม้ว่า · <b>therefore</b> = ผล</p><p><b>it / they:</b> ย้อนหาคำนามที่จำนวนและความหมายตรงกัน</p></div>' +
+      '<p class="summary-tip">⚠ วงคำ NOT / EXCEPT ในใจ ก่อนเลือกข้อที่ไม่ตรงกับเรื่อง</p>' +
+      '</div>' +
+      '<div class="summary-part summary-writing">' +
+      '<h3>Writing <span class="summary-count">30 ข้อ · หาจุดผิด</span></h3>' +
+      '<p><b>ดู Writing ทั้ง 4 Form: 120 ข้อ</b><br>Error Identification = เลือกส่วนที่ผิดในประโยค</p>' +
+      '<p class="memory-rule">กริยา → ประโยค → รูปคำ</p>' +
+      '<p class="summary-tip">จัดกลุ่มจากประโยคและคำอธิบายเฉลยเดิมได้ 115 ข้อ อีก 5 ข้อของ Form 4 ยังมีข้อมูลไม่ชัดหรือเฉลยไม่สอดคล้อง จึงแยกไว้</p>' +
+      '<div class="study-grid">' +
+      '<div class="study-item"><div class="study-heading"><b>รูปกริยา</b><span>34 ข้อ</span></div><p class="study-english" lang="en">Verb form</p><p class="study-meaning">ใช้ V1 / V-ing / V3 ให้ถูก</p><p class="study-action">จำ: modal + V1 · expect to + V1 · passive = be + V3</p><p><b>ตัวอย่าง:</b> She can work. / The bridge was built.</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>โครงสร้างประโยค</b><span>26 ข้อ</span></div><p class="study-english" lang="en">Clause / Pronoun</p><p class="study-meaning">ประโยคต้องครบ สรรพนามต้องอ้างถูก</p><p class="study-action">จำ: หาประธานและกริยาหลักก่อน</p><p><b>ตัวอย่าง:</b> I know how you use it. ไม่ใช่ how do you use it</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>รูปคำและลำดับคำ</b><span>15 ข้อ</span></div><p class="study-english" lang="en">Word form / Word order</p><p class="study-meaning">เลือกชนิดคำและวางตำแหน่งให้ถูก</p><p class="study-action">จำ: adjective ขยายนาม · adverb ขยายกริยา</p><p><b>ตัวอย่าง:</b> traditional GPS / use it carefully</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>คำนามและจำนวน</b><span>13 ข้อ</span></div><p class="study-english" lang="en">Noun / Article / Quantifier</p><p class="study-meaning">นับได้–นับไม่ได้ เอกพจน์–พหูพจน์</p><p class="study-action">จำ: many + นามนับได้พหูพจน์ · much + นามนับไม่ได้</p><p><b>ตัวอย่าง:</b> many projects / much sugar</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>คำเชื่อมและบุพบท</b><span>12 ข้อ</span></div><p class="study-english" lang="en">Conjunction / Preposition</p><p class="study-meaning">ดูว่าตามด้วยประโยคหรือกลุ่มคำนาม</p><p class="study-action">จำ: because + S + V · because of + นาม / V-ing</p><p><b>ตัวอย่าง:</b> because it rains / because of the rain</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>ประธาน–กริยาและเวลา</b><span>9 ข้อ</span></div><p class="study-english" lang="en">Agreement / Tense</p><p class="study-meaning">กริยาตรงกับประธานและเวลาของเรื่อง</p><p class="study-action">จำ: ตัดวลีขยายในใจ แล้วหาประธานจริง</p><p><b>ตัวอย่าง:</b> The firm is … / The rocks contain …</p></div>' +
+      '<div class="study-item"><div class="study-heading"><b>โครงสร้างคู่ขนาน</b><span>6 ข้อ</span></div><p class="study-english" lang="en">Parallel structure</p><p class="study-meaning">คำที่เรียงคู่กันใช้รูปสอดคล้องกัน</p><p class="study-action">จำ: ดูรายการที่เชื่อมด้วย and / or</p><p><b>ตัวอย่าง:</b> shifting, ramping up, and localizing</p></div>' +
+      '</div>' +
+      '<details class="study-details"><summary>ดูจำนวนจุดผิด Writing แยกทั้ง 4 Form</summary><div class="listening-table-wrap"><table class="listening-table"><caption>จัดกลุ่มหลักหนึ่งกลุ่มต่อข้อ ตามคำอธิบายเฉลยเดิม ไม่ใช่สถิติข้อสอบทั่วไป</caption><thead><tr><th scope="col">จุดผิด</th><th scope="col">F1</th><th scope="col">F2</th><th scope="col">F3</th><th scope="col">F4</th><th scope="col">รวม</th></tr></thead><tbody>' +
+      '<tr><th scope="row">รูปกริยา / V-ing / V3</th><td>10</td><td>9</td><td>7</td><td>8</td><td>34</td></tr>' +
+      '<tr><th scope="row">โครงสร้างประโยค / สรรพนาม</th><td>7</td><td>8</td><td>6</td><td>5</td><td>26</td></tr>' +
+      '<tr><th scope="row">รูปคำ / การเลือกคำ / ลำดับคำ</th><td>2</td><td>4</td><td>5</td><td>4</td><td>15</td></tr>' +
+      '<tr><th scope="row">คำนาม / article / คำบอกจำนวน</th><td>4</td><td>2</td><td>4</td><td>3</td><td>13</td></tr>' +
+      '<tr><th scope="row">บุพบท / คำเชื่อม / สำนวน</th><td>3</td><td>4</td><td>4</td><td>1</td><td>12</td></tr>' +
+      '<tr><th scope="row">ประธาน–กริยา / tense</th><td>3</td><td>2</td><td>2</td><td>2</td><td>9</td></tr>' +
+      '<tr><th scope="row">โครงสร้างคู่ขนาน</th><td>1</td><td>1</td><td>2</td><td>2</td><td>6</td></tr>' +
+      '<tr><th scope="row">ยังต้องตรวจต้นฉบับ</th><td>0</td><td>0</td><td>0</td><td>5</td><td>5</td></tr></tbody><tfoot><tr><th scope="row">รวม</th><td>30</td><td>30</td><td>30</td><td>30</td><td>120</td></tr></tfoot></table></div>' +
+      '<p class="summary-tip">Form 4 ข้อ 106, 110, 116, 117 มีหมายเหตุไม่แน่ใจในเฉลยเดิม; ข้อ 96 เสนอแก้ thriving เป็น thrive แต่ประโยคมี are อยู่แล้ว จึงยังไม่นับเป็นกลุ่มรูปกริยา</p>' +
+      '<details><summary>ดูหมายเลขข้อที่ใช้จัดกลุ่ม</summary>' +
+      '<p><b>Form 1</b></p><ul class="listening-outline">' +
+      '<li><b>รูปกริยา / V-ing / V3:</b> 91, 94, 96, 99, 102, 105, 107, 113, 115, 116</li>' +
+      '<li><b>โครงสร้างประโยค / สรรพนาม:</b> 97, 98, 106, 108, 112, 118, 120</li>' +
+      '<li><b>รูปคำ / การเลือกคำ / ลำดับคำ:</b> 92, 95</li>' +
+      '<li><b>คำนาม / article / คำบอกจำนวน:</b> 100, 111, 114, 119</li>' +
+      '<li><b>บุพบท / คำเชื่อม / สำนวน:</b> 93, 104, 110</li>' +
+      '<li><b>ประธาน–กริยา / tense:</b> 101, 103, 117</li>' +
+      '<li><b>โครงสร้างคู่ขนาน:</b> 109</li>' +
+      '</ul>' +
+      '<p><b>Form 2</b></p><ul class="listening-outline">' +
+      '<li><b>รูปกริยา / V-ing / V3:</b> 92, 94, 98, 100, 102, 103, 115, 119, 120</li>' +
+      '<li><b>โครงสร้างประโยค / สรรพนาม:</b> 95, 99, 101, 106, 109, 111, 112, 116</li>' +
+      '<li><b>รูปคำ / การเลือกคำ / ลำดับคำ:</b> 91, 96, 97, 114</li>' +
+      '<li><b>คำนาม / article / คำบอกจำนวน:</b> 93, 110</li>' +
+      '<li><b>บุพบท / คำเชื่อม / สำนวน:</b> 105, 107, 113, 117</li>' +
+      '<li><b>ประธาน–กริยา / tense:</b> 108, 118</li>' +
+      '<li><b>โครงสร้างคู่ขนาน:</b> 104</li>' +
+      '</ul>' +
+      '<p><b>Form 3</b></p><ul class="listening-outline">' +
+      '<li><b>รูปกริยา / V-ing / V3:</b> 92, 93, 94, 97, 101, 103, 112</li>' +
+      '<li><b>โครงสร้างประโยค / สรรพนาม:</b> 96, 98, 104, 107, 108, 111</li>' +
+      '<li><b>รูปคำ / การเลือกคำ / ลำดับคำ:</b> 91, 95, 102, 109, 114</li>' +
+      '<li><b>คำนาม / article / คำบอกจำนวน:</b> 99, 116, 117, 118</li>' +
+      '<li><b>บุพบท / คำเชื่อม / สำนวน:</b> 100, 105, 113, 120</li>' +
+      '<li><b>ประธาน–กริยา / tense:</b> 110, 119</li>' +
+      '<li><b>โครงสร้างคู่ขนาน:</b> 106, 115</li>' +
+      '</ul>' +
+      '<p><b>Form 4</b></p><ul class="listening-outline">' +
+      '<li><b>รูปกริยา / V-ing / V3:</b> 91, 95, 101, 103, 108, 113, 115, 118</li>' +
+      '<li><b>โครงสร้างประโยค / สรรพนาม:</b> 93, 94, 99, 102, 111</li>' +
+      '<li><b>รูปคำ / การเลือกคำ / ลำดับคำ:</b> 100, 104, 109, 114</li>' +
+      '<li><b>คำนาม / article / คำบอกจำนวน:</b> 92, 97, 120</li>' +
+      '<li><b>บุพบท / คำเชื่อม / สำนวน:</b> 98</li>' +
+      '<li><b>ประธาน–กริยา / tense:</b> 105, 107</li>' +
+      '<li><b>โครงสร้างคู่ขนาน:</b> 112, 119</li>' +
+      '</ul>' +
+      '</details></details>' +
+      '<p class="summary-tip">ตัวอย่างสูตรจำเป็นตัวอย่างสั้นเพื่อทบทวน บางข้อในข้อมูลเดิมมีส่วนที่ขีดเส้นใต้ไม่ตรงกับคำอธิบาย จึงควรตรวจต้นฉบับก่อนใช้เฉลยรายข้อ</p>' +
+      '<p class="memory-rule">ประธาน → กริยา → รูปคำ</p>' +
+      '<ul class="memory-list">' +
+      '<li><b>ประธานจริง</b><span>The list of items <b>is</b> … → ยึด list ไม่ใช่ items</span></li>' +
+      '<li><b>สูตรกริยา</b><span>can / should + V1 · have / has / had + V3<br>ถูกกระทำ (passive) = be + V3</span></li>' +
+      '<li><b>รูปคำให้ตรง</b><span>a <b>careful</b> driver · drives <b>carefully</b><br>reading, swimming, <b>cycling</b> → ใช้รูปขนานกัน</span></li>' +
+      '</ul>' +
+      '<div class="memory-pairs"><p><b>many / few</b> + นามนับได้พหูพจน์</p><p><b>much / little</b> + นามนับไม่ได้ เช่น information</p></div>' +
+      '<p class="summary-tip">⚠ V1 = กริยารูปพื้นฐาน · V3 = past participle เช่น work / worked, go / gone</p>' +
+      '</div>' +
+      '<p class="memory-review"><b>วิธีทวนให้จำ:</b> อ่านสูตร → ปิดสรุปแล้วพูดจากความจำ → ทำโจทย์ → จดจุดที่พลาดแล้วทวน</p>' +
+      '<a class="summary-link" href="cu-tep-guide.html">อ่านคำอธิบายและตัวอย่างเพิ่มเติม →</a>' +
+      '</section>'
+    ));
+    var idiomSearch = wrap.querySelector("#idiom-search");
+    if (idiomSearch){
+      var idiomGroups = wrap.querySelectorAll(".idiom-group");
+      idiomGroups.forEach(function(group){ group.dataset.initialOpen = group.open ? "yes" : "no"; });
+      idiomSearch.addEventListener("input", function(){
+        var term = idiomSearch.value.trim().toLocaleLowerCase();
+        var count = 0;
+        idiomGroups.forEach(function(group){
+          var matches = 0;
+          group.querySelectorAll(".idiom-item").forEach(function(item){
+            var match = !term || item.dataset.idiomSearch.toLocaleLowerCase().includes(term);
+            item.hidden = !match;
+            if (match){ matches++; count++; }
+          });
+          group.hidden = matches === 0;
+          group.open = term ? matches > 0 : group.dataset.initialOpen === "yes";
+        });
+        wrap.querySelector("#idiom-search-status").textContent = term
+          ? "พบ " + count + " สำนวน"
+          : "80 สำนวน · เปิดหมวดที่ต้องการอ่าน";
+      });
+    }
     return wrap;
   }
 
